@@ -163,12 +163,12 @@
 				<control type="label" id="4366">
 					<width>600</width>
 					<height>60</height>
-					<label>         Music Viz Settings</label>
+					<label>$LOCALIZE[31328]</label>
 					<font>Font_Bold33</font>
 					<textcolor>$VAR[TitleColorVar]</textcolor>
 				</control>
 				<control type="button" id="451666">
-					<label>Music Visualisation </label>
+					<label>$LOCALIZE[31329] </label>
 					<label2>[COLOR $VAR[FontColorVar]]$VAR[MusicVizSettingsVar][/COLOR]</label2>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick condition="!Skin.HasSetting(AltMusicVizLayout) | !Skin.HasSetting(ThirdMusicVizLayout) | !Skin.HasSetting(ThirdMusicVizLayout)">Skin.Reset(widgetpola)</onclick>
@@ -366,40 +366,32 @@
 				</control>
 				<!-- FourthMusicVizLayout -->
 				<control type="radiobutton" id="418200">
-					<label>Move Down</label>
+					<label>$LOCALIZE[31439]</label>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick>Skin.ToggleSetting(FourthMusicVizLayoutDown)</onclick>
 					<selected>Skin.HasSetting(FourthMusicVizLayoutDown)</selected>
 					<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
 				</control>
 				<control type="radiobutton" id="418201">
-					<label>Show Info</label>
+					<label>$LOCALIZE[31338]</label>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick>Skin.ToggleSetting(FourthMusicVizLayoutShowInfo)</onclick>
 					<selected>Skin.HasSetting(FourthMusicVizLayoutShowinfo)</selected>
 					<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
 				</control>
 				<control type="radiobutton" id="418202">
-					<label>Show Rating</label>
+					<label>$LOCALIZE[31563]</label>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick>Skin.ToggleSetting(FourthMusicVizLayoutShowRating)</onclick>
 					<selected>Skin.HasSetting(FourthMusicVizLayoutShowRating)</selected>
 					<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
 				</control>
 				<control type="radiobutton" id="418203">
-					<label>Show Time and Progress</label>
+					<label>$LOCALIZE[31564]</label>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick>Skin.ToggleSetting(FourthMusicVizLayoutProgress)</onclick>
 					<selected>Skin.HasSetting(FourthMusicVizLayoutProgress)</selected>
 					<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
-				</control>
-				
-				<control type="label" id="430">
-					<width>600</width>
-					<height>60</height>
-					<label>     $LOCALIZE[12006] $LOCALIZE[31046]</label>
-					<font>Font_Bold33</font>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
 				</control>
 				<control type="radiobutton" id="431">
 					<label>$LOCALIZE[31253]</label>

@@ -3936,7 +3936,7 @@
 		<value condition="Skin.HasSetting(AltMusicVizLayout)">MooViz</value>
 		<value condition="Skin.HasSetting(ThirdMusicVizLayout)">SeedyEvil</value>
 		<value condition="Skin.HasSetting(FourthMusicVizLayout)">SiLVO</value>
-		<value>Original</value>
+		<value>$LOCALIZE[31565]</value>
 	</variable>
 	<variable name="AcademyAward">
 		<value condition="String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp)">PICTURE</value>
