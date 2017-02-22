@@ -178,9 +178,8 @@
 					<align>left</align>
 					<font>Font_Bold28</font>
 					<textcolor>FF017196</textcolor>
-					<label>PLOT</label>
+					<label>$LOCALIZE[31551]</label>
 				</control>
-
 				<control type="textbox">
 					<visible>!Skin.HasSetting(DisableVideoThumb) + !Skin.HasSetting(Discinfoscreen)</visible>
 					<description>Plot</description>
@@ -194,7 +193,6 @@
 					<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
 					<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
 				</control>
-
 				<control type="label">
 					<visible>Skin.HasSetting(DisableVideoThumb)</visible>
 					<left>130</left>
@@ -204,7 +202,7 @@
 					<align>left</align>
 					<font>Font_Bold28</font>
 					<textcolor>FF017196</textcolor>
-					<label>PLOT</label>
+					<label>$LOCALIZE[31551]</label>
 				</control>
 				<control type="textbox">
 					<visible>Skin.HasSetting(DisableVideoThumb)</visible>

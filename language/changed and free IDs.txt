@@ -196,7 +196,7 @@ Last Update: 04.06.2016
 
 31297	msgid "  •  Global widget backgrounds"
 
-31300	msgid "       •  Background"
+31300	msgid "  •  Background"
 
 31301	msgid "  •  Match info button background to widget background"
 
@@ -232,9 +232,9 @@ Last Update: 04.06.2016
 
 31320	msgid "Hide Visualisation behind Fanart"
 
-31328	msgid "Alternate Music Visualisation 1"
+31328	msgid "         Music Viz Settings"
 
-31329	msgid "Alternate Music Visualisation 2"
+31329	msgid "Music Visualisation"
 
 31337	msgid "Show Alternate Layout 1"
 
@@ -644,6 +644,13 @@ START HERE:
 
 31562	msgid "Show Logo Below HomeBar"
 
+31563	msgid "  •  Show Rating"
+
+31564	msgid "  •  Show Time and Progress"
+
+31565	msgid "Original"
+
+
 END HERE
 ###############################################################
 
@@ -655,9 +662,6 @@ FREE SLOTS !!!!!!!!!!!!!!! ( maybe not 100% accurate - please double check befor
 =============================================================================================
 
 
-31563
-31564
-31565
 31566
 31567
 31568
