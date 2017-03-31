@@ -287,7 +287,7 @@
 					<top>-40</top>
 					<width>550</width>
 					<height>825</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[ListPosterVar1]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
 					<bordersize>19</bordersize>
@@ -367,7 +367,7 @@
 					<top>770</top>
 					<width>510</width>
 					<height>765</height>
-					<texture diffuse="thumbs/movieposter_mask_reflect.png" flipy="true" background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar1]</texture>
+					<texture diffuse="thumbs/movieposter_mask_reflect.png" flipy="true" background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<visible>!Skin.HasSetting(genrethumbs)</visible>

@@ -2640,6 +2640,10 @@ msgctxt "#31734"
 msgid "Use QuickList instead of default shutdown menu"
 msgstr ""
 
+msgctxt "#31735"
+msgid "Artwork"
+msgstr ""
+
 
 
 

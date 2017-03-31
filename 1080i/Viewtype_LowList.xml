@@ -717,7 +717,7 @@
 						<top>-130</top>
 						<width>399</width>
 						<height>600</height>
-						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar1]</texture>
+						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar]</texture>
 						<visible>!Skin.HasSetting(genrethumbs)</visible>
 					</control>
 					<control type="image">

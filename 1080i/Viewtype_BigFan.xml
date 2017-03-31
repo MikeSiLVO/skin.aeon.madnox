@@ -144,7 +144,7 @@
 					<top>166</top>
 					<width>215</width>
 					<height>315</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>275</fadetime>
 					<visible>!Skin.HasSetting(genrethumbs)</visible>
 				</control>

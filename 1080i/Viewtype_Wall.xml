@@ -673,31 +673,11 @@
 				<width>265</width>
 				<height>398</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-				<bordersize>24</bordersize>
-				<visible>!Skin.HasSetting(squarethumbs) + !Skin.HasSetting(genrethumbs)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>7</posy>
-				<width>265</width>
-				<height>398</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-				<bordersize>24</bordersize>
-				<visible>Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
-			</control>
-			<control type="image">   <!-- inactive movies round -->
-				<posx>10</posx>
-				<posy>7</posy>
-				<width>265</width>
-				<height>398</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<bordersize>24</bordersize>
-				<visible>!Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
+				<visible>!Skin.HasSetting(squarethumbs)</visible>
 			</control>
-			<control type="image">   <!-- inactive movies square -->
+			<control type="image">
 				<posx>10</posx>
 				<posy>7</posy>
 				<width>265</width>
@@ -705,17 +685,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<bordersize>24</bordersize>
-				<visible>Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
-			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>7</posy>
-				<width>265</width>
-				<height>398</height>
-				<aspectratio>stretch</aspectratio>
-				<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-				<bordersize>24</bordersize>
-				<visible>Skin.HasSetting(squarethumbs) + !Skin.HasSetting(genrethumbs)</visible>
+				<visible>Skin.HasSetting(squarethumbs)</visible>
 			</control>
 			<include>MovieWallIcons</include>
 			<control type="image">
@@ -725,7 +695,6 @@
 				<height>260</height>
 				<include>Animation_VisibleChange200</include>
 				<animation effect="fade" start="100" end="25" time="0" condition="true">Conditional</animation>
-
 			</control>
 			<control type="group">
 				<top>20</top>
@@ -744,30 +713,10 @@
 					<top>10</top>
 					<width>265</width>
 					<height>398</height>
-					<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-					<bordertexture border="1" colordiffuse="$VAR[FocusTextureColorVar]">thumbs/poster_shadow40.png</bordertexture>
-					<bordersize>18</bordersize>
-					<visible>!Skin.HasSetting(squarethumbs) + !Skin.HasSetting(genrethumbs)</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>265</width>
-					<height>398</height>
-					<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-					<bordertexture border="12" colordiffuse="$VAR[FocusTextureColorVar]">thumbs_square/poster_shadow90.png</bordertexture>
-					<bordersize>15</bordersize>
-					<visible>Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>265</width>
-					<height>398</height>
 					<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<bordertexture border="1" colordiffuse="$VAR[FocusTextureColorVar]">thumbs/poster_shadow40.png</bordertexture>
 					<bordersize>18</bordersize>
-					<visible>!Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
+					<visible>!Skin.HasSetting(squarethumbs)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -777,17 +726,7 @@
 					<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<bordertexture border="12" colordiffuse="$VAR[FocusTextureColorVar]">thumbs_square/poster_shadow90.png</bordertexture>
 					<bordersize>15</bordersize>
-					<visible>Skin.HasSetting(squarethumbs) + Skin.HasSetting(genrethumbs)</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>265</width>
-					<height>398</height>
-					<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar1]</texture>
-					<bordertexture border="12" colordiffuse="$VAR[FocusTextureColorVar]">thumbs_square/poster_shadow90.png</bordertexture>
-					<bordersize>15</bordersize>
-					<visible>Skin.HasSetting(squarethumbs) + !Skin.HasSetting(genrethumbs)</visible>
+					<visible>Skin.HasSetting(squarethumbs)</visible>
 				</control>
 				<control type="group">
 					<top>18</top>
@@ -1006,91 +945,91 @@
 		</control>
 
 		<!-- Letter-Scrollbar -->
-			<control type="image">
-				<left>400</left>
-				<top>1003</top>
-				<width>1097</width>
-				<height>58</height>
-				<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6016)">Conditional</animation>
-				<texture>views/directory/sbl_backround.png</texture>
-				<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-				<visible>Control.HasFocus(6016) + Skin.HasSetting(AlphabetScrollbar)</visible>
-				<visible>Container.Content(movies) | Container.Content(sets)</visible>
-			</control>
-			<control type="panel" id="6016">
-				<onup>500</onup>
-				<ondown>61</ondown>
-				<left>410</left>
-				<top>1013</top>
-				<width>1188</width>
-				<height>100%</height>
-				<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6016)">Conditional</animation>
-				<visible>Container.Content(movies) | Container.Content(sets)</visible>
-				<itemlayout height="41" width="40">
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>white</colordiffuse>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-						<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
-						<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="41" width="40">
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-				</focusedlayout>
-				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
-			</control>
-			<!-- Letter-Scrollbar TVSHOWS-->
-			<control type="image">
-				<left>450</left>
-				<top>1003</top>
-				<width>1037</width>
-				<height>58</height>
-				<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6016)">Conditional</animation>
-				<texture>views/directory/sbl_backround.png</texture>
-				<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-				<visible>Control.HasFocus(6016) + Skin.HasSetting(AlphabetScrollbar)</visible>
-				<visible>Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-			</control>
-			<control type="panel" id="6016">
-				<onup>500</onup>
-				<ondown>61</ondown>
-				<left>455</left>
-				<top>1013</top>
-				<width>1188</width>
-				<height>100%</height>
-				<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6016)">Conditional</animation>
-				<visible>Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-				<itemlayout height="41" width="38">
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>white</colordiffuse>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-						<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
-						<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="41" width="38">
-					<control type="image">
-						<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
-						<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-				</focusedlayout>
-				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
-			</control>
+		<control type="image">
+			<left>400</left>
+			<top>1003</top>
+			<width>1097</width>
+			<height>58</height>
+			<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6016)">Conditional</animation>
+			<texture>views/directory/sbl_backround.png</texture>
+			<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+			<visible>Control.HasFocus(6016) + Skin.HasSetting(AlphabetScrollbar)</visible>
+			<visible>Container.Content(movies) | Container.Content(sets)</visible>
+		</control>
+		<control type="panel" id="6016">
+			<onup>500</onup>
+			<ondown>61</ondown>
+			<left>410</left>
+			<top>1013</top>
+			<width>1188</width>
+			<height>100%</height>
+			<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6016)">Conditional</animation>
+			<visible>Container.Content(movies) | Container.Content(sets)</visible>
+			<itemlayout height="41" width="40">
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>white</colordiffuse>
+					<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+				</control>
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+					<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="41" width="40">
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+				</control>
+			</focusedlayout>
+			<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+		</control>
+		<!-- Letter-Scrollbar TVSHOWS-->
+		<control type="image">
+			<left>450</left>
+			<top>1003</top>
+			<width>1037</width>
+			<height>58</height>
+			<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6016)">Conditional</animation>
+			<texture>views/directory/sbl_backround.png</texture>
+			<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+			<visible>Control.HasFocus(6016) + Skin.HasSetting(AlphabetScrollbar)</visible>
+			<visible>Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+		</control>
+		<control type="panel" id="6016">
+			<onup>500</onup>
+			<ondown>61</ondown>
+			<left>455</left>
+			<top>1013</top>
+			<width>1188</width>
+			<height>100%</height>
+			<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6016)">Conditional</animation>
+			<visible>Container.Content(TVShows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			<itemlayout height="41" width="38">
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>white</colordiffuse>
+					<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+				</control>
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+					<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="41" width="38">
+				<control type="image">
+					<texture>views/directory/1/$INFO[ListItem.Label].png</texture>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+				</control>
+			</focusedlayout>
+			<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+		</control>
 
 	</include>
 
@@ -1144,7 +1083,7 @@
 			<include>WallContent</include>
 		</control>
 
-	<!-- Letter-Scrollbar -->
+		<!-- Letter-Scrollbar -->
 		<control type="image">
 			<left>1769</left>
 			<top>80</top>
@@ -1183,7 +1122,7 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="33" width="28">
-			<control type="label">
+				<control type="label">
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
 					<textcolor>$VAR[TitleColorVar]</textcolor>
