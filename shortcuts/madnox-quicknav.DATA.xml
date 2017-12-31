@@ -16,7 +16,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>music</defaultID>
-		<label>10005</label>
+		<label>2</label>
 		<label2>Common menu item</label2>
 		<icon>special://skin/extras/BigIcons/Headphone.png</icon>
 		<action>ActivateWindow(Music)</action>
