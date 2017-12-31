@@ -957,10 +957,7 @@
 			<control type="group" id="8000">
 				<width>2325</width>
 				<height>825</height>
-				<animation type="Conditional" condition="Window.IsActive(1199)" reversible="false">
-					<include>Animation_PanelFlipUp2</include>
-				</animation>
-				<animation type="Conditional" condition="!Window.IsActive(1199)" reversible="false">
+				<animation type="Conditional" reversible="false">
 					<include>Animation_PanelFlipDown1</include>
 				</animation>
 				<animation type="Conditional" condition="![ControlGroup(8000).HasFocus | Control.HasFocus(8012)]">
@@ -1195,10 +1192,7 @@
 			<control type="group" id="9000">
 				<width>2325</width>
 				<height>825</height>
-				<animation type="Conditional" condition="Window.IsActive(1199)" reversible="false">
-					<include>Animation_PanelFlipUp2</include>
-				</animation>
-				<animation type="Conditional" condition="!Window.IsActive(1199)" reversible="false">
+				<animation type="Conditional" reversible="false">
 					<include>Animation_PanelFlipDown1</include>
 				</animation>
 				<animation type="Conditional" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9012)]">
@@ -1433,7 +1427,6 @@
 		</control>
 		<control type="group">
 			<include>Animation_HideBreadCrumbs</include>
-			<visible>!Window.IsActive(1199)</visible>
 			<control type="image">
 				<width>1920</width>
 				<height>87</height>

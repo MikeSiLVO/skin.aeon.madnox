@@ -1946,7 +1946,7 @@
 				<animation effect="slide" start="0,0" end="620,0" delay="0" time="800" tween="cubic" easing="inout" condition="Skin.Hassetting(KodiFlixTVCenterList)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="940,0" delay="0" time="800" tween="cubic" easing="inout" condition="!Skin.Hassetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus) + !Skin.HasSetting(KodiFlixTVShortList)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="210,0" delay="0" time="800" tween="cubic" easing="inout" condition="Skin.Hassetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus)">Conditional</animation>
-				<visible>[[Container.Content(Movies) | Container.Content(Sets)] + ![[Container.Content(tvshows) | Container.Content(tvshows)] + Skin.HasSetting(KodiFlixBoxsets)] + [Skin.HasSetting(KodiFlixLandscapeView) | Skin.HasSetting(KodiFlixClearArtView)]] | [[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(KodiFlixTVPosters) + !Skin.HasSetting(KodiFlixBoxsets) + !Skin.HasSetting(KodiFlixTVInfo)] | [Container.Content(episodes) + !Skin.HasSetting(KodiFlixTVInfo)]]</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Sets)] + ![[Container.Content(tvshows) | Container.Content(tvshows)] + Skin.HasSetting(KodiFlixBoxsets) + [Skin.HasSetting(KodiFlixLandscapeView) | Skin.HasSetting(KodiFlixClearArtView)]] | [[Container.Content(TVShows) | Container.Content(Seasons)] + !Skin.HasSetting(KodiFlixTVPosters) + !Skin.HasSetting(KodiFlixBoxsets) + !Skin.HasSetting(KodiFlixTVInfo)] | [Container.Content(episodes) + !Skin.HasSetting(KodiFlixTVInfo)]</visible>
 			</control>
 			<control type="image">
 				<left>45</left>

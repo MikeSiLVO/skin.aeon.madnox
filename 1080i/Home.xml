@@ -117,7 +117,6 @@
 			<animation effect="slide" end="0,330" time="560" tween="cubic" delay="160" condition="!Skin.HasSetting(lowermainmenu) + !String.IsEmpty(Window(home).Property(PanelWidget2Info)) + !Window.IsActive(1115)">Conditional</animation>
 			<animation effect="slide" end="0,-330" time="560" tween="cubic" delay="160" condition="!Skin.HasSetting(lowermainmenu) + !String.IsEmpty(Window(home).Property(PanelWidgetInfo)) + !Window.IsActive(1115)">Conditional</animation>
 			<animation effect="slide" end="0,330" time="480" tween="cubic" delay="160" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + [Window.IsActive(1115) | Window.IsActive(1154)]">Conditional</animation>
-			<animation effect="slide" end="0,-383" time="480" tween="cubic" delay="160" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + Window.IsActive(1199)">Conditional</animation>
 			<control type="group">
 				<top>472</top>
 				<include>LibraryStats</include>
@@ -323,7 +322,7 @@
 				</control>
 			</control>
 		</control>
-		
+
 
 		<!-- Hidden list for submenu playlist-based background -->
 		<control type="wraplist" id="8011">

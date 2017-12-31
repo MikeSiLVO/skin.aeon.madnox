@@ -8,7 +8,7 @@
 			<animation effect="fade" start="100" end="0" condition="Container(9000).OnNext | Container(9000).OnPrevious">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="400" delay="400" tween="quadratic" easing="out" condition="![Container(9000).OnNext | Container(9000).OnPrevious]">Conditional</animation>
 			<animation effect="slide" end="0,-349" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Window.IsVisible(1199) | Window.IsVisible(1115)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Window.IsVisible(1115)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.WidgetHide) + !ControlGroup(90010).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.PanelInfo) + ControlGroup(90020).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="!Skin.HasSetting(Enable.PanelInfo) + String.IsEqual(Container(9000).ListItem.Property(widgetPanelInfo.2),Enabled) + ControlGroup(90020).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)">Conditional</animation>
@@ -35,7 +35,7 @@
 			<animation effect="fade" start="100" end="0" condition="Container(9000).OnNext | Container(9000).OnPrevious">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="400" delay="400" tween="quadratic" easing="out" condition="![Container(9000).OnNext | Container(9000).OnPrevious]">Conditional</animation>
 			<animation effect="slide" end="0,601" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Window.IsVisible(1199) | Window.IsVisible(1115)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Window.IsVisible(1115)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.WidgetHide) + !ControlGroup(90020).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.PanelInfo) + ControlGroup(90010).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="!Skin.HasSetting(Enable.PanelInfo) + String.IsEqual(Container(9000).ListItem.Property(widgetPanelInfo),Enabled) + ControlGroup(90010).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List)">Conditional</animation>
@@ -2083,7 +2083,7 @@
 	<include name="Furniture_HomeNowPlaying">
 		<control type="group">
 			<top>14</top>
-			<visible>!Window.IsActive(1115) + !Window.IsActive(1154) + !Window.IsActive(1199)</visible>
+			<visible>!Window.IsActive(1115) + !Window.IsActive(1154)</visible>
 			<visible>[String.IsEmpty(Control.GetLabel(4325)) + !Skin.HasSetting(movenowplayingwidget)] | [String.IsEmpty(Control.GetLabel(4321)) + Skin.HasSetting(movenowplayingwidget)]</visible>
 			<visible>[Skin.HasSetting(lowermainmenu) + Skin.HasSetting(movenowplayingwidget) + !Control.IsVisible(90010) + ![ControlGroup(90020).HasFocus + Skin.HasSetting(Enable.PanelInfo) + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)]] |
 				[!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(movenowplayingwidget) + !Control.IsVisible(90010) + ![ControlGroup(90020).HasFocus + Skin.HasSetting(Enable.PanelInfo) + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)]] |

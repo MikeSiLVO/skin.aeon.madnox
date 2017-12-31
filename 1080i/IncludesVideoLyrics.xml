@@ -1129,7 +1129,7 @@
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
 				<animation effect="slide" end="-15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="300"/>				
+					<effect type="zoom" center="auto" start="25" end="100" time="300"/>
 					<effect type="rotate" center="auto" start="360" end="0" time="300" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1144,7 +1144,7 @@
 			<control type="label">
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="500"/>		
+					<effect type="zoom" center="auto" start="25" end="100" time="500"/>
 					<effect type="rotate" center="auto" start="450" end="0" time="500" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1160,7 +1160,7 @@
 				<visible>String.EndsWith(Container(110).Currentitem,13) | String.EndsWith(Container(110).Currentitem,33) | String.EndsWith(Container(110).Currentitem,53) | String.EndsWith(Container(110).Currentitem,73) | String.EndsWith(Container(110).Currentitem,93)</visible>
 				<animation effect="slide" end="15,0" condition="true">Conditional</animation>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" center="auto" start="25" end="100" time="600"/>			
+					<effect type="zoom" center="auto" start="25" end="100" time="600"/>
 					<effect type="rotate" center="auto" start="540" end="0" time="700" tween="sine" easing="out"/>
 				</animation>
 				<width>auto</width>
@@ -1362,7 +1362,7 @@
 				</control>
 			</control>
 		</definition>
-	</include>	
+	</include>
 		<include name="Lyrics16">
 		<param name="col161" default="black"/>
 		<param name="col162" default="black"/>
@@ -1652,7 +1652,6 @@
 					<width max="625">auto</width>
 					<height>600</height>
 					<wrapmultiline>true</wrapmultiline>
-					<height>600</height>
 					<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
 					<label> $INFO[Container(110).ListItem.Property(part4)]</label>
 					<font>lyr18b</font>
@@ -1687,7 +1686,6 @@
 					<width max="625">auto</width>
 					<height>600</height>
 					<wrapmultiline>true</wrapmultiline>
-					<height>600</height>
 					<visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
 					<animation type="Visible" reversible="false">
 					<effect type="slide" delay="750" end="0,47" time="250" tween="sine" easing="out"/>

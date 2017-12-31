@@ -210,7 +210,7 @@
 			<onclick condition="Control.IsVisible(708)">SetProperty(actualViewtype,Shelf3DR,home)</onclick>
 			<onclick condition="Control.IsVisible(750)">SetProperty(actualViewtype,Shelf,home)</onclick>
 			<onclick condition="Control.IsVisible(810)">SetProperty(actualViewtype,MusicFlixView,home)</onclick>
-			<onclick condition="Control.IsVisible(811)">SetProperty(actualViewtype,MusicFanView,home)</onclick>
+			<!-- <onclick condition="Control.IsVisible(811)">SetProperty(actualViewtype,MusicFanView,home)</onclick> -->
 			<onclick condition="Control.IsVisible(812)">SetProperty(actualViewtype,ListXtra,home)</onclick>
 			<onclick condition="Control.IsVisible(820)">SetProperty(actualViewtype,KodiFlixViewTV,home)</onclick>
 			<onclick condition="Control.IsVisible(507)">SetProperty(actualViewtype,VideoFanartList,home)</onclick>
