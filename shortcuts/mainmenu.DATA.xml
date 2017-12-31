@@ -56,7 +56,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>videos</defaultID>
-		<label>10006</label>
+		<label>3</label>
 		<label2 />
 		<icon>special://skin/extras/BigIcons/Camcorder.png</icon>
 		<action>ActivateWindow(Videos,root)</action>
