@@ -57,7 +57,7 @@
 			<height>60</height>
 			<textoffsetx>20</textoffsetx>
 			<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus />
 			<label>$LOCALIZE[31272]</label>
 			<label2>[COLOR $VAR[FontColorVar]]$VAR[FavoritesListTypeVar][/COLOR]</label2>
 			<font>Font_Bold33</font>

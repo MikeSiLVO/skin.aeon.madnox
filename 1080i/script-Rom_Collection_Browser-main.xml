@@ -827,8 +827,8 @@
 					</control>
 				</control>
 				<control type="button" id="970">
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus />
+					<texturenofocus />
 					<visible>!Skin.HasSetting(noflowalbum)</visible>
 					<animation effect="fade" start="100" end="0" time="640">Hidden</animation>
 				</control>
@@ -1728,8 +1728,8 @@
 					</control>
 				</control>
 				<control type="button" id="960">
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus />
+					<texturenofocus />
 					<visible>!Skin.HasSetting(noflow)</visible>
 					<animation effect="fade" start="100" end="0" time="640">Hidden</animation>
 				</control>
@@ -2498,8 +2498,8 @@
 			</control>
 			<control type="scrollbar" id="2200">
 				<animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(2200) | Control.IsVisible(4050)]">Conditional</animation>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
+				<textureslidernib />
+				<textureslidernibfocus />
 				<orientation>horizontal</orientation>
 				<animation effect="zoom" start="70" end="100" center="auto" tween="back" time="320" condition="Control.HasFocus(2200) | Control.IsVisible(4050)">Conditional</animation>
 				<texturesliderbar border="20,0,20,0">views/scrollbarnub-nofocus.png</texturesliderbar>

@@ -32,7 +32,7 @@
 					<height>50</height>
 					<label>$LOCALIZE[31053]</label>
 					<font>Font_Bold28</font>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<textcolor>grey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<onright>90501</onright>
@@ -43,7 +43,7 @@
 					<height>50</height>
 					<label>$LOCALIZE[31290]</label>
 					<font>Font_Bold28</font>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<textcolor>grey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<onright>90502</onright>
@@ -54,7 +54,7 @@
 					<height>50</height>
 					<label>$LOCALIZE[31496]</label>
 					<font>Font_Bold28</font>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<textcolor>grey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<onright>90503</onright>

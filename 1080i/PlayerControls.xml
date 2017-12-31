@@ -29,10 +29,10 @@
             <top>-30</top>
             <width>1</width>
             <height>1</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
+            <label />
+            <font />
+            <texturenofocus />
+            <texturefocus />
             <onfocus>RunScript(script.playlists,type=video)</onfocus>
             <onfocus>RunScript(script.playlists,type=music)</onfocus>
             <onfocus>RunScript(script.favourites,playlists=play)</onfocus>

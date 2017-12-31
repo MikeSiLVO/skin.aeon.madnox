@@ -52,14 +52,14 @@
 						<width>854</width>
 						<height>42</height>
 						<texturefocus border="8" colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<label>-</label>
+						<texturenofocus />
+						<label />
 						<ondown>600</ondown>
 						<visible>!String.IsEmpty(ListItem.Director)</visible>
 					</control>
 					<control type="button" id="599">
 						<include>HiddenObject</include>
-						<texturenofocus>-</texturenofocus>
+						<texturenofocus />
 						<onfocus>SetProperty(ListType,Actors,home)</onfocus>
 						<onfocus>SetProperty(ContainerTitle,$INFO[Container(600).ListItem.Label],home)</onfocus>
 						<onfocus>SetFocus(601)</onfocus>
@@ -71,8 +71,8 @@
 							<width>960</width>
 							<height>42</height>
 							<texturefocus border="8" colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<label>-</label>
+							<texturenofocus />
+							<label />
 							<onclick condition="Skin.HasSetting(UseMetadataAddon)">SetProperty(ListType,Director,home)</onclick>
 							<onclick condition="Skin.HasSetting(UseMetadataAddon)">SetFocus(601)</onclick>
 							<onclick condition="!Skin.HasSetting(UseMetadataAddon)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director])</onclick>
@@ -86,8 +86,8 @@
 							<width>960</width>
 							<height>42</height>
 							<texturefocus border="8" colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<label>-</label>
+							<texturenofocus />
+							<label />
 							<onclick condition="Skin.HasSetting(UseMetadataAddon)">SetProperty(ListType,Writer,home)</onclick>
 							<onclick condition="Skin.HasSetting(UseMetadataAddon)">SetFocus(601)</onclick>
 							<onclick condition="!Skin.HasSetting(UseMetadataAddon)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>

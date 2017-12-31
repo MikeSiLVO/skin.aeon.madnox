@@ -27,8 +27,8 @@
 				<top>120</top>
 				<width>1200</width>
 				<height>60</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<label>31700</label>
 				<font>Font_Bold33</font>
 				<disabledcolor>white2</disabledcolor>
@@ -108,8 +108,8 @@
 				<top>300</top>
 				<width>1200</width>
 				<height>60</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<label>31702</label>
 				<font>Font_Bold33</font>
 				<disabledcolor>white2</disabledcolor>
@@ -122,8 +122,8 @@
 				<top>420</top>
 				<width>1200</width>
 				<height>60</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<label>20333</label>
 				<font>Font_Bold33</font>
 				<disabledcolor>white2</disabledcolor>

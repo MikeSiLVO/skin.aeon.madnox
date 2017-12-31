@@ -28,10 +28,10 @@
 				<textoffsety>4</textoffsety>
 				<align>center</align>
 				<aligny>top</aligny>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<alttexturefocus>-</alttexturefocus>
-				<alttexturenofocus>-</alttexturenofocus>
+				<texturefocus />
+				<texturenofocus />
+				<alttexturefocus />
+				<alttexturenofocus />
 				<label/>
 				<altlabel/>
 				<font>Font_Reg22</font>
@@ -1162,10 +1162,10 @@
 					<textoffsety>4</textoffsety>
 					<align>center</align>
 					<aligny>top</aligny>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<alttexturefocus>-</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>
+					<texturefocus />
+					<texturenofocus />
+					<alttexturefocus />
+					<alttexturenofocus />
 					<label>$LOCALIZE[31075]</label>
 					<altlabel>$LOCALIZE[31075]</altlabel>
 					<font>Font_Reg22</font>
@@ -1378,10 +1378,10 @@
 					<textoffsety>4</textoffsety>
 					<align>center</align>
 					<aligny>top</aligny>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
-					<alttexturefocus>-</alttexturefocus>
-					<alttexturenofocus>-</alttexturenofocus>
+					<texturefocus />
+					<texturenofocus />
+					<alttexturefocus />
+					<alttexturenofocus />
 					<label>$LOCALIZE[31075]</label>
 					<altlabel>$LOCALIZE[31075]</altlabel>
 					<font>Font_Reg22</font>

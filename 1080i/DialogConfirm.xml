@@ -43,7 +43,7 @@
 			<width>730</width>
 			<height>282</height>
 			<align>left</align>
-			<label>-</label>
+			<label />
 			<textcolor>white3</textcolor>
 			<autoscroll time="2000" delay="2000" repeat="4000">Skin.HasSetting(AutoScroll)</autoscroll>
 		</control>

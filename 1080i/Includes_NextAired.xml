@@ -9,8 +9,8 @@
 		<align>left</align>
 		<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
 		<texturenofocus>views/tripanel/listselect_fo.png</texturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus />
+		<alttexturenofocus />
 		<font>Font-Condensed-S34</font>
 		<shadowcolor>22000000</shadowcolor>
 		<textcolor>white</textcolor>
@@ -24,10 +24,10 @@
 		<height>84</height>
 		<textoffsetx>30</textoffsetx>
 		<align>left</align>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
+		<texturefocus />
+		<texturenofocus />
+		<alttexturefocus />
+		<alttexturenofocus />
 		<font>Font-Condensed-S34</font>
 		<shadowcolor>22000000</shadowcolor>
 		<textcolor>white</textcolor>
@@ -43,8 +43,8 @@
 		<align>left</align>
 		<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
 		<texturenofocus>views/tripanel/listselect_fo.png</texturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus />
+		<alttexturenofocus />
 		<font>Font-Condensed-S34</font>
 		<shadowcolor>22000000</shadowcolor>
 		<textcolor>white</textcolor>
@@ -58,10 +58,10 @@
 		<height>50</height>
 		<textoffsetx>20</textoffsetx>
 		<align>left</align>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<alttexturefocus>-</alttexturefocus>
-		<alttexturenofocus>-</alttexturenofocus>
+		<texturefocus />
+		<texturenofocus />
+		<alttexturefocus />
+		<alttexturenofocus />
 		<font>Font-Condensed-S34</font>
 		<shadowcolor>22000000</shadowcolor>
 		<textcolor>white</textcolor>

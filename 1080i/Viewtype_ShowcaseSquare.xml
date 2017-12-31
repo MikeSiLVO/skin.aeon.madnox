@@ -267,8 +267,8 @@
 				</control>
 			</control>
 			<control type="button" id="970">
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<visible>!Skin.HasSetting(noflowalbum)</visible>
 				<animation effect="fade" start="100" end="0" time="640">Hidden</animation>
 			</control>

@@ -244,7 +244,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -603,7 +603,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -929,7 +929,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -1255,7 +1255,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -1581,7 +1581,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -2219,7 +2219,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -3234,7 +3234,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack" value="Clear White">FFFFFFFF</property>
@@ -3885,7 +3885,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -4244,7 +4244,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -4570,7 +4570,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -4896,7 +4896,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -5222,7 +5222,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -5861,7 +5861,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -6876,7 +6876,7 @@
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear|Colored Clear">homewidgets/bg_clear.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Clear White|Colored Clear White">homewidgets/bg_clearwhite.png</property>
 		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="Colored Default">homewidgets/bg_default.png</property>
-		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None">-</property>
+		<property name="widgetbackground" tag="property" attribute="name|widgetBack.2" value="None" />
 		<property name="widgetbackground">homewidgets/bg_default.png</property>
 		<!-- Set Background Color -->
 		<property name="widgetbackgroundcolor" tag="property" attribute="name|widgetBack.2" value="Clear White">FFFFFFFF</property>
@@ -7301,7 +7301,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7377,7 +7377,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.b" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.b" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.b" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.b" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7453,7 +7453,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.c" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.c" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.c" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.c" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7528,7 +7528,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.d" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.d" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.d" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.d" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7610,7 +7610,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.2" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.2" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7686,7 +7686,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.2b" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2b" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2b" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.2b" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7762,7 +7762,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.2c" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2c" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2c" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.2c" value="Glass">true</property>
 		<property name="isglass">false</property>
@@ -7837,7 +7837,7 @@
 		<property name="case" tag="property" attribute="name|widgetCase.2d" value="Case">case</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2d" value="Case ">bdcase</property>
 		<property name="case" tag="property" attribute="name|widgetCase.2d" value="Clear Case">clearcase</property>
-		<property name="case">-</property>
+		<property name="case" />
 		<!-- Is Glass -->
 		<property name="isglass" tag="property" attribute="name|widgetCase.2d" value="Glass">true</property>
 		<property name="isglass">false</property>

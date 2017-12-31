@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol>-</defaultcontrol>
+	<defaultcontrol />
 	<onload>Skin.Reset(vispanelrotate)</onload>
 	<onunload>Skin.Reset(vispanelrotate)</onunload>
 	<onload>RunScript(script.artistslideshow)</onload>
@@ -373,7 +373,7 @@
 						<top>-243</top>
 						<width>388</width>
 						<height>388</height>
-						<imagepath background="true" flipx="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+						<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 						<aspectratio>scale</aspectratio>
 						<timeperimage>40000</timeperimage>
 						<fadetime>5</fadetime>
@@ -812,8 +812,8 @@
 						<reveal>true</reveal>
 						<texturebg border="3">mooviz/progress.border.png</texturebg>
 						<midtexture>mooviz/progress.png</midtexture>
-						<lefttexture>-</lefttexture>
-						<righttexture>-</righttexture>
+						<lefttexture />
+						<righttexture />
 						<info>Player.Progress</info>
 						<animation effect="fade" end="80" condition="true">Conditional</animation>
 						<visible>Player.HasDuration</visible>
@@ -1745,8 +1745,8 @@
 				<reveal>true</reveal>
 				<texturebg border="3">mooviz/progress.border.png</texturebg>
 				<midtexture>mooviz/progress.png</midtexture>
-				<lefttexture>-</lefttexture>
-				<righttexture>-</righttexture>
+				<lefttexture />
+				<righttexture />
 				<info>Player.Progress</info>
 				<animation effect="fade" end="80" condition="true">Conditional</animation>
 				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
@@ -1983,8 +1983,8 @@
 					<info>Player.Progress</info>
 					<texturebg border="3">musicviz/progress.border.png</texturebg>
 					<midtexture>musicviz/progress.png</midtexture>
-					<lefttexture>-</lefttexture>
-					<righttexture>-</righttexture>
+					<lefttexture />
+					<righttexture />
 					<info>Player.Progress</info>
 					<animation effect="fade" end="80" condition="true">Conditional</animation>
 					<visible>Player.HasDuration + Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
@@ -1998,8 +1998,8 @@
 					<reveal>true</reveal>
 					<texturebg border="3">mooviz/progress.border.png</texturebg>
 					<midtexture>mooviz/progress.png</midtexture>
-					<lefttexture>-</lefttexture>
-					<righttexture>-</righttexture>
+					<lefttexture />
+					<righttexture />
 					<info>Player.Progress</info>
 					<animation effect="fade" end="80" condition="true">Conditional</animation>
 					<visible>Player.HasDuration + !Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
@@ -2044,7 +2044,7 @@
 					</control>
 					<control type="label">
 						<height>21</height>
-						<label>-</label>
+						<label />
 					</control>
 					<control type="label">
 						<height>40</height>
@@ -2059,7 +2059,7 @@
 					</control>
 					<control type="label">
 						<height>1</height>
-						<label>-</label>
+						<label />
 					</control>
 					<control type="label">
 						<height>50</height>
@@ -2264,7 +2264,7 @@
 				</control>
 				<control type="group">
 					<control type="wraplist" id="3001">
-						<viewtype label="icon">List Info</viewtype>
+						<viewtype label="icon">list</viewtype>
 						<left>1530</left>
 						<top>60</top>
 						<width>350</width>
@@ -2501,8 +2501,8 @@
 				<reveal>true</reveal>
 				<texturebg border="3">mooviz/progress.border.png</texturebg>
 				<midtexture>mooviz/progress.png</midtexture>
-				<lefttexture>-</lefttexture>
-				<righttexture>-</righttexture>
+				<lefttexture />
+				<righttexture />
 				<info>Player.Progress</info>
 				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
 			</control>

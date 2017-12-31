@@ -431,7 +431,7 @@
 			<visible>!Skin.HasSetting(DisableLibraryStats) + !Skin.HasSetting(AlternateTimeStats)</visible>
 			<visible>!String.IsEmpty(Control.GetLabel(4323)) | Window.IsActive(1131)</visible>
 			<animation effect="slide" end="-750,0" time="240">WindowClose</animation>
-			<animation effect="slide" start="-750,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="-750,0" end="0,0" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="-750" end="0" time="240">VisibleChange</animation>
 			<animation effect="slide" start="-750,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu)] + !Skin.HasSetting(totalshomehigh)">Conditional</animation>
@@ -485,7 +485,7 @@
 			<left>760r</left>
 			<visible>!Skin.HasSetting(DisableTimePanel) + !Skin.HasSetting(AlternateTimeStats)</visible>
 			<animation effect="slide" end="750,0" time="240">WindowClose</animation>
-			<animation effect="slide" start="750,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="750,0" end="0,0" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="750,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu)] + !Skin.HasSetting(timehomehigh)">Conditional</animation>
 			<animation effect="slide" end="0,-472" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(timehomehigh)">Conditional</animation>
@@ -575,7 +575,7 @@
 			<animation effect="slide" end="0,330" time="560" tween="cubic" delay="160" condition="!Skin.HasSetting(rsshomelow) + !Skin.HasSetting(lowermainmenu) + !String.IsEmpty(Window(home).Property(PanelWidget2Info)) + !Window.IsActive(1115)">Conditional</animation>
 			<animation effect="slide" end="0,-330" time="560" tween="cubic" delay="160" condition="!Skin.HasSetting(rsshomelow) + !Skin.HasSetting(lowermainmenu) + !String.IsEmpty(Window(home).Property(PanelWidgetInfo)) + !Window.IsActive(1115)">Conditional</animation>
 			<animation effect="slide" end="1920,0" time="240">WindowClose</animation>
-			<animation effect="slide" start="1880,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="1880,0" end="0,0" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="1880,0" end="0,0" delay="2000" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu)] + !Skin.HasSetting(rsshomelow)">Conditional</animation>
 			<animation effect="slide" end="0,-19" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(smallermainmenu) + !Skin.HasSetting(rsshomelow)">Conditional</animation>
@@ -611,7 +611,6 @@
 						<urlset>1</urlset>
 						<headlinecolor>grey</headlinecolor>
 						<titlecolor>$VAR[HomeMenuWidgetTextVar]</titlecolor>
-						<scrollspeed>40</scrollspeed>
 					</control>
 				</control>
 			</control>
@@ -636,7 +635,6 @@
 					<urlset>1</urlset>
 					<headlinecolor>a9000000</headlinecolor>
 					<titlecolor>dc2B60DE</titlecolor>
-					<scrollspeed>40</scrollspeed>
 				</control>
 				<control type="group">
 					<animation effect="rotatex" end="180" time="320" center="22" tween="cubic" easing="inout" condition="Skin.HasSetting(rsshomelow)">Conditional</animation>

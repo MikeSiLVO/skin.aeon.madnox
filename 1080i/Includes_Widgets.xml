@@ -272,7 +272,7 @@
 			</control>
 			<control type="label">
 				<height>0.5</height>
-				<label>-</label>
+				<label />
 			</control>
 			<!-- Info 1 -->
 			<control type="label">
@@ -294,7 +294,7 @@
 			</control>
 			<control type="label">
 				<height>0.5</height>
-				<label>-</label>
+				<label />
 			</control>
 			<!-- Plot -->
 			<control type="textbox">
@@ -934,8 +934,8 @@
 				<textcolor>white</textcolor>
 				<label>$PARAM[Title]</label>
 				<label2>$PARAM[titleRight]</label2>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<onclick>noop</onclick>
 				<visible>!Control.HasFocus($PARAM[id]) + $PARAM[labelVisible] + !$PARAM[isWeather]</visible>
 			</control>
@@ -949,8 +949,8 @@
 				<textcolor>white</textcolor>
 				<label>$PARAM[Title]</label>
 				<label2>$PARAM[titleRight]</label2>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<onclick>noop</onclick>
 				<visible>Control.HasFocus($PARAM[id]) + $PARAM[labelFocusVisible] + !$PARAM[isWeather]</visible>
 			</control>
@@ -964,8 +964,8 @@
 				<textcolor>white</textcolor>
 				<label>$PARAM[Title]</label>
 				<label2>$PARAM[titleRight]</label2>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<onclick>noop</onclick>
 				<visible>!Control.HasFocus($PARAM[id]) + $PARAM[labelVisible] + $PARAM[isWeather] + $PARAM[weatherFanArt]</visible>
 			</control>
@@ -979,8 +979,8 @@
 				<textcolor>white</textcolor>
 				<label>$PARAM[Title]</label>
 				<label2>$PARAM[titleRight]</label2>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<onclick>noop</onclick>
 				<visible>Control.HasFocus($PARAM[id]) + $PARAM[labelFocusVisible] + $PARAM[isWeather] + $PARAM[weatherFanArt]</visible>
 			</control>
@@ -1617,7 +1617,7 @@
 	<include name="WeatherContentToday">
 		<item>
 			<label>$LOCALIZE[31006]</label>
-			<icon>-</icon>
+			<icon />
 			<onclick>noop</onclick>
 			<visible>!Weather.IsFetched</visible>
 		</item>
@@ -1636,7 +1636,7 @@
 	<include name="WeatherContentTomorrow">
 		<item>
 			<label>$LOCALIZE[31006]</label>
-			<icon>-</icon>
+			<icon />
 			<onclick>noop</onclick>
 			<visible>!Weather.IsFetched</visible>
 		</item>
@@ -1655,7 +1655,7 @@
 	<include name="WeatherContent">
 		<item>
 			<label>$LOCALIZE[31006]</label>
-			<icon>-</icon>
+			<icon />
 			<onclick>noop</onclick>
 			<visible>!Weather.IsFetched</visible>
 		</item>
@@ -2744,7 +2744,7 @@
 		<control type="group">
 			<visible>Skin.HasSetting(AlternateTimeStats) + [!Skin.HasSetting(DisableLibraryStats) | !Skin.HasSetting(DisableTimePanel)]</visible>
 			<animation effect="slide" end="-1920,0" time="240">WindowClose</animation>
-			<animation effect="slide" start="-1920,0" end="0,0" delay="WidgetSlideDelay" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="-1920,0" end="0,0" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="-1920" end="0" time="240">VisibleChange</animation>
 			<animation effect="slide" start="-1920,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
 			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu)] + ![Skin.HasSetting(totalshomehigh) | Skin.HasSetting(timehomehigh)]">Conditional</animation>

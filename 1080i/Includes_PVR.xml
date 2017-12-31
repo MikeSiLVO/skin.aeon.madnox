@@ -149,7 +149,7 @@
 						<height>82</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>-</label>
+						<label />
 						<texturefocus border="40" colordiffuse="$VAR[FocusTextureColorVar]">buttons/roundedbutton-focus.png</texturefocus>
 						<texturenofocus border="40">buttons/roundedbutton-nofocus.png</texturenofocus>
 					</control>
@@ -228,7 +228,7 @@
 		</control>
 		<control type="button" id="2">
 			<description>View As button</description>
-			<label>-</label>
+			<label />
 			<include>ViewtypeSettingsButton</include>
 		</control>
 		<control type="button" id="3">
@@ -265,7 +265,7 @@
 						<include>Objects_MediaMenuButtonIcons1</include>
 						<textureradioon>special://skin/extras/icons/cabinet.png</textureradioon>
 						<textureradiooff>special://skin/extras/icons/cabinet.png</textureradiooff>
-						<label>-</label>
+						<label />
 					</control>
 					<control type="radiobutton" id="100">
 						<description>Channels</description>
@@ -583,8 +583,8 @@
 				<info>Player.Progress</info>
 				<midtexture border="0">new_pvr/texturebg_white.png</midtexture>
 				<texturebg border="3,0,3,0">new_pvr/texturebg_border_white.png</texturebg>
-				<lefttexture>-</lefttexture>
-				<righttexture>-</righttexture>
+				<lefttexture />
+				<righttexture />
 				<colordiffuse>$VAR[FontColorVar]</colordiffuse>
 			</control>
 		</control>
@@ -1211,8 +1211,8 @@
 				<info>Pvr.Progress</info>
 				<midtexture border="0">new_pvr/texturebg_white.png</midtexture>
 				<texturebg border="3,0,3,0">new_pvr/texturebg_border_white.png</texturebg>
-				<lefttexture>-</lefttexture>
-				<righttexture>-</righttexture>
+				<lefttexture />
+				<righttexture />
 				<colordiffuse>$VAR[FontColorVar]</colordiffuse>
 			</control>
 		</control>
@@ -1280,7 +1280,7 @@
 				<onright>NextChannelGroup</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol />
 				<scrolltime tween="quadratic">200</scrolltime>
 				<itemlayout height="59" width="975">
 					<control type="image">
@@ -1322,8 +1322,8 @@
 							<colordiffuse>$VAR[FontColorVar]</colordiffuse>
 							<texturebg border="3">new_pvr/texturebg_border_white.png</texturebg>
 							<midtexture border="3">new_pvr/texturebg_white.png</midtexture>
-							<lefttexture>-</lefttexture>
-							<righttexture>-</righttexture>
+							<lefttexture />
+							<righttexture />
 							<visible>!Skin.HasSetting(iconleftprogressright)</visible>
 						</control>
 					</control>
@@ -1348,8 +1348,8 @@
 							<colordiffuse>$VAR[FontColorVar]</colordiffuse>
 							<texturebg border="3">new_pvr/texturebg_border_white.png</texturebg>
 							<midtexture border="3">new_pvr/texturebg_white.png</midtexture>
-							<lefttexture>-</lefttexture>
-							<righttexture>-</righttexture>
+							<lefttexture />
+							<righttexture />
 							<visible>Skin.HasSetting(iconleftprogressright)</visible>
 						</control>
 					</control>
@@ -1408,8 +1408,8 @@
 							<visible>!String.IsEqual(ListItem.Title,)</visible>
 							<texturebg border="3">new_pvr/texturebg_border_white.png</texturebg>
 							<midtexture border="3">new_pvr/texturebg_white.png</midtexture>
-							<lefttexture>-</lefttexture>
-							<righttexture>-</righttexture>
+							<lefttexture />
+							<righttexture />
 							<visible>!Skin.HasSetting(iconleftprogressright)</visible>
 						</control>
 					</control>
@@ -1433,8 +1433,8 @@
 							<visible>!String.IsEqual(ListItem.Title,)</visible>
 							<texturebg border="3">new_pvr/texturebg_border_white.png</texturebg>
 							<midtexture border="3">new_pvr/texturebg_white.png</midtexture>
-							<lefttexture>-</lefttexture>
-							<righttexture>-</righttexture>
+							<lefttexture />
+							<righttexture />
 							<visible>Skin.HasSetting(iconleftprogressright)</visible>
 						</control>
 					</control>
@@ -1516,8 +1516,8 @@
 					<info>Container(11).ListItem.Progress</info>
 					<midtexture border="0">new_pvr/texturebg_white.png</midtexture>
 					<texturebg border="3,0,3,0">new_pvr/texturebg_border_white.png</texturebg>
-					<lefttexture>-</lefttexture>
-					<righttexture>-</righttexture>
+					<lefttexture />
+					<righttexture />
 					<colordiffuse>$VAR[FontColorVar]</colordiffuse>
 				</control>
 			</control>
@@ -1650,7 +1650,7 @@
 			<onright>NextChannelGroup</onright>
 			<onup>11</onup>
 			<ondown>11</ondown>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol />
 			<scrolltime tween="quadratic">200</scrolltime>
 			<itemlayout height="113" width="735">
 				<control type="image">

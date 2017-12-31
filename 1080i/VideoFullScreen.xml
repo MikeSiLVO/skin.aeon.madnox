@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol>-</defaultcontrol>
+	<defaultcontrol />
 	<controls>
 		<control type="group" id="0">
 			<animation effect="slide" end="0,45" time="160" tween="cubic" condition="Window.IsVisible(seekbar) + !Skin.HasSetting(Show_Info_Paused)">Conditional</animation>
@@ -41,7 +41,7 @@
 					<aligny>center</aligny>
 					<font>Font_Reg28</font>
 					<textcolor>grey2</textcolor>
-					<label>-</label>
+					<label />
 				</control>
 				<control type="label" id="11">
 					<description>row 2 label</description>
@@ -50,7 +50,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Font_Reg28</font>
-					<label>-</label>
+					<label />
 					<textcolor>grey2</textcolor>
 				</control>
 				<control type="label" id="12">
@@ -60,7 +60,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Font_Reg28</font>
-					<label>-</label>
+					<label />
 					<textcolor>grey2</textcolor>
 				</control>
 			</control>

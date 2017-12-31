@@ -29,9 +29,9 @@
 			<include>MusicExtraFanartHome</include>
 			<include>MusicArtistSlideshowHome</include>
 		</control>
-		
+
 		<include>CommonMediaPlayingBackground</include>
-		
+
 		<control type="image">
 			<width>1920</width>
 			<height>945</height>
@@ -42,12 +42,12 @@
 		</control>
 		<!-- NowPlaying Info -->
 		<include>Furniture_HomeNowPlaying</include>
-		
-		
+
+
 		<control type="group">
 			<include condition="Skin.HasSetting(NowPlayingBottom)">BottomNowPlaying</include>
 		</control>
-		
+
 		<control type="group">
 			<top>0</top>
 			<left>267</left>
@@ -87,7 +87,7 @@
 				<font>Font_Reg32</font>
 				<textcolor>$VAR[TitleColorVar]</textcolor>
 			</control>
-			
+
 			<control type="group">
 				<left>790</left>
 				<top>210</top>
@@ -108,7 +108,7 @@
 				<control type="togglebutton">
 					<width>50</width>
 					<height>50</height>
-					<texturefocus>-</texturefocus>
+					<texturefocus />
 					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
 					<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
 					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
@@ -118,7 +118,7 @@
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 			</control>
-			
+
 			<control type="grouplist" id="330">
 				<left>300</left>
 				<top>272</top>

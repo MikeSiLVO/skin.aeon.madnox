@@ -110,7 +110,7 @@
 				<control type="togglebutton">
 					<width>50</width>
 					<height>50</height>
-					<texturefocus>-</texturefocus>
+					<texturefocus />
 					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
 					<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
 					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
@@ -141,7 +141,7 @@
 				<control type="togglebutton">
 					<width>50</width>
 					<height>50</height>
-					<texturefocus>-</texturefocus>
+					<texturefocus />
 					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
 					<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
 					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>

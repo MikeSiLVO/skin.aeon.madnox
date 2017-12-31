@@ -263,7 +263,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>18</textoffsety>
 						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturenofocus />
 						<label>31012</label>
 						<font>Font_Bold34</font>
 						<textcolor>grey</textcolor>
@@ -275,7 +275,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>18</textoffsety>
 						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturenofocus />
 						<label>31013</label>
 						<font>Font_Bold34</font>
 						<textcolor>grey</textcolor>
@@ -287,7 +287,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>18</textoffsety>
 						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturenofocus />
 						<label>31014</label>
 						<font>Font_Bold34</font>
 						<textcolor>grey</textcolor>
@@ -299,7 +299,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textoffsety>18</textoffsety>
 						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturenofocus />
 						<label>186</label>
 						<font>Font_Bold34</font>
 						<textcolor>grey</textcolor>

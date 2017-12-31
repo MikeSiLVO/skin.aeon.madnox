@@ -18,7 +18,7 @@
                 <width>60</width>
                 <height>60</height>
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus />
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                 <onup>Action(Close)</onup>
                 <ondown>Action(Close)</ondown>

@@ -81,7 +81,7 @@
 				<control type="edit" id="12">
 					<left>387</left>
 					<top>254</top>
-					<label>-</label>
+					<label />
 					<onleft>9002</onleft>
 					<onright>9002</onright>
 					<onup>22</onup>
@@ -277,7 +277,7 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>18</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>186</label>
 					<font>Font_Bold34</font>
 					<textcolor>grey</textcolor>
@@ -290,7 +290,7 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>18</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>222</label>
 					<font>Font_Bold34</font>
 					<textcolor>grey</textcolor>

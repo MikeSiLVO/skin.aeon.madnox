@@ -206,8 +206,8 @@
 					<texturesliderbackground border="12,0,12,0">views/scrollbarbacklist2.png</texturesliderbackground>
 					<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
 					<texturesliderbarfocus border="8,0,8,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
+					<textureslidernib />
+					<textureslidernibfocus />
 					<showonepage>false</showonepage>
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(88) + !Container.Scrolling">Conditional</animation>
@@ -863,8 +863,8 @@
 					<texturesliderbackground border="12,0,12,0">views/scrollbarbacklist2.png</texturesliderbackground>
 					<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
 					<texturesliderbarfocus border="8,0,8,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
-					<textureslidernib>-</textureslidernib>
-					<textureslidernibfocus>-</textureslidernibfocus>
+					<textureslidernib />
+					<textureslidernibfocus />
 					<showonepage>false</showonepage>
 					<orientation>horizontal</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(88) + !Container.Scrolling">Conditional</animation>

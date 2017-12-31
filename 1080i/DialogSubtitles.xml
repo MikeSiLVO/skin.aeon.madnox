@@ -280,7 +280,7 @@
 				<ondown>121</ondown>
 				<onleft>120</onleft>
 				<onright>150</onright>
-				<texturesliderbackground>-</texturesliderbackground>
+				<texturesliderbackground />
 				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 				<showonepage>false</showonepage>
@@ -355,7 +355,7 @@
 					<onup>150</onup>
 					<ondown>150</ondown>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<width>300</width>
 					<height>90</height>
 					<label>$LOCALIZE[24120]</label>

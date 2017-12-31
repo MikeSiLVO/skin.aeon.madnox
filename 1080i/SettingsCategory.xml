@@ -76,7 +76,7 @@
 				<textoffsetx>20</textoffsetx>
 				<textoffsety>18</textoffsety>
 				<texturefocus colordiffuse="$VAR[DialogColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus />
 				<font>Font_Bold34_Caps</font>
 				<textcolor>grey</textcolor>
 				<focusedcolor>white2</focusedcolor>
@@ -105,7 +105,7 @@
 				<textoffsetx>45</textoffsetx>
 				<top>0</top>
 				<height>50</height>
-				<label>-</label>
+				<label />
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>Font_Bold30_Caps</font>
@@ -151,7 +151,7 @@
 			<align>left</align>
 			<aligny>top</aligny>
 			<texturefocus colordiffuse="$VAR[DialogColorVar]">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturenofocus />
 			<font>Font_Bold34_Caps</font>
 			<textcolor>grey</textcolor>
 			<focusedcolor>white2</focusedcolor>

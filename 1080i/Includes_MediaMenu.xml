@@ -22,7 +22,7 @@
 			<visible>Window.IsActive(musicplaylist)</visible>
 		</control>
 		<control type="button" id="26">
-			<label>-</label>
+			<label />
 			<include>Objects_MediaMenuButtonIcons</include>
 			<visible>Window.IsActive(musicplaylist)</visible>
 		</control>
@@ -130,7 +130,7 @@
 			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 		</control>
 		<control type="button" id="10">
-			<label>-</label>
+			<label />
 			<include>Objects_MediaMenuButtonIcons</include>
 			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 		</control>

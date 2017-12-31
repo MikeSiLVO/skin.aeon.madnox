@@ -41,7 +41,7 @@
 					<textoffsetx>12</textoffsetx>
 					<textoffsety>12</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>186</label>
 					<font>Font_Bold34_Caps</font>
 					<onclick condition="!Control.isVisible(106)">PreviousMenu</onclick>
@@ -53,7 +53,7 @@
 					<textoffsetx>12</textoffsetx>
 					<textoffsety>12</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>222</label>
 					<font>Font_Bold34_Caps</font>
 					<onclick condition="!Control.isVisible(106)">PreviousMenu</onclick>

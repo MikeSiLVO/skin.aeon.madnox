@@ -47,14 +47,14 @@
 				<top>15</top>
 				<width>1860</width>
 				<align>center</align>
-				<label>-</label>
+				<label />
 				<font>Font_Bold34</font>
 			</control>
 			<control type="fadelabel" id="3">
 				<top>60</top>
 				<width>1860</width>
 				<align>center</align>
-				<label>-</label>
+				<label />
 				<font>Font_Bold34</font>
 			</control>
 		</control>

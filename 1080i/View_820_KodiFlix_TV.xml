@@ -1970,7 +1970,7 @@
 					<effect type="fade" start="20" end="100" time="750" delay="0" tween="sine" easing="out" />
 				</animation>
 			</control>
-			
+
 			<control type="group">
 				<visible>!Skin.HasSetting(KodiFlixTVInfoSwitchArt)</visible>
 				<control type="image" id="82090">
@@ -2016,7 +2016,7 @@
 					<visible>Skin.HasSetting(KodiFlixTVInfo) + !ListItem.IsParentFolder</visible>
 				</control>
 			</control>
-			
+
 			<control type="group">
 				<visible>Skin.HasSetting(KodiFlixTVInfoSwitchArt)</visible>
 				<control type="image" id="82091">
@@ -2060,7 +2060,7 @@
 					<visible>Skin.HasSetting(KodiFlixTVInfo) + !ListItem.IsParentFolder</visible>
 				</control>
 			</control>
-			
+
 			<control type="group" id="816">
 				<visible>Skin.HasSetting(KodiFlixTVInfo) + !Skin.HasSetting(KodiFlixTVInfoSwitchArt) + Skin.HasSetting(KodiFlixTVInfoShowCast) + !ListItem.IsParentFolder</visible>
 				<control type="wraplist" id="1000">
@@ -2506,8 +2506,8 @@
 				<texturesliderbackground border="12,0,12,0">views/scrollbarbacklist2.png</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
 				<texturesliderbarfocus border="12,0,12,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
+				<textureslidernib />
+				<textureslidernibfocus />
 				<onup>820</onup>
 				<ondown>820</ondown>
 				<showonepage>false</showonepage>

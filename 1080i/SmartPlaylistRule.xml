@@ -50,7 +50,7 @@
 					<width>954</width>
 					<height>74</height>
 					<textoffsetx>30</textoffsetx>
-					<texturefocus>-</texturefocus>
+					<texturefocus />
 					<texturenofocus>settings/settings_separator.png</texturenofocus>
 					<label>21422</label>
 					<font>Font_Reg32</font>
@@ -64,7 +64,7 @@
 					<textoffsetx>0</textoffsetx>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
 					<texturenofocus>settings/settings_radiobuttonoff3.png</texturenofocus>
-					<label>-</label>
+					<label />
 					<onleft>9000</onleft>
 					<onright>16</onright>
 					<onup>18</onup>
@@ -78,7 +78,7 @@
 					<textoffsetx>0</textoffsetx>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
 					<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
-					<label>-</label>
+					<label />
 					<onleft>15</onleft>
 					<onright>9002</onright>
 					<onup>18</onup>
@@ -135,7 +135,7 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>18</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>186</label>
 					<font>Font_Bold34_Caps</font>
 					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
@@ -148,7 +148,7 @@
 					<textoffsetx>20</textoffsetx>
 					<textoffsety>18</textoffsety>
 					<texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>222</label>
 					<font>Font_Bold34_Caps</font>
 					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>

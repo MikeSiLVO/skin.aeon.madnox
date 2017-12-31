@@ -92,9 +92,9 @@
 				<width>980</width>
 				<height>66</height>
 				<align>center</align>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<label>-</label>
+				<texturefocus />
+				<texturenofocus />
+				<label />
 				<font>Font_Reg32</font>
 				<textcolor>FF6a6565</textcolor>
 				<onup>10</onup>
@@ -119,7 +119,7 @@
 					<height>62</height>
 					<textoffsetx>30</textoffsetx>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>1024</label>
 					<font>Font_Reg32</font>
 					<onleft>10</onleft>
@@ -133,7 +133,7 @@
 					<height>62</height>
 					<textoffsetx>30</textoffsetx>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>15019</label>
 					<font>Font_Reg32</font>
 					<onleft>10</onleft>
@@ -147,7 +147,7 @@
 					<height>62</height>
 					<textoffsetx>30</textoffsetx>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>1210</label>
 					<font>Font_Reg32</font>
 					<onleft>10</onleft>
@@ -161,7 +161,7 @@
 					<height>62</height>
 					<textoffsetx>30</textoffsetx>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>222</label>
 					<font>Font_Reg32</font>
 					<onleft>12</onleft>
@@ -175,7 +175,7 @@
 					<height>62</height>
 					<textoffsetx>30</textoffsetx>
 					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturenofocus />
 					<label>186</label>
 					<font>Font_Reg32</font>
 					<onleft>12</onleft>

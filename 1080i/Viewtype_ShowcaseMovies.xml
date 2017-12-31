@@ -532,14 +532,14 @@
 					</control>
 				</control>
 				<control type="button" id="960">
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus />
+					<texturenofocus />
 					<visible>!Control.IsVisible(961)</visible>
 					<animation effect="fade" start="100" end="0" time="640">Hidden</animation>
 				</control>
 				<control type="button" id="961">
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus />
+					<texturenofocus />
 					<visible>[Skin.HasSetting(noflow) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [Skin.HasSetting(noflowtv) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
 				</control>
 				<control type="group" id="6000">

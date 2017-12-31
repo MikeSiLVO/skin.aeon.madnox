@@ -2414,7 +2414,7 @@
 						<enable>no</enable>
 					</control>
 					<control type="button" id="2">
-						<label>-</label>
+						<label />
 						<include>Objects_MediaMenuButtonAlt</include>
 					</control>
 					<control type="spincontrolex" id="3">

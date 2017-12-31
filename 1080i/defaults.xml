@@ -4,7 +4,7 @@
 		<left>0</left>
 		<top>0</top>
 		<aspectratio>stretch</aspectratio>
-		<texture>-</texture>
+		<texture />
 		<fadetime>0</fadetime>
 	</default>
 	<default type="multiimage">
@@ -20,7 +20,7 @@
 		<top>0</top>
 		<align>left</align>
 		<aligny>center</aligny>
-		<label>-</label>
+		<label />
 		<font>Font_Reg29</font>
 		<textcolor>white2</textcolor>
 		<selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
@@ -87,7 +87,7 @@
 		<lefttexture colordiffuse="$VAR[ColorDiffuseVar]" border="1">dialogs/progress/progress_left.png</lefttexture>
 		<midtexture colordiffuse="$VAR[ColorDiffuseVar]" border="1">dialogs/progress/progress_mid.png</midtexture>
 		<righttexture colordiffuse="$VAR[ColorDiffuseVar]" border="1">dialogs/progress/progress_right.png</righttexture>
-		<overlaytexture>-</overlaytexture>
+		<overlaytexture />
 	</default>
 	<default type="spincontrol">
 		<left>0</left>
@@ -98,7 +98,7 @@
 		<textoffsety>0</textoffsety>
 		<align>left</align>
 		<aligny>center</aligny>
-		<font>-</font>
+		<font />
 		<textcolor>white2</textcolor>
 		<disabledcolor>grey3</disabledcolor>
 		<textureup colordiffuse="$VAR[ColorDiffuseVar]">settings/spin-up.png</textureup>
@@ -117,7 +117,7 @@
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 		<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturenofocus />
 		<font>Font_Reg29</font>
 		<textcolor>white2</textcolor>
 		<selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
@@ -158,9 +158,9 @@
 		<top>0</top>
 		<controloffsetx>75</controloffsetx>
 		<controloffsety>0</controloffsety>
-		<texturesliderbar>-</texturesliderbar>
-		<textureslidernib>-</textureslidernib>
-		<textureslidernibfocus>-</textureslidernibfocus>
+		<texturesliderbar />
+		<textureslidernib />
+		<textureslidernibfocus />
 		<orientation>horizontal</orientation>
 	</default>
 	<default type="sliderex">
@@ -185,8 +185,8 @@
 	<default type="mover">
 		<left>0</left>
 		<top>0</top>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturefocus />
+		<texturenofocus />
 	</default>
 	<default type="resize">
 		<left>0</left>
@@ -203,7 +203,7 @@
 		<height>63</height>
 		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
-		<texturefocus>-</texturefocus>
+		<texturefocus />
 		<texturenofocus>button-nofocus.png</texturenofocus>
 		<font>Font_Reg29</font>
 		<textcolor>white2</textcolor>
@@ -214,9 +214,9 @@
 		<top>0</top>
 		<width>1005</width>
 		<height>9</height>
-		<texturesliderbackground>-</texturesliderbackground>
-		<texturesliderbar>-</texturesliderbar>
-		<texturesliderbarfocus>-</texturesliderbarfocus>
+		<texturesliderbackground />
+		<texturesliderbar />
+		<texturesliderbarfocus />
 		<textureslidernib>views/scrollbarnub-nofocus.png</textureslidernib>
 		<textureslidernibfocus>views/scrollbarnub-focus.png</textureslidernibfocus>
 		<showonepage>false</showonepage>

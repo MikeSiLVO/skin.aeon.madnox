@@ -45,8 +45,8 @@
 				<include>MusicPanel</include>
 			</control>
 			<control type="button" id="7002">
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus />
+				<texturenofocus />
 				<include>HiddenObject</include>
 				<onup>Control.Move(506,-1)</onup>
 				<onleft>506</onleft>

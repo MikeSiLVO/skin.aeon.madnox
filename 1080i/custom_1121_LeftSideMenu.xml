@@ -638,8 +638,8 @@
 			<height>40</height>
 			<align>center</align>
 			<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">-</texturenofocus>
-			<label>-</label>
+			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8" />
+			<label />
 			<textcolor>grey2</textcolor>
 			<onclick condition="String.IsEmpty(Window(home).Property(quicknavsetup))">SetProperty(quicknavsetup,1,home)</onclick>
 			<onclick condition="String.IsEmpty(Window(home).Property(quicknavsetup))">Notification($LOCALIZE[31902],$LOCALIZE[31881])</onclick>
@@ -668,8 +668,8 @@
 			<height>40</height>
 			<align>center</align>
 			<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">-</texturenofocus>
-			<label>-</label>
+			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8" />
+			<label />
 			<textcolor>grey2</textcolor>
 			<onclick>Action(Close)</onclick>
 			<onclick>Fullscreen</onclick>
@@ -697,8 +697,8 @@
 			<height>40</height>
 			<align>center</align>
 			<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">-</texturenofocus>
-			<label>-</label>
+			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8" />
+			<label />
 			<textcolor>grey2</textcolor>
 			<onclick>Action(Close)</onclick>
 			<onclick>ActivateWindow(musicplaylist)</onclick>
@@ -726,8 +726,8 @@
 			<height>40</height>
 			<align>center</align>
 			<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">-</texturenofocus>
-			<label>-</label>
+			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="8" />
+			<label />
 			<textcolor>grey2</textcolor>
 			<onclick>Action(Close)</onclick>
 			<onclick>PlayDVD()</onclick>

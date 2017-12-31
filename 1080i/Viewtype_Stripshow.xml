@@ -158,8 +158,8 @@
 				<texturesliderbackground>osd/osd_progress_clear.png</texturesliderbackground>
 				<texturesliderbar>osd/osd_progress_clear.png</texturesliderbar>
 				<texturesliderbarfocus>osd/osd_progressmid.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
+				<textureslidernib />
+				<textureslidernibfocus />
 				<onup>517</onup>
 				<ondown>109</ondown>
 				<orientation>horizontal</orientation>

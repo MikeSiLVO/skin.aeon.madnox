@@ -297,8 +297,8 @@
 					<label>749</label>
 					<font>Font_Reg38</font>
 					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-					<textureradioon>-</textureradioon>
-					<textureradiooff>-</textureradiooff>
+					<textureradioon />
+					<textureradiooff />
 				</control>
 			</control>
 		</control>

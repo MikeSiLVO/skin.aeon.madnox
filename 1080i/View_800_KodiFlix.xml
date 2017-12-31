@@ -2350,7 +2350,7 @@
 							<camera x="530" y="50"/>
 							<visible>!Skin.HasSetting(KodiFlixMoviesCenterList) + Container.Content(movies) + !ListItem.IsCollection + !Skin.HasSetting(KodiFlixMoviesCenterList)</visible>
 						</control>
-						
+
 						<control type="image">
 							<left>185</left>
 							<top>149</top>
@@ -2368,8 +2368,8 @@
 							<camera x="530" y="50"/>
 							<visible>Skin.HasSetting(KodiFlixMovieBoxsetsDiscArt) + [Container.Content(movies) + !ListItem.IsCollection] + Skin.HasSetting(KodiFlixMovieBoxsetsDiscArtPos) + !String.IsEmpty(Container.ListItem.Art(discart))</visible>
 						</control>
-						
-						
+
+
 						<control type="group">
 							<visible>!Skin.HasSetting(KodiFlixMovieBoxsetsActiveMovieSetCases)</visible>
 							<control type="image">
@@ -2741,8 +2741,8 @@
 				<texturesliderbackground border="12,0,12,0">views/scrollbarbacklist2.png</texturesliderbackground>
 				<texturesliderbar border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbar>
 				<texturesliderbarfocus border="14,0,14,0">views/scrollbar/scrollbar_horizontal.png</texturesliderbarfocus>
-				<textureslidernib>-</textureslidernib>
-				<textureslidernibfocus>-</textureslidernibfocus>
+				<textureslidernib />
+				<textureslidernibfocus />
 				<onup>800</onup>
 				<ondown>800</ondown>
 				<onleft>62</onleft>

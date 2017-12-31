@@ -59,12 +59,12 @@
 					<item id="1">
 						<label>31999</label>
 						<onclick>noop</onclick>
-						<icon>-</icon>
+						<icon />
 					</item>
 					<item id="2">
 						<label>13200</label>
 						<onclick>noop</onclick>
-						<icon>-</icon>
+						<icon />
 					</item>
 				</content>
 			</control>
