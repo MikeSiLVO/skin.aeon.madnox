@@ -653,8 +653,8 @@
 					</control>
 				</control>
 				<control type="grouplist" id="9005">	<!-- CREDIT SCREEN -->
-					<left>387</left>
-					<top>200</top>
+					<left>400</left>
+					<top>180</top>
 					<width>1469</width>
 					<height>900</height>
 					<visible>Container(9000).Hasfocus(9)</visible>
@@ -666,36 +666,35 @@
 					<ondown>9001</ondown>
 					<control type="label">
 						<width>1460</width>
-						<height>80</height>
-						<textoffsetx>70</textoffsetx>
-						<aligny>bottom</aligny>
-						<label>[B]AEON  M A D N O X[/B]  - [ RC.2 ] JARVIS</label>
+						<height>90</height>
+						<align>center</align>
+						<label>[B]AEON  M A D N O X[/B]  - LEIA</label>
 						<font>Font_MainClassic2</font>
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
-						<width>1960</width>
-						<height>28</height>
-						<textoffsetx>70</textoffsetx>
-						<aligny>bottom</aligny>
+						<width>1460</width>
+						<height>30</height>
+						<align>center</align>
 						<label>[B]by Mike_Doc, Schimi2k &amp; MeowMoo[/B]</label>
 						<font>Font_Bold28_Caps</font>
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
 						<width>1460</width>
-						<height>94</height>
-						<textoffsetx>70</textoffsetx>
-						<aligny>bottom</aligny>
+						<height>30</height>
+						<align>center</align>
 						<label>(Original AeonNox by BigNoid &amp; Phil65)</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
-						<width>1960</width>
+						<height>130</height>
+						<include>HiddenObject</include>
+					</control>
+					<control type="label">
+						<width>1460</width>
 						<height>38</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>[B]BIG THANKS AND RESPECT TO:[/B]</label>
 						<font>Font_Bold30_Caps</font>
 						<textcolor>grey2</textcolor>
@@ -703,17 +702,13 @@
 					<control type="label">
 						<width>1460</width>
 						<height>55</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
-						<label>[B]The A-Team: "MikeSilvo", "Mr.V" &amp; "BobCratchett"[/B] [CR]for helping us so much with the Code update, adding SkinShortcut Script and the Great new Widget-System - You are Great Guys</label>
+						<label>[B]The A-Team: "MikeSiLVO", "Mr.V" &amp; "BobCratchett"[/B] [CR]for helping us so much with the Code update, adding SkinShortcut Script and the Great new Widget-System - You are Great Guys</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
 						<width>1460</width>
 						<height>34</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"bsoriano" for Testing and BugHunting</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -721,8 +716,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>34</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"BigNoid and Phil65" for Original AeonNox</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -730,8 +723,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>34</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"Warlion" "Shedrock" &amp; "Brimstone" for previous AeonNox Mod Versions</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -739,8 +730,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>34</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"mikebzh44", "R3N3", "Warner306" &amp; "ShadowTek" for various Mods</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -748,8 +737,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>54</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>All Addon and Script Provider we are using in MadNox</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -757,8 +744,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>34</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>And to all other Important Contributors:</label>
 						<font>Font_Bold30_Caps</font>
 						<textcolor>grey2</textcolor>
@@ -766,8 +751,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>30</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"neurosis13", "manfeed", "N.O.W.A.L.L.", "www.webdesignerdepot.com", "DJH_", "Jezz_X", "black",</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -775,8 +758,6 @@
 					<control type="label">
 						<width>1460</width>
 						<height>50</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>"Martijn", "Deano316", "defluo", "fmronan", "thrak76", "xhaggi" and all other people who contributed to this project.</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
@@ -784,17 +765,13 @@
 					<control type="label">
 						<width>1460</width>
 						<height>40</height>
-						<textoffsetx>30</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>[B]And of course the Great MadNox Community[/B]</label>
 						<font>Font_Reg22</font>
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
-						<width>1960</width>
+						<width>1460</width>
 						<height>28</height>
-						<textoffsetx>70</textoffsetx>
-						<aligny>bottom</aligny>
 						<label>[B]THANK YOU[/B]</label>
 						<font>Font_Bold28_Caps</font>
 						<textcolor>grey2</textcolor>
@@ -856,20 +833,19 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1170</left>
-				<top>780</top>
+				<left>649.5</left>
+				<top>-280</top>
 				<visible>Container(9000).Hasfocus(9)</visible>
 				<control type="image">
-					<top>30</top>
-					<width>400</width>
-					<aspectratio>keep</aspectratio>
-					<texture>fanarttv.png</texture>
-				</control>
-				<control type="image">
-					<left>350</left>
 					<width>300</width>
 					<aspectratio>keep</aspectratio>
-					<texture>kodi.png</texture>
+					<texture>kodi-logo.png</texture>
+				</control>
+				<control type="image">
+					<left>600</left>
+					<width>470</width>
+					<aspectratio>keep</aspectratio>
+					<texture>fanarttv.png</texture>
 				</control>
 			</control>
 		</control>
