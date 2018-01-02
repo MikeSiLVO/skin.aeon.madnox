@@ -18,7 +18,6 @@
 		</control>
 		<control type="group">
 			<top>30</top>
-			<left>0</left>
 			<control type="image">
 				<left>285</left>
 				<top>580</top>

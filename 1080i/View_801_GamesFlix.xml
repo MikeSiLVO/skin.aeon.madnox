@@ -50,8 +50,6 @@
 			</control>
 			<control type="multiimage">
 				<description>GamesFlix Fanart extrafanart</description>
-				<left>0</left>
-				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<aspectratio>scale</aspectratio>
@@ -110,7 +108,7 @@
 					<font>font12_textbox</font>
 					<pagecontrol>63</pagecontrol>
 					<include>GamesFlixShowCaseInfoPanelButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<!-- End Games Plot -->
@@ -130,7 +128,7 @@
 					<font>font12_textbox</font>
 					<pagecontrol>63</pagecontrol>
 					<include>GamesFlixShowCaseInfoPanelButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<!-- End Small Games Plot -->
@@ -207,7 +205,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>262</top>
 						<width>298</width>
 						<height>399</height>
@@ -217,7 +214,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>298</width>
 						<height>399</height>
@@ -281,7 +277,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>362</top>
 						<width>198</width>
 						<height>299</height>
@@ -291,7 +286,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>198</width>
 						<height>299</height>
@@ -303,7 +297,6 @@
 				<!-- End of Small Portrait Orientation Thumbs-->
 			</control>
 			<control type="scrollbar" id="75">
-				<left>0</left>
 				<top>960</top>
 				<width>FullScreenWidth</width>
 				<height>12</height>

@@ -391,7 +391,7 @@
 		<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Case)">homewidgets/case/poster/$VAR[HomeWidgetInfoCase]</value>
 		<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),BD Case)">homewidgets/bdcase/poster/$VAR[HomeWidgetInfoCase]</value>
 		<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Clear Case)">homewidgets/clearcase/poster/$VAR[HomeWidgetInfoCase]</value>
-		<value></value>
+		<value />
 	</variable>
 	<variable name="WidgetListInfoLabelVar">
 		<value condition="String.IsEqual(Skin.String(Widget.ListInfo),Always On)">$LOCALIZE[31821]</value>

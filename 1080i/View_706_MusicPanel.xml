@@ -36,7 +36,6 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>homewidgets/glass/banner.png</texture>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 			</control>
@@ -45,7 +44,6 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>thumbs_square/banner_shadow_in.png</texture>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 			</control>
@@ -72,7 +70,6 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>homewidgets/glass/banner.png</texture>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 			</control>
@@ -81,12 +78,11 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>thumbs_square/banner_shadow_in.png</texture>
 				<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 			</control>
 			</control>
-		<!-- "Top" Artist Art -->
+			<!-- Top Artist Art -->
 			<control type="grouplist">
 				<visible>Skin.HasSetting(MusicPanelNextIconsArtists) + Container.Content(artists)</visible>
 				<animation effect="slide" start="0,0" end="0,-200" time="200" condition="!Skin.HasSetting(MusicPanelDown) + Container.Content(albums)">Conditional</animation>
@@ -259,8 +255,6 @@
 					<fadetime>IconCrossfadeTime2</fadetime>
 				</control>
 				<control type="image">
-					<top>0</top>
-					<left>0</left>
 					<width>250</width>
 					<height>250</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -595,7 +589,6 @@
 					<height>410</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="thumbs/cdcover_mask.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -639,7 +632,6 @@
 					<height>410</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -686,7 +678,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font.ml</font>
-					<autoscroll time="1000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="1000" delay="4000" repeat="5000">true</autoscroll>
 					<visible>!ListItem.IsParentFolder + Container.Content(albums)</visible>
 				</control>
 				<control type="textbox">
@@ -699,7 +691,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font.ml</font>
-					<autoscroll time="1500" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="1500" delay="4000" repeat="5000">true</autoscroll>
 					<visible>Container.Content(artists)</visible>
 				</control>
 				<!-- INFO BG-->
@@ -727,7 +719,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font.ml</font>
-					<autoscroll time="1500" delay="8000" repeat="5000"></autoscroll>
+					<autoscroll time="1500" delay="8000" repeat="5000">true</autoscroll>
 					<visible>Skin.HasSetting(MusicPanelInfo)</visible>
 				</control>
 			</control>
@@ -973,7 +965,6 @@
 				<!--Artists lvl -->
 				<control type="label">
 					<visible>Container.Content(artists)</visible>
-					<left>0</left>
 					<width min="0" max="300">auto</width>
 					<align>center</align>
 					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.AlbumCount)] $VAR[MusicPanelGermanVar] $LOCALIZE[31490] $INFO[Window(Home).Property(SkinHelper.ListItem.SongCount)] Songs</label>

@@ -5,7 +5,6 @@
 	<controls>
 		<include>DialogBackFade</include>
 		<control type="image">
-			<left>0</left>
 			<top>387</top>
 			<width>87</width>
 			<height>214</height>

@@ -384,7 +384,7 @@
 					<include>Music_RightList</include>
 					<include>Shelf_Music</include>
 					<include>MusicFlixView</include>
-					<include>MusicFanView</include>
+					<!-- <include>MusicFanView</include> -->
 					<include>MusicPanel</include>
 					<include>ListXtra</include>
 				</control>

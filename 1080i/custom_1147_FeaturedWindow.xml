@@ -4,8 +4,6 @@
 	<onload>ActivateWindow(1115)</onload>
 	<onload condition="Window.Previous(home)">SetFocus(5012)</onload>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>

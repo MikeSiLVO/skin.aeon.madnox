@@ -184,9 +184,9 @@
 							<height>119</height>
 							<info>Player.Progress</info>
 							<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
-							<lefttexture border="1"></lefttexture>
+							<lefttexture />
 							<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
-							<righttexture border="1"></righttexture>
+							<righttexture />
 							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>
 							<visible>[Skin.HasSetting(ProgressMainMenu) + !Skin.HasSetting(smallermainmenu)]</visible>
 						</control>
@@ -197,9 +197,9 @@
 							<height>119</height>
 							<info>Player.Progress</info>
 							<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
-							<lefttexture border="1"></lefttexture>
+							<lefttexture />
 							<midtexture border="1">osd/info/osd_progress_mid.png</midtexture>
-							<righttexture border="1"></righttexture>
+							<righttexture />
 							<colordiffuse>$VAR[HomeMenuTextFocusVar]</colordiffuse>
 							<visible>[Skin.HasSetting(ProgressMainMenu) + Skin.HasSetting(smallermainmenu)]</visible>
 						</control>
@@ -240,7 +240,6 @@
 		<include>skinshortcuts-template-backgroundFanart</include>
 		<include condition="!Skin.HasSetting(nohomepageMusicinfo) | !Skin.HasSetting(homepageVideoinfo)">Furniture_HomeNowPlaying</include>
 		<control type="group">
-			<left>0</left>
 			<top>20</top>
 			<visible>!String.IsEmpty(Window(home).Property(DisableWidgets)) + !Player.HasMedia + !Window.IsActive(1115) + !Window.IsActive(1154)</visible>
 			<include>Animation_WindowFade200</include>
@@ -261,7 +260,6 @@
 				<animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
-				<left>0</left>
 				<top>6</top>
 				<width>65</width>
 				<height>49</height>

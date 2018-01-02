@@ -16,7 +16,6 @@
 					<top>20</top>
 					<width>1880</width>
 					<height>1000</height>
-					<aspectratio>stretch</aspectratio>
 					<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
 					<texture border="40" colordiffuse="$VAR[AreaColorVar]">buttons/roundedbutton-nofocus.png</texture>
 					<visible>true</visible>
@@ -44,7 +43,6 @@
 							<top>10</top>
 							<left>14</left>
 							<control type="label">
-								<left>0</left>
 								<top>10</top>
 								<width>55</width>
 								<height>40</height>
@@ -106,7 +104,6 @@
 							<top>-5</top>
 							<width>1060</width>
 							<height>90</height>
-							<aspectratio>stretch</aspectratio>
 							<animation effect="fade" start="70" end="40" time="300" easing="out" condition="!Control.HasFocus(50)">Conditional</animation>
 							<animation effect="fade" start="40" end="70" time="300" easing="in" condition="true">Conditional</animation>
 							<texture colordiffuse="$VAR[AreaColorVar]" border="40">buttons/roundedbutton-focus.png</texture>
@@ -115,7 +112,6 @@
 							<top>10</top>
 							<left>14</left>
 							<control type="label">
-								<left>0</left>
 								<width>55</width>
 								<height>60</height>
 								<align>right</align>
@@ -441,7 +437,6 @@
 					<top>20</top>
 					<width>1883</width>
 					<height>1000</height>
-					<aspectratio>stretch</aspectratio>
 					<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
 					<texture border="40" colordiffuse="$VAR[AreaColorVar]">buttons/roundedbutton-nofocus.png</texture>
 					<visible>true</visible>
@@ -733,7 +728,6 @@
 								<width>630</width>
 								<height>22</height>
 								<label>$INFO[ListItem.Title]</label>
-								<font>Font_Reg28</font>
 								<textcolor>$VAR[FontColorVar]</textcolor>
 							</control>
 							<control type="label">
@@ -780,7 +774,6 @@
 							<top>-17</top>
 							<width>957</width>
 							<height>140</height>
-							<aspectratio>stretch</aspectratio>
 							<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
 							<texture border="40" colordiffuse="$VAR[AreaColorVar]">buttons/roundedbutton-focus.png</texture>
 							<visible>true</visible>
@@ -830,7 +823,6 @@
 								<height>22</height>
 								<textcolor>white</textcolor>
 								<label>$INFO[ListItem.Title]</label>
-								<font>Font_Reg28</font>
 							</control>
 							<control type="label">
 								<left>170</left>
@@ -938,7 +930,6 @@
 						<top>10</top>
 						<width>434</width>
 						<height>146</height>
-						<aspectratio>stretch</aspectratio>
 						<animation effect="zoom" start="100" end="110,140" time="0" condition="true" center="auto">Conditional</animation>
 						<texture border="40">buttons/roundedbutton-nofocus.png</texture>
 					</control>
@@ -990,11 +981,9 @@
 							<righttexture />
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>44</top>
 							<width>400</width>
 							<height>30</height>
-							<font>Font_Reg28</font>
 							<align>left</align>
 							<textcolor>grey3</textcolor>
 							<selectedcolor>grey2</selectedcolor>
@@ -1009,7 +998,6 @@
 						<top>10</top>
 						<width>434</width>
 						<height>146</height>
-						<aspectratio>stretch</aspectratio>
 						<animation effect="zoom" start="100" end="110,140" time="0" condition="true" center="auto">Conditional</animation>
 						<animation effect="fade" start="10" end="80" time="300" easing="in">Focus</animation>
 						<texture colordiffuse="$VAR[AreaColorVar]" border="40">buttons/roundedbutton-focus.png</texture>
@@ -1019,7 +1007,6 @@
 						<top>10</top>
 						<width>434</width>
 						<height>146</height>
-						<aspectratio>stretch</aspectratio>
 						<animation effect="zoom" start="100" end="110,140" time="0" condition="true" center="auto">Conditional</animation>
 						<texture border="40" colordiffuse="$VAR[AreaColorVar]">buttons/roundedbutton-nofocus.png</texture>
 					</control>
@@ -1069,11 +1056,9 @@
 							<righttexture />
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>44</top>
 							<width>400</width>
 							<height>30</height>
-							<font>Font_Reg28</font>
 							<align>left</align>
 							<textcolor>grey</textcolor>
 							<selectedcolor>grey</selectedcolor>
@@ -1148,7 +1133,7 @@
 						<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
 						<animation effect="fade" start="100" end="40" time="200" condition="Control.IsVisible(56)">Conditional</animation>
 					</control>
-<!-- 					TV Thumb instead of Tv channel logo on right side - Wall view END -->
+					<!-- TV Thumb instead of Tv channel logo on right side - Wall view END -->
 				</control>
 				<control type="group">
 					<visible>Player.HasVideo</visible>
@@ -1157,7 +1142,6 @@
 					<control type="image">
 						<width>445</width>
 						<height>225</height>
-						<aspectratio>stretch</aspectratio>
 						<texture border="0">black-back.png</texture>
 					</control>
 					<control type="videowindow">

@@ -2,8 +2,6 @@
 <window>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_WindowFade200</include>
@@ -32,15 +30,12 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="74" width="630">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
 						<width>733</width>
 						<height>74</height>
 						<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 					</control>
 					<control type="image">
 						<left>22</left>
-						<top>0</top>
 						<width>74</width>
 						<height>74</height>
 						<aspectratio>keep</aspectratio>
@@ -67,15 +62,12 @@
 				</itemlayout>
 				<focusedlayout height="74" width="630">
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
 						<width>733</width>
 						<height>74</height>
 						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texture>
 					</control>
 					<control type="image">
 						<left>22</left>
-						<top>0</top>
 						<width>74</width>
 						<height>74</height>
 						<aspectratio>keep</aspectratio>
@@ -113,8 +105,6 @@
 				<left>1120</left>
 				<top>180</top>
 				<control type="grouplist" id="9003">
-					<left>0</left>
-					<top>0</top>
 					<width>1469</width>
 					<height>741</height>
 					<pagecontrol>60</pagecontrol>
@@ -123,8 +113,6 @@
 					<onup>9003</onup>
 					<ondown>9003</ondown>
 					<control type="label" id="9005">
-						<left>0</left>
-						<top>0</top>
 						<width>734</width>
 						<height>74</height>
 						<textoffsetx>30</textoffsetx>

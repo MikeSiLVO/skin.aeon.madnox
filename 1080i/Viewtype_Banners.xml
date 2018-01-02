@@ -234,7 +234,6 @@
 						<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))</visible>
 					</control>
 					<control type="label">
-						<left></left>
 						<width>562</width>
 						<height>104</height>
 						<align>center</align>
@@ -303,7 +302,6 @@
 							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))</visible>
 						</control>
 						<control type="label">
-							<left></left>
 							<width>562</width>
 							<height>104</height>
 							<align>center</align>

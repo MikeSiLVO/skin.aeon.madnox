@@ -7,11 +7,9 @@
 		<left>200</left>
 		<top>230</top>
 	</coordinates>
-	<include>dialogeffect</include><!-- undefined include -->
-
+	<include>dialogeffect</include>
 	<controls>
 		<control type="image" id="0">
-			<top>0</top>
 			<width>1400</width>
 			<height>560</height>
 			<texture border="40,100,40,100">keyboard/keyboard_back.png</texture>

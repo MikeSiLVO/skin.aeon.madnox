@@ -3,8 +3,6 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<onload>Dialog.Close(1154)</onload>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_DialogPopup</include>
@@ -345,7 +343,7 @@
 					<selected>Skin.HasSetting(ThirdMusicVizLayoutWaveform)</selected>
 					<visible>Skin.HasSetting(ThirdMusicVizLayout)</visible>
 				</control>
-				
+
 				<control type="radiobutton" id="18202">
 					<label>31338</label>
 					<include>Objects_CommonSettingsButton</include>
@@ -416,7 +414,7 @@
 					<selected>Skin.HasSetting(FourthMusicVizLayoutProgress)</selected>
 					<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
 				</control>
-				
+
 				<control type="label" id="430">
 					<width>600</width>
 					<height>60</height>

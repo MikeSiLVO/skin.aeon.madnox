@@ -176,7 +176,6 @@
 						</item>
 					</content>
 				</control>
-
 				<control type="grouplist" id="9001">
 					<left>-36</left>
 					<top>550</top>
@@ -187,8 +186,6 @@
 					<pagecontrol>70</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">300</scrolltime>
 					<control type="group" id="90011">
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<control type="radiobutton" id="132">
@@ -227,8 +224,6 @@
 					<!-- Add Movies Dialogue -->
 					<control type="panel" id="150">
 						<description>Movies roles</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -250,8 +245,6 @@
 								<visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
 							</control>
 							<control type="image">
-								<top>0</top>
-								<left>0</left>
 								<width>74</width>
 								<height>40</height>
 								<texture>black.png</texture>
@@ -382,8 +375,6 @@
 					<!-- Add TV Shows Dialogue -->
 					<control type="panel" id="250">
 						<description>TV roles</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -405,8 +396,6 @@
 								<visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
 							</control>
 							<control type="image">
-								<top>0</top>
-								<left>0</left>
 								<width>74</width>
 								<height>40</height>
 								<texture>black.png</texture>
@@ -537,8 +526,6 @@
 					<!-- Add YouTube Dialogue -->
 					<control type="panel" id="350">
 						<description>Youtube Videos</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -617,8 +604,6 @@
 					<!-- Add Movie Crew Dialogue -->
 					<control type="panel" id="550">
 						<description>Crew</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -640,8 +625,6 @@
 								<visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
 							</control>
 							<control type="image">
-								<top>0</top>
-								<left>0</left>
 								<width>74</width>
 								<height>40</height>
 								<texture>black.png</texture>
@@ -772,8 +755,6 @@
 					<!-- Add Thumbs Dialogue -->
 					<control type="panel" id="450">
 						<description>Artwork</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -814,8 +795,6 @@
 					<!-- Add Fanart Dialogue -->
 					<control type="panel" id="750">
 						<description>Fanart</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>446</height>
 						<orientation>horizontal</orientation>
@@ -942,7 +921,6 @@
 				</control>
 				<!-- Add Section Label -->
 				<control type="group">
-					<left>0</left>
 					<top>980</top>
 					<control type="label">
 						<width>1190</width>

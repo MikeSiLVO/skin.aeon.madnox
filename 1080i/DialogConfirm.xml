@@ -52,7 +52,6 @@
 			<width>790</width>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<itemgap>0</itemgap>
 			<control type="button" id="11">
 				<description>Yes button</description>
 				<width>365</width>

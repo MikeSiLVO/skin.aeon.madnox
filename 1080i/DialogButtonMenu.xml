@@ -5,8 +5,6 @@
 	<onload condition="Skin.HasSetting(quicklistmenu)">ActivateWindow(1121)</onload>
 	<defaultcontrol always="true">800</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_DialogZoom</include>
@@ -136,7 +134,6 @@
 			</control>
 			<control type="grouplist">
 				<left>714</left>
-				<top>0</top>
 				<width>550</width>
 				<height>1080</height>
 				<align>center</align>

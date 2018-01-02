@@ -642,20 +642,18 @@
 			<onfocus condition="Skin.HasSetting(fstrailer)">PlayMedia($ESCINFO[ListItem.Trailer])</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
 		</control>
-
 		<control type="button">
 			<include>HiddenObject</include>
 			<visible>!Skin.HasSetting(kioskmode)</visible>
 			<hitrect x="50" y="0" w="1870" h="10" />
 			<onfocus>ActivateWindow(playercontrols)</onfocus>
 		</control>
-
 	</include>
 	<include name="FilterButtons">
 		<control type="edit" id="2255">
 			<label>587</label>
 			<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-			<hinttext></hinttext>
+			<hinttext />
 			<visible>!Container.Content()</visible>
 			<include>Objects_MediaMenuButtonIcons</include>
 		</control>

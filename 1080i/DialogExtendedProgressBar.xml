@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol></defaultcontrol>
+	<defaultcontrol />
 	<include>Animation_DialogPopup</include>
 	<onload condition="Library.IsScanningVideo + Skin.HasSetting(UpdateArt.Enabled)">SetProperty(UpdateArt,1)</onload>
 	<onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(UpdateArt.Enabled)">RunScript(script.artwork.downloader,silent=true)</onunload>

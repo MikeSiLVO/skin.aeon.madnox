@@ -2,5 +2,5 @@
 	<allowoverlay>no</allowoverlay>
 	<onload condition="!Window.IsActive(visualisation)">FullScreen</onload>
 	<visible>Player.HasAudio + Skin.HasSetting(MusicAuto) + !Skin.HasSetting(Use_Startup_Playlist) + !String.Contains(Window(videos).Property(TvTunesIsAlive),true)</visible>
-	<controls></controls>
+	<controls />
 </window>

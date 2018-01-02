@@ -14,8 +14,6 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<!--     <onunload>Skin.SetString($INFO[Window(home).Property(BackgroundArea)],$ESCINFO[Skin.String(ItemToEdit.MultiFanart)])</onunload>

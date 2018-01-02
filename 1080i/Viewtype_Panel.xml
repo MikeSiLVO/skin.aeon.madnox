@@ -611,7 +611,6 @@
 		<control type="group">
 			<visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
 			<control type="label">
-				<left></left>
 				<top>110</top>
 				<width>420</width>
 				<align>center</align>
@@ -620,7 +619,6 @@
 				<textcolor>white2</textcolor>
 			</control>
 			<control type="label">
-				<left></left>
 				<top>0</top>
 				<width>420</width>
 				<align>center</align>

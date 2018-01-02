@@ -2,8 +2,6 @@
 <window>
 	<defaultcontrol always="false">2</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>
@@ -397,8 +395,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -1130,8 +1128,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -1188,8 +1186,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2054,8 +2052,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2148,8 +2146,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2324,8 +2322,8 @@
 								<posy>0</posy>
 								<width>0</width>
 								<height>0</height>
-								<texturefocus></texturefocus>
-								<texturenofocus></texturenofocus>
+								<texturefocus />
+								<texturenofocus />
 								<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 								<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 								<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2405,8 +2403,8 @@
 								<posy>0</posy>
 								<width>0</width>
 								<height>0</height>
-								<texturefocus></texturefocus>
-								<texturenofocus></texturenofocus>
+								<texturefocus />
+								<texturenofocus />
 								<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 								<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 								<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2589,8 +2587,6 @@
 					<animation effect="slide" end="0,-300" time="320" tween="quadratic" condition="!ControlGroup(100).HasFocus">Conditional</animation>
 					<control type="image">
 						<description>filter background image</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1080</width>
 						<height>240</height>
 						<texture flipy="true">osd/osd_back.png</texture>
@@ -2667,7 +2663,6 @@
 						<!-- Console filter -->
 						<control type="label">
 							<description>Consoles</description>
-							<left>0</left>
 							<top>-620</top>
 							<width>300</width>
 							<align>center</align>
@@ -2675,7 +2670,6 @@
 							<textcolor>white2</textcolor>
 						</control>
 						<control type="wraplist" id="500">
-							<left>0</left>
 							<top>75</top>
 							<width>300</width>
 							<height>144</height>
@@ -2688,7 +2682,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<left>0</left>
 									<top>0</top>
 									<width>300</width>
 									<height>45</height>
@@ -2710,8 +2703,6 @@
 							</itemlayout>
 							<focusedlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">views/tripanel/listselect_fo.png</texture>
@@ -2719,8 +2710,6 @@
 									<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="10">views/addonwall_select.png</texture>
@@ -2745,8 +2734,8 @@
 									<posy>0</posy>
 									<width>0</width>
 									<height>0</height>
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
+									<texturefocus />
+									<texturenofocus />
 									<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 									<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 									<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2777,8 +2766,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">button-nofocus.png</texture>
@@ -2799,8 +2786,6 @@
 							</itemlayout>
 							<focusedlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">views/tripanel/listselect_fo.png</texture>
@@ -2808,8 +2793,6 @@
 									<visible>Control.HasFocus(600)</visible>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="10">views/addonwall_select.png</texture>
@@ -2818,7 +2801,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2834,8 +2816,8 @@
 									<posy>0</posy>
 									<width>0</width>
 									<height>0</height>
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
+									<texturefocus />
+									<texturenofocus />
 									<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 									<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 									<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2866,8 +2848,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">button-nofocus.png</texture>
@@ -2875,7 +2855,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2888,8 +2867,6 @@
 							</itemlayout>
 							<focusedlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">views/tripanel/listselect_fo.png</texture>
@@ -2897,8 +2874,6 @@
 									<visible>Control.HasFocus(700)</visible>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="10">views/addonwall_select.png</texture>
@@ -2907,7 +2882,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2919,12 +2893,10 @@
 								</control>
 								<control type="button">
 									<description>Autoplay video</description>
-									<posx>0</posx>
-									<posy>0</posy>
 									<width>0</width>
 									<height>0</height>
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
+									<texturefocus />
+									<texturenofocus />
 									<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 									<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 									<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -2955,8 +2927,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">button-nofocus.png</texture>
@@ -2964,7 +2934,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2977,8 +2946,6 @@
 							</itemlayout>
 							<focusedlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">views/tripanel/listselect_fo.png</texture>
@@ -2986,8 +2953,6 @@
 									<visible>Control.HasFocus(800)</visible>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="10">views/addonwall_select.png</texture>
@@ -3014,8 +2979,8 @@
 							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
+							<texturefocus />
+							<texturenofocus />
 							<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 							<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 							<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -3044,16 +3009,12 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>90</width>
 									<height>45</height>
 									<texture border="5">button-nofocus.png</texture>
 									<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 								</control>
 								<control type="label">
-									<left>0</left>
-									<top>0</top>
 									<width>75</width>
 									<height>45</height>
 									<align>left</align>
@@ -3066,8 +3027,6 @@
 							</itemlayout>
 							<focusedlayout height="48">
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>90</width>
 									<height>45</height>
 									<texture border="5">views/tripanel/listselect_fo.png</texture>
@@ -3075,8 +3034,6 @@
 									<visible>Control.HasFocus(900)</visible>
 								</control>
 								<control type="image">
-									<left>0</left>
-									<top>0</top>
 									<width>90</width>
 									<height>45</height>
 									<texture border="10">views/addonwall_select.png</texture>
@@ -3084,8 +3041,6 @@
 									<visible>!Control.HasFocus(900)</visible>
 								</control>
 								<control type="label">
-									<left>0</left>
-									<top>0</top>
 									<width>75</width>
 									<height>45</height>
 									<align>left</align>
@@ -3097,12 +3052,10 @@
 								</control>
 								<control type="button">
 									<description>Autoplay video</description>
-									<posx>0</posx>
-									<posy>0</posy>
 									<width>0</width>
 									<height>0</height>
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
+									<texturefocus />
+									<texturenofocus />
 									<visible>!String.IsEmpty(ListItem.Property(autoplayvideomain)) + !String.IsEmpty(ListItem.Property(gameplaymain))</visible>
 									<animation delay="300" effect="fade" start="100" end="100">Focus</animation>
 									<onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplaymain)],1)</onfocus>
@@ -3116,7 +3069,7 @@
 		</control>
 		<!-- Messages -->
 		<control type="label" id="4000">
-			<label></label>
+			<label />
 			<left>10</left>
 			<top>560</top>
 			<width>680</width>

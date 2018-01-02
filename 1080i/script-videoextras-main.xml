@@ -7,8 +7,6 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 			<include>CommonMediaPlayingBackground</include>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
 				<include>FullscreenDimensions</include>
 				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>

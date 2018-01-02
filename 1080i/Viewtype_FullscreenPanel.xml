@@ -684,7 +684,6 @@
 							<top>15</top>
 							<width>374</width>
 							<height>210</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" border="5">$INFO[ListItem.Icon]</texture>
 							<bordersize>5</bordersize>
 							<visible>!Container.Content(tvshows)</visible>
@@ -827,7 +826,6 @@
 							<top>15</top>
 							<width>374</width>
 							<height>210</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" border="5">$INFO[ListItem.Icon]</texture>
 							<bordersize>5</bordersize>
 							<visible>!Container.Content(tvshows)</visible>
@@ -1733,7 +1731,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="FSPanelTVFocusedLayout">
 		<control type="image">
 			<top>0</top>
@@ -1748,7 +1745,6 @@
 			<top>6</top>
 			<width>374</width>
 			<height>210</height>
-			<aspectratio>stretch</aspectratio>
 			<texture background="true" border="5">$INFO[ListItem.Icon]</texture>
 			<bordersize>5</bordersize>
 			<visible>!Container.Content(tvshows)</visible>
@@ -1839,18 +1835,15 @@
 		</control>
 	</include>
 	<include name="FSPanelTVItemLayout">
-
 		<control type="image">
 			<left>5</left>
 			<top>6</top>
 			<width>374</width>
 			<height>210</height>
-			<aspectratio>stretch</aspectratio>
 			<texture background="true" border="5">$INFO[ListItem.Icon]</texture>
 			<bordersize>5</bordersize>
 			<visible>!Container.Content(tvshows)</visible>
 		</control>
-
 		<control type="image">
 			<left>405</left>
 			<top>-289</top>
@@ -1872,7 +1865,6 @@
 			<bordersize>5</bordersize>
 			<visible>Container.Content(tvshows)</visible>
 		</control>
-
 		<control type="image">
 			<left>284</left>
 			<top>11</top>

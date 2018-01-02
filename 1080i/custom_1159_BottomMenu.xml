@@ -13,33 +13,7 @@
 				<height>630</height>
 				<texture>views/lowlist_panelback.png</texture>
 			</control>
-			<!--control type="button" id="2019">
-                <top>1020</top>
-                <width>60</width>
-                <height>60</height>
-                <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
-                <texturenofocus />
-                <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                <onup>Action(Close)</onup>
-                <ondown>Action(Close)</ondown>
-                <onright>2020</onright>
-                <onleft>SetFocus(2020,20)</onleft>
-                <onleft>2020</onleft>
-                <onclick condition="String.IsEmpty(Window(home).Property(DisableWidgets))">SetProperty(DisableWidgets,true,home)</onclick>
-                <onclick condition="!String.IsEmpty(Window(home).Property(DisableWidgets))">ClearProperty(DisableWidgets,home)</onclick>
-            </control>
-            <control type="image" id="2016">
-                <top>1025</top>
-                <width>60</width>
-                <height>60</height>
-                <texture>$VAR[WidgetModeIconVar]</texture>
-            </control>
-            <control type="list" id="2020">
-                <left>60</left>
-                <top>1020</top>
-                <width>1920</width-->
 			<control type="list" id="2020">
-				<left>0</left>
 				<top>1020</top>
 				<width>1980</width>
 				<height>135</height>
@@ -177,33 +151,6 @@
 					</item>
 				</content>
 			</control>
-			<!--        <control type="grouplist" id="2020">
-                <left>0</left>
-                <top>1007</top>
-                <width>600</width>
-                <align>left</align>
-                <itemgap>7</itemgap>
-                <orientation>horizontal</orientation>
-                <control type="label" id="2017">
-                    <width>500</width>
-                    <height>70</height>
-                    <align>right</align>
-                    <aligny>top</aligny>
-                    <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
-                    <font>Font_Reg26_Caps</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                    <scroll>false</scroll>
-                    <animation effect="zoom" center="0,22" start="100" end="120" time="160" tween="quadratic">Focus</animation>
-                </control>
-            </control>
-            <control type="image" id="2018">
-                <left>0</left>
-                <top>1007</top>
-                <width>45</width>
-                <height>45</height>
-                <colordiffuse>white</colordiffuse>
-                <texture>dialogs/circle/$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed)].png</texture>
-            </control> -->
 		</control>
 		<control type="wraplist" id="8014">
 			<left>-1000</left>

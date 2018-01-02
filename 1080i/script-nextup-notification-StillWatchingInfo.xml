@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">4012</defaultcontrol>
 	<controls>
 		<control type="group">
-			<left>0</left>
 			<top>752</top>
 			<width>890</width>
 			<height>339</height>

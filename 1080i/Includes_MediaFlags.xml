@@ -698,7 +698,6 @@
 				<control type="group">
 					<left>300r</left>
 					<control type="label">
-						<top>0</top>
 						<width>330</width>
 						<height>90</height>
 						<align>left</align>
@@ -831,7 +830,6 @@
 					<animation effect="slide" end="1210,0" time="0" condition="Control.IsVisible(53) | Control.IsVisible(50) | Control.IsVisible(57)">Conditional</animation>
 					<animation effect="slide" end="1080,0" time="0" condition="Control.IsVisible(700)">Conditional</animation>
 					<control type="image">
-						<left>0</left>
 						<width>135</width>
 						<height>88</height>
 						<texture fallback="flags/music/rating/rating0.png">flags/music/rating/rating$INFO[ListItem.Rating].png</texture>
@@ -885,7 +883,6 @@
 						</control>
 						<control type="label">
 							<left>-5</left>
-							<top>0</top>
 							<width>155</width>
 							<height>70</height>
 							<align>center</align>
@@ -897,7 +894,6 @@
 						</control>
 					</control>
 					<control type="group">
-						<!--totals-->
 						<left>1630</left>
 						<control type="label">
 							<width>135</width>
@@ -930,7 +926,6 @@
 						</control>
 						<control type="label">
 							<left>1764</left>
-							<top>0</top>
 							<width>135</width>
 							<height>88</height>
 							<aligny>center</aligny>
@@ -980,7 +975,7 @@
 						<animation effect="slide" end="270,70" time="0" condition="Control.IsVisible(512) | Control.IsVisible(810) | Control.IsVisible(750) | Control.IsVisible(509) | Control.IsVisible(53) | Control.IsVisible(500)">Conditional</animation>
 						<animation effect="slide" end="1300,70" time="0" condition="Control.IsVisible(50) | Control.IsVisible(812)">Conditional</animation>
 						<animation effect="slide" end="-130,70" time="0" condition="Control.IsVisible(700)">Conditional</animation>
-						
+
 						<control type="image">
 							<top>-51</top>
 							<left>-5</left>
@@ -1113,7 +1108,6 @@
 					</control>
 					<control type="label">
 						<left>1764</left>
-						<top>0</top>
 						<width>135</width>
 						<height>88</height>
 						<aligny>center</aligny>

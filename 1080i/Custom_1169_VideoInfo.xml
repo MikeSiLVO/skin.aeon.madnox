@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="1169" type="dialog">
 	<defaultcontrol always="true">451</defaultcontrol>
-
 	<coordinates>
-		<left>0</left>
 		<top>-250</top>
 		<system>1</system>
 	</coordinates>
@@ -67,12 +65,10 @@
 						<colordiffuse>88ffffff</colordiffuse>
 					</control>
 					<control type="label">
-						<left></left>
 						<top>115</top>
 						<width>250</width>
 						<height>30</height>
 						<align>center</align>
-						<font>Font_Reg28</font>
 						<textcolor>bcicon</textcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -85,12 +81,10 @@
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left></left>
 						<top>115</top>
 						<width>250</width>
 						<height>30</height>
 						<align>center</align>
-						<font>Font_Reg28</font>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>

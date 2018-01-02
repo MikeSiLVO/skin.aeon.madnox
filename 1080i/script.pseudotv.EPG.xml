@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_DialogZoom</include>
@@ -200,15 +198,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="321">
-
-            <left>4</left>
-            <top>204</top>
-            <width>30</width>
-            <height>30</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 			<control type="label" id="302">
 				<left>123</left>
 				<top>255</top>
@@ -228,15 +217,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="322">
-
-            <left>4</left>
-            <top>368</top>
-            <width>74</width>
-            <height>74</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 			<control type="label" id="303">
 				<left>123</left>
 				<top>330</top>
@@ -256,15 +236,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="323">
-
-            <left>4</left>
-            <top>448</top>
-            <width>74</width>
-            <height>74</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 			<control type="label" id="304">
 				<left>123</left>
 				<top>405</top>
@@ -284,15 +255,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="324">
-
-            <left>4</left>
-            <top>528</top>
-            <width>74</width>
-            <height>74</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 			<control type="label" id="305">
 				<left>123</left>
 				<top>480</top>
@@ -312,15 +274,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="325">
-
-            <left>4</left>
-            <top>608</top>
-            <width>74</width>
-            <height>74</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 			<control type="label" id="306">
 				<left>123</left>
 				<top>555</top>
@@ -340,15 +293,6 @@
 				<font>Font_Reg32</font>
 				<textcolor>FF6db9e5</textcolor>
 			</control>
-			<!--<control type="image" id="326">
-
-            <left>4</left>
-            <top>608</top>
-            <width>74</width>
-            <height>74</height>
-            <texture></texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>-->
 		</control>
 	</controls>
 </window>

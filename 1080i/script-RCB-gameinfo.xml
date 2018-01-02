@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<animation type="WindowOpen" reversible="false">
@@ -24,7 +22,7 @@
 				<ondown>3000</ondown>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="0" width="0" />
-				<focusedlayout height="0" width="0"></focusedlayout>
+				<focusedlayout height="0" width="0" />
 			</control>
 		</control>
 		<control type="image">
@@ -319,7 +317,7 @@
 			</control>
 		</control>
 		<control type="label" id="4000">
-			<label></label>
+			<label />
 			<left>10</left>
 			<top>560</top>
 			<width>680</width>

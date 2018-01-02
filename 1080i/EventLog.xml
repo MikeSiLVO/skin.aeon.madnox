@@ -3,11 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<views>50</views>
 	<menucontrol>9051</menucontrol>
-	<onload>SetProperty(Window.HasSettings,True,home)</onload>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
 	<controls>
-		<include>CommonBackground</include>
 		<control type="group">
 			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0">WindowOpen</animation>
 			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0">WindowClose</animation>
@@ -35,7 +31,6 @@
 						<texture border="40">listpanel_back.png</texture>
 					</control>
 					<control type="list" id="50">
-						<left>0</left>
 						<top>180</top>
 						<width>1720</width>
 						<height>840</height>
@@ -63,7 +58,6 @@
 							</control>
 							<control type="label">
 								<left>135</left>
-								<top>0</top>
 								<width>1565</width>
 								<height>70</height>
 								<font>font30</font>
@@ -88,7 +82,6 @@
 							</control>
 							<control type="label">
 								<left>60</left>
-								<top>0</top>
 								<width>1630</width>
 								<height>120</height>
 								<font>font15</font>
@@ -107,8 +100,6 @@
 								<texture border="1">separator2.png</texture>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>1720</width>
 								<height>120</height>
 								<texture border="8">listselect_fo_clear.png</texture>
@@ -126,7 +117,6 @@
 							</control>
 							<control type="label">
 								<left>135</left>
-								<top>0</top>
 								<width>1565</width>
 								<height>70</height>
 								<font>font30</font>
@@ -153,7 +143,6 @@
 							</control>
 							<control type="label">
 								<left>60</left>
-								<top>0</top>
 								<width>1630</width>
 								<height>120</height>
 								<font>font15</font>

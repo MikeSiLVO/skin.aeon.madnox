@@ -95,8 +95,8 @@
 				</control>
 			</control>
 		</focusedlayout>
-		<itemlayout height="525" width="200" condition="![Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)]"></itemlayout>
-		<focusedlayout height="525" width="655" condition="![Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)]"></focusedlayout>
+		<itemlayout height="525" width="200" condition="![Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)]" />
+		<focusedlayout height="525" width="655" condition="![Skin.HasSetting(noflowalbum) + !Control.IsVisible(7003)]" />
 	</include>
 	<include name="scqfixed">
 		<control type="fixedlist" id="509">
@@ -442,30 +442,21 @@
 			<include condition="Skin.HasSetting(showcasewrap)">scqwrap</include>
 		</control>
 		<!-- label for cd art-->
-		<!-- label for cd art-->
-		<!-- label for cd art
-            <control type="image">
-                <left>0</left>
-                <top>50</top>
-                <width>1920</width>
-                <height>47</height>
-                <texture background="true">pvr/border.png</texture>
-            </control>
-            <control type="label">
-				<left>10</left>
-				<top>50</top>
-				<width>1900</width>
-				<height>47</height>
-				<label>$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</label>
-				<scroll>true</scroll>
-            </control-->
-		<!-- label for cd art-->
-		<!-- label for cd art-->
-		<!-- label for cd art-->
+		<!-- <control type="image">
+			<top>50</top>
+			<width>1920</width>
+			<height>47</height>
+			<texture background="true">pvr/border.png</texture>
+		</control>
+		<control type="label">
+			<left>10</left>
+			<top>50</top>
+			<width>1900</width>
+			<height>47</height>
+			<label>$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist]/cdart/</label>
+			<scroll>true</scroll>
+		</control> -->
 		<include>MusicShowcaseDiscAlbums</include>
-		<!-- label for cd art-->
-		<!-- label for cd art-->
-		<!-- label for cd art-->
 		<control type="button" id="1970">
 			<include>HiddenObject</include>
 			<visible>Control.IsVisible(509) + !Container.OnNext + !Container.OnPrevious</visible>
@@ -1103,7 +1094,6 @@
 		<height>342</height>
 		<aspectratio scalediffuse="false">scale</aspectratio>
 		<texture background="true">thumbs/boxes/cd_glass_reflect.png</texture>
-		<fadetime>0</fadetime>
 		<colordiffuse>d1FFFFFF</colordiffuse>
 		<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
 		<visible>Skin.HasSetting(usecasescd) + Container.Content(albums)</visible>
@@ -1158,7 +1148,6 @@
 		<width>383</width>
 		<height>383</height>
 		<aspectratio scalediffuse="false">scale</aspectratio>
-		<fadetime>0</fadetime>
 		<bordersize>16</bordersize>
 		<bordertexture border="16">thumbs/cd_shadow.png</bordertexture>
 	</include>
@@ -1176,7 +1165,6 @@
 	</include>
 	<include name="MusicShowcaseThumbReflection">
 		<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-		<fadetime>0</fadetime>
 		<include>MusicShowcaseThumbReflectionDimensions</include>
 		<colordiffuse>d1FFFFFF</colordiffuse>
 		<animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
@@ -1184,7 +1172,6 @@
 	</include>
 	<include name="MusicShowcaseThumbReflectionMain">
 		<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-		<fadetime>0</fadetime>
 		<include>MusicShowcaseThumbReflectionDimensions</include>
 		<animation effect="slide" start="0,00" end="0,10" time="0" condition="Skin.HasSetting(usecasescd) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">Conditional</animation>
 		<colordiffuse>52FFFFFF</colordiffuse>

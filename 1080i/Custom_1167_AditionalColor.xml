@@ -24,8 +24,6 @@
 	<onunload>ClearProperty(colorallareas,home)</onunload>
 	<onunload>ClearProperty(colordialog,10000)</onunload>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>

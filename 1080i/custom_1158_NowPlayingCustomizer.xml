@@ -3,8 +3,6 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<onload>Notification($LOCALIZE[31902],$LOCALIZE[31878])</onload>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>
@@ -237,7 +235,7 @@
 					<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
 				</control>
 				<control type="label" id="332">
-					<label></label>
+					<label />
 					<height>5</height>
 					<include>Objects_NowPlayingSettingsButton</include>
 				</control>
@@ -252,7 +250,7 @@
 					<textcolor>$VAR[TitleColorVar]</textcolor>
 				</control>
 				<control type="label" id="334">
-					<label></label>
+					<label />
 					<height>10</height>
 					<font>Font_Reg32</font>
 					<include>Objects_NowPlayingSettingsButton</include>

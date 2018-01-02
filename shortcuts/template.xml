@@ -7348,7 +7348,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7363,7 +7363,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7424,7 +7424,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7439,7 +7439,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7500,7 +7500,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7515,7 +7515,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7575,7 +7575,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7590,7 +7590,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7657,7 +7657,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7672,7 +7672,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName) + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7733,7 +7733,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7748,7 +7748,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7809,7 +7809,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7824,7 +7824,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>
@@ -7884,7 +7884,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseOnInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 			<variable name="HomeWidget$SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]InfoCaseVar">
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Glass) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
@@ -7899,7 +7899,7 @@
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + !$SKINSHORTCUTS[isglass]">homewidgets/$SKINSHORTCUTS[case]/square/cd.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass] + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Property(Label3)) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.ChannelName) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.Artist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AlbumArtist) + String.IsEmpty(Container($SKINSHORTCUTS[idprefix]$SKINSHORTCUTS[id]).ListItem.AddonName)  + !$SKINSHORTCUTS[widgetsquare]">homewidgets/glass/portrait.png</value>
 				<value condition="String.IsEqual(Skin.String(Widget.CaseInfo),Match widget panel) + $SKINSHORTCUTS[isglass]">homewidgets/glass/square.png</value>
-				<value></value>
+				<value />
 			</variable>
 		</variables>
 	</other>

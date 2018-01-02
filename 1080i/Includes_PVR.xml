@@ -1230,9 +1230,7 @@
 				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 			</control>
 		</control>
-
 	</include>
-
 	<include name="ChannelOSDExtended">
 		<left>60</left>
 		<top>75</top>
@@ -1244,7 +1242,6 @@
 			<width>1800</width>
 			<height>940</height>
 			<texture border="40" colordiffuse="$VAR[DialogColorVar]">buttons/roundedbutton-nofocus.png</texture>
-			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
 			<left>965</left>
@@ -1291,7 +1288,6 @@
 						<texture colordiffuse="$VAR[DialogColorVar]">osd/osd_settings_buttonnf.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>10</top>
 						<width>60</width>
 						<height>40</height>
@@ -1378,7 +1374,6 @@
 						<texture colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texture>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>10</top>
 						<width>60</width>
 						<height>40</height>

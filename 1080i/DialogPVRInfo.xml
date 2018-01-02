@@ -11,8 +11,6 @@
 		<control type="group">
 			<control type="image">
 				<description>background image</description>
-				<left>0</left>
-				<top>0</top>
 				<width>1122</width>
 				<height>750</height>
 				<texture border="40">new_pvr/mod/bg.png</texture>
@@ -58,16 +56,13 @@
 							<top>45</top>
 							<width>738</width>
 							<height>38</height>
-							<font>Font_Reg28</font>
 							<textcolor>$VAR[FontColorVar]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<textoffsetx>15</textoffsetx>
 						</control>
 						<control type="label">
-							<top>0</top>
 							<width>738</width>
 							<height>45</height>
-							<font>Font_Reg28</font>
 							<textcolor>context</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<textoffsetx>15</textoffsetx>
@@ -81,7 +76,6 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<top>0</top>
 							<width>738</width>
 							<height>90</height>
 							<texture border="4">listselect_fo.png</texture>
@@ -92,17 +86,14 @@
 							<top>45</top>
 							<width>738</width>
 							<height>38</height>
-							<font>Font_Reg28</font>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9002)">Conditional</animation>
 							<textoffsetx>15</textoffsetx>
 						</control>
 						<control type="label">
-							<top>0</top>
 							<width>738</width>
 							<height>45</height>
-							<font>Font_Reg28</font>
 							<textcolor>white</textcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9002)">Conditional</animation>
@@ -141,7 +132,6 @@
 					<top>470</top>
 					<width>708</width>
 					<height>242</height>
-					<font>Font_Reg28</font>
 					<align>justify</align>
 					<shadowcolor>black</shadowcolor>
 					<textcolor>white6</textcolor>

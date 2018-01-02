@@ -121,7 +121,6 @@
 					</control>
 					<control type="image">
 						<left>80</left>
-						<top>0</top>
 						<width>60</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
@@ -179,7 +178,6 @@
 					</control>
 					<control type="image">
 						<left>1200</left>
-						<top>0</top>
 						<width>150</width>
 						<height>90</height>
 						<aspectratio>keep</aspectratio>
@@ -209,7 +207,6 @@
 					</control>
 					<control type="image">
 						<left>80</left>
-						<top>0</top>
 						<width>60</width>
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
@@ -263,7 +260,6 @@
 					</control>
 					<control type="image">
 						<left>1200</left>
-						<top>0</top>
 						<width>150</width>
 						<height>90</height>
 						<aspectratio>keep</aspectratio>

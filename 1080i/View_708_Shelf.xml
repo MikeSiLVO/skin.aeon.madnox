@@ -316,7 +316,6 @@
 								<width>260</width>
 								<height>339</height>
 								<texture diffuse="views/shelf3DR/diffuse_box.png" background="true">$VAR[ListPosterVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-94</left>
@@ -324,7 +323,6 @@
 								<width>260</width>
 								<height>337</height>
 								<texture flipy="true" diffuse="views/shelf3DR/reflect_poster.png" background="true">$VAR[ListPosterVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>90</left>
@@ -341,7 +339,6 @@
 								<width>287</width>
 								<height>380</height>
 								<texture background="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 							<control type="image">
@@ -350,7 +347,6 @@
 								<width>287</width>
 								<height>380</height>
 								<texture flipy="true" diffuse="views/shelf3DR/reflect_box_overlay.png" background="true" >views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</control>
@@ -407,7 +403,6 @@
 								<width>388</width>
 								<height>538</height>
 								<texture background="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<animation type="Focus" reversible="false">
 									<effect type="zoom" center="50,180" start="80" end="100" time="600" tween="cubic" easing="out" />
 								</animation>
@@ -421,7 +416,6 @@
 								<visible>Control.HasFocus(708)</visible>
 								<colordiffuse>89FFFFFF</colordiffuse>
 								<texture flipy="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<animation type="Focus" reversible="false">
 									<effect type="zoom" center="50,180" start="80" end="100" time="600" tween="cubic" easing="out" />
 								</animation>
@@ -473,7 +467,6 @@
 								<width>388</width>
 								<height>538</height>
 								<texture background="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<animation type="Focus" reversible="false">
 									<effect type="zoom" center="50,180" start="80" end="100" time="600" tween="cubic" easing="out" />
 								</animation>
@@ -485,7 +478,6 @@
 								<height>538</height>
 								<colordiffuse>89FFFFFF</colordiffuse>
 								<texture flipy="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 								<animation type="Focus" reversible="false">
 									<effect type="zoom" center="50,180" start="80" end="100" time="600" tween="cubic" easing="out" />
 								</animation>
@@ -528,7 +520,6 @@
 								<width>388</width>
 								<height>538</height>
 								<texture background="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-144</left>
@@ -537,7 +528,6 @@
 								<height>538</height>
 								<colordiffuse>89FFFFFF</colordiffuse>
 								<texture flipy="true">views/shelf3DR/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 						<control type="group">
@@ -680,7 +670,6 @@
 								<width>372</width>
 								<height>538</height>
 								<texture background="true">views/shelf3DR/b$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="group">
 								<top>-100</top>
@@ -761,7 +750,6 @@
 								<height>538</height>
 								<colordiffuse>89FFFFFF</colordiffuse>
 								<texture flipy="true" background="true">views/shelf3DR/b$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="textbox">
 								<left>-80</left>

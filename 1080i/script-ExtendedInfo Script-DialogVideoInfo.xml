@@ -44,7 +44,6 @@
 					<top>-20</top>
 					<width>1100</width>
 					<height>110</height>
-					<itemgap>0</itemgap>
 					<align>center</align>
 					<control type="label">
 						<width>1042</width>
@@ -84,11 +83,9 @@
 					<texture border="1">separator2.png</texture>
 				</control>
 				<control type="grouplist">
-					<left>0</left>
 					<top>95</top>
 					<width>1190</width>
 					<height>90</height>
-					<itemgap>0</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<control type="label">
@@ -116,7 +113,6 @@
 								<texture>$INFO[Container(550).ListItem(0).label,flags/studios/,.png]</texture>
 							</control>
 							<control type="label">
-								<left>0</left>
 								<width>198</width>
 								<height>90</height>
 								<align>center</align>
@@ -137,7 +133,6 @@
 								<texture>$INFO[Container(1450).ListItem(0).label,flags/studios/,.png]</texture>
 							</control>
 							<control type="label">
-								<left>0</left>
 								<width>198</width>
 								<height>90</height>
 								<align>center</align>
@@ -169,7 +164,6 @@
 						<width>160</width>
 						<visible>!String.IsEqual(Window.Property(Duration),0) + !String.IsEmpty(Window.Property(Duration))</visible>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>160</width>
 							<height>60</height>
@@ -197,7 +191,6 @@
 						<visible>!String.IsEmpty(Window.Property(rating))</visible>
 						<width>200</width>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>200</width>
 							<height>60</height>
@@ -226,7 +219,6 @@
 						<visible>!String.IsEmpty(Window.Property(rated))</visible>
 						<width>200</width>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>200</width>
 							<height>60</height>
@@ -255,7 +247,6 @@
 						<visible>!String.IsEmpty(Window.Property(Top250))</visible>
 						<width>200</width>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>200</width>
 							<height>60</height>
@@ -511,7 +502,6 @@
 				</control>
 				<!-- Awards Label -->
 				<control type="label">
-					<left>0</left>
 					<top>922</top>
 					<width>788</width>
 					<height>50</height>
@@ -524,7 +514,6 @@
 					<visible>Control.IsVisible(800) + !String.IsEmpty(Window.Property(omdb.Awards)) + !String.IsEmpty(Window.Property(discart))</visible>
 				</control>
 				<control type="label">
-					<left>0</left>
 					<top>922</top>
 					<width>1132</width>
 					<height>50</height>
@@ -564,12 +553,9 @@
 						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="grouplist">
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>90</height>
 						<align>left</align>
-						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
 						<animation effect="fade" start="0" end="100" time="500" tween="sine" easing="inout">VisibleChange</animation>
 						<visible>!String.IsEmpty(Window.Property(DBID)) + Control.IsVisible(800)</visible>
@@ -661,8 +647,6 @@
 					<!-- Add Cast -->
 					<control type="panel" id="1000">
 						<description>Cast</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -739,8 +723,6 @@
 					<!-- Add Crew -->
 					<control type="panel" id="750">
 						<description>Crew</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -838,8 +820,6 @@
 					<!-- Add Set -->
 					<control type="panel" id="250">
 						<description>Set</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -864,8 +844,6 @@
 								<visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
 							</control>
 							<control type="image">
-								<top>0</top>
-								<left>0</left>
 								<width>74</width>
 								<height>40</height>
 								<texture>black.png</texture>
@@ -973,8 +951,6 @@
 					<!-- Add Official Videos -->
 					<control type="panel" id="1150">
 						<description>Official Videos</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -1053,8 +1029,6 @@
 					<!-- Add YouTube Videos -->
 					<control type="panel" id="350">
 						<description>Youtube Videos</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -1133,8 +1107,6 @@
 					<!-- Add Artwork -->
 					<control type="panel" id="1250">
 						<description>Artwork</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -1177,8 +1149,6 @@
 					<!-- Add Fanart -->
 					<control type="panel" id="1350">
 						<description>Fanart</description>
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<orientation>horizontal</orientation>
@@ -1304,7 +1274,6 @@
 				</control>
 				<!-- Add Section Label -->
 				<control type="group" id="71">
-					<left>0</left>
 					<top>975</top>
 					<visible>String.IsEqual(Control.GetLabel(5),$LOCALIZE[207])</visible>
 					<!-- <include>SettingsFadeEffect</include> -->
@@ -1363,7 +1332,6 @@
 					<top>510</top>
 					<width>1190</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>300</onup>

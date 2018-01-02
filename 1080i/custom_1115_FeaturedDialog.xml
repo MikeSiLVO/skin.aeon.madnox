@@ -6,8 +6,6 @@
 	<onload>SetFocus(5000)</onload>
 	<onunload condition="Window.IsActive(1147)">Action(PreviousMenu)</onunload>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>
@@ -1434,7 +1432,6 @@
 			</control>
 			<control type="group">
 				<control type="grouplist">
-					<left>0</left>
 					<width>1920</width>
 					<align>center</align>
 					<itemgap>50</itemgap>

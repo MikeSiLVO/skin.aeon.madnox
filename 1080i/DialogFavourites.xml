@@ -2,8 +2,6 @@
 <window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<onunload condition="String.Contains(Skin.String(widgetlist),favourite) | String.Contains(Skin.String(widget2list),favourite)">AlarmClock(FavouriteUpdate,RunScript(script.favourites),00:01,silent)</onunload>

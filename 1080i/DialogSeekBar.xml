@@ -4,13 +4,10 @@
 	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![VideoPlayer.Content(livetv) | Window.IsVisible(videoosd) | Window.IsVisible(fullscreeninfo) | Window.IsActive(script-XBMC-Subtitles-main.xml)] + Window.IsVisible(fullscreenvideo)</visible>
 	<coordinates>
 		<system>1</system>
-		<left>0</left>
-		<top>0</top>
 	</coordinates>
 	<controls>
 		<control type="group" id="10125">
 			<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-			<left>0</left>
 			<top>130</top>
 			<visible>Player.Paused + VideoPlayer.Content(movies) + Skin.HasSetting(Show_Info_Paused)</visible>
 			<control type="group">
@@ -244,7 +241,6 @@
 			</control>
 		</control>
 		<control type="group" id="10125">
-			<left>0</left>
 			<top>130</top>
 			<visible>Skin.HasSetting(Plotinfoscreen)</visible>
 			<visible>Player.Paused + VideoPlayer.Content(episodes) + Skin.HasSetting(Show_Info_Paused)</visible>
@@ -315,7 +311,6 @@
 			</control>
 		</control>
 		<control type="group" id="10125">
-			<left>0</left>
 			<top>130</top>
 			<visible>Skin.HasSetting(Plotinfoscreen)</visible>
 			<visible>Player.Paused + VideoPlayer.Content(files) + Skin.HasSetting(Show_Info_Paused)</visible>
@@ -824,18 +819,6 @@
 						<include>OSDFlagVars</include>
 						<visible>String.IsEmpty(VideoPlayer.Studio)</visible>
 					</control>
-					<!--control type="label">
-						<left>0</left>
-						<top>-5</top>
-						<width>155</width>
-						<height>70</height>
-						<align>center</align>
-						<label>$INFO[VideoPlayer.Studio]</label>
-						<font>Font_Reg22_Caps</font>
-						<textcolor>grey</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-						<visible>String.IsEmpty(Control.GetLabel(76))</visible>
-					</control-->
 				</control>
 				<control type="image" id="2117">
 					<left>325</left>
@@ -844,13 +827,6 @@
 					<include>OSDFlagVars</include>
 					<visible>!VideoPlayer.Content(files) + !String.IsEmpty(VideoPlayer.mpaa)</visible>
 				</control>
-				<!--control type="image">
-					<left>325</left>
-					<top>30</top>
-					<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
-					<include>OSDFlagVars</include>
-					<visible>!VideoPlayer.Content(files) + String.IsEmpty(Control.GetLabel(2117))</visible>
-				</control-->
 				<control type="image">
 					<left>1480</left>
 					<top>30</top>

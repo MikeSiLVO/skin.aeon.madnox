@@ -223,7 +223,6 @@
 					<posx>305</posx>
 					<posy>-1</posy>
 					<control type="label">
-						<left>0</left>
 						<width>200</width>
 						<height>60</height>
 						<align>center</align>

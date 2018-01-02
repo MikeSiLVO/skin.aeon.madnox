@@ -5,7 +5,6 @@
 		<top>0</top>
 		<aspectratio>stretch</aspectratio>
 		<texture />
-		<fadetime>0</fadetime>
 	</default>
 	<default type="multiimage">
 		<aspectratio align="center">scale</aspectratio>
@@ -13,7 +12,6 @@
 		<include>FullscreenDimensions</include>
 		<timeperimage>7000</timeperimage>
 		<randomize>true</randomize>
-		<include condition="![Window.IsActive(1115) | Window.IsActive(weather)]">Animation_WindowFade250</include>
 	</default>
 	<default type="label">
 		<left>0</left>
@@ -190,6 +188,7 @@
 	</default>
 	<default type="resize">
 		<left>0</left>
+		<top>0</top>
 		<top>348</top>
 		<width>384</width>
 		<height>384</height>
@@ -208,20 +207,6 @@
 		<font>Font_Reg29</font>
 		<textcolor>white2</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-	</default>
-	<default type="scrollbar">
-		<left>0</left>
-		<top>0</top>
-		<width>1005</width>
-		<height>9</height>
-		<texturesliderbackground />
-		<texturesliderbar />
-		<texturesliderbarfocus />
-		<textureslidernib>views/scrollbarnub-nofocus.png</textureslidernib>
-		<textureslidernibfocus>views/scrollbarnub-focus.png</textureslidernibfocus>
-		<showonepage>false</showonepage>
-		<orientation>vertical</orientation>
-		<include>Animation_WindowFade250</include>
 	</default>
 	<default type="group">
 		<left>0</left>

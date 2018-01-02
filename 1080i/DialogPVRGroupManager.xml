@@ -2,8 +2,6 @@
 <window>
 	<defaultcontrol always="true">29</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>
@@ -15,7 +13,6 @@
 				<animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
 				<control type="group">
 					<left>387</left>
-					<top>0</top>
 					<control type="label">
 						<top>120</top>
 						<width>489</width>
@@ -25,7 +22,6 @@
 						<font>Font_Bold37_Caps</font>
 					</control>
 					<control type="list" id="13">
-						<left>0</left>
 						<top>180</top>
 						<width>489</width>
 						<height>741</height>
@@ -36,14 +32,11 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 							</control>
 							<control type="label">
-								<left>0</left>
 								<width>489</width>
 								<height>74</height>
 								<textoffsetx>30</textoffsetx>
@@ -56,15 +49,12 @@
 						</itemlayout>
 						<focusedlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(13)">Conditional</animation>
 							</control>
 							<control type="label">
-								<left>0</left>
 								<width>489</width>
 								<height>74</height>
 								<textoffsetx>30</textoffsetx>
@@ -78,7 +68,6 @@
 				</control>
 				<control type="group">
 					<left>876</left>
-					<top>0</top>
 					<control type="label" id="21">
 						<top>120</top>
 						<width>489</width>
@@ -87,7 +76,6 @@
 						<font>Font_Bold34_Caps</font>
 					</control>
 					<control type="list" id="11">
-						<left>0</left>
 						<top>180</top>
 						<width>489</width>
 						<height>741</height>
@@ -98,15 +86,11 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>74</width>
 								<height>74</height>
 								<aspectratio>keep</aspectratio>
@@ -115,7 +99,6 @@
 							</control>
 							<control type="label">
 								<left>74</left>
-								<top>0</top>
 								<width>415</width>
 								<height>74</height>
 								<textoffsetx>15</textoffsetx>
@@ -126,24 +109,18 @@
 						</itemlayout>
 						<focusedlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 								<visible>!Control.HasFocus(11)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texture>
 								<visible>Control.HasFocus(11)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>74</width>
 								<height>74</height>
 								<aspectratio>keep</aspectratio>
@@ -152,7 +129,6 @@
 							</control>
 							<control type="label">
 								<left>74</left>
-								<top>0</top>
 								<width>415</width>
 								<height>74</height>
 								<textoffsetx>15</textoffsetx>
@@ -164,7 +140,6 @@
 				</control>
 				<control type="group">
 					<left>1365</left>
-					<top>0</top>
 					<control type="label" id="22">
 						<top>120</top>
 						<width>489</width>
@@ -173,7 +148,6 @@
 						<font>Font_Bold34_Caps</font>
 					</control>
 					<control type="list" id="12">
-						<left>0</left>
 						<top>180</top>
 						<width>489</width>
 						<height>741</height>
@@ -184,15 +158,11 @@
 						<scrolltime>200</scrolltime>
 						<itemlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>74</width>
 								<height>74</height>
 								<aspectratio>keep</aspectratio>
@@ -201,7 +171,6 @@
 							</control>
 							<control type="label">
 								<left>74</left>
-								<top>0</top>
 								<width>415</width>
 								<height>74</height>
 								<textoffsetx>15</textoffsetx>
@@ -212,24 +181,18 @@
 						</itemlayout>
 						<focusedlayout height="74">
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texture>
 								<visible>!Control.HasFocus(12)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>489</width>
 								<height>74</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texture>
 								<visible>Control.HasFocus(12)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>74</width>
 								<height>74</height>
 								<aspectratio>keep</aspectratio>
@@ -238,7 +201,6 @@
 							</control>
 							<control type="label">
 								<left>74</left>
-								<top>0</top>
 								<width>415</width>
 								<height>74</height>
 								<textoffsetx>15</textoffsetx>

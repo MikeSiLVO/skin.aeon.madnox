@@ -517,11 +517,9 @@
 					<texture colordiffuse="$VAR[ColorDiffuseVar]">info/info_panellines_movie.png</texture>
 				</control>
 				<control type="grouplist">
-					<left>0</left>
 					<top>-5</top>
 					<width>1018</width>
 					<height>200</height>
-					<itemgap>0</itemgap>
 					<orientation>vertical</orientation>
 					<control type="label">
 						<width>1018</width>
@@ -533,16 +531,12 @@
 						<scroll>true</scroll>
 					</control>
 					<control type="grouplist">
-						<left>0</left>
-						<top>0</top>
 						<width>1018</width>
 						<height>50</height>
-						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>true</usecontrolcoords>
 						<visible>!String.IsEmpty(VideoPlayer.Tagline)</visible>
 						<control type="image" id="12020">
-							<left>0</left>
 							<top>6</top>
 							<width>42</width>
 							<height>35</height>
@@ -662,7 +656,6 @@
 					<top>90</top>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
 					<control type="label">
-						<left>0</left>
 						<top>2</top>
 						<width>135</width>
 						<height>60</height>
@@ -1205,7 +1198,6 @@
 						<include>Furniture_FlagUpright</include>
 					</control>
 					<control type="image">
-						<top>0</top>
 						<width>161</width>
 						<height>70</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
@@ -1224,7 +1216,6 @@
 						<include>Furniture_FlagUpright</include>
 					</control>
 					<control type="image">
-						<top>0</top>
 						<width>132</width>
 						<height>70</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>

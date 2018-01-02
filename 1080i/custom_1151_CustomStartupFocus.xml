@@ -36,7 +36,6 @@
 						<texture colordiffuse="$VAR[ColorDiffuseVar]">button-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<left></left>
 						<width>300</width>
 						<height>40</height>
 						<textoffsetx>10</textoffsetx>
@@ -53,7 +52,6 @@
 							<texture colordiffuse="$VAR[ColorDiffuseVar]" border="8">views/tripanel/listselect_fo.png</texture>
 						</control>
 						<control type="label">
-							<left></left>
 							<width>300</width>
 							<height>40</height>
 							<textoffsetx>10</textoffsetx>

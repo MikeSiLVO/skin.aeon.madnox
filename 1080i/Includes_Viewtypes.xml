@@ -1043,7 +1043,6 @@
                     <top>78</top>
                     <width>264</width>
                     <height>400</height>
-                    <aspectratio>stretch</aspectratio>
                     <texture background="true" diffuse="thumbs/movieposter_mask.png">$VAR[ListPosterVar]</texture>
                     <fadetime>200</fadetime>
                     <bordertexture border="-50">thumbs/poster_shadow.png</bordertexture>
@@ -1668,21 +1667,18 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[FanartPanelDetail1Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
 						<control type="label">
 							<aligny>top</aligny>
 							<width>420</width>
-							<font>Font_Reg28</font>
 							<height>44</height>
 							<label fallback="31006">$VAR[FanartPanelValue1Var]</label>
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
 							<width>420</width>
-							<font>Font_Reg28</font>
 							<height>22</height>
 							<label>$VAR[FanartPanelDetail2Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
@@ -1690,7 +1686,6 @@
 						<control type="label">
 							<width>420</width>
 							<height>44</height>
-							<font>Font_Reg28</font>
 							<aligny>top</aligny>
 							<label fallback="31006">$VAR[FanartPanelValue2Var]</label>
 							<scroll>true</scroll>
@@ -1698,14 +1693,12 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[PosterPanelDetail3Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
 						<control type="label">
 							<width>420</width>
 							<height>44</height>
-							<font>Font_Reg28</font>
 							<aligny>top</aligny>
 							<label fallback="31006">$VAR[PosterPanelValue3Var]</label>
 							<scroll>true</scroll>
@@ -1713,14 +1706,12 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[FanartPanelDetail4Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
 						<control type="fadelabel">
 							<width>422</width>
 							<height>44</height>
-							<font>Font_Reg28</font>
 							<aligny>top</aligny>
 							<label fallback="31006">$VAR[PosterPanelValue4Var]</label>
 							<pauseatend>3000</pauseatend>
@@ -1728,14 +1719,12 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[PosterPanelDetail5Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
 						<control type="label">
 							<width>300</width>
 							<height>44</height>
-							<font>Font_Reg28</font>
 							<aligny>top</aligny>
 							<label fallback="31006">$VAR[PosterPanelValue5Var]</label>
 							<scroll>true</scroll>
@@ -1743,14 +1732,12 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[PosterPanelDetail6Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
 						<control type="label">
 							<width>420</width>
 							<height>44</height>
-							<font>Font_Reg28</font>
 							<aligny>top</aligny>
 							<label fallback="31006">$VAR[PosterPanelValue6Var]</label>
 							<scroll>true</scroll>
@@ -1758,7 +1745,6 @@
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
-							<font>Font_Reg28</font>
 							<label>$VAR[PosterPanelDetail7Var]</label>
 							<textcolor>$VAR[SubTitleColorVar]</textcolor>
 						</control>
@@ -1766,7 +1752,6 @@
 							<width>420</width>
 							<height>44</height>
 							<aligny>top</aligny>
-							<font>Font_Reg28</font>
 							<label fallback="31452">$VAR[PosterPanelValue7Var]</label>
 							<scroll>true</scroll>
 						</control>

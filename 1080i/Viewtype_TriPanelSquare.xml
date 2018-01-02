@@ -188,7 +188,6 @@
 					<height>530</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="thumbs/boxes/cdcover_mask.png" fallback="DefaultMusicGenres.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 					<colordiffuse>FF000000</colordiffuse>
 				</control>
 				<control type="image">
@@ -248,7 +247,6 @@
 					<height>486</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="thumbs/boxes/cdcover_mask.png" fallback="DefaultMusicGenres.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 					<colordiffuse>FF000000</colordiffuse>
 				</control>
 				<control type="image">
@@ -355,7 +353,6 @@
 					<width>480</width>
 					<height>400</height>
 					<label>$VAR[InfoWallTextboxVar]</label>
-					<font>Font_Reg28</font>
 					<autoscroll delay="10000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="textbox">
@@ -771,7 +768,6 @@
 					<top>275</top>
 					<width>410</width>
 					<height>80</height>
-					<aspectratio>stretch</aspectratio>
 					<texture>homewidgets/glass/banner.png</texture>
 					<visible>Control.IsVisible(53) + Skin.HasSetting(TriPanelSquareClearArt)  + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 					<animation effect="slide" end="0,0" time="300" condition=" String.IsEqual(Skin.String(TriPanelSquarePosition),1)">Conditional</animation>
@@ -782,7 +778,6 @@
 					<top>275</top>
 					<width>410</width>
 					<height>80</height>
-					<aspectratio>stretch</aspectratio>
 					<texture>thumbs_square/banner_shadow_in.png</texture>
 					<visible>Control.IsVisible(53) + Skin.HasSetting(TriPanelSquareClearArt)  + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 					<animation effect="slide" end="0,0" time="300" condition=" String.IsEqual(Skin.String(TriPanelSquarePosition),1)">Conditional</animation>

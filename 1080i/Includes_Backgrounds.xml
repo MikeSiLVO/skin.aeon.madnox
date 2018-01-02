@@ -165,7 +165,6 @@
 				</control>
 				<control type="group">
 					<left>750</left>
-					<top>0</top>
 					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">

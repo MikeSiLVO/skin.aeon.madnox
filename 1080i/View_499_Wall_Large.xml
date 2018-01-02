@@ -30,7 +30,6 @@
 				<posx>384</posx>
 				<width>254</width>
 				<height>423</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>[[!Skin.Hassetting(WallLargeCases) + Container.Content(movies)] | [Container.Content(movies) + !Skin.Hassetting(usecases) + !Skin.Hassetting(clearcases)]]</visible>
@@ -40,7 +39,6 @@
 				<posx>384</posx>
 				<width>254</width>
 				<height>423</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>ListItem.IsCollection | Container.Content(tvshows) | Container.Content(seasons)</visible>
@@ -50,7 +48,6 @@
 				<posx>390</posx>
 				<width>242</width>
 				<height>376</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>Skin.Hassetting(WallLargeCases) + Container.Content(movies) + Skin.Hassetting(usecases) + !Skin.Hassetting(clearcases) + !ListItem.IsCollection</visible>
@@ -60,7 +57,6 @@
 				<posx>391</posx>
 				<width>242</width>
 				<height>408</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>Skin.Hassetting(WallLargeCases) + Container.Content(movies) + Skin.Hassetting(usecases) + Skin.Hassetting(clearcases) + !ListItem.IsCollection</visible>
@@ -176,7 +172,7 @@
 				<height>283</height>
 				<label>$VAR[GlobalPlotVar]</label>
 				<font>Font18a</font>
-				<autoscroll delay="10000" time="4000" repeat="8000"></autoscroll>
+				<autoscroll delay="10000" time="4000" repeat="8000">true</autoscroll>
 			</control>
 			<control type="image">
 				<posx>630</posx>
@@ -989,7 +985,6 @@
 							<posy>10</posy>
 							<width>134</width>
 							<height>192</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>8</bordersize>
@@ -1000,7 +995,6 @@
 							<posy>6</posy>
 							<width>140</width>
 							<height>199</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>9</bordersize>
@@ -1011,7 +1005,6 @@
 							<posy>15</posy>
 							<width>126</width>
 							<height>197.5</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="2">thumbs/thumbnail_focused.png</bordertexture>

@@ -50,8 +50,6 @@
 			</control>
 			<control type="multiimage">
 				<description>GamesFlix Fanart extrafanart</description>
-				<left>0</left>
-				<top>0</top>
 				<width>1920</width>
 				<height>1080</height>
 				<aspectratio>scale</aspectratio>
@@ -110,7 +108,7 @@
 					<font>font12_textbox</font>
 					<pagecontrol>63</pagecontrol>
 					<include>GamesFlixShowCaseInfoPanelButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<!-- End Games Plot -->
@@ -130,7 +128,7 @@
 					<font>font12_textbox</font>
 					<pagecontrol>63</pagecontrol>
 					<include>GamesFlixShowCaseInfoPanelButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<!-- End Small Thumbs Games Plot -->
@@ -170,7 +168,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>362</top>
 						<width>299</width>
 						<height>299</height>
@@ -180,7 +177,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>299</width>
 						<height>299</height>
@@ -206,7 +202,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>362</top>
 						<width>299</width>
 						<height>299</height>
@@ -216,7 +211,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>299</width>
 						<height>299</height>
@@ -226,7 +220,6 @@
 					</control>
 				</focusedlayout>
 				<!-- End of Square Thumbs -->
-
 				<!-- Small Square Thumbs -->
 				<itemlayout width="250" height="250" condition="Skin.HasSetting(smallgamesflixsquareview)">
 					<control type="image">
@@ -244,7 +237,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>412</top>
 						<width>249</width>
 						<height>249</height>
@@ -254,7 +246,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>249</width>
 						<height>249</height>
@@ -280,7 +271,6 @@
 						<texture border="30" flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel2.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>412</top>
 						<width>249</width>
 						<height>249</height>
@@ -290,7 +280,6 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>664</top>
 						<width>249</width>
 						<height>249</height>
@@ -302,7 +291,6 @@
 			</control>
 			<!-- End of Small Square Thumbs -->
 			<control type="scrollbar" id="75">
-				<left>0</left>
 				<top>960</top>
 				<width>FullScreenWidth</width>
 				<height>12</height>

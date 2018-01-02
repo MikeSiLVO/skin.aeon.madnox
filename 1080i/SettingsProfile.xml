@@ -92,7 +92,6 @@
 							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>245</top>
 							<width>280</width>
 							<height>100</height>
@@ -104,7 +103,6 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>281</top>
 							<width>280</width>
 							<height>100</height>
@@ -116,7 +114,6 @@
 							<label fallback="13170">$LOCALIZE[31031]:</label>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>310</top>
 							<width>280</width>
 							<height>100</height>
@@ -146,7 +143,6 @@
 							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>245</top>
 							<width>280</width>
 							<height>100</height>
@@ -158,7 +154,6 @@
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>281</top>
 							<width>280</width>
 							<height>100</height>
@@ -170,7 +165,6 @@
 							<label fallback="13170">$LOCALIZE[31031]:</label>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>310</top>
 							<width>280</width>
 							<height>100</height>

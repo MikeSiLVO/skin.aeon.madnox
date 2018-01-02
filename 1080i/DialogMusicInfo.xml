@@ -96,7 +96,6 @@
 					<top>-20</top>
 					<width>1100</width>
 					<height>110</height>
-					<itemgap>0</itemgap>
 					<align>center</align>
 					<visible>String.IsEqual(ListItem.DBType,song)</visible>
 					<control type="label">
@@ -125,7 +124,6 @@
 					<top>-20</top>
 					<width>1100</width>
 					<height>110</height>
-					<itemgap>0</itemgap>
 					<align>center</align>
 					<visible>String.IsEqual(ListItem.DBType,album)</visible>
 					<control type="label">
@@ -155,7 +153,6 @@
 					<top>-20</top>
 					<width>1100</width>
 					<height>110</height>
-					<itemgap>0</itemgap>
 					<align>center</align>
 					<visible>String.IsEqual(ListItem.DBType,artist)</visible>
 					<control type="label">
@@ -177,11 +174,9 @@
 					<texture border="1">separator2.png</texture>
 				</control>
 				<control type="grouplist">
-					<left>0</left>
 					<top>95</top>
 					<width>1050</width>
 					<height>90</height>
-					<itemgap>0</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<control type="label">
@@ -215,12 +210,11 @@
 							<colordiffuse>grey</colordiffuse>
 							<width>198</width>
 							<height>88</height>
-							<include>MediaFlagValues</include>
+							<include>MediaFlagVars</include>
 							<bordersize>2</bordersize>
 							<texture>$INFO[ListItem.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<width>198</width>
 							<height>90</height>
 							<align>center</align>
@@ -240,7 +234,6 @@
 						<visible>!IsEmpty(Window(home).Property(Artist.Albums.Count)) + !String.IsEmpty(Container(50).NumItems) + !String.IsEqual(ListItem.DBType,song)</visible>
 						<width>160</width>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>160</width>
 							<height>60</height>
@@ -251,7 +244,6 @@
 							<visible>!System.HasAddon(script.skin.info.service)</visible>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>160</width>
 							<height>60</height>
@@ -291,7 +283,6 @@
 					<control type="image">
 						<width>260</width>
 						<aspectratio>keep</aspectratio>
-						<colordiffuse>$VAR[StarRatingDiffuseVar]</colordiffuse>
 						<texture fallback="flags/music/rating/rating0.png">flags/music/rating/rating$INFO[ListItem.Rating].png</texture>
 						<visible>!String.IsEqual(ListItem.DBType,artist)</visible>
 					</control>
@@ -692,8 +683,6 @@
 					<pagecontrol>70</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">300</scrolltime>
 					<control type="group" id="90017">
-						<left>0</left>
-						<top>0</top>
 						<width>1190</width>
 						<height>420</height>
 						<control type="button" id="900171">
@@ -722,7 +711,7 @@
 							<textcolor>white</textcolor>
 							<pagecontrol />
 							<label>$VAR[MusicPlotVar]</label>
-							<autoscroll time="3000" delay="6000" repeat="6000"></autoscroll>
+							<autoscroll time="3000" delay="6000" repeat="6000">true</autoscroll>
 							<animation effect="fade" start="0" end="100" time="500" tween="sine" easing="inout">VisibleChange</animation>
 							<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(900171)">Conditional</animation>
 						</control>
@@ -869,7 +858,6 @@
 					<include>HiddenObject</include>
 				</control>
 				<control type="group" id="71">
-					<left>0</left>
 					<top>975</top>
 					<visible>ControlGroup(9001).HasFocus</visible>
 					<include>SettingsFadeAnimation</include>
@@ -907,7 +895,6 @@
 			</control>
 			<control type="group">
 				<left>3</left>
-				<top>0</top>
 				<control type="image">
 					<top>450</top>
 					<width>594</width>
@@ -928,7 +915,6 @@
 					<top>510</top>
 					<width>1192</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>300</onup>

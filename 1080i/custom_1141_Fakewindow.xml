@@ -12,8 +12,6 @@
 	<!-- 	<onload condition="String.IsEmpty(Window(home).Property(activewindow))">ReplaceWindow(home)</onload>
  -->
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>

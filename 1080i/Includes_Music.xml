@@ -130,7 +130,6 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="textbox">
-							<left>0</left>
 							<top>209</top>
 							<width>729</width>
 							<height>220</height>
@@ -1093,9 +1092,9 @@
 	<include name="cdarthome">
 		<texture background="true">$INFO[Player.FolderPath]cdart.png</texture>
 	</include>
-	<include name="cdart">
+	<!-- <include name="cdart">
 		<texture background="true" fallback="common/cdart/default.png">$INFO[Player.FolderPath]cdart.png</texture>
-	</include>
+	</include> -->
 	<include name="vinylart">
 		<texture background="true" fallback="common/cdart/vinyl.png">$INFO[Player.FolderPath]cdart.png</texture>
 	</include>
@@ -1120,7 +1119,6 @@
 			<texture border="4">osd/osd_settings_buttonnf.png</texture>
 		</control>
 		<control type="image">
-			<left>0</left>
 			<top>10</top>
 			<width>235</width>
 			<height>235</height>
@@ -2420,7 +2418,6 @@
 				<colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
 			</control>
 			<control type="grouplist">
-				<left>0</left>
 				<width>1920</width>
 				<align>center</align>
 				<itemgap>50</itemgap>

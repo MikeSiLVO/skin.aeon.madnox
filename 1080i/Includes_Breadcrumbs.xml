@@ -112,15 +112,13 @@
 				<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
 			</control>
 			<control type="progress">
-				<left>0</left>
-				<top>0</top>
 				<width>660</width>
 				<height>45</height>
 				<info>Player.Progress</info>
 				<texturebg>osd/info/osd_progress_back_cache.png</texturebg>
-				<lefttexture></lefttexture>
+				<lefttexture />
 				<midtexture colordiffuse="$VAR[HomeMenuTextFocusVar]">osd/info/osd_progress_mid.png</midtexture>
-				<righttexture></righttexture>
+				<righttexture />
 				<visible>Player.HasMedia + Skin.HasSetting(ProgressNowPlaying)</visible>
 				<animation effect="fade" end="35" time="600" condition="Player.HasMedia">Conditional</animation>
 			</control>
@@ -230,7 +228,6 @@
 				<visible>Control.HasFocus(60) | Control.HasFocus(61) | Control.HasFocus(62) | Control.HasFocus(71) | Control.HasFocus(70) | !Control.IsVisible(4051) | [!Skin.HasSetting(FadedTopBar) + !Skin.HasSetting(ClassicTopBar)]</visible>
 				<control type="image">
 					<left>645</left>
-					<top>0</top>
 					<width>600</width>
 					<height>87</height>
 					<visible>Skin.HasSetting(ClassicTopBar)</visible>
@@ -239,7 +236,6 @@
 				<control type="grouplist">
 					<width>1920</width>
 					<align>center</align>
-					<!--breadcrumbs-->
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="image">

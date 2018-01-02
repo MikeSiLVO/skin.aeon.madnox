@@ -2,7 +2,6 @@
 <includes>
 	<include name="Furniture_ClassicHomeGradient">
 		<control type="image">
-			<left>0</left>
 			<top>455</top>
 			<width>2120</width>
 			<height>225</height>
@@ -34,19 +33,10 @@
 		<onup condition="Control.IsVisible(90010)">90010</onup>
 		<onup condition="!Control.IsVisible(90010) + Control.IsVisible(90020)">90020</onup>
 		<ondown>9010</ondown>
-		<!-- <onup condition="Skin.HasSetting(lowermainmenu) + Control.IsVisible(4444)">4444</onup>
-		<onup condition="Skin.HasSetting(lowermainmenu)  + !Control.IsVisible(4444) + Control.IsVisible(4445)">4445</onup>
-		<onup condition="Skin.HasSetting(lowermainmenu)  + !Control.IsVisible(4444) + !Control.IsVisible(4445)">SetFocus(9009)</onup>
-		<onup condition="!Skin.HasSetting(lowermainmenu) + Control.IsVisible(4445)">4445</onup>
-		<onup condition="!Skin.HasSetting(lowermainmenu) + !Control.IsVisible(4445)">SetFocus(9009)</onup>
-		<ondown condition="String.IsEmpty(Window(home).Property(DisableWidgets)) + !Integer.IsGreater(Container(9010).NumItems,0) + !Skin.HasSetting(lowermainmenu) + Control.IsVisible(4444)">4444</ondown> -->
-		<!-- <onback condition="!Skin.HasSetting(DisableWidgetToggle) + String.IsEmpty(Window(home).Property(DisableWidgets))">SetProperty(DisableWidgets,1,home)</onback>
-		<onback condition="!Skin.HasSetting(DisableWidgetToggle) + !String.IsEmpty(Window(home).Property(DisableWidgets))">ClearProperty(DisableWidgets,home)</onback> -->
 		<scrolltime tween="quadratic">300</scrolltime>
 		<include condition="Skin.HasSetting(mainmenuicons)">FocusPosition4</include>
 		<include condition="!Skin.HasSetting(mainmenuicons)">FocusPosition2</include>
 		<include>DefaultControl</include>
-
 		<visible>![Player.HasMedia + System.IdleTime(8)]</visible>
 		<orientation>horizontal</orientation>
 		<animation effect="slide" end="-302,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
@@ -110,7 +100,6 @@
 		</focusedlayout>
 		<itemlayout height="225" width="519" condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
 			<control type="label">
-				<left>0</left>
 				<width>519</width>
 				<textcolor>white5</textcolor>
 				<include>MainMenuLabels</include>
@@ -118,7 +107,6 @@
 		</itemlayout>
 		<focusedlayout height="225" width="519" condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">
 			<control type="label">
-				<left>0</left>
 				<width>519</width>
 				<textcolor>$VAR[MainMenuFontColorVar]</textcolor>
 				<include>MainMenuLabels</include>
@@ -126,7 +114,6 @@
 		</focusedlayout>
 		<itemlayout height="225" width="639" condition="Skin.HasSetting(biggergap)">
 			<control type="label">
-				<left>0</left>
 				<width>639</width>
 				<textcolor>white5</textcolor>
 				<include>MainMenuLabels</include>
@@ -134,7 +121,6 @@
 		</itemlayout>
 		<focusedlayout height="225" width="639" condition="Skin.HasSetting(biggergap)">
 			<control type="label">
-				<left>0</left>
 				<width>639</width>
 				<textcolor>$VAR[MainMenuFontColorVar]</textcolor>
 				<include>MainMenuLabels</include>
@@ -157,12 +143,6 @@
 		<scrolltime tween="quadratic">300</scrolltime>
 		<onup>9000</onup>
 		<onback>SetFocus(9000)</onback>
-
-		<!-- Silvo -->
-		<!--ondown condition="Control.IsVisible(90020)">90020</ondown>
-		<ondown condition="!Control.IsVisible(90020) + Control.IsVisible(90010)">90010</ondown>
-		<ondown condition="!Control.IsVisible(90020) + !Control.IsVisible(90010)">9000</ondown-->
-		<!-- MadNox -->
 		<ondown condition="!Skin.HasSetting(lowermainmenu) + Control.IsVisible(90020)">90020</ondown>
 		<ondown condition="!Skin.HasSetting(lowermainmenu) + !Control.IsVisible(90020) + Skin.HasSetting(bottomindicator)">SetFocus(9011)</ondown>
 		<ondown condition="!Skin.HasSetting(lowermainmenu) + !Control.IsVisible(90020) + !Skin.HasSetting(bottomindicator) + Control.IsVisible(90010)">90010</ondown>
@@ -381,7 +361,6 @@
 				<top>1048</top>
 				<width>380</width>
 				<align>center</align>
-				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="image">

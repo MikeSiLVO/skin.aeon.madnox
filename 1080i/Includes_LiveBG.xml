@@ -8,8 +8,6 @@
         <height>312</height>
     </include>
     <include name="PolaroidPos">
-        <left>0</left>
-        <top>0</top>
         <width>461</width>
         <height>500</height>
     </include>
@@ -109,7 +107,6 @@
 					</control>
 					<control type="group">
 						<left>1950</left>
-						<top>0</top>
 						<animation effect="zoom" start="180" end="180" center="auto" time="0" tween="linear" condition="true">Conditional</animation>
 						<animation effect="rotate" center="auto" start="75" end="75" time="0" condition="true">Conditional</animation>
 						<control type="image">
@@ -611,14 +608,14 @@
 					</control>
 				</control>
 			</control>
-			
+
 			<!-- My Pics -->
 			<control type="group">
 				<animation effect="fade" time="600">VisibleChange</animation>
 				<include>Animation_WindowFade250</include>
 				<include>FullscreenDimensions</include>
 				<visible>[Control.HasFocus(9010) + String.EndsWith(Container(9010).ListItem.Property(background),.Live) + Integer.IsGreater(Container(8011).NumItems,0) + String.Contains(Container(9010).ListItem.Property(backgroundCase),Polaroid)] |
-					[String.EndsWith(Container(9000).ListItem.Property(background),.Live) + ![Control.HasFocus(9010) + [String.EndsWith(Container(9010).ListItem.Property(background),FanartList) | String.EndsWith(Container(9010).ListItem.Property(background),.Live)] + Integer.IsGreater(Container(8011).NumItems,0) + !IsEmpty(Container(8011).ListItem.Art(fanart))] + String.Contains(Container(9000).ListItem.Property(backgroundCase),Polaroid)] | 
+					[String.EndsWith(Container(9000).ListItem.Property(background),.Live) + ![Control.HasFocus(9010) + [String.EndsWith(Container(9010).ListItem.Property(background),FanartList) | String.EndsWith(Container(9010).ListItem.Property(background),.Live)] + Integer.IsGreater(Container(8011).NumItems,0) + !IsEmpty(Container(8011).ListItem.Art(fanart))] + String.Contains(Container(9000).ListItem.Property(backgroundCase),Polaroid)] |
 					String.StartsWith(Control.GetLabel(4322),case)</visible>
 				<control type="group">
 					<control type="group">
@@ -754,7 +751,6 @@
 						<control type="group">
 							<description>Picture 9</description>
 							<left>685</left>
-							<top>0</top>
 							<animation effect="rotate" center="auto" start="-10" end="-10" time="0" condition="true">Conditional</animation>
 							<control type="image">
 								<include>PicturePos</include>

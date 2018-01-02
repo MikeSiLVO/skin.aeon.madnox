@@ -334,7 +334,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font.ml</font>
-						<autoscroll time="1000" delay="4000" repeat="5000"></autoscroll>
+						<autoscroll time="1000" delay="4000" repeat="5000">true</autoscroll>
 						<visible>!ListItem.IsParentFolder + Container.Content(albums)</visible>
 					</control>
 				</control>

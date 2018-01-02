@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="BottomNowPlaying">
-<!--Now Playing-->
+		<!--Now Playing-->
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="150" end="100" center="960,540" delay="100" time="800" tween="cubic" />
@@ -14,7 +14,7 @@
 			<control type="group">
 				<visible>Player.HasMedia + Skin.HasSetting(NowPlayingBottom)</visible>
 				<include>Animation_WindowFade200</include>
-	<!--CDArt right-->
+				<!--CDArt right-->
 				<!--vinyl-->
 				<control type="image">
 					<visible>!Skin.HasSetting(NowPlayingBottomColorCD) + !Skin.HasSetting(NowPlayingBottomMidCD)</visible>
@@ -112,7 +112,7 @@
 					<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-	<!-- Background need to be behind the Mid CDArt-->
+				<!-- Background need to be behind the Mid CDArt-->
 				<control type="image">
 					<top>900</top>
 					<width>1920</width>
@@ -129,7 +129,7 @@
 					<animation effect="fade" time="500" delay="160">Visible</animation>
 					<animation effect="fade" time="700">Hidden</animation>
 				</control>
-	<!--CDArt mid-->
+				<!--CDArt mid-->
 				<!--vinyl-->
 				<control type="image">
 					<visible>!Skin.HasSetting(NowPlayingBottomColorCD) + Skin.HasSetting(NowPlayingBottomMidCD)</visible>
@@ -149,7 +149,7 @@
 					<texture background="true">common/cdart/vinyl.png</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-			<!--ColorCD-->
+				<!--ColorCD-->
 				<control type="image">
 					<visible>Skin.HasSetting(NowPlayingBottomColorCD) + Skin.HasSetting(NowPlayingBottomMidCD)</visible>
 					<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" delay="720">WindowOpen</animation>
@@ -227,7 +227,7 @@
 					<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
-	<!-- Movie CDArt-->
+				<!-- Movie CDArt-->
 				<control type="image">
 					<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" delay="720">WindowOpen</animation>
 					<animation type="WindowClose">
@@ -248,13 +248,12 @@
 				</control>
 			</control>
 		</control>
-	<!--Music Info-->
+		<!--Music Info-->
 		<control type="group">
 			<visible>Player.HasAudio + Skin.HasSetting(NowPlayingBottom)</visible>
 			<top>260</top>
 			<left>15</left>
 			<control type="group">
-				<left>0</left>
 				<top>695</top>
 				<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
 				<animation type="WindowClose" reversible="false">
@@ -262,8 +261,6 @@
 					<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
 				</animation>
 				<control type="image" id="8318">
-					<left>0</left>
-					<top>0</top>
 					<width>250</width>
 					<fadetime>400</fadetime>
 					<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
@@ -302,8 +299,6 @@
 				</control>
 				<control type="label">
 					<animation effect="slide" time="250" start="-270,10" end="0,0" tween="back" easing="out" condition="String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
-					<left>0</left>
-					<top>0</top>
 					<width>790</width>
 					<height>38</height>
 					<align>left</align>
@@ -363,8 +358,6 @@
 				</control>
 				<control type="label">
 					<visible>!MusicPartyMode.Enabled</visible>
-					<left>0</left>
-					<top>0</top>
 					<width>750</width>
 					<height>36</height>
 					<align>right</align>
@@ -376,8 +369,6 @@
 				</control>
 				<control type="label">
 					<visible>MusicPartyMode.Enabled</visible>
-					<left>0</left>
-					<top>0</top>
 					<width>750</width>
 					<height>36</height>
 					<align>right</align>
@@ -389,7 +380,6 @@
 				</control>
 				<control type="group">
 					<control type="label">
-						<left>0</left>
 						<top>40</top>
 						<width>750</width>
 						<height>36</height>
@@ -402,7 +392,6 @@
 						<include>Animation_VisibleChange400</include>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>65</top>
 						<width>750</width>
 						<height>36</height>
@@ -415,7 +404,6 @@
 						<include>Animation_VisibleChange400</include>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>90</top>
 						<width>750</width>
 						<height>36</height>
@@ -430,55 +418,53 @@
 				</control>
 			</control>
 		</control>
-<!--Video-->
-			<control type="group">
-				<left>0</left>
-				<top>0</top>
-				<visible>Player.HasVideo + Skin.HasSetting(NowPlayingBottom)</visible>
-				<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
-				<animation type="WindowClose" reversible="false">
-					<effect type="fade" start="100" end="0" time="240" />
-					<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-				</animation>
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			<visible>Player.HasVideo + Skin.HasSetting(NowPlayingBottom)</visible>
+			<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="fade" start="100" end="0" time="240" />
+				<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+			</animation>
 			<!--ClearLogo-->
-				<control type="image" id="9966">
-					<left>0</left>
-					<top>950</top>
-					<width>250</width>
-					<fadetime>400</fadetime>
-					<texture background="true">$VAR[HomeNowPlayingArtworkVar]</texture>
-					<aspectratio aligny="center" align="left">keep</aspectratio>
-					<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>
-				</control>
-			<!--Title-->
-				<control type="label">
-					<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
-					<left>-125</left>
-					<top>1000</top>
-					<width>790</width>
-					<height>38</height>
-					<align>left</align>
-					<scroll>true</scroll>
-					<font>font13</font>
-					<label>$VAR[HomeNowPlayingVideoTitleVar]</label>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>String.IsEmpty(Control.GetLabel(9966))</visible>
-				</control>
-			<!-- Outline-->
-				<control type="label">
-					<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
-					<left>1050</left>
-					<top>1000</top>
-					<width>700</width>
-					<height>38</height>
-					<align>right</align>
-					<font>font13</font>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<label>$VAR[HomeNowPlayingVideoEpisodeVar]</label>
-				</control>
+			<control type="image" id="9966">
+				<top>950</top>
+				<width>250</width>
+				<fadetime>400</fadetime>
+				<texture background="true">$VAR[HomeNowPlayingArtworkVar]</texture>
+				<aspectratio aligny="center" align="left">keep</aspectratio>
+				<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>
 			</control>
+			<!--Title-->
+			<control type="label">
+				<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+				<left>-125</left>
+				<top>1000</top>
+				<width>790</width>
+				<height>38</height>
+				<align>left</align>
+				<scroll>true</scroll>
+				<font>font13</font>
+				<label>$VAR[HomeNowPlayingVideoTitleVar]</label>
+				<textcolor>$VAR[TitleColorVar]</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>String.IsEmpty(Control.GetLabel(9966))</visible>
+			</control>
+			<!-- Outline-->
+			<control type="label">
+				<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+				<left>1050</left>
+				<top>1000</top>
+				<width>700</width>
+				<height>38</height>
+				<align>right</align>
+				<font>font13</font>
+				<textcolor>$VAR[TitleColorVar]</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<label>$VAR[HomeNowPlayingVideoEpisodeVar]</label>
+			</control>
+		</control>
 	</include>
 </includes>

@@ -587,7 +587,6 @@
 					<texture colordiffuse="white3">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<left></left>
 					<top>53</top>
 					<width>219</width>
 					<height>60</height>
@@ -619,7 +618,6 @@
 					<texture colordiffuse="white2">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<left></left>
 					<top>53</top>
 					<width>219</width>
 					<height>60</height>

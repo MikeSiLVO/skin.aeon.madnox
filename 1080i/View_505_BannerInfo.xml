@@ -47,7 +47,6 @@
 					<control type="image">
 						<width>980</width>
 						<height>181</height>
-						<aspectratio>stretch</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_banner_tp.png">$VAR[BannerVar]</texture>
 						<fadetime>400</fadetime>
 						<bordertexture border="2">thumbs/panel_border3.png</bordertexture>
@@ -155,7 +154,6 @@
 							<top>6</top>
 							<width>975</width>
 							<height>170</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" >$VAR[BannerVar]</texture>
 							<fadetime>400</fadetime>
 							<visible>[!String.IsEmpty(ListItem.Art(banner)) + [!Skin.HasSetting(BannerInfoUseLogo) | !ListItem.IsCollection ]] | !String.IsEmpty(ListItem.Art(fanart)) + !ListItem.IsCollection + Skin.HasSetting(BannerInfoEnableCases)</visible>
@@ -276,7 +274,6 @@
 						<width>984</width>
 						<height>191</height>
 						<texture background="true">homewidgets/case/banner/$VAR[GlobalCaseVar]</texture>
-						<aspectratio>stretch</aspectratio>
 						<visible>Skin.HasSetting(BannerInfoEnableCases) + !ListItem.IsParentFolder</visible>
 					</control>
 				</focusedlayout>
@@ -347,7 +344,7 @@
 					<visible>Skin.HasSetting(SkinHelperAnimations) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.AnimatedFanart)) + !Skin.HasSetting(BannerInfoDisableAnimatedFanart)</visible>
 				</control>
 			</control>
-			
+
 			<control type="group">
 				<visible>Skin.HasSetting(BannerInfoPosterDisc) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 				<control type="image">
@@ -355,7 +352,6 @@
 					<posy>182</posy>
 					<width>285</width>
 					<height>385</height>
-					<aspectratio>stretch</aspectratio>
 					<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar]</texture>
 				</control>
 				<control type="image">
@@ -367,7 +363,7 @@
 					<texture background="true">$INFO[ListItem.Art(discart)]</texture>
 				</control>
 			</control>
-			
+
 			<control type="wraplist" id="6022">
 				<posx>1113</posx>
 				<posy>182</posy>
@@ -384,7 +380,6 @@
 					<control type="image">
 						<width>285</width>
 						<height>385</height>
-						<aspectratio>stretch</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar]</texture>
 					</control>
 					<control type="image">
@@ -397,7 +392,6 @@
 				</focusedlayout>
 				<content target="video" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 			</control>
-						
 			<control type="label">
 				<posx>1113</posx>
 				<posy>570</posy>
@@ -575,7 +569,6 @@
 					<posx>305</posx>
 					<posy>-1</posy>
 					<control type="label">
-						<left>0</left>
 						<width>200</width>
 						<height>60</height>
 						<align>center</align>

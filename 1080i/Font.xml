@@ -373,7 +373,7 @@
 			<linespacing>0.8</linespacing>
 			<size>73</size>
 		</font>
-		
+
 		<font>
 			<name>fontOutline</name>
 			<filename>aeon_common.ttf</filename>
@@ -384,13 +384,10 @@
 		<font>
 			<name>font15</name>
 			<filename>aeon_common.ttf</filename>
-			<style></style>
 			<aspect>1.2</aspect>
 			<size>31</size>
 		</font>
-	
-		
-		
+
 		<font>
 			<name>Font_Reg22_2</name>
 			<filename>OpenSans-Regular.ttf</filename>
@@ -514,12 +511,6 @@
 			<filename>webhostinghub-glyphs.ttf</filename>
 			<size>36</size>
 		</font>
-		<!--font>
-			<name>unique</name>
-			<filename>unique.ttf</filename>
-			<style>uppercase bold</style>
-			<size>48</size>
-		</font-->
 		<font>
 			<name>font_SimplerE3D_20</name>
 			<filename>a_SimplerE3D.ttf</filename>
@@ -1569,12 +1560,6 @@
 			<size>29</size>
 		</font>
 		<font>
-			<name>Font_Reg28</name>
-			<filename>OpenSansCond.ttf</filename>
-			<linespacing>0.84</linespacing>
-			<size>28</size>
-		</font>
-		<font>
 			<name>Font_Reg28_2</name>
 			<filename>OpenSansCond.ttf</filename>
 			<size>28</size>
@@ -1950,12 +1935,6 @@
 			<filename>MC360.ttf</filename>
 			<linespacing>0.80</linespacing>
 			<size>29</size>
-		</font>
-		<font>
-			<name>Font_Reg28</name>
-			<filename>MC360.ttf</filename>
-			<linespacing>0.84</linespacing>
-			<size>28</size>
 		</font>
 		<font>
 			<name>Font_Reg28_2</name>
@@ -2339,11 +2318,6 @@
 			<size>31</size>
 		</font>
 		<font>
-			<name>Font_Reg28</name>
-			<filename>Ubuntu-C.ttf</filename>
-			<size>30</size>
-		</font>
-		<font>
 			<name>Font_Reg28_2</name>
 			<filename>Ubuntu-C.ttf</filename>
 			<size>30</size>
@@ -2676,11 +2650,6 @@
 			<name>Font_Reg29</name>
 			<filename>Ubuntu-R_KOR.ttf</filename>
 			<size>27</size>
-		</font>
-		<font>
-			<name>Font_Reg28</name>
-			<filename>Ubuntu-R_KOR.ttf</filename>
-			<size>26</size>
 		</font>
 		<font>
 			<name>Font_Reg28_2</name>
@@ -3072,12 +3041,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>Font_Reg28</name>
-			<filename>MC360.ttf</filename>
-			<linespacing>0.84</linespacing>
-			<size>28</size>
-		</font>
-		<font>
 			<name>Font_Reg28_2</name>
 			<filename>MC360.ttf</filename>
 			<size>28</size>
@@ -3446,12 +3409,6 @@
 			<size>33</size>
 		</font>
 		<font>
-			<name>Font_Reg28</name>
-			<filename>MC360.ttf</filename>
-			<linespacing>0.84</linespacing>
-			<size>32</size>
-		</font>
-		<font>
 			<name>Font_Reg28_2</name>
 			<filename>MC360.ttf</filename>
 			<linespacing>0.83</linespacing>
@@ -3801,11 +3758,6 @@
 			<size>27</size>
 		</font>
 		<font>
-			<name>Font_Reg28</name>
-			<filename>arial.ttf</filename>
-			<size>26</size>
-		</font>
-		<font>
 			<name>Font_Info</name>
 			<filename>arial.ttf</filename>
 			<linespacing>0.80</linespacing>
@@ -3931,7 +3883,7 @@
 			<name>Font_Bold28</name>
 			<filename>arial.ttf</filename>
 			<size>24</size>
-		</font>	 
+		</font>
 		<font>
 			<name>Font_Bold24</name>
 			<filename>arial.ttf</filename>
@@ -3964,5 +3916,4 @@
 			<size>20</size>
 		</font>
 	</fontset>
-
 </fonts>

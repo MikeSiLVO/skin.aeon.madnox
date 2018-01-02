@@ -58,7 +58,6 @@
 			<itemlayout height="80" width="620">
 				<control type="image">
 					<left>10</left>
-					<top>0</top>
 					<width>640</width>
 					<height>80</height>
 					<texture colordiffuse="$VAR[ColorDiffuseVar]" border="1">osd/osd_settings_buttonnf.png</texture>
@@ -102,7 +101,6 @@
 			<focusedlayout height="80" width="620">
 				<control type="image">
 					<left>10</left>
-					<top>0</top>
 					<width>640</width>
 					<height>80</height>
 					<texture colordiffuse="$VAR[ColorDiffuseVar]" border="1">osd/osd_settings_buttonnf.png</texture>

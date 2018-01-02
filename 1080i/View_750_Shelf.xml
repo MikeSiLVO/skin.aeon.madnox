@@ -214,7 +214,6 @@
 				</control>
 				<control type="fixedlist" id="750">
 					<viewtype label="Shelf 3D">list</viewtype>
-					<left>0</left>
 					<top>415</top>
 					<height>920</height>
 					<width>2100</width>
@@ -262,7 +261,6 @@
 								<width>207</width>
 								<height>333</height>
 								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>58</left>
@@ -279,7 +277,6 @@
 								<width>240</width>
 								<height>380</height>
 								<texture background="true">thumbs/boxes/steelbooks/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-100</left>
@@ -323,7 +320,6 @@
 								<width>277</width>
 								<height>470</height>
 								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
-								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-115</left>
@@ -331,7 +327,6 @@
 								<width>276</width>
 								<height>480</height>
 								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" flipy="true" background="true">$VAR[ListPosterVar]</texture>
-								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<colordiffuse>61FFFFFF</colordiffuse>
 							</control>
 							<control type="image">
@@ -349,7 +344,6 @@
 								<width>320</width>
 								<height>540</height>
 								<texture background="true">thumbs/boxes/steelbooks/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-148</left>
@@ -358,7 +352,6 @@
 								<height>540</height>
 								<colordiffuse>61FFFFFF</colordiffuse>
 								<texture flipy="true">thumbs/boxes/steelbooks/$VAR[GlobalCaseVar]</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</focusedlayout>
@@ -501,7 +494,6 @@
 						<visible>!Skin.HasSetting(coloredflags)</visible>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<include>MediaFlagVarsShelf</include>
 						<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec)</visible>
@@ -531,7 +523,6 @@
 						<width>162.5</width>
 						<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>162.5</width>
 							<height>60</height>
@@ -557,7 +548,6 @@
 						<left>250</left>
 						<top>-6</top>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>162.5</width>
 							<height>60</height>
@@ -583,7 +573,6 @@
 						<left>380</left>
 						<top>-6</top>
 						<control type="label">
-							<left>0</left>
 							<width>200</width>
 							<height>60</height>
 							<align>center</align>
@@ -871,7 +860,6 @@
 				</control>
 				<control type="fixedlist" id="750">
 					<viewtype label="Shelf 3D">list</viewtype>
-					<left>0</left>
 					<top>415</top>
 					<height>920</height>
 					<width>2550</width>
@@ -929,7 +917,6 @@
 								<width>258</width>
 								<height>240</height>
 								<texture background="true">thumbs/boxes/steelbooks/3d_cd.png</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-104</left>
@@ -937,7 +924,6 @@
 								<width>258</width>
 								<height>240</height>
 								<texture flipy="true"  background="true" >thumbs/boxes/steelbooks/3d_cd.png</texture>
-								<aspectratio>stretch</aspectratio>
 								<colordiffuse>61FFFFFF</colordiffuse>
 							</control>
 						</control>
@@ -951,7 +937,7 @@
 							<font>font_cdvv_10</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+							<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 							<label>$INFO[ListItem.Artist]</label>
 							<visible>Container.Content(artists) + Skin.HasSetting(Shelf3DSpineText)</visible>
 							<animation type="Focus" reversible="false">
@@ -983,7 +969,7 @@
 							<font>font_cdvv_10</font>
 							<textcolor>white</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+							<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 							<label>$INFO[ListItem.Tracknumber]: $INFO[ListItem.Title]</label>
 							<visible>Container.Content(songs) + Skin.HasSetting(Shelf3DSpineText)</visible>
 							<animation effect="rotate" center="auto" start="" end="-90" time="0" condition="true">Conditional</animation>
@@ -1023,7 +1009,6 @@
 								<width>400</width>
 								<height>370</height>
 								<texture background="true">thumbs/boxes/steelbooks/3d_cd.png</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
 								<left>-148</left>
@@ -1031,7 +1016,6 @@
 								<width>400</width>
 								<height>370</height>
 								<texture flipy="true">thumbs/boxes/steelbooks/3d_cd.png</texture>
-								<aspectratio>stretch</aspectratio>
 							</control>
 						</control>
 					</focusedlayout>
@@ -1057,7 +1041,7 @@
 					<font>Font_MainClassic3.low</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>00000000</shadowcolor>
-					<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+					<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 					<label>$INFO[ListItem.Tracknumber]: $INFO[ListItem.Title]</label>
 					<visible>Container.Content(songs) + !Skin.HasSetting(Shelf3DSpineText)</visible>
 				</control>
@@ -1071,7 +1055,7 @@
 					<font>Font_MainClassic3.low</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+					<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>Container.Content(albums) + !Skin.HasSetting(Shelf3DSpineText)</visible>
 				</control>
@@ -1085,7 +1069,7 @@
 					<font>font_cdvv_18</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+					<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 					<label>$INFO[ListItem.Artist]</label>
 					<visible>Container.Content(artists) + Skin.HasSetting(Shelf3DSpineText)</visible>
 					<animation effect="rotate" center="auto" start="" end="-90" time="0" condition="true">Conditional</animation>
@@ -1099,7 +1083,7 @@
 					<font>font_cdvv_18</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+					<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>Container.Content(albums) + Skin.HasSetting(Shelf3DSpineText)</visible>
 					<animation effect="rotate" center="auto" start="" end="-90" time="0" condition="true">Conditional</animation>
@@ -1113,7 +1097,7 @@
 					<font>font_cdvv_18</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<autoscroll delay="3000" time="1000" repeat="5000"></autoscroll>
+					<autoscroll delay="3000" time="1000" repeat="5000">true</autoscroll>
 					<label>$INFO[ListItem.Tracknumber]: $INFO[ListItem.Title]</label>
 					<visible>Container.Content(songs) + Skin.HasSetting(Shelf3DSpineText)</visible>
 					<animation effect="rotate" center="auto" start="" end="-90" time="0" condition="true">Conditional</animation>

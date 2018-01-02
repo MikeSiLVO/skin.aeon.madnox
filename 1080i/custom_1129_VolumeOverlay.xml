@@ -39,12 +39,10 @@
 				<visible>!Player.Muted + !player.passthrough</visible>
 				<control type="image">
 					<left>-10</left>
-					<top>0</top>
 					<width>150</width>
 					<height>150</height>
 					<align>center</align>
 					<texture colordiffuse="$VAR[VolumeColorVar]">$VAR[VolumeIconVar]</texture>
-					<fadetime>0</fadetime>
 				</control>
 			</control>
 			<control type="group">
@@ -67,7 +65,6 @@
 			</control>
 			<control type="label">
 				<left>15</left>
-				<top>0</top>
 				<width>320</width>
 				<height>160</height>
 				<align>left</align>

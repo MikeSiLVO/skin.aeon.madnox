@@ -394,8 +394,8 @@
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(ListCase)</visible>
-				<control type="image" id="3822">   		<!-- Poster round edges -->
-					<left>0</left>
+				<!-- Poster round edges -->
+				<control type="image" id="3822">
 					<top>787</top>
 					<width>497</width>
 					<height>680</height>
@@ -981,7 +981,6 @@
 						<width>102.5</width>
 						<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>262.5</width>
 							<height>60</height>
@@ -998,7 +997,6 @@
 						<left>210</left>
 						<top>166</top>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>262.5</width>
 							<height>60</height>
@@ -1190,7 +1188,6 @@
 						<height>826</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
-						<fadetime>0</fadetime>
 						<colordiffuse>FF000000</colordiffuse>
 						<bordersize>17</bordersize>
 						<visible>[!Skin.HasSetting(listcdart) + Container.Content(movies)] | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
@@ -1223,7 +1220,6 @@
 						<height>826</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture background="true">$VAR[ListPosterVar]</texture>
-						<fadetime>0</fadetime>
 						<colordiffuse>FF000000</colordiffuse>
 						<bordersize>17</bordersize>
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
@@ -1239,8 +1235,8 @@
 						<bordersize>19</bordersize>
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
 					</control>
-					<control type="image">			<!-- Poster hard corners ground reflect with disc -->
-						<left>0</left>
+					<!-- Poster hard corners ground reflect with disc -->
+					<control type="image">
 						<top>772</top>
 						<width>512</width>
 						<height>765</height>
@@ -1251,7 +1247,6 @@
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
 					</control>
 				</control>
-
 				<control type="group">
 					<visible>[!Container.Content(episodes) + Skin.HasSetting(ListCase)] | [Container.Content(episodes) + Skin.HasSetting(listshowposter) + Skin.HasSetting(ListCase)]</visible>
 					<control type="image">
@@ -1313,11 +1308,10 @@
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
 					</control>
 				</control>
-
 				<control type="group">
 					<visible>[Container.Content(episodes) + Skin.HasSetting(ListCase)] | [Container.Content(epsiodes) + Skin.HasSetting(listshowposter) + Skin.HasSetting(ListCase)]</visible>
-					<control type="image" id="3822">   		<!-- Poster round edges -->
-						<left>0</left>
+					<!-- Poster round edges -->
+					<control type="image" id="3822">
 						<top>787</top>
 						<width>497</width>
 						<height>680</height>
@@ -1362,7 +1356,6 @@
 					<height>510</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="thumbs/cdcover_mask.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -1445,7 +1438,6 @@
 					<height>320</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true" diffuse="thumbs/cdcover_mask.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>250</top>
@@ -1489,7 +1481,6 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true">common/bgcolor.png</texture>
 					<visible>!String.Contains(ListItem.Path,videodevil)</visible>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -1500,7 +1491,6 @@
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<visible>!String.Contains(ListItem.Path,videodevil)</visible>
 				</control>
-				
 				<control type="image">
 					<left>-20</left>
 					<top>325</top>
@@ -1509,7 +1499,6 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true">common/bgcolor.png</texture>
 					<visible>String.Contains(ListItem.Path,videodevil)</visible>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<left>-20</left>
@@ -1521,7 +1510,6 @@
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<visible>String.Contains(ListItem.Path,videodevil)</visible>
 				</control>
-				
 				<control type="image">
 					<top>766</top>
 					<width>510</width>
@@ -1573,7 +1561,6 @@
 					<height>320</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<texture background="true">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>250</top>

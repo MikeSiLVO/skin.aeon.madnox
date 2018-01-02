@@ -21,26 +21,7 @@
 		<control type="group"><!-- default group -->
 			<animation effect="fade" time="400">VisibleChange</animation>
 			<visible>Control.IsVisible(900)</visible>
-			<!--control type="image">
-			<left>10</left>
-			<top>60</top>
-			<width>1900</width>
-			<height>810</height>
-			<texture>views/other/panel.png</texture>
-			<colordiffuse>F9000000</colordiffuse>
-			<animation effect="fade" end="85" condition="true">Conditional</animation>
-		</control-->
-			<!--control type="image">
-			<left>900</left>
-			<top>690</top>
-			<width>380</width>
-			<height>362</height>
-			<texture flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel.png</texture>
-			<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
-			<animation effect="fade" end="85" condition="true">Conditional</animation>
-		</control-->
 			<control type="image">
-				<left>0</left>
 				<top>471</top>
 				<width>1950</width>
 				<height>30</height>
@@ -48,12 +29,9 @@
 				<colordiffuse>C3FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>0</top>
 				<width>1920</width>
 				<height>362</height>
 				<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
-				<!--texture flipy="true" diffuse="thumbs/reflection_diffuse_sq.png">views/other/panel.png</texture-->
 				<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
@@ -68,17 +46,7 @@
 				<animation effect="fade" end="85" condition="true">Conditional</animation>
 			</control>
 			<!-- MAD - Shadow for clearlogo -->
-			<!--control type="image">
-			<left>1470</left>
-			<top>140</top>
-			<width>390</width>
-			<height>164</height>
-			<texture>shadow_h.png</texture>
-			<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
-			<animation effect="fade" end="85" condition="true">Conditional</animation>
-		</control-->
 			<control type="image">
-				<left>0</left>
 				<top>501</top>
 				<width>1920</width>
 				<height>360</height>
@@ -105,7 +73,6 @@
 				<visible>Control.HasFocus(5801)</visible>
 			</control>
 			<control type="image">
-				<!--Source logo-->
 				<top>920</top>
 				<left>115</left>
 				<texture>$VAR[ColorFlagsSource]source/$VAR[MovieSetsSourceFlagVar,,.png]</texture>
@@ -113,14 +80,12 @@
 				<animation effect="slide" end="64" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 			</control>
 			<control type="image">
-				<!--Resolution logo-->
 				<top>915</top>
 				<left>415</left>
 				<texture>$VAR[ColorFlagsResolution]resolution/$INFO[Container(5801).ListItem.VideoResolution,,.png]</texture>
 				<include>AudioFlagsVars</include>
 			</control>
 			<control type="image">
-				<!--AspectRatio logo-->
 				<top>915</top>
 				<left>715</left>
 				<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[Container(5801).ListItem.VideoAspect,,.png]</texture>
@@ -332,7 +297,7 @@
 				<font>Font18a</font>
 				<label>$INFO[Container(5801).ListItem.Plot]</label>
 				<textcolor>FFFFFAF0</textcolor>
-				<autoscroll delay="8000" time="2000" repeat="8000"></autoscroll>
+				<autoscroll delay="8000" time="2000" repeat="8000">true</autoscroll>
 				<visible>Control.HasFocus(5801)</visible>
 			</control>
 			<control type="image"><!-- Fanart -->
@@ -411,8 +376,6 @@
 					<visible>Container.Content(movies) | Container.Content(sets)</visible>
 					<itemlayout height="40">
 						<control type="image">
-							<left>0</left>
-							<top>0</top>
 							<width>380</width>
 							<height>1</height>
 							<texture>separator2.png</texture>
@@ -1105,7 +1068,6 @@
 			<visible>Control.HasFocus(160)</visible>
 			<animation effect="slide" start="0,0" end="0,-80" time="600" delay="1000" tween="cubic" easing="inout" condition="Control.HasFocus(160)">Conditional</animation>
 			<control type="image">
-				<left>0</left>
 				<top>760</top>
 				<height>40</height>
 				<width>1280</width>
@@ -1114,7 +1076,6 @@
 				<include>Animation_DefaultGlass2</include>
 			</control>
 			<control type="label">
-				<left>0</left>
 				<top>760</top>
 				<height>40</height>
 				<width>1280</width>
@@ -1125,13 +1086,6 @@
 				<textcolor>FFFFFAF0</textcolor>
 				<scroll>true</scroll>
 			</control>
-			<!--control type="image">
-			<left>0</left>
-			<top>760</top>
-			<height>40</height>
-			<width>1280</width>
-			<texture>gradient_small.png</texture>
-		</control-->
 		</control>
 	</include>
 </includes>

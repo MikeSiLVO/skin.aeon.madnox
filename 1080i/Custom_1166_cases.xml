@@ -2,7 +2,6 @@
 <window id="1166" type="dialog">
 	<defaultcontrol always="true">451</defaultcontrol>
 	<coordinates>
-		<left>0</left>
 		<top>-500</top>
 		<system>1</system>
 	</coordinates>
@@ -67,12 +66,10 @@
 						<colordiffuse>55ffffff</colordiffuse>
 					</control>
 					<control type="label">
-						<left></left>
 						<top>115</top>
 						<width>250</width>
 						<height>30</height>
 						<align>center</align>
-						<font>Font_Reg28</font>
 						<textcolor>bcicon</textcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -117,12 +114,10 @@
 						<visible>String.IsEqual(ListItem.Property(casetype),none)</visible>
 					</control>
 					<control type="label">
-						<left></left>
 						<top>115</top>
 						<width>250</width>
 						<height>30</height>
 						<align>center</align>
-						<font>Font_Reg28</font>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>

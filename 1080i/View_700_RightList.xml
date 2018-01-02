@@ -395,7 +395,7 @@
 					<font>font14_textbox</font>
 					<pagecontrol>63</pagecontrol>
 					<include>ShowCaseInfoPanelButtonsValues</include>
-					<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 				<control type="scrollbar" id="63">
 					<left>640</left>
@@ -523,7 +523,6 @@
 						<width>162.5</width>
 						<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>162.5</width>
 							<height>60</height>
@@ -549,7 +548,6 @@
 						<left>1100</left>
 						<top>-6</top>
 						<control type="label">
-							<left>0</left>
 							<top>2</top>
 							<width>162.5</width>
 							<height>60</height>
@@ -575,7 +573,6 @@
 						<left>1220</left>
 						<top>-6</top>
 						<control type="label">
-							<left>0</left>
 							<width>200</width>
 							<height>60</height>
 							<align>center</align>
@@ -867,7 +864,6 @@
 						<left>736</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -949,7 +945,6 @@
 						<left>736</left>
 						<top>10</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -1004,7 +999,6 @@
 						<left>742</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -1076,7 +1070,6 @@
 						<left>742</left>
 						<top>10</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -1131,7 +1124,6 @@
 						<left>742</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>1</top>
 							<width>72</width>
 							<height>72</height>
@@ -1196,7 +1188,6 @@
 						<left>742</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>-1</top>
 							<width>72</width>
 							<height>72</height>
@@ -1244,7 +1235,6 @@
 						<left>742</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -1292,7 +1282,6 @@
 						<left>742</left>
 						<top>-1</top>
 						<control type="image">
-							<left>0</left>
 							<top>3</top>
 							<width>64</width>
 							<height>64</height>
@@ -1632,7 +1621,6 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>homewidgets/glass/banner.png</texture>
 				<visible>Skin.HasSetting(rightlistBannerartist) + [!String.IsEmpty(Control.GetLabel(6565)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 				<animation effect="slide" start="0,280" end="0" time="500" tween="cubic" delay="50" condition="!Container.Content(Artists)">Conditional</animation>
@@ -1643,7 +1631,6 @@
 				<top>95</top>
 				<width>763</width>
 				<height>150</height>
-				<aspectratio>stretch</aspectratio>
 				<texture>thumbs_square/banner_shadow_in.png</texture>
 				<visible>Skin.HasSetting(rightlistBannerartist) + [!String.IsEmpty(Control.GetLabel(6565)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 				<animation effect="slide" start="0,280" end="0" time="500" tween="cubic" delay="50" condition="!Container.Content(Artists)">Conditional</animation>
@@ -1781,7 +1768,6 @@
 					<height>410</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true" diffuse="thumbs/cdcover_mask.png">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -1822,7 +1808,6 @@
 					<height>410</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<texture background="true">common/bgcolor.png</texture>
-					<fadetime>0</fadetime>
 				</control>
 				<control type="image">
 					<top>255</top>
@@ -1879,7 +1864,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10</font>
-				<autoscroll time="1000" delay="4000" repeat="5000"></autoscroll>
+				<autoscroll time="1000" delay="4000" repeat="5000">true</autoscroll>
 				<visible>!ListItem.IsParentFolder + Container.Content(albums) + Skin.HasSetting(RightListShowTracks)</visible>
 			</control>
 			<control type="textbox">
@@ -1892,7 +1877,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10</font>
-				<autoscroll time="1500" delay="4000" repeat="5000"></autoscroll>
+				<autoscroll time="1500" delay="4000" repeat="5000">true</autoscroll>
 				<visible>Skin.HasSetting(RightListShowCDs) + Container.Content(artists)</visible>
 			</control>
 			<control type="textbox">
@@ -1905,7 +1890,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10</font>
-				<autoscroll time="1500" delay="8000" repeat="5000"></autoscroll>
+				<autoscroll time="1500" delay="8000" repeat="5000">true</autoscroll>
 				<visible>Skin.HasSetting(RightListShowInfo)</visible>
 			</control>
 			</control>
@@ -2134,7 +2119,6 @@
 					</control>
 					<control type="image">
 						<top>-11</top>
-						<left>0</left>
 						<width>840</width>
 						<height>90</height>
 						<texture border="0" colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo2.png</texture>

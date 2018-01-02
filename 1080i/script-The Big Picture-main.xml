@@ -15,8 +15,6 @@
 		</control>
 		<control type="image">
 			<description>Main background</description>
-			<left>0</left>
-			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<texture>common/bgcolor.png</texture>
@@ -34,8 +32,6 @@
 		</control>
 		<control type="wraplist" id="100">
 			<description>List of Images</description>
-			<left>0</left>
-			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
 			<scrolltime tween="cubic" easing="inout">500</scrolltime>
@@ -44,8 +40,6 @@
 			<itemlayout width="1920" height="1080">
 				<control type="image">
 					<description>Picture in ratio scale</description>
-					<left>0</left>
-					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<aspectratio>scale</aspectratio>
@@ -54,8 +48,6 @@
 				</control>
 				<control type="image">
 					<description>Picture in ratio keep (default)</description>
-					<left>0</left>
-					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<aspectratio>keep</aspectratio>
@@ -66,8 +58,6 @@
 			<focusedlayout width="1920" height="1080">
 				<control type="image">
 					<description>Picture in ratio scale</description>
-					<left>0</left>
-					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<aspectratio>scale</aspectratio>
@@ -76,8 +66,6 @@
 				</control>
 				<control type="image">
 					<description>Picture in ratio keep (default)</description>
-					<left>0</left>
-					<top>0</top>
 					<width>1920</width>
 					<height>1080</height>
 					<aspectratio>keep</aspectratio>
@@ -181,7 +169,7 @@
 			</control>
 		</control>
 		<control type="label">
-			<label></label>
+			<label />
 			<description>TEST label</description>
 			<left>240</left>
 			<top>200</top>

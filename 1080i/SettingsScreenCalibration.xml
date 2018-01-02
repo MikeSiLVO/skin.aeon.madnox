@@ -39,7 +39,7 @@
 			<texturefocus>calibration/calibrate-subtitles-focus.png</texturefocus>
 			<texturenofocus>calibration/calibrate-subtitles.png</texturenofocus>
 		</control>
-		<control type="resize" id="11"></control>
+		<control type="resize" id="11" />
 		<control type="group">
 			<left>30</left>
 			<top>120</top>

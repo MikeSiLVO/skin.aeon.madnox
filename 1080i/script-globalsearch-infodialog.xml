@@ -3,8 +3,6 @@
 	<defaultcontrol />
 	<coordinates>
 		<system>1</system>
-		<left>0</left>
-		<top>0</top>
 	</coordinates>
 	<include>DialogOpenCloseAnimation</include>
 	<controls>
@@ -22,8 +20,6 @@
 			<top>158</top>
 			<control type="image">
 				<description>background image</description>
-				<left>0</left>
-				<top>0</top>
 				<width>1522</width>
 				<height>764</height>
 				<texture border="40">back.png</texture>
@@ -138,7 +134,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(110)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -255,7 +251,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(110)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -336,7 +332,7 @@
 							<label2>$INFO[Container(100).ListItem.Property(PlotOutline)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(PlotOutline))</visible>
-							<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+							<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 						</item>
 						<item>
 							<label>$LOCALIZE[20074]:</label>
@@ -409,7 +405,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(120)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -544,7 +540,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(130)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -649,7 +645,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(140)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -790,7 +786,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(150)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -925,7 +921,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(160)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -1060,7 +1056,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(170)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -1201,7 +1197,7 @@
 							<top>1</top>
 							<width>569</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+							<texture colordiffuse="$VAR[FocusTextureColorVar]" border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(180)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -1301,7 +1297,7 @@
 				<textcolor>grey</textcolor>
 				<pagecontrol>195</pagecontrol>
 				<label>$INFO[Container(100).ListItem.Property(Plot)]</label>
-				<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
 			</control>
 			<control type="scrollbar" id="195">
@@ -1327,7 +1323,7 @@
 				<textcolor>grey</textcolor>
 				<pagecontrol>195</pagecontrol>
 				<label>$INFO[Container(100).ListItem.Property(Plot)]</label>
-				<autoscroll time="3000" delay="4000" repeat="5000"></autoscroll>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<visible>![Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)]</visible>
 			</control>
 			<control type="scrollbar" id="195">

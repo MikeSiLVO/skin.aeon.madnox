@@ -145,7 +145,6 @@
 						<left>278</left>
 						<top>-120</top>
 						<control type="label">
-							<left>0</left>
 							<top>645</top>
 							<width>255</width>
 							<height>52</height>
@@ -155,7 +154,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>690</top>
 							<width>255</width>
 							<height>52</height>
@@ -165,7 +163,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>735</top>
 							<width>255</width>
 							<height>52</height>
@@ -175,7 +172,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>780</top>
 							<width>255</width>
 							<height>52</height>
@@ -185,7 +181,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>825</top>
 							<width>255</width>
 							<height>52</height>
@@ -195,7 +190,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>870</top>
 							<width>255</width>
 							<height>52</height>
@@ -205,7 +199,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>915</top>
 							<width>255</width>
 							<height>52</height>
@@ -1509,7 +1502,7 @@
 								<content>
 									<item>
 										<label>31875</label>
-										<icon></icon>
+										<icon />
 										<onclick>noop</onclick>
 										<visible>String.IsEmpty(Window.Property(Video.1.Title)) + String.IsEmpty(Window.Property(Video.2.Title)) + String.IsEmpty(Window.Property(Video.3.Title)) + String.IsEmpty(Window.Property(MapList.1.MapLabel.1)) + String.IsEmpty(Window.Property(MapList.1.MapLabel.2)) + String.IsEmpty(Window.Property(MapList.1.MapLabel.3))</visible>
 									</item>
@@ -1799,7 +1792,6 @@
 								<height>532</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[Window.Property(Map.1.Area)]</texture>
-								<fadetime>0</fadetime>
 								<animation effect="zoom" end="-892,0,1920,1080" time="640" tween="cubic" condition="!String.IsEmpty(Window(weather).Property(FSMap))">Conditional</animation>
 								<visible>Skin.HasSetting(WeatherMap1)</visible>
 							</control>
@@ -1810,7 +1802,6 @@
 								<height>532</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[Window.Property(Map.2.Area)]</texture>
-								<fadetime>0</fadetime>
 								<animation effect="zoom" end="-892,0,1920,1080" time="640" tween="cubic" condition="!String.IsEmpty(Window(weather).Property(FSMap))">Conditional</animation>
 								<visible>Skin.HasSetting(WeatherMap2)</visible>
 							</control>
@@ -1821,7 +1812,6 @@
 								<height>532</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[Window.Property(Map.3.Area)]</texture>
-								<fadetime>0</fadetime>
 								<animation effect="zoom" end="-892,0,1920,1080" time="640" tween="cubic" condition="!String.IsEmpty(Window(weather).Property(FSMap))">Conditional</animation>
 								<visible>Skin.HasSetting(WeatherMap3)</visible>
 							</control>
@@ -1863,7 +1853,6 @@
 							<include>Animation_VisibleChange200</include>
 							<itemlayout width="210" height="195">
 								<control type="label">
-									<left></left>
 									<width>210</width>
 									<height>34</height>
 									<align>center</align>
@@ -1879,7 +1868,6 @@
 									<info>ListItem.ActualIcon</info>
 								</control>
 								<control type="label">
-									<left></left>
 									<top>158</top>
 									<width>210</width>
 									<height>34</height>
@@ -1889,7 +1877,6 @@
 							</itemlayout>
 							<focusedlayout width="210" height="195">
 								<control type="label">
-									<left></left>
 									<width>210</width>
 									<height>34</height>
 									<align>center</align>
@@ -1905,7 +1892,6 @@
 									<info>ListItem.ActualIcon</info>
 								</control>
 								<control type="label">
-									<left></left>
 									<top>158</top>
 									<width>210</width>
 									<height>34</height>
@@ -1995,7 +1981,6 @@
 					<textoffsetx>0</textoffsetx>
 					<align>right</align>
 					<label>$INFO[Window.Property(Alerts.RSS)]</label>
-					<font>Font_Reg28</font>
 					<textcolor>floor</textcolor>
 					<scroll>true</scroll>
 					<scrollspeed>30</scrollspeed>
@@ -2066,7 +2051,6 @@
 						<left>278</left>
 						<top>-120</top>
 						<control type="label">
-							<left>0</left>
 							<top>645</top>
 							<width>255</width>
 							<height>52</height>
@@ -2076,7 +2060,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>690</top>
 							<width>255</width>
 							<height>52</height>
@@ -2086,7 +2069,6 @@
 							<textcolor>grey2</textcolor>
 						</control>
 						<control type="label">
-							<left>0</left>
 							<top>735</top>
 							<width>255</width>
 							<height>52</height>

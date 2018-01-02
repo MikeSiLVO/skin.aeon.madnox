@@ -148,11 +148,11 @@
 			<effect type="slide" start="0,-52" end="0,0" time="240" tween="cubic" easing="in" />
 		</animation>
 	</include>
-	<include name="Animation_HomeWidget">
+	<!-- <include name="Animation_HomeWidget">
 		<animation effect="fade" delay="800" time="400">WindowOpen</animation>
 		<animation effect="fade" time="160">WindowClose</animation>
 		<animation effect="fade" time="240">VisibleChange</animation>
-	</include>
+	</include> -->
 	<include name="TopbarPulseAnimationLeft">
 		<animation effect="fade" start="100" end="20" time="1600" pulse="true" condition="true">Conditional</animation>
 	</include>

@@ -32,7 +32,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem9Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -42,7 +41,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem9Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -52,7 +50,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem9Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -62,7 +59,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem9Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -107,7 +103,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -117,7 +112,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -127,7 +121,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -137,7 +130,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -182,7 +174,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -192,7 +183,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -202,7 +192,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -212,7 +201,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -257,7 +245,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -267,7 +254,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -277,7 +263,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -287,7 +272,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -332,7 +316,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -342,7 +325,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -352,7 +334,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -362,7 +343,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -407,7 +387,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -417,7 +396,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -427,7 +405,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -437,7 +414,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -482,7 +458,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -492,7 +467,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -502,7 +476,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -512,7 +485,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -557,7 +529,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -567,7 +538,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -577,7 +547,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -587,7 +556,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -632,7 +600,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -642,7 +609,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -652,7 +618,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -662,7 +627,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -733,7 +697,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -743,7 +706,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -753,7 +715,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -763,7 +724,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -826,7 +786,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -836,7 +795,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -846,7 +804,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -856,7 +813,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -901,7 +857,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -911,7 +866,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -921,7 +875,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -931,7 +884,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -976,7 +928,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -986,7 +937,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -996,7 +946,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1006,7 +955,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1051,7 +999,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1061,7 +1008,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1071,7 +1017,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1081,7 +1026,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1126,7 +1070,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1136,7 +1079,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 
@@ -1147,7 +1089,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1157,7 +1098,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1202,7 +1142,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1212,7 +1151,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1222,7 +1160,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1232,7 +1169,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1277,7 +1213,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1287,7 +1222,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1297,7 +1231,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1307,7 +1240,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1352,7 +1284,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1362,7 +1293,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1372,7 +1302,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1382,7 +1311,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1427,7 +1355,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1437,7 +1364,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1447,7 +1373,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1457,7 +1382,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1533,7 +1457,6 @@
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem-1Var]</texture>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
-								<fadetime>0</fadetime>
 							</control>
 							<control type="image">
 								<left>30</left>
@@ -1542,7 +1465,6 @@
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem-1Var]</texture>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
-								<fadetime>0</fadetime>
 							</control>
 							<control type="image">
 								<left>30</left>
@@ -1551,7 +1473,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem-1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1561,7 +1482,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem-1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1627,7 +1547,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1637,7 +1556,6 @@
 								<height>242</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1647,7 +1565,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1657,7 +1574,6 @@
 								<height>242</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem8Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1714,7 +1630,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1724,7 +1639,6 @@
 								<height>291</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1734,7 +1648,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1744,7 +1657,6 @@
 								<height>290</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem7Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1801,7 +1713,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1811,7 +1722,6 @@
 								<height>340</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1821,7 +1731,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1831,7 +1740,6 @@
 								<height>339</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem6Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1888,7 +1796,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1898,7 +1805,6 @@
 								<height>387</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1908,7 +1814,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1918,7 +1823,6 @@
 								<height>387</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem5Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1975,7 +1879,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1985,7 +1888,6 @@
 								<height>438</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -1995,7 +1897,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2005,7 +1906,6 @@
 								<height>438</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem4Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2062,7 +1962,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2072,7 +1971,6 @@
 								<height>488</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2082,7 +1980,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2092,7 +1989,6 @@
 								<height>488</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem3Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2149,7 +2045,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2159,7 +2054,6 @@
 								<height>537</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2169,7 +2063,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2179,7 +2072,6 @@
 								<height>537</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem2Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2236,7 +2128,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2246,7 +2137,6 @@
 								<height>586</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2256,7 +2146,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2266,7 +2155,6 @@
 								<height>586</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem1Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2335,7 +2223,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2345,7 +2232,6 @@
 								<height>636</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<texture background="true" diffuse="thumbs/posterdiffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2355,7 +2241,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>!Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -2365,7 +2250,6 @@
 								<height>636</height>
 								<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
 								<texture background="true" flipy="true" diffuse="thumbs/posterreflectiondiffuse2.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ShowcaseItem0Var]</texture>
-								<fadetime>0</fadetime>
 								<visible>Skin.HasSetting(genrethumbs)</visible>
 							</control>
 							<control type="image">
@@ -3210,7 +3094,6 @@
 							<width>102.5</width>
 							<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 							<control type="label">
-								<left>0</left>
 								<top>2</top>
 								<width>262.5</width>
 								<height>60</height>
@@ -3227,7 +3110,6 @@
 							<left>180</left>
 							<top>166</top>
 							<control type="label">
-								<left>0</left>
 								<top>2</top>
 								<width>262.5</width>
 								<height>60</height>
@@ -3324,7 +3206,6 @@
 			<visible>Control.IsVisible(510)</visible>
 		</control>
 		<control type="fixedlist" id="510">
-			<left>0</left>
 			<top>460</top>
 			<width>1890</width>
 			<height>560</height>
@@ -3340,8 +3221,8 @@
 			<visible>!String.IsEmpty(Container.FolderPath) + !Container.Content(years)</visible>
 			<visible>!Container.Content(countries) + !Container.Content(addons) + [!Container.Content(episodes) | String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/)]</visible>
 			<visible>![!String.IsEmpty(Skin.String(DisablePostersVL)) + Window.IsActive(videos)]</visible>
-			<itemlayout width="210" height="750"></itemlayout>
-			<focusedlayout width="210" height="750"></focusedlayout>
+			<itemlayout width="210" height="750" />
+			<focusedlayout width="210" height="750" />
 		</control>
 		<control type="button" id="5106">
 			<include>HiddenObject</include>

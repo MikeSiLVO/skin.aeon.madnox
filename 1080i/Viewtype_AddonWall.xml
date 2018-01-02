@@ -136,16 +136,13 @@
 							<left>19</left>
 							<width>249</width>
 							<height>249</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="DefaultAddonMusic.png" diffuse="thumbs/boxes/cdcover_mask_aa.png">$VAR[ThumbnailVar]</texture>
 							<animation effect="fade" end="70" time="0" condition="true">Conditional</animation>
 						</control>
 						<control type="image">
-							<left>0</left>
 							<top>-4</top>
 							<width>285</width>
 							<height>285</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true">wall/boxes/wall_overlay.png</texture>
 							<colordiffuse>77ffffff</colordiffuse>
 							<visible>[Container.Content(Albums) + Skin.HasSetting(addonwallmusicCase)] | [Container.Content(songs) + Skin.HasSetting(addonwallmusicCase2)]</visible>
@@ -163,15 +160,12 @@
 								<left>19</left>
 								<width>249</width>
 								<height>249</height>
-								<aspectratio>stretch</aspectratio>
 								<texture background="true"  diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
 							</control>
 							<control type="image">
-								<left>0</left>
 								<top>-4</top>
 								<width>285</width>
 								<height>285</height>
-								<aspectratio>stretch</aspectratio>
 								<texture background="true">wall/boxes/wall_overlay.png</texture>
 							</control>
 							<control type="image">
@@ -179,12 +173,10 @@
 								<top>1</top>
 								<width>268</width>
 								<height>268</height>
-								<aspectratio>stretch</aspectratio>
 								<texture border="5" colordiffuse="$VAR[FocusTextureColorVar]">views/addonwall_select.png</texture>
 								<bordersize>5</bordersize>
 							</control>
 						</control>
-
 						<control type="group">    <!-- no case -->
 							<animation type="Focus" condition="Skin.HasSetting(InfoWallZoom)">
 								<effect type="zoom" start="60" end="130" time="200" tween="sine" easing="inout" center="auto"/>
@@ -196,7 +188,6 @@
 								<left>19</left>
 								<width>249</width>
 								<height>249</height>
-								<aspectratio>stretch</aspectratio>
 								<texture background="true"  diffuse="thumbs/boxes/cdcover_mask_aa.png" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
 							</control>
 							<control type="image">
@@ -204,12 +195,10 @@
 								<top>6</top>
 								<width>261</width>
 								<height>260</height>
-								<aspectratio>stretch</aspectratio>
 								<texture border="5" colordiffuse="$VAR[FocusTextureColorVar]">views/addonwall_select.png</texture>
 							</control>
 						</control>
 					</focusedlayout>
-
 					<!-- VIDEO -->
 					<itemlayout height="268" width="189" condition="[Container.Content(tvshows) + ![Skin.HasSetting(TVInfoWallLandscape) | Skin.HasSetting(TVInfoWallBanner) | Skin.HasSetting(TVInfoWallLogo)]] | [[Window.IsActive(programs) + !Container.Content(addons)] + !Skin.HasSetting(InfoWallSquare)] | Container.Content(sets) | Container.Content(seasons)">    <!--  TV CASES INACTIVE-->
 						<control type="group">
@@ -915,7 +904,6 @@
 								</control>
 							</control>
 							<control type="image">
-								<left>0</left>
 								<top>3</top>
 								<width>169</width>
 								<height>259</height>
@@ -926,8 +914,8 @@
 							</control>
 						</control>
 					</focusedlayout>
-
-					<itemlayout height="161" width="300" condition="Container.Content(episodes) | [Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLandscape)]"> <!-- TV LANDSCAPE INACTIVE-->
+					<!-- TV LANDSCAPE INACTIVE-->
+					<itemlayout height="161" width="300" condition="Container.Content(episodes) | [Container.Content(tvshows) + Skin.HasSetting(TVInfoWallLandscape)]">
 						<control type="group">
 							<top>1</top>
 							<left>20</left>
@@ -950,7 +938,6 @@
 									<bordersize>5</bordersize>
 								</control>
 								<control type="label">
-									<left>0</left>
 									<top>110</top>
 									<width>285</width>
 									<height>51</height>
@@ -1028,7 +1015,6 @@
 									<bordersize>5</bordersize>
 								</control>
 								<control type="label">
-									<left>0</left>
 									<top>110</top>
 									<width>285</width>
 									<height>51</height>
@@ -1480,20 +1466,17 @@
 							<visible>!Player.Hasvideo</visible>
 							<include>Animation_VisibleChange200</include>
 						</control>
-
 						<control type="image">
 							<left>-7</left>
 							<top>-7</top>
 							<width>804</width>
 							<height>458</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true">$INFO[Container.ListItem.Art(extrafanart1)]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
 							<bordersize>7</bordersize>
 							<visible>ListItem.IsCollection</visible>
 						</control>
-
 						<control type="multiimage">
 							<width>790</width>
 							<height>444</height>
@@ -1507,25 +1490,20 @@
 							<visible>!String.StartsWith(ListItem.Label,*) + [String.StartsWith(Container.FolderPath,videodb://) | String.StartsWith(Container.FolderPath,special://profile/playlist)] + !Skin.HasSetting(InfoWallEpisodeThumb)</visible>
 							<include>Animation_VisibleChange200</include>
 						</control>
-
 						<control type="image">
 							<left>-7</left>
 							<top>-7</top>
 							<width>804</width>
 							<height>458</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true">$INFO[Window(home).Property(SkinHelper.ListItem.Art.AnimatedFanart)]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
 							<bordersize>7</bordersize>
 							<visible>Skin.HasSetting(SkinHelperAnimations) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.AnimatedFanart)) + !Skin.HasSetting(InfoWallDisableAnimatedFanart)</visible>
 						</control>
-
-
 						<control type="image">
 							<width>790</width>
 							<height>444</height>
-							<aspectratio>stretch</aspectratio>
 							<include condition="Window.IsActive(pictures)">Aspectratio_Keep</include>
 							<include condition="!Window.IsActive(pictures)">Aspectratio_Scale</include>
 							<texture background="true" fallback="DefaultAddonMusic.png">$VAR[ThumbnailVar]</texture>
@@ -1533,11 +1511,9 @@
 							<visible>!String.StartsWith(ListItem.Label,*) + [String.StartsWith(Container.FolderPath,videodb://) | String.StartsWith(Container.FolderPath,special://profile/playlist)] + Skin.HasSetting(InfoWallEpisodeThumb)</visible>
 							<include>Animation_VisibleChange200</include>
 						</control>
-
 						<control type="multiimage">
 							<width>790</width>
 							<height>444</height>
-							<aspectratio>stretch</aspectratio>
 							<fadetime>FanartCrossfadeTime</fadetime>
 							<include condition="Window.IsActive(pictures)">Aspectratio_Keep</include>
 							<include condition="!Window.IsActive(pictures)">Aspectratio_stretch</include>
@@ -1546,8 +1522,6 @@
 							<visible>ListItem.IsCollection</visible>
 							<include>Animation_VisibleChange200</include>
 						</control>
-
-
 						<control type="label">
 							<top>-200</top>
 							<width>790</width>
@@ -1557,17 +1531,14 @@
 							<animation effect="fade" delay="80" end="100" time="240" condition="!String.IsEqual(Control.GetLabel(8827),empty.png)">Conditional</animation>
 							<visible>Container.Content(artists)</visible>
 						</control>
-
 						<control type="image">
 							<width>790</width>
 							<height>444</height>
-							<aspectratio>stretch</aspectratio>
 							<texture background="true" fallback="empty.png">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Label]\fanart.jpg</texture>
 							<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
 							<animation effect="fade" delay="80" end="100" time="240">Conditional</animation>
 							<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
 						</control>
-
 						<control type="multiimage">
 							<width>790</width>
 							<height>444</height>
@@ -1578,7 +1549,6 @@
 							<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
 							<include>Animation_VisibleChange200</include>
 						</control>
-
 						<control type="group">
 							<control type="image" id="40001">
 								<width>790</width>

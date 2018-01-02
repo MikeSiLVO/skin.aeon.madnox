@@ -558,7 +558,6 @@
 					<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))</visible>
 				</control>
 				<control type="label">
-					<left></left>
 					<top>8</top>
 					<width>816</width>
 					<height>146</height>
@@ -623,7 +622,6 @@
 					<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner))</visible>
 				</control>
 				<control type="label">
-					<left></left>
 					<top>8</top>
 					<width>816</width>
 					<height>146</height>
@@ -661,10 +659,8 @@
 					<texture>overlayprogress.png</texture>
 					<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
 				</control>
-
 			</control>
 		</focusedlayout>
-
 		<!-- POSTER -->
 		<itemlayout width="275" height="400" condition="[[Container.Content(movies) + !Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + !Skin.HasSetting(TVWallBanner)] | Container.Content(seasons) | Container.Content(sets) | Container.Content(musicvideos) | [Window.IsActive(videos) + Container.Content(genres)] | [Window.IsActive(pictures) + String.Contains(Container.FolderPath,\comics\)]]">
 			<control type="image">
@@ -672,7 +668,6 @@
 				<posy>7</posy>
 				<width>265</width>
 				<height>398</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<bordersize>24</bordersize>
 				<visible>!Skin.HasSetting(squarethumbs)</visible>
@@ -682,7 +677,6 @@
 				<posy>7</posy>
 				<width>265</width>
 				<height>398</height>
-				<aspectratio>stretch</aspectratio>
 				<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<bordersize>24</bordersize>
 				<visible>Skin.HasSetting(squarethumbs)</visible>
@@ -812,7 +806,6 @@
 						<bordersize>5</bordersize>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>125</top>
 						<width>310</width>
 						<height>51</height>
@@ -867,7 +860,6 @@
 						<bordersize>5</bordersize>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>125</top>
 						<width>310</width>
 						<height>51</height>

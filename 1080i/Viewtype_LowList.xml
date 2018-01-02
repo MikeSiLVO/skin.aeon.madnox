@@ -725,7 +725,6 @@
 						<visible>!Container.Content(years)</visible>
 					</control>
 					<control type="image">
-						<left>0</left>
 						<top>477</top>
 						<width>389</width>
 						<height>300</height>
@@ -958,7 +957,6 @@
 							<bordersize>5</bordersize>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>8</top>
 							<width>816</width>
 							<height>146</height>
@@ -1013,7 +1011,6 @@
 							<bordersize>5</bordersize>
 						</control>
 						<control type="label">
-							<left></left>
 							<top>8</top>
 							<width>816</width>
 							<height>146</height>

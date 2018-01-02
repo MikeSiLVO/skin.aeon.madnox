@@ -2,8 +2,6 @@
 <window>
 	<defaultcontrol>120</defaultcontrol>
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>

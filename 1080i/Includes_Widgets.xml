@@ -13,15 +13,15 @@
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.PanelInfo) + ControlGroup(90020).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="!Skin.HasSetting(Enable.PanelInfo) + String.IsEqual(Container(9000).ListItem.Property(widgetPanelInfo.2),Enabled) + ControlGroup(90020).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle.2),List)">Conditional</animation>
 			<visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetStyle))</visible>
-			<!-- Test Image
-			<control type="image">
+			<!-- Test Image -->
+			<!-- <control type="image">
 				<top>449</top>
-				<left></left>
+				<left />
 				<centerleft>50%</centerleft>
 				<width>1440</width>
 				<height>310</height>
 				<texture>grey.png</texture>
-			</control>-->
+			</control> -->
 			<!-- Widgets  -->
 			<include>skinshortcuts-template-widget1</include>
 		</control>
@@ -40,15 +40,15 @@
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="Skin.HasSetting(Enable.PanelInfo) + ControlGroup(90010).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List)">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" delay="100" condition="!Skin.HasSetting(Enable.PanelInfo) + String.IsEqual(Container(9000).ListItem.Property(widgetPanelInfo),Enabled) + ControlGroup(90010).HasFocus + !String.Contains(Container(9000).ListItem.Property(widgetStyle),List)">Conditional</animation>
 			<visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetStyle.2))</visible>
-			<!-- Test Image
-			<control type="image">
+			<!-- Test Image -->
+			<!-- <control type="image">
 				<top>90</top>
 				<left></left>
 				<centerleft>50%</centerleft>
 				<width>1440</width>
 				<height>310</height>
 				<texture>grey.png</texture>
-			</control>-->
+			</control> -->
 			<!-- Widgets  -->
 			<include>skinshortcuts-template-widget2</include>
 		</control>
@@ -471,7 +471,6 @@
 					<top>$PARAM[topArt]</top>
 					<width>$PARAM[widthArt]</width>
 					<height>$PARAM[heightArt]</height>
-					<aspectratio>stretch</aspectratio>
 					<texture>$VAR[HomeWidgetBannerVar]</texture>
 				</control>
 				<control type="image">
@@ -525,7 +524,6 @@
 					<top>$PARAM[topArt]</top>
 					<width>$PARAM[widthArt]</width>
 					<height>$PARAM[heightArt]</height>
-					<aspectratio>stretch</aspectratio>
 					<texture>$VAR[HomeWidgetBannerVar]</texture>
 				</control>
 				<control type="image">
@@ -686,7 +684,7 @@
 	<!-- Panel Background -->
 	<include name="PanelBack">
 		<control type="image">
-			<left></left>
+			<left />
 			<centerleft>50%</centerleft>
 			<top>-21</top>
 			<width>$PARAM[backWidth]</width>
@@ -696,7 +694,7 @@
 			<include>HomeWidgetTrans</include>
 		</control>
 		<control type="image">
-			<left></left>
+			<left />
 			<centerleft>50%</centerleft>
 			<top>-21</top>
 			<width>$PARAM[backWidth]</width>
@@ -710,7 +708,7 @@
 	<include name="PanelLabel">
 		<control type="label">
 			<top>$PARAM[labelBottom]</top>
-			<left></left>
+			<left />
 			<centerleft>50%</centerleft>
 			<width>$PARAM[labelWidth]</width>
 			<height>auto</height>

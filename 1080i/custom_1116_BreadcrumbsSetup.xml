@@ -3,8 +3,6 @@
 	<defaultcontrol>450</defaultcontrol>
 
 	<coordinates>
-		<left>0</left>
-		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_DialogPopup</include>

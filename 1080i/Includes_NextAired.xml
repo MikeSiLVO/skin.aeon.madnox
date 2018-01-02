@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="TVGuideWeekdayButtonbackground">
-		<left>0</left>
-		<top>0</top>
 		<width>434</width>
 		<height>84</height>
 		<textoffsetx>30</textoffsetx>
@@ -18,8 +16,6 @@
 		<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 	</include>
 	<include name="TVGuideWeekdayButton">
-		<left>0</left>
-		<top>0</top>
 		<width>434</width>
 		<height>84</height>
 		<textoffsetx>30</textoffsetx>
@@ -35,8 +31,6 @@
 		<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 	</include>
 	<include name="TVGuideWeekdayButtonbackground2">
-		<left>0</left>
-		<top>0</top>
 		<width>434</width>
 		<height>50</height>
 		<textoffsetx>20</textoffsetx>
@@ -52,8 +46,6 @@
 		<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 	</include>
 	<include name="TVGuideWeekdayButton2">
-		<left>0</left>
-		<top>0</top>
 		<width>434</width>
 		<height>50</height>
 		<textoffsetx>20</textoffsetx>
@@ -183,7 +175,6 @@
 					<height>80</height>
 					<align>center</align>
 					<label>[COLOR white2]$INFO[ListItem.Property(ShortTime)][/COLOR][COLOR grey] ($INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]])[/COLOR]</label>
-					<font>Font_Reg28</font>
 					<textcolor>$VAR[TitleColorVar]</textcolor>
 					<animation type="Conditional" condition="!String.IsEmpty(Window(Home).property(TVGuide.PreviewThumbs)) + !Skin.HasSetting(NextAiredLogo)">
 						<effect type="slide" end="0,25" time="0" />
@@ -248,7 +239,6 @@
 				<textcolor>$VAR[TitleColorVar]</textcolor>
 			</control>
 			<control type="image">
-				<left>0</left>
 				<top>822</top>
 				<width>135</width>
 				<height>90</height>
@@ -300,7 +290,6 @@
 		<top>61</top>
 		<width>1305</width>
 		<height>978</height>
-		<itemgap>0</itemgap>
 		<orientation>horizontal</orientation>
 		<scrolltime>0</scrolltime>
 		<animation effect="fade" start="100" end="0" time="240" tween="sine" easing="inout">Hidden</animation>
@@ -334,7 +323,6 @@
 		<visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 	</include>
 	<include name="NextAiredLabelVars">
-		<left></left>
 		<top>120</top>
 		<width>171</width>
 		<height>30</height>
@@ -470,7 +458,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<label>$INFO[Window(Home).Property(NextAired.1.Date)]</label>
 					<align>center</align>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[41])">Conditional</animation>
@@ -480,7 +467,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[42])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.2.Date)]</label>
 					<align>center</align>
@@ -490,7 +476,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[43])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.3.Date)]</label>
 					<align>center</align>
@@ -500,7 +485,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[44])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.4.Date)]</label>
 					<align>center</align>
@@ -510,7 +494,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[45])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.5.Date)]</label>
 					<align>center</align>
@@ -520,7 +503,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[46])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.6.Date)]</label>
 					<align>center</align>
@@ -530,7 +512,6 @@
 					<top>952</top>
 					<width>172</width>
 					<height>38</height>
-					<font>Font_Reg28</font>
 					<animation effect="fade" start="100" end="65" time="0" condition="!String.IsEqual(System.Date(ddd),$LOCALIZE[47])">Conditional</animation>
 					<label>$INFO[Window(Home).Property(NextAired.7.Date)]</label>
 					<align>center</align>
@@ -2261,7 +2242,6 @@
 					<description>Weekday labels</description>
 					<left>62</left>
 					<top>210</top>
-					<itemgap>0</itemgap>
 					<control type="button">
 						<label>[B]$VAR[TVDayLabelMon][/B]</label>
 						<label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.1.Date)][/COLOR]</label2>
@@ -2323,7 +2303,6 @@
 					<description>Weekday labels</description>
 					<left>62</left>
 					<top>210</top>
-					<itemgap>0</itemgap>
 					<control type="button" id="2001">
 						<label>[B]$VAR[TVDayLabelMon][/B]</label>
 						<label2>[COLOR=99FFFFFF]$INFO[Window(Home).Property(NextAired.1.Date)][/COLOR]</label2>
@@ -2972,7 +2951,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -2983,7 +2961,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -2994,7 +2971,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="200">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3049,7 +3025,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3060,7 +3035,6 @@
 						<textcolor>white</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3071,7 +3045,6 @@
 						<textcolor>white</textcolor>
 					</control>
 					<control type="panel" id="201">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3126,11 +3099,9 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
-						<!-- reksp13 Fixed Tomorrow Text For TV Guide -->
 						<label>$INFO[Window(Home).Property(NextAired.TomorrowText)]</label>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -3138,7 +3109,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3149,7 +3119,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="202">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3204,7 +3173,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3215,7 +3183,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3226,7 +3193,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="203">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3281,7 +3247,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3292,7 +3257,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3303,7 +3267,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="204">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3358,7 +3321,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3369,7 +3331,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3380,7 +3341,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="205">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3435,7 +3395,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3446,7 +3405,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3457,7 +3415,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="206">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3512,7 +3469,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3523,7 +3479,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3534,7 +3489,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="207">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3589,7 +3543,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3600,7 +3553,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3611,7 +3563,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="208">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3666,7 +3617,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3677,7 +3627,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3688,7 +3637,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="209">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3743,7 +3691,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3754,7 +3701,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3765,7 +3711,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="210">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3820,7 +3765,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3831,7 +3775,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3842,7 +3785,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="211">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3897,7 +3839,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3908,7 +3849,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3919,7 +3859,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="212">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -3974,7 +3913,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -3985,7 +3923,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -3996,7 +3933,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="213">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -4051,7 +3987,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -4062,7 +3997,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -4073,7 +4007,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="214">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>
@@ -4128,7 +4061,6 @@
 					<width>170</width>
 					<height>655</height>
 					<control type="label">
-						<left>0</left>
 						<top>13</top>
 						<width>170</width>
 						<height>20</height>
@@ -4139,7 +4071,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="label">
-						<left>0</left>
 						<top>855</top>
 						<width>172</width>
 						<height>38</height>
@@ -4150,7 +4081,6 @@
 						<textcolor>gray</textcolor>
 					</control>
 					<control type="panel" id="215">
-						<left>0</left>
 						<top>40</top>
 						<width>171</width>
 						<height>818</height>

@@ -11,7 +11,6 @@
 				<height>561</height>
 				<align>center</align>
 				<aspectratio scalediffuse="true">keep</aspectratio>
-				<fadetime>0</fadetime>
 				<bordertexture border="18">thumbs/poster_shadow.png</bordertexture>
 				<bordersize>18</bordersize>
 				<texture background="true" diffuse="thumbs/posterdiffuse.png">$INFO[ListItem.Icon]</texture>
@@ -336,7 +335,6 @@
 						<align>right</align>
 						<aligny>bottom</aligny>
 						<label>$INFO[ListItem.Label2] min</label>
-						<font>Font_Reg28</font>
 						<textcolor>grey</textcolor>
 					</control>
 				</itemlayout>
@@ -417,28 +415,20 @@
 							<top>67</top>
 							<visible>!Skin.HasSetting(OverlaySetting)</visible>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>45</width>
 								<height>45</height>
 								<texture>dialogs/circle/46.png</texture>
 								<visible>ListItem.IsResumable</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>45</width>
 								<height>45</height>
-								<!-- Default XBMC Icon -->
 								<texture>OverlayWatched.png</texture>
 								<visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
 								<width>45</width>
 								<height>45</height>
-								<!-- Default XBMC Icon -->
 								<texture>common/new.png</texture>
 								<visible>!ListItem.IsResumable + !Integer.IsGreater(ListItem.PlayCount,0)</visible>
 							</control>
@@ -451,7 +441,6 @@
 							<align>right</align>
 							<aligny>bottom</aligny>
 							<label>$INFO[ListItem.Label2] min</label>
-							<font>Font_Reg28</font>
 							<textcolor>grey</textcolor>
 							<animation effect="slide" end="-50,0" time="0" condition="!Skin.HasSetting(OverlaySetting)">Conditional</animation>
 						</control>

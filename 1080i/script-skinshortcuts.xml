@@ -10,7 +10,7 @@
 				<left>63</left>
 				<top>194</top>
 				<width>750</width>
-				<height>768</height>
+				<height>740</height>
 				<onright>90001</onright>
 				<onup>211</onup>
 				<ondown>211</ondown>
@@ -78,10 +78,9 @@
 			</control>
 			<control type="grouplist" id="90001">
 				<left>387</left>
-				<top>195</top>
+				<top>194</top>
 				<width>1469</width>
-				<height>732</height>
-				<itemgap>0</itemgap>
+				<height>740</height>
 				<onleft>211</onleft>
 				<onup>90001</onup>
 				<ondown>90001</ondown>
