@@ -233,7 +233,6 @@
 					<itemlayout width="268" height="434">
 						<control type="group">
 							<left>150</left>
-							<top>0</top>
 							<control type="image">
 								<left>-90</left>
 								<top>135</top>
@@ -306,7 +305,6 @@
 								<effect type="zoom" center="50,180" start="80" end="100" time="600" tween="cubic" easing="out" />
 							</animation>
 							<left>170</left>
-							<top>0</top>
 							<control type="image">
 								<left>-135</left>
 								<top>30</top>
@@ -878,7 +876,6 @@
 					<itemlayout width="300">
 						<control type="group">
 							<left>150</left>
-							<top>0</top>
 							<control type="image">
 								<left>-98</left>
 								<top>275</top>
@@ -978,7 +975,6 @@
 					<focusedlayout width="380" height="434">
 						<control type="group">
 							<left>170</left>
-							<top>0</top>
 							<control type="image">
 								<left>-137</left>
 								<top>170</top>

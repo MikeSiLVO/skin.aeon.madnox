@@ -357,7 +357,6 @@
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">1200</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -431,7 +430,6 @@
 							<width>366</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -557,7 +555,6 @@
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -631,7 +628,6 @@
 							<width>366</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -757,7 +753,6 @@
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -993,7 +988,6 @@
 							<width>550</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>
@@ -1229,7 +1223,6 @@
 							<width>550</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
-							<focusposition>0</focusposition>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<onclick>SetFocus(5014)</onclick>

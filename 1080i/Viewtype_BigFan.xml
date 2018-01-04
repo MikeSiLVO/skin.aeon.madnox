@@ -13,7 +13,6 @@
 				<ondown>9000</ondown>
 				<pagecontrol>71</pagecontrol>
 				<scrolltime tween="quadratic">500</scrolltime>
-				<focusposition>0</focusposition>
 				<orientation>horizontal</orientation>
 				<preloaditems>2</preloaditems>
 				<visible>![!String.IsEmpty(Skin.String(DisableBigFanVL)) + Window.IsActive(videos)]</visible>
@@ -186,14 +185,12 @@
 			</control>
 			<control type="image">
 				<left>194r</left>
-				<top>0</top>
 				<width>200</width>
 				<height>200</height>
 				<include>OverlayVisibility0</include>
 			</control>
 			<control type="image">
 				<left>194r</left>
-				<top>0</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>$VAR[VideoextrasOverlay]</texture>
@@ -201,7 +198,6 @@
 			</control>
 			<control type="image">
 				<left>194r</left>
-				<top>0</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>overlayprogress.png</texture>

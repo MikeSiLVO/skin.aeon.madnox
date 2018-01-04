@@ -36,7 +36,7 @@
 					<texture fallback="common/black.png" background="true">$INFO[Window(home).Property(VideoInfo.ImageFilter)]</texture>
 				</control>
 				<control type="image">
-					<posx>729</posx>
+					<left>729</left>
 					<width>1192</width>
 					<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 					<height>1080</height>

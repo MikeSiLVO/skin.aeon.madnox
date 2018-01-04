@@ -1314,9 +1314,9 @@
 				</control>
 
 				<control type="scrollbar" id="60">
-					<posx>1015</posx>
+					<left>1015</left>
 					<include>Animation_VerticalScrollBar</include>
-					<posy>164</posy>
+					<top>164</top>
 					<width>46</width>
 					<height>787</height>
 					<texturesliderbackground>views/scrollbarbacklist.png</texturesliderbackground>
@@ -1327,8 +1327,8 @@
 
 			<!-- Letter-Scrollbar -->
 				<control type="image">
-					<posx>1005</posx>
-					<posy>104</posy>
+					<left>1005</left>
+					<top>104</top>
 					<width>48</width>
 					<height>905</height>
 					<animation effect="fade" start="100" end="80" time="50" condition="Control.HasFocus(6007)">Conditional</animation>
@@ -1339,8 +1339,8 @@
 				<control type="list" id="6007">
 					<onleft>512</onleft>
 					<onright>9000</onright>
-					<posx>1015</posx>
-					<posy>124</posy>
+					<left>1015</left>
+					<top>124</top>
 					<width>88</width>
 					<height>900</height>
 					<orientation>vertical</orientation>
@@ -1373,8 +1373,8 @@
 				<control type="group">
 					<left>-22</left>
 					<control type="image" id="8827">
-						<posx>1300</posx>
-						<posy>115</posy>
+						<left>1300</left>
+						<top>115</top>
 						<width>335</width>
 						<height>130</height>
 						<aspectratio>keep</aspectratio>
@@ -1409,8 +1409,8 @@
 					<control type="group">
 						<visible>[Control.IsVisible(8827) + !Container.OnNext + !Container.OnPrevious + String.IsEqual(Control.GetLabel(8827),empty.png)] | !Control.IsVisible(8827)</visible>
 						<control type="label">
-							<posx>1100</posx>
-							<posy>170</posy>
+							<left>1100</left>
+							<top>170</top>
 							<width>760</width>
 							<height>30</height>
 							<align>center</align>
@@ -1423,8 +1423,8 @@
 							<animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>1090</posx>
-							<posy>178</posy>
+							<left>1090</left>
+							<top>178</top>
 							<height>60</height>
 							<width>775</width>
 							<texture border="1">osd/osd_settings_buttonnf.png</texture>
@@ -1432,8 +1432,8 @@
 					</control>
 					<control type="group">
 						<control type="textbox">
-							<posx>1090</posx>
-							<posy>245</posy>
+							<left>1090</left>
+							<top>245</top>
 							<width>775</width>
 							<height>248</height>
 							<font>Font_Reg19</font>
@@ -1443,11 +1443,11 @@
 						</control>
 					</control>
 					<control type="group">
-						<posx>1090</posx>
-						<posy>505</posy>
+						<left>1090</left>
+						<top>505</top>
 						<control type="image">
-							<posx>-15</posx>
-							<posy>-15</posy>
+							<left>-15</left>
+							<top>-15</top>
 							<width>820</width>
 							<height>474</height>
 							<texture>common/black.png</texture>

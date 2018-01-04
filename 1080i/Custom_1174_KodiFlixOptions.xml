@@ -2,7 +2,6 @@
 <window id="1174" type="dialog">
 	<defaultcontrol always="true">1100</defaultcontrol>
 	<coordinates>
-		<left>0</left>
 		<top>-500</top>
 		<system>1</system>
 	</coordinates>
@@ -398,7 +397,7 @@
 					<onclick>Skin.ToggleSetting(KodiFlixTVInfoShowBanner)</onclick>
 					<selected>Skin.HasSetting(KodiFlixTVInfoShowBanner)</selected>
 					<visible>String.IsEqual(Window(home).Property(actualViewtype),KodiFlixViewTV) + Skin.HasSetting(KodiFlixTVInfo)</visible>
-				</control>				
+				</control>
 			</control>
 			<control type="grouplist" id="1200">
 				<orientation>vertical</orientation>

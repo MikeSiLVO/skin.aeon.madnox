@@ -159,7 +159,6 @@
 					<textcolor>white3</textcolor>
 				</control>
 				<control type="label" id="9">
-					<top>0</top>
 					<width>1125</width>
 					<label />
 					<font>Font_Bold34_Caps</font>

@@ -2431,7 +2431,6 @@
 				</control>
 				<control type="label">
 					<left>-250</left>
-					<top>0</top>
 					<width>690</width>
 					<height>45</height>
 					<align>left</align>
@@ -2578,8 +2577,8 @@
 			<animation effect="slide" start="2620,0" end="0,0" time="2650" tween="sine" easing="out" condition="System.IdleTime(20) + Skin.HasSetting(KodiFlixExtrasDelay_20)">Conditional</animation>
 			<animation effect="slide" start="2620,0" end="0,0" time="2650" tween="sine" easing="out" condition="System.IdleTime(30) + Skin.HasSetting(KodiFlixExtrasDelay_30)">Conditional</animation>
 			<control type="image">
-				<posy>598</posy>
-				<posx>250</posx>
+				<top>598</top>
+				<left>250</left>
 				<width>1685</width>
 				<height>322</height>
 				<aspectratio>scale</aspectratio>
@@ -2587,8 +2586,8 @@
 				<fadetime>400</fadetime>
 			</control>
 			<control type="image">
-				<posy>570</posy>
-				<posx>200</posx>
+				<top>570</top>
+				<left>200</left>
 				<width>1780</width>
 				<height>422</height>
 				<texture background="true">thumbs/listpanel_back_glow.png</texture>
@@ -2599,8 +2598,8 @@
 				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
 			</control>
 			<control type="grouplist">
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<orientation>horizontal</orientation>
 				<visible>ListItem.IsCollection</visible>
 				<control type="image" id="6601">
@@ -2653,8 +2652,8 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<orientation>horizontal</orientation>
 				<visible>ListItem.IsCollection + System.IdleTime(26)</visible>
 				<control type="image" id="6601">
@@ -2707,8 +2706,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>278</posx>
+				<top>622</top>
+				<left>278</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2719,8 +2718,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>278</posx>
+				<top>622</top>
+				<left>278</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2731,8 +2730,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>532</posx>
+				<top>622</top>
+				<left>532</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2743,8 +2742,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>532</posx>
+				<top>622</top>
+				<left>532</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2755,8 +2754,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>785</posx>
+				<top>622</top>
+				<left>785</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2767,8 +2766,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>785</posx>
+				<top>622</top>
+				<left>785</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2779,8 +2778,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1040</posx>
+				<top>622</top>
+				<left>1040</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2791,8 +2790,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1040</posx>
+				<top>622</top>
+				<left>1040</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2803,8 +2802,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1295</posx>
+				<top>622</top>
+				<left>1295</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2815,8 +2814,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1295</posx>
+				<top>622</top>
+				<left>1295</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2827,8 +2826,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1550</posx>
+				<top>622</top>
+				<left>1550</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2839,8 +2838,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
 			</control>
 			<control type="image">
-				<posy>622</posy>
-				<posx>1550</posx>
+				<top>622</top>
+				<left>1550</left>
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
@@ -2851,8 +2850,8 @@
 				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
 			</control>
 			<control type="Label">
-				<posy>594</posy>
-				<posx>284</posx>
+				<top>594</top>
+				<left>284</left>
 				<width>254</width>
 				<height>254</height>
 				<textcolor>FFFFFAF0</textcolor>
@@ -2863,8 +2862,8 @@
 				<include>KodiFlixExtrasClear</include>
 			</control>
 			<control type="Label">
-				<posy>594</posy>
-				<posx>284</posx>
+				<top>594</top>
+				<left>284</left>
 				<width>254</width>
 				<height>254</height>
 				<textcolor>FFFFFAF0</textcolor>
@@ -2874,8 +2873,8 @@
 				<visible>[Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting(NetFlixTVHideFilmInfo) + [[Skin.HasSetting(KodiFlixExtrasDelay_5) + System.IdleTime(30)] | [Skin.HasSetting(KodiFlixExtrasDelay_10) + System.IdleTime(40)] | [Skin.HasSetting(KodiFlixExtrasDelay_20) + System.IdleTime(50)] | [Skin.HasSetting(KodiFlixExtrasDelay_30) + System.IdleTime(60)]]</visible>
 			</control>
 			<control type="Label">
-				<posy>594</posy>
-				<posx>284</posx>
+				<top>594</top>
+				<left>284</left>
 				<width>254</width>
 				<height>254</height>
 				<textcolor>FFFFFAF0</textcolor>
@@ -2887,8 +2886,8 @@
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<visible>!ListItem.IsCollection</visible>
 				<include>KodiFlixExtrasClear</include>
 				<control type="image">
@@ -2937,8 +2936,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<visible>!ListItem.IsCollection</visible>
 				<width>254</width>
 				<height>254</height>
@@ -2949,8 +2948,8 @@
 				<include>KodiFlixExtrasClear</include>
 			</control>
 			<control type="image">
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<visible>!ListItem.IsCollection</visible>
 				<width>254</width>
 				<height>254</height>
@@ -2962,8 +2961,8 @@
 			</control>
 			<control type="grouplist">
 				<orientation>vertical</orientation>
-				<posy>629</posy>
-				<posx>1374</posx>
+				<top>629</top>
+				<left>1374</left>
 				<visible>!ListItem.IsCollection</visible>
 				<include>KodiFlixExtrasClear</include>
 				<control type="image">
@@ -3002,8 +3001,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posy>629</posy>
-				<posx>284</posx>
+				<top>629</top>
+				<left>284</left>
 				<visible>[Container.Content(movies) | Container.Content(sets)] + Skin.HasSetting(NetFlixTVHideFilmInfo) + [[Skin.HasSetting(KodiFlixExtrasDelay_5) + System.IdleTime(30)] | [Skin.HasSetting(KodiFlixExtrasDelay_10) + System.IdleTime(40)] | [Skin.HasSetting(KodiFlixExtrasDelay_20) + System.IdleTime(50)] | [Skin.HasSetting(KodiFlixExtrasDelay_30) + System.IdleTime(60)]]</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="textbox" id="70">
@@ -3065,7 +3064,6 @@
 	</include>
 	<include name="KodiFlixTVSmallFanartDimensions">
 		<left>520</left>
-		<top>0</top>
 		<width>1400</width>
 		<height>788</height>
 	</include>

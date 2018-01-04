@@ -390,7 +390,7 @@
 			</control>
 			<control type="image" id="1">
 				<top>-40</top>
-				<posx>-1000</posx>
+				<left>-1000</left>
 				<width>3920</width>
 				<height>350</height>
 				<texture colordiffuse="black">home/nowplaying_shadow.png</texture>
@@ -1731,7 +1731,6 @@
 			<focusedlayout height="113" width="735">
 				<control type="image">
 					<left>12</left>
-					<top>0</top>
 					<width>725</width>
 					<height>112</height>
 					<texture colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texture>

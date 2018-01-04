@@ -619,7 +619,6 @@
 				<textcolor>white2</textcolor>
 			</control>
 			<control type="label">
-				<top>0</top>
 				<width>420</width>
 				<align>center</align>
 				<label>$VAR[FirstLabelVar]</label>

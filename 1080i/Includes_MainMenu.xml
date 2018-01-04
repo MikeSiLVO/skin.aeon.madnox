@@ -450,8 +450,6 @@
 	<include name="PlayListStatsList">
 		<control type="list" id="43230">
 			<visible>String.IsEqual(Container(9000).ListItem.Property(InfoLine),Movie playlist) | String.IsEqual(Container(9000).ListItem.Property(InfoLine),TV Show playlist) | String.IsEqual(Container(9000).ListItem.Property(InfoLine),Music Video playlist)</visible>
-			<posx>0</posx>
-			<posy>0</posy>
 			<width>1</width>
 			<height>1</height>
 			<focusedlayout/>

@@ -25,8 +25,8 @@
 			<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
 		</control>
 		<control type="image"><!-- inactive cases round -->
-			<posx>22</posx>
-			<posy>21</posy>
+			<left>22</left>
+			<top>21</top>
 			<width>241</width>
 			<height>378</height>
 			<texture>wall/boxes/wall_movie_overlay.png</texture>
@@ -34,8 +34,8 @@
 			<visible>!Skin.HasSetting(squarethumbs) + Skin.HasSetting(wallcases)</visible>
 		</control>
 		<control type="image"><!-- inactive cases square -->
-			<posx>22</posx>
-			<posy>21</posy>
+			<left>22</left>
+			<top>21</top>
 			<width>241</width>
 			<height>378</height>
 			<texture>wall/boxes/wall_movie_overlay.png</texture>
@@ -65,8 +65,8 @@
 			<visible>Skin.HasSetting(MusicWallRound) + !Skin.HasSetting(MusicWallCase)</visible>
 		</control>
 		<control type="image">
-			<posx>12</posx>
-			<posy>11</posy>
+			<left>12</left>
+			<top>11</top>
 			<height>185</height>
 			<width>185</width>
 			<aspectratio align="left">keep</aspectratio>
@@ -126,8 +126,8 @@
 	<include name="WallContent">
 		<itemlayout height="268" width="275" condition="[!Container.Content(studios) + !Container.Content(directors) + !Container.Content(actors) + !Container.Content(years)] + ![Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | [Window.IsActive(videos) + Container.Content(genres)] | [Window.IsActive(pictures) + String.Contains(Container.FolderPath,\comics\)]] + [Skin.HasSetting(titlewall) | String.IsEqual(Container.FolderName,youtube)] + !Container.Content(episodes)">
 			<control type="group">
-				<posx>20</posx>
-				<posy>23</posy>
+				<left>20</left>
+				<top>23</top>
 				<control type="image">
 					<left>5</left>
 					<width>235</width>
@@ -139,7 +139,7 @@
 				</control>
 				<control type="image">
 					<left>14</left>
-					<posy>191</posy>
+					<top>191</top>
 					<width>217</width>
 					<height>35</height>
 					<align>center</align>
@@ -151,7 +151,7 @@
 					<visible>!Container.Content(artists)</visible>
 					<control type="image">
 						<left>14</left>
-						<posy>191</posy>
+						<top>191</top>
 						<width>217</width>
 						<height>35</height>
 						<align>center</align>
@@ -211,8 +211,8 @@
 
 		<focusedlayout height="268" width="275" condition="[!Container.Content(studios) + !Container.Content(directors) + !Container.Content(actors) + !Container.Content(years)] + ![Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | [Window.IsActive(videos) + Container.Content(genres)] | [Window.IsActive(pictures) + String.Contains(Container.FolderPath,\comics\)]] + [Skin.HasSetting(titlewall) | String.IsEqual(Container.FolderName,youtube)] + !Container.Content(episodes)">
 			<control type="group">
-				<posx>20</posx>
-				<posy>23</posy>
+				<left>20</left>
+				<top>23</top>
 				<control type="image">
 					<left>5</left>
 					<width>235</width>
@@ -238,7 +238,7 @@
 				</control>
 				<control type="image">
 					<left>5</left>
-					<posy>191</posy>
+					<top>191</top>
 					<width>235</width>
 					<height>35</height>
 					<align>center</align>
@@ -250,7 +250,7 @@
 					<visible>!Container.Content(artists)</visible>
 					<control type="image">
 						<left>5</left>
-						<posy>191</posy>
+						<top>191</top>
 						<width>235</width>
 						<height>35</height>
 						<align>center</align>
@@ -313,8 +313,8 @@
 		<!--MAD - New Studios Layout-->
 		<itemlayout height="164" width="242" condition="Container.Content(studios)">
 			<control type="group">
-				<posx>10</posx>
-				<posy>5</posy>
+				<left>10</left>
+				<top>5</top>
 				<control type="image">
 					<left>-2</left>
 					<top>4</top>
@@ -328,8 +328,8 @@
 		</itemlayout>
 		<focusedlayout height="164" width="242" condition="Container.Content(studios)">
 			<control type="group">
-				<posx>20</posx>
-				<posy>23</posy>
+				<left>20</left>
+				<top>23</top>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="100" end="108" time="400" tween="cubic" />
 				</animation>
@@ -406,8 +406,8 @@
 		<!--MAD - New Directors Layout-->
 		<itemlayout height="164" width="242" condition="Container.Content(directors)">
 			<control type="group">
-				<posx>10</posx>
-				<posy>5</posy>
+				<left>10</left>
+				<top>5</top>
 				<control type="image">
 					<left>-2</left>
 					<top>4</top>
@@ -433,8 +433,8 @@
 
 		<focusedlayout height="164" width="242" condition="Container.Content(directors)">
 			<control type="group">
-				<posx>20</posx>
-				<posy>23</posy>
+				<left>20</left>
+				<top>23</top>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="100" end="108" time="400" tween="cubic" />
 				</animation>
@@ -472,8 +472,8 @@
 		<!--MAD - New Actors Layout-->
 		<itemlayout height="164" width="242" condition="Container.Content(actors)">
 			<control type="group">
-				<posx>10</posx>
-				<posy>5</posy>
+				<left>10</left>
+				<top>5</top>
 				<control type="image">
 					<left>-2</left>
 					<top>4</top>
@@ -499,8 +499,8 @@
 
 		<focusedlayout height="164" width="242" condition="Container.Content(actors)">
 			<control type="group">
-				<posx>20</posx>
-				<posy>23</posy>
+				<left>20</left>
+				<top>23</top>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="100" end="108" time="400" tween="cubic" />
 				</animation>
@@ -538,8 +538,8 @@
 		<!-- BANNER -->
 		<itemlayout height="197" width="831" condition="[Container.Content(movies) + Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + Skin.HasSetting(TVWallBanner)]">
 			<control type="group">
-				<posx>4</posx>
-				<posy>18</posy>
+				<left>4</left>
+				<top>18</top>
 				<control type="image">
 					<width>821</width>
 					<height>173</height>
@@ -550,7 +550,7 @@
 					<bordersize>15</bordersize>
 				</control>
 				<control type="image">
-					<posy>8</posy>
+					<top>8</top>
 					<width>831</width>
 					<height>141</height>
 					<aspectratio align="center">keep</aspectratio>
@@ -599,8 +599,8 @@
 		</itemlayout>
 		<focusedlayout height="197" width="841" condition="[Container.Content(movies) + Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + Skin.HasSetting(TVWallBanner)]">
 			<control type="group">
-				<posx>4</posx>
-				<posy>18</posy>
+				<left>4</left>
+				<top>18</top>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="100" end="108" time="400" tween="cubic" />
 				</animation>
@@ -614,7 +614,7 @@
 					<bordersize>15</bordersize>
 				</control>
 				<control type="image">
-					<posy>8</posy>
+					<top>8</top>
 					<width>831</width>
 					<height>141</height>
 					<aspectratio align="center">keep</aspectratio>
@@ -664,8 +664,8 @@
 		<!-- POSTER -->
 		<itemlayout width="275" height="400" condition="[[Container.Content(movies) + !Skin.HasSetting(MovieWallBanner)] | [Container.Content(tvshows) + !Skin.HasSetting(TVWallBanner)] | Container.Content(seasons) | Container.Content(sets) | Container.Content(musicvideos) | [Window.IsActive(videos) + Container.Content(genres)] | [Window.IsActive(pictures) + String.Contains(Container.FolderPath,\comics\)]]">
 			<control type="image">
-				<posx>10</posx>
-				<posy>7</posy>
+				<left>10</left>
+				<top>7</top>
 				<width>265</width>
 				<height>398</height>
 				<texture background="true" diffuse="wall/wall_movie_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
@@ -673,8 +673,8 @@
 				<visible>!Skin.HasSetting(squarethumbs)</visible>
 			</control>
 			<control type="image">
-				<posx>10</posx>
-				<posy>7</posy>
+				<left>10</left>
+				<top>7</top>
 				<width>265</width>
 				<height>398</height>
 				<texture background="true" diffuse="" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
@@ -683,8 +683,8 @@
 			</control>
 			<include>MovieWallIcons</include>
 			<control type="image">
-				<posx>4</posx>
-				<posy>4</posy>
+				<left>4</left>
+				<top>4</top>
 				<width>177</width>
 				<height>260</height>
 				<include>Animation_VisibleChange200</include>

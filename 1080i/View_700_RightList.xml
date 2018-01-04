@@ -32,8 +32,7 @@
 			</control>
 			<!-- MAD - Fake Logos -->
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -46,8 +45,7 @@
 				<visible>String.StartsWith(ListItem.Title,a) | String.StartsWith(ListItem.Title,b) | String.StartsWith(ListItem.Title,c) | String.StartsWith(ListItem.Title,d)</visible>
 			</control>
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -60,8 +58,7 @@
 				<visible>String.StartsWith(ListItem.Title,e) | String.StartsWith(ListItem.Title,f) | String.StartsWith(ListItem.Title,g) | String.StartsWith(ListItem.Title,h)</visible>
 			</control>
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -74,8 +71,7 @@
 				<visible>String.StartsWith(ListItem.Title,i) | String.StartsWith(ListItem.Title,j) | String.StartsWith(ListItem.Title,k) | String.StartsWith(ListItem.Title,l)</visible>
 			</control>
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -88,8 +84,7 @@
 				<visible>String.StartsWith(ListItem.Title,m) | String.StartsWith(ListItem.Title,n) | String.StartsWith(ListItem.Title,o) | String.StartsWith(ListItem.Title,p)</visible>
 			</control>
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -102,8 +97,7 @@
 				<visible>String.StartsWith(ListItem.Title,q) | String.StartsWith(ListItem.Title,r) | String.StartsWith(ListItem.Title,s) | String.Contains(ListItem.Title,t)</visible>
 			</control>
 			<control type="textbox">
-				<posx>0</posx>
-				<posy>38</posy>
+				<top>38</top>
 				<width>510</width>
 				<height>220</height>
 				<align>center</align>
@@ -661,7 +655,6 @@
 				</itemlayout>
 				<focusedlayout height="85" width="806" condition="!Skin.HasSetting(rightlistalternate) + [Container.Content(movies) | Container.Content(sets)]">
 					<control type="image">
-						<top>0</top>
 						<left>20</left>
 						<width>825</width>
 						<height>85</height>
@@ -757,17 +750,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="85" width="806" condition="Skin.HasSetting(rightlistalternate) + [Container.Content(movies) | Container.Content(sets)]">
-					<!--
-					<control type="image">
-						<top>0</top>
-						<left>20</left>
-						<width>825</width>
-						<height>85</height>
-						<texture border="4">listselect_fo.png</texture>
-						<visible>Control.HasFocus(700)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-				-->
 					<control type="label">
 						<top>-12</top>
 						<left>30</left>
@@ -873,7 +855,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>116</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -888,7 +869,6 @@
 				</itemlayout>
 				<focusedlayout height="85" width="806" condition="!Skin.HasSetting(rightlistalternatetv) + Container.Content(tvshows)">
 					<control type="image">
-						<top>0</top>
 						<left>20</left>
 						<width>825</width>
 						<height>85</height>
@@ -954,7 +934,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>116</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -1008,7 +987,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>100</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -1022,17 +1000,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="85" width="806" condition="Skin.HasSetting(rightlistalternatetv) + Container.Content(tvshows)">
-					<!--
-					<control type="image">
-						<top>0</top>
-						<left>20</left>
-						<width>825</width>
-						<height>85</height>
-						<texture border="4">listselect_fo.png</texture>
-						<visible>Control.HasFocus(700)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-				-->
 					<control type="label">
 						<top>-12</top>
 						<left>30</left>
@@ -1079,7 +1046,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>100</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -1155,7 +1121,6 @@
 						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="image">
-						<top>0</top>
 						<left>20</left>
 						<width>825</width>
 						<height>68</height>
@@ -1244,7 +1209,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>100</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -1291,7 +1255,6 @@
 						</control>
 						<control type="label">
 							<left>-18</left>
-							<top>0</top>
 							<width>100</width>
 							<height>68</height>
 							<font>Font_Reg26</font>
@@ -1343,7 +1306,6 @@
 				</itemlayout>
 				<focusedlayout height="85" width="806" condition="Container.Content(episodes) + !Skin.HasSetting(rightlistalternateepisode)">
 					<control type="image">
-						<top>0</top>
 						<left>20</left>
 						<width>825</width>
 						<height>85</height>
@@ -2037,7 +1999,6 @@
 				<top>740</top>
 				<control type="scrollbar" id="63">
 					<left>636</left>
-					<top>0</top>
 					<width>14</width>
 					<height>245</height>
 					<onup>PageUp(70)</onup>
@@ -2139,7 +2100,6 @@
 					</control>
 					<control type="label">
 						<left>10</left>
-						<top>0</top>
 						<width>775</width>
 						<height>68</height>
 						<font>font15</font>

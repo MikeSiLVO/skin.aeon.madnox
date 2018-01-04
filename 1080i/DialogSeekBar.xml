@@ -58,8 +58,8 @@
 				<control type="image" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>media info background image</description>
-					<posx>16</posx>
-					<posy>16</posy>
+					<left>16</left>
+					<top>16</top>
 					<width>665</width>
 					<height>195</height>
 					<texture>views/weatherback.png</texture>
@@ -67,8 +67,8 @@
 				<!--  Today's Weather   -->
 				<control type="image">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
-					<posx>22</posx>
-					<posy>8</posy>
+					<left>22</left>
+					<top>8</top>
 					<width>160</width>
 					<height>160</height>
 					<aspectratio align="right" aligny="top">keep</aspectratio>
@@ -77,8 +77,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>current temp Value</description>
-					<posx>187</posx>
-					<posy>23</posy>
+					<left>187</left>
+					<top>23</top>
 					<width>195</width>
 					<height>40</height>
 					<font>Font_ShowcaseMainLabel2_Caps</font>
@@ -91,8 +91,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>predicted high label</description>
-					<posx>187</posx>
-					<posy>31</posy>
+					<left>187</left>
+					<top>31</top>
 					<width>485</width>
 					<height>160</height>
 					<label>High: [COLOR orange]$INFO[Window(2600).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]  Low: [COLOR lightblue]$INFO[Window(2600).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR] • $INFO[Window(2600).Property(Day0.Outlook)]</label>
@@ -107,8 +107,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>low label</description>
-					<posx>35</posx>
-					<posy>78</posy>
+					<left>35</left>
+					<top>78</top>
 					<width>135</width>
 					<height>160</height>
 					<label>[COLOR white]$INFO[Window(2600).Property(Day1.Title)][/COLOR]</label>
@@ -122,8 +122,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>low label</description>
-					<posx>187</posx>
-					<posy>78</posy>
+					<left>187</left>
+					<top>78</top>
 					<width>485</width>
 					<height>160</height>
 					<label> High: [COLOR orange]$INFO[Window(2600).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]  Low: [COLOR lightblue]$INFO[Window(2600).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR] • $INFO[Window(2600).Property(Day1.Outlook)]</label>
@@ -137,8 +137,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>tomorrow high label</description>
-					<posx>35</posx>
-					<posy>104</posy>
+					<left>35</left>
+					<top>104</top>
 					<width>135</width>
 					<height>160</height>
 					<label>[COLOR white]$INFO[Window(2600).Property(Day2.Title)][/COLOR]</label>
@@ -152,8 +152,8 @@
 				<control type="label" id="19547">
 					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 					<description>tomorrow high label</description>
-					<posx>187</posx>
-					<posy>104</posy>
+					<left>187</left>
+					<top>104</top>
 					<width>485</width>
 					<height>160</height>
 					<label> High: [COLOR orange]$INFO[Window(2600).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]  Low: [COLOR lightblue]$INFO[Window(2600).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR] • $INFO[Window(2600).Property(Day2.Outlook)]</label>

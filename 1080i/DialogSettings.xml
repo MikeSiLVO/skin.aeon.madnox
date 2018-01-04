@@ -2,32 +2,31 @@
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="image">
-			<posx>-64</posx>
+			<left>-64</left>
 			<width>662</width>
 			<height>1080</height>
 			<texture colordiffuse="$VAR[DialogColorVar]">dialogs/context_middle.png</texture>
 		</control>
 		<control type="group">
-			<posx>550</posx>
+			<left>550</left>
 			<include>Neon_VerticalBar</include>
 		</control>
 		<control type="image">
-			<posx>0</posx>
-			<posy>18</posy>
+			<top>18</top>
 			<width>90</width>
 			<height>90</height>
 			<texture colordiffuse="grey">special://skin/extras/BigIcons/Magicwand.png</texture>
 		</control>
 		<control type="label" id="2">
-			<posx>90</posx>
-			<posy>24</posy>
+			<left>90</left>
+			<top>24</top>
 			<width>1080</width>
 			<height>60</height>
 			<label>587</label>
@@ -35,8 +34,7 @@
 			<textcolor>$VAR[FontColorVar]</textcolor>
 		</control>
 		<control type="grouplist" id="5">
-			<posx>0</posx>
-			<posy>100</posy>
+			<top>100</top>
 			<width>570</width>
 			<height>910</height>
 			<pagecontrol>6</pagecontrol>

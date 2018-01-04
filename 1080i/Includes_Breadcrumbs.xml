@@ -277,13 +277,11 @@
 				</control>
 				<!--  ScrollLabel  -->
 				<control type="group">
-					<posx>870</posx>
-					<posy>455</posy>
+					<left>870</left>
+					<top>455</top>
 					<width>430</width>
 					<height>332</height>
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
 						<width>170</width>
 						<height>170</height>
 						<align>center</align>
@@ -295,8 +293,7 @@
 						<visible>[String.Contains(Container.SortMethod,$LOCALIZE[551]) | String.Contains(Container.SortMethod,$LOCALIZE[561]) | String.Contains(Container.SortMethod,$LOCALIZE[558]) | String.Contains(Container.SortMethod,$LOCALIZE[557]) | String.Contains(Container.SortMethod,$LOCALIZE[556])] + Skin.HasSetting(ShowScrollLetter)</visible>
 					</control>
 					<control type="label">
-						<posx>1</posx>
-						<posy>0</posy>
+						<left>1</left>
 						<width>170</width>
 						<height>170</height>
 						<align>center</align>

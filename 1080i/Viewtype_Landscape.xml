@@ -284,7 +284,6 @@
 			</control>
 			<control type="image">
 				<left>200r</left>
-				<top>0</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>$INFO[ListItem.Overlay,thumbs/]</texture>
@@ -312,7 +311,6 @@
 			</control>
 			<control type="image">
 				<left>200r</left>
-				<top>0</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>overlayprogress.png</texture>

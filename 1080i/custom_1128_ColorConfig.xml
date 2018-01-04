@@ -58,7 +58,6 @@
 					<width>603</width>
 					<height>45</height>
 					<textoffsetx>15</textoffsetx>
-					<textoffsety>0</textoffsety>
 					<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="3">settings/listselect_nf3.png</texturenofocus>
 					<label>$LOCALIZE[31176]</label>
 					<font>Font_Bold26_Caps</font>
@@ -99,7 +98,6 @@
 					<width>603</width>
 					<height>45</height>
 					<textoffsetx>15</textoffsetx>
-					<textoffsety>0</textoffsety>
 					<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="3">settings/listselect_nf3.png</texturenofocus>
 					<label>$LOCALIZE[31885]</label>
 					<font>Font_Bold26_Caps</font>

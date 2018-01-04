@@ -5,11 +5,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(505) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
-			<posy>-65</posy>
+			<top>-65</top>
 			<control type="image">
 				<description>background image</description>
-				<posx>89</posx>
-				<posy>150</posy>
+				<left>89</left>
+				<top>150</top>
 				<width>1742</width>
 				<height>1088</height>
 				<texture>listpanel_back_glow.png</texture>
@@ -19,16 +19,16 @@
 			</control>
 			<control type="image">
 				<description>background image</description>
-				<posx>90</posx>
-				<posy>148</posy>
+				<left>90</left>
+				<top>148</top>
 				<width>1740</width>
 				<height>964</height>
 				<texture border="40">listpanel_back.png</texture>
 			</control>
 			<control type="fixedlist" id="505">
 				<viewtype label="Banner Info">icon</viewtype>
-				<posx>120</posx>
-				<posy>179</posy>
+				<left>120</left>
+				<top>179</top>
 				<height>905</height>
 				<width>980</width>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
@@ -38,7 +38,6 @@
 				<onup>505</onup>
 				<ondown>505</ondown>
 				<orientation>vertical</orientation>
-				<focusposition>0</focusposition>
 				<movement>4</movement>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
 				<pagecontrol>60</pagecontrol>
@@ -88,7 +87,7 @@
 						<visible>String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(banner))</visible>
 						<control type="image">
 							<description>background image</description>
-							<posx>2</posx>
+							<left>2</left>
 							<width>976</width>
 							<height>181</height>
 							<aspectratio>scale</aspectratio>
@@ -99,8 +98,7 @@
 							<visible>String.IsEmpty(ListItem.Art(fanart))</visible>
 						</control>
 						<control type="label">
-							<posx>2</posx>
-							<posy>0</posy>
+							<left>2</left>
 							<width>970</width>
 							<height>170</height>
 							<align>left</align>
@@ -122,16 +120,16 @@
 						<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>892</posx>
-						<posy>8</posy>
+						<left>892</left>
+						<top>8</top>
 						<width>80</width>
 						<height>80</height>
 						<include>OverlayVisibility0</include>
 						<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
-						<posx>892</posx>
-						<posy>8</posy>
+						<left>892</left>
+						<top>8</top>
 						<width>80</width>
 						<height>80</height>
 						<texture>overlayprogress.png</texture>
@@ -139,8 +137,8 @@
 						<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="group">
-						<posx>5</posx>
-						<posy>5</posy>
+						<left>5</left>
+						<top>5</top>
 						<include>UnwatchedIcon</include>
 					</control>
 				</itemlayout>
@@ -162,7 +160,7 @@
 							<visible>String.IsEmpty(ListItem.Art(banner)) | [Skin.HasSetting(BannerInfoUseLogo) + ListItem.IsCollection]</visible>
 							<control type="image">
 								<top>1</top>
-								<posx>2</posx>
+								<left>2</left>
 								<width>972</width>
 								<height>179</height>
 								<aspectratio>scale</aspectratio>
@@ -172,7 +170,7 @@
 							</control>
 							<control type="image">
 								<description>background image</description>
-								<posx>2</posx>
+								<left>2</left>
 								<width>976</width>
 								<height>181</height>
 								<aspectratio>scale</aspectratio>
@@ -203,7 +201,7 @@
 							<visible>String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(banner))</visible>
 							<control type="image">
 								<description>background image</description>
-								<posx>2</posx>
+								<left>2</left>
 								<width>976</width>
 								<height>181</height>
 								<aspectratio>scale</aspectratio>
@@ -219,8 +217,7 @@
 								<visible>String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(BannerInfoEnableCases)</visible>
 							</control>
 							<control type="label">
-								<posx>2</posx>
-								<posy>0</posy>
+								<left>2</left>
 								<width>970</width>
 								<height>170</height>
 								<align>left</align>
@@ -241,23 +238,23 @@
 							<visible>System.HasAddon(script.videoextras)</visible>
 						</control>
 						<control type="image">
-							<posx>894</posx>
-							<posy>6</posy>
+							<left>894</left>
+							<top>6</top>
 							<width>80</width>
 							<height>80</height>
 							<include>OverlayVisibility0</include>
 						</control>
 						<control type="image">
-							<posx>894</posx>
-							<posy>6</posy>
+							<left>894</left>
+							<top>6</top>
 							<width>80</width>
 							<height>80</height>
 							<texture>overlayprogress.png</texture>
 							<visible>Container.ListItem(0).IsResumable + Skin.HasSetting(InProgressFlag)</visible>
 						</control>
 						<control type="group">
-							<posx>4</posx>
-							<posy>4</posy>
+							<left>4</left>
+							<top>4</top>
 							<include>UnwatchedIcon</include>
 						</control>
 					</control>
@@ -279,8 +276,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1098</posx>
-				<posy>180</posy>
+				<left>1098</left>
+				<top>180</top>
 				<width>14</width>
 				<height>896</height>
 				<onright>61</onright>
@@ -294,8 +291,8 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(BannerInfoPosterDisc)</visible>
 				<control type="image">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>685</width>
 					<height>385</height>
 					<aspectratio>scale</aspectratio>
@@ -303,8 +300,8 @@
 					<visible>String.IsEqual(Control.GetLabel(4420),fanart) + ListItem.IsCollection + !String.IsEmpty(Container.ListItem.Art(fanart))</visible>
 				</control>
 				<control type="image">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>685</width>
 					<height>385</height>
 					<aspectratio>scale</aspectratio>
@@ -312,8 +309,8 @@
 					<visible>String.IsEqual(Control.GetLabel(4420),fanart) + ListItem.IsCollection + !String.IsEmpty(Container.ListItem.Art(extrafanart1))</visible>
 				</control>
 				<control type="image">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>685</width>
 					<height>385</height>
 					<aspectratio>keep</aspectratio>
@@ -321,8 +318,8 @@
 					<visible>String.IsEqual(Control.GetLabel(4420),fanart) + ListItem.IsCollection + String.IsEmpty(Container.ListItem.Art(extrafanart1)) + String.IsEmpty(ListItem.Art(fanart)) + !String.IsEmpty(ListItem.Art(clearlogo))</visible>
 				</control>
 				<control type="multiimage">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>685</width>
 					<height>385</height>
 					<aspectratio>scale</aspectratio>
@@ -335,8 +332,8 @@
 					<include>Animation_VisibleChange200</include>
 				</control>
 				<control type="image">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>685</width>
 					<height>385</height>
 					<aspectratio>scale</aspectratio>
@@ -348,15 +345,15 @@
 			<control type="group">
 				<visible>Skin.HasSetting(BannerInfoPosterDisc) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 				<control type="image">
-					<posx>1113</posx>
-					<posy>182</posy>
+					<left>1113</left>
+					<top>182</top>
 					<width>285</width>
 					<height>385</height>
 					<texture background="true" fallback="thumbs/fallback_poster_tp.png">$VAR[ListPosterVar]</texture>
 				</control>
 				<control type="image">
-					<posx>1413</posx>
-					<posy>182</posy>
+					<left>1413</left>
+					<top>182</top>
 					<width>385</width>
 					<height>385</height>
 					<aspectratio>keep</aspectratio>
@@ -365,8 +362,8 @@
 			</control>
 
 			<control type="wraplist" id="6022">
-				<posx>1113</posx>
-				<posy>182</posy>
+				<left>1113</left>
+				<top>182</top>
 				<width>685</width>
 				<height>385</height>
 				<viewtype>list</viewtype>
@@ -393,8 +390,8 @@
 				<content target="video" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 			</control>
 			<control type="label">
-				<posx>1113</posx>
-				<posy>570</posy>
+				<left>1113</left>
+				<top>570</top>
 				<width>628</width>
 				<height>60</height>
 				<font>font16_title</font>
@@ -405,8 +402,8 @@
 				<visible>![String.Contains(ListItem.Filename,.3D.) | String.Contains(ListItem.Filename,.3d.)] + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
-				<posx>1113</posx>
-				<posy>570</posy>
+				<left>1113</left>
+				<top>570</top>
 				<width>628</width>
 				<height>60</height>
 				<font>font16_title</font>
@@ -417,8 +414,8 @@
 				<visible>[String.Contains(ListItem.Filename,.3D.) | String.Contains(ListItem.Filename,.3d.)]</visible>
 			</control>
 			<control type="grouplist">
-				<posx>1113</posx>
-				<posy>625</posy>
+				<left>1113</left>
+				<top>625</top>
 				<width>685</width>
 				<height>270</height>
 				<itemgap>5</itemgap>
@@ -437,8 +434,8 @@
 				</control>
 			</control>
 			<control type="image">
-				<posy>727</posy>
-				<posx>1150</posx>
+				<top>727</top>
+				<left>1150</left>
 				<width>600</width>
 				<height>500</height>
 				<aspectratio aligny="top">keep</aspectratio>
@@ -448,8 +445,8 @@
 				<visible>!Skin.HasSetting(LogoBehindPlot) + !ListItem.IsCollection</visible>
 			</control>
 			<control type="image">
-				<posy>727</posy>
-				<posx>1150</posx>
+				<top>727</top>
+				<left>1150</left>
 				<width>600</width>
 				<height>500</height>
 				<aspectratio aligny="top">keep</aspectratio>
@@ -459,8 +456,8 @@
 				<visible>!Skin.HasSetting(LogoBehindPlot) + !String.IsEmpty(Container.ListItem.Art(clearlogo)) + !String.IsEmpty(Container.ListItem.Art(extrafanart1)) + String.IsEmpty(Container.ListItem.Art(clearart)) + ListItem.IsCollection</visible>
 			</control>
 			<control type="image">
-				<posy>727</posy>
-				<posx>1150</posx>
+				<top>727</top>
+				<left>1150</left>
 				<width>600</width>
 				<height>500</height>
 				<aspectratio aligny="top">keep</aspectratio>
@@ -470,8 +467,8 @@
 				<visible>!Skin.HasSetting(LogoBehindPlot) + !String.IsEmpty(Container.ListItem.Art(extrafanart1)) + !String.IsEmpty(Container.ListItem.Art(clearlogo)) + !String.IsEmpty(Container.ListItem.Art(clearart))</visible>
 			</control>
 			<control type="image">
-				<posy>727</posy>
-				<posx>1150</posx>
+				<top>727</top>
+				<left>1150</left>
 				<width>600</width>
 				<height>500</height>
 				<aspectratio aligny="top">keep</aspectratio>
@@ -482,8 +479,8 @@
 			</control>
 			<control type="textbox">
 				<label>$VAR[VideoPlotVar3]</label>
-				<posy>727</posy>
-				<posx>1130</posx>
+				<top>727</top>
+				<left>1130</left>
 				<width>655</width>
 				<height>247</height>
 				<font>font14_textbox</font>
@@ -492,33 +489,32 @@
 				<include>ShowCaseInfoPanelButtonsValues</include>
 			</control>
 			<control type="image">
-				<posx>1113</posx>
-				<posy>568</posy>
+				<left>1113</left>
+				<top>568</top>
 				<width>2</width>
 				<height>510</height>
 				<texture border="1">separator3.png</texture>
 			</control>
 			<control type="image">
-				<posx>1115</posx>
-				<posy>890</posy>
+				<left>1115</left>
+				<top>890</top>
 				<height>90</height>
 				<width>684</width>
 				<texture border="1">separator5.png</texture>
 			</control>
 			<control type="group">
-				<posx>1140</posx>
-				<posy>990</posy>
+				<left>1140</left>
+				<top>990</top>
 				<width>1815</width>
 				<height>90</height>
 				<include>VisibleFadeEffect</include>
 				<visible>Container.Content(tvshows)</visible>
 				<control type="group">
-					<posy>-5</posy>
+					<top>-5</top>
 					<width>175</width>
 					<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 					<control type="label">
-						<posx>0</posx>
-						<posy>2</posy>
+						<top>2</top>
 						<width>165</width>
 						<height>60</height>
 						<align>center</align>
@@ -528,7 +524,7 @@
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
-						<posy>52</posy>
+						<top>52</top>
 						<width>165</width>
 						<height>30</height>
 						<align>center</align>
@@ -540,11 +536,10 @@
 				<control type="group">
 					<visible>!String.IsEmpty(ListItem.Property(TotalEpisodes))</visible>
 					<width>167</width>
-					<posx>165</posx>
-					<posy>-5</posy>
+					<left>165</left>
+					<top>-5</top>
 					<control type="label">
-						<posx>0</posx>
-						<posy>2</posy>
+						<top>2</top>
 						<width>165</width>
 						<height>60</height>
 						<align>center</align>
@@ -554,7 +549,7 @@
 						<textcolor>grey2</textcolor>
 					</control>
 					<control type="label">
-						<posy>52</posy>
+						<top>52</top>
 						<width>165</width>
 						<height>30</height>
 						<align>center</align>
@@ -566,8 +561,8 @@
 				<control type="group">
 					<visible>!String.IsEmpty(ListItem.Property(UnWatchedEpisodes))</visible>
 					<width>200</width>
-					<posx>305</posx>
-					<posy>-1</posy>
+					<left>305</left>
+					<top>-1</top>
 					<control type="label">
 						<width>200</width>
 						<height>60</height>
@@ -588,7 +583,7 @@
 					</control>
 				</control>
 				<control type="image" id="800014">
-					<posx>500</posx>
+					<left>500</left>
 					<width>165</width>
 					<colordiffuse>grey2</colordiffuse>
 					<include>MediaFlagVars</include>
@@ -600,7 +595,7 @@
 					<visible>!String.IsEmpty(Control.GetLabel(800014)) + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
-					<posx>495</posx>
+					<left>495</left>
 					<colordiffuse>grey2</colordiffuse>
 					<include>MediaFlagVars</include>
 					<texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
@@ -693,8 +688,8 @@
 				</control>
 			</control>
 			<control type="scrollbar" id="61">
-				<posx>1797</posx>
-				<posy>725</posy>
+				<left>1797</left>
+				<top>725</top>
 				<width>14</width>
 				<height>200</height>
 				<onleft>505</onleft>
@@ -706,8 +701,8 @@
 				<texturesliderbackground>views/scrollbarbacklist.png</texturesliderbackground>
 			</control>
 			<control type="image">
-				<posx>1081</posx>
-				<posy>170</posy>
+				<left>1081</left>
+				<top>170</top>
 				<width>48</width>
 				<height>920</height>
 				<animation effect="fade" start="100" end="80" time="50" condition="Control.HasFocus(6021)">Conditional</animation>
@@ -719,8 +714,8 @@
 			<control type="list" id="6021">
 				<onright>61</onright>
 				<onleft>505</onleft>
-				<posx>1091</posx>
-				<posy>180</posy>
+				<left>1091</left>
+				<top>180</top>
 				<width>88</width>
 				<height>100%</height>
 				<orientation>vertical</orientation>

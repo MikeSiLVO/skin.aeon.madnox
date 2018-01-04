@@ -173,7 +173,6 @@
 								<texture border="1">osd/osd_settings_buttonnf.png</texture>
 							</control>
 							<control type="image">
-								<left>0</left>
 								<width>1665</width>
 								<height>59</height>
 								<texture colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</texture>

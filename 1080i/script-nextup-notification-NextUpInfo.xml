@@ -25,18 +25,11 @@
 				<control type="image" id="3012">
 					<visible>false</visible>
 				</control>
-
 				<control type="image">
-					<left>0</left>
-					<right>0</right>
-					<top>0</top>
 					<height>90</height>
 					<texture border="5" colordiffuse="af000000">white.png</texture>
 				</control>
 				<control type="image">
-					<left>0</left>
-					<right>0</right>
-					<bottom>0</bottom>
 					<height>30</height>
 					<texture border="5" colordiffuse="cf000000">common/white.png</texture>
 				</control>
@@ -155,7 +148,6 @@
 					</control>
 					<control type="label">
 						<width>100%</width>
-						<top>0</top>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>B3dddddd</textcolor>
@@ -167,7 +159,6 @@
 					<control type="label" description="Title" id="3000">
 						<width>100%</width>
 						<left>267</left>
-						<top>0</top>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>$VAR[FocusTextureColorVar]</textcolor>

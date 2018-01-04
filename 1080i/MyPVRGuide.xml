@@ -218,7 +218,6 @@
 					<control type="image" id="2">
 						<width>60</width>
 						<height>60</height>
-						<top>0</top>
 					</control>
 					<control type="label" id="1">
 						<left>9</left>
@@ -348,7 +347,7 @@
 			</control>
 			<control type="group">
 				<control type="image">
-					<posy>750</posy>
+					<top>750</top>
 					<width>1920</width>
 					<height>350</height>
 					<texture colordiffuse="$VAR[AreaColorVar]">views/diffuse_bottom.png</texture>

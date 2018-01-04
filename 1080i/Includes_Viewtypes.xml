@@ -1023,7 +1023,8 @@
 					<include>Animation_VisibleChange200</include>
 				</control>
 				<!-- END Extra Fanart by ShadowTek -->
-				<control type="image">   <!--  Posters Poster right -->
+				<!-- Posters Poster right -->
+				<control type="image">
 					<left>1591</left>
 					<top>78</top>
 					<width>264</width>
@@ -1474,7 +1475,7 @@
 			<!-- BEGIN Extra Fanart by ShadowTek -->
 			<control type="multiimage">
 				<left>915</left>
-				<posy>75</posy>
+				<top>75</top>
 				<width>785</width>
 				<height>442</height>
 				<aspectratio align="center">scale</aspectratio>
@@ -1663,7 +1664,6 @@
 					<top>71</top>
 					<control type="grouplist">
 						<orientation>vertical</orientation>
-						<top>0</top>
 						<control type="label">
 							<width>420</width>
 							<height>22</height>
@@ -1948,7 +1948,6 @@
 		</control>
 		<!-- END Next Aired -->
 	</include>
-
 	<!--MAD - New Info / Text only Infopanel - Start -->
 	<include name="ShowcaseInfoPaneTextOnly">
 		<control type="group" id="7550">
@@ -2213,7 +2212,6 @@
 		<!-- END Next Aired -->
 	</include>
 	<!--End-->
-
 	<include name="FloorSetDiscArt">
 		<control type="group">
 			<animation type="WindowClose" reversible="false">

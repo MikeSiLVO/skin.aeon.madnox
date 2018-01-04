@@ -415,7 +415,7 @@
 		<selectedcolor>grey2</selectedcolor>
 	</include>
 	<include name="Objects_DoubleKeyOff">
-		<posx>-129</posx>
+		<left>-129</left>
 		<width>300</width>
 		<height>102</height>
 		<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">keyboard/keyboard_triplef.png</texturefocus>
@@ -2929,10 +2929,10 @@
 	</include>
 	<!-- <include name="YoutubeItemLayout">
 		<control type="group">
-			<posx>75</posx>
-			<posy>160</posy>
+			<left>75</left>
+			<top>160</top>
 			<control type="image">
-				<posx>25</posx>
+				<left>25</left>
 				<width>390</width>
 				<height>220</height>
 				<fadetime>200</fadetime>
@@ -2942,30 +2942,30 @@
 				<bordersize>5</bordersize>
 			</control>
 			<control type="image">
-				<posx>25</posx>
+				<left>25</left>
 				<width>390</width>
 				<height>220</height>
 				<texture colordiffuse="55FFFFFF">common/bgcolor.png</texture>
 			</control>
 			<control type="label">
-				<posx>35</posx>
-				<posy>215</posy>
+				<left>35</left>
+				<top>215</top>
 				<width>440</width>
 				<label>$INFO[ListItem.Label2]</label>
 				<font>Font_Reg25_2</font>
 				<textcolor>grey</textcolor>
 			</control>
 			<control type="image">
-				<posx>280</posx>
-				<posy>218</posy>
+				<left>280</left>
+				<top>218</top>
 				<width>130</width>
 				<height>30</height>
 				<texture colordiffuse="grey">$INFO[ListItem.Rating,stars/,.png]</texture>
 				<include>Animation_HomeWidget</include>
 			</control>
 			<control type="textbox">
-				<posx>20</posx>
-				<posy>242</posy>
+				<left>20</left>
+				<top>242</top>
 				<height>104</height>
 				<width>400</width>
 				<label>$INFO[ListItem.Label]</label>
@@ -2974,8 +2974,8 @@
 				<textcolor>grey2</textcolor>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>-15</posy>
+				<left>30</left>
+				<top>-15</top>
 				<width>380</width>
 				<height>5</height>
 				<align>center</align>
@@ -2988,20 +2988,20 @@
 	</include> -->
 	<!-- <include name="YoutubeFocusedLayout">
 		<control type="group">
-			<posx>75</posx>
-			<posy>160</posy>
+			<left>75</left>
+			<top>160</top>
 			<animation type="Focus">
 				<effect type="zoom" time="150" start="95" end="100" center="245,260" />
 				<effect type="zoom" time="150" start="105" end="100" delay="150" center="245,260" />
 			</animation>
             <control type="image">
-                <posy>-45</posy>
+                <top>-45</top>
                 <width>440</width>
                 <height>410</height>
                 <texture colordiffuse="$VAR[FocusTextureColorVar]" border="40">buttons/roundedbutton-focus.png</texture>
             </control>
 			<control type="image">
-				<posx>25</posx>
+				<left>25</left>
 				<width>390</width>
 				<height>220</height>
 				<aspectratio aligny="center">scale</aspectratio>
@@ -3012,30 +3012,30 @@
 			<control type="image">
 				<animation effect="fade" time="300" start="100" end="0" delay="100">Focus</animation>
 				<animation effect="fade" time="300" start="0" end="100">UnFocus</animation>
-				<posx>25</posx>
+				<left>25</left>
 				<width>390</width>
 				<height>220</height>
 				<texture colordiffuse="55FFFFFF">common/bgcolor.png</texture>
 			</control>
 			<control type="label">
-				<posx>35</posx>
-				<posy>215</posy>
+				<left>35</left>
+				<top>215</top>
 				<width>440</width>
 				<label>$INFO[ListItem.Label2]</label>
 				<font>Font_Reg25_2</font>
 				<textcolor>grey</textcolor>
 			</control>
 			<control type="image">
-				<posx>280</posx>
-				<posy>218</posy>
+				<left>280</left>
+				<top>218</top>
 				<width>130</width>
 				<height>30</height>
 				<texture colordiffuse="grey">$INFO[ListItem.Rating,stars/,.png]</texture>
 				<include>Animation_HomeWidget</include>
 			</control>
 			<control type="textbox">
-				<posx>20</posx>
-				<posy>242</posy>
+				<left>20</left>
+				<top>242</top>
 				<height>104</height>
 				<width>400</width>
 				<align>center</align>
@@ -3045,8 +3045,8 @@
 				<font>Font_Reg25_2</font>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>-15</posy>
+				<left>30</left>
+				<top>-15</top>
 				<width>380</width>
 				<height>5</height>
 				<align>center</align>

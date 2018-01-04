@@ -45,7 +45,6 @@
 				</control>
 				<control type="image">
 					<left>1042</left>
-					<top>0</top>
 					<width>149</width>
 					<height>60</height>
 					<texture>special://home/addons/script.extendedinfo/resources/skins/Default/media/moviedb.png</texture>

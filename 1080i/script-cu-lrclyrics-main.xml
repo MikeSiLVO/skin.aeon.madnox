@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<coordinates>
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<system>1</system>
 	</coordinates>
 	<controls>
@@ -10,22 +10,22 @@
 	        <visible>!Skin.HasSetting(manfeedlyrics)</visible>
 			<control type="image" id="299">
 				<description>list</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>0</width>
 				<height>0</height>
 				<texture />
 			</control>
 			<control type="image">
-				<posx>50</posx>
-				<posy>150</posy>
+				<left>50</left>
+				<top>150</top>
 				<width>1000</width>
 				<height>490</height>
 				<texture>mooviz/lyr.bg.png</texture>
 			</control>
 			<control type="list" id="110">
-				<posx>85</posx>
-				<posy>170</posy>
+				<left>85</left>
+				<top>170</top>
 				<width>1354</width>
 				<height>460</height>
 				<onleft>111</onleft>
@@ -38,7 +38,7 @@
 				<animation effect="fade" time="160">WindowClose</animation>
 				<itemlayout height="45">
 					<control type="label">
-						<posx>1</posx>
+						<left>1</left>
 						<width>1000</width>
 						<height>45</height>
 						<align>left</align>
@@ -53,7 +53,7 @@
 						<animation effect="zoom" start="100" end="110" time="150" center="500,50">Focus</animation>
 						<animation effect="zoom" end="100" start="110" time="150" center="500,50">UnFocus</animation>
 						<control type="label">
-							<posx>10</posx>
+							<left>10</left>
 							<width>1000</width>
 							<height>45</height>
 							<align>left</align>
@@ -64,7 +64,7 @@
 							<shadowcolor>black</shadowcolor>
 						</control>
 						<control type="label">
-							<posx>60</posx>
+							<left>60</left>
 							<width>1000</width>
 							<height>45</height>
 							<align>left</align>
@@ -78,8 +78,8 @@
 				</focusedlayout>
 			</control>
 			<control type="spincontrol" id="111">
-				<posx>1800</posx>
-				<posy>6</posy>
+				<left>1800</left>
+				<top>6</top>
 				<height>98</height>
 				<textoffsetx>0</textoffsetx>
 				<textcolor>grey</textcolor>
@@ -93,8 +93,8 @@
 				<animation effect="fade" time="160">WindowClose</animation>
 			</control>
 			<control type="label">
-				<posx>82</posx>
-				<posy>150</posy>
+				<left>82</left>
+				<top>150</top>
 				<width>1754</width>
 				<height>478</height>
 				<align>center</align>
@@ -104,8 +104,8 @@
 				<visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
 			</control>
 			<control type="list" id="120">
-				<posx>482</posx>
-				<posy>90</posy>
+				<left>482</left>
+				<top>90</top>
 				<width>1354</width>
 				<height>450</height>
 				<onleft>121</onleft>
@@ -123,7 +123,7 @@
 						<texture>dialogs/setcontent_button_nofocus.png</texture>
 					</control>
 					<control type="label">
-						<posx>52</posx>
+						<left>52</left>
 						<width>1724</width>
 						<height>60</height>
 						<font>Font_Reg57</font>
@@ -145,7 +145,7 @@
 						<visible>Control.HasFocus(120)</visible>
 					</control>
 					<control type="label">
-						<posx>52</posx>
+						<left>52</left>
 						<width>1724</width>
 						<height>60</height>
 						<font>Font_Reg57</font>
@@ -155,8 +155,8 @@
 				</focusedlayout>
 			</control>
 			<control type="spincontrol" id="121">
-				<posx>1800</posx>
-				<posy>6</posy>
+				<left>1800</left>
+				<top>6</top>
 				<height>98</height>
 				<textoffsetx>0</textoffsetx>
 				<textcolor>grey</textcolor>

@@ -125,7 +125,6 @@
 			</control>
 			<control type="grouplist">
 				<left>10</left>
-				<top>0</top>
 				<width>1500</width>
 				<itemgap>10</itemgap>
 				<orientation>horizontal</orientation>

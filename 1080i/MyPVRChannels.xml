@@ -178,7 +178,7 @@
 			<control type="group">
 				<include>Animation_WindowFade200</include>
 				<control type="image">
-					<posy>717</posy>
+					<top>717</top>
 					<width>1920</width>
 					<height>367</height>
 					<texture colordiffuse="$VAR[AreaColorVar]">views/diffuse_bottom.png</texture>
@@ -195,13 +195,12 @@
 					<description>Videopreview &amp; border</description>
 					<control type="image">
 						<left>23</left>
-						<top>0</top>
 						<width>664</width>
 						<height>374</height>
 						<texture border="2">pvr/Border.png</texture>
 						<colordiffuse>$VAR[ExtendedColorDiffuseVar]</colordiffuse>
 					</control>
-<!-- 					TV Thumb instead of Tv channel logo on right side - Big List START -->
+					<!-- TV Thumb instead of Tv channel logo on right side - Big List START -->
 					<control type="image">
 						<visible>!String.IsEqual(ListItem.Icon,DefaultVideo.png)</visible>
 						<left>30</left>
@@ -1175,7 +1174,7 @@
 			<control type="group">
 				<include>Animation_WindowFade200</include>
 				<control type="image">
-					<posy>717</posy>
+					<top>717</top>
 					<width>1920</width>
 					<height>367</height>
 					<texture colordiffuse="$VAR[AreaColorVar]">views/diffuse_bottom.png</texture>

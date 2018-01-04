@@ -309,7 +309,6 @@
 					<itemlayout width="290" height="434">
 						<control type="group">
 							<left>150</left>
-							<top>0</top>
 							<control type="image">
 								<left>-94</left>
 								<top>164</top>
@@ -360,7 +359,6 @@
 								<effect type="zoom" delay="5000" center="50,180" start="100" end="20" time="800" tween="cubic" easing="out" />
 							</animation>
 							<left>140</left>
-							<top>0</top>
 							<control type="image">
 								<left>-136</left>
 								<top>67</top>
@@ -425,7 +423,6 @@
 						<control type="group">
 							<visible>ListItem.IsCollection</visible>
 							<left>140</left>
-							<top>0</top>
 							<control type="image">
 								<left>-136</left>
 								<top>67</top>
@@ -487,7 +484,6 @@
 							<visible>!Control.HasFocus(708) + !ListItem.IsCollection</visible>
 							<visible>!ListItem.IsParentFolder</visible>
 							<left>140</left>
-							<top>0</top>
 							<control type="image">
 								<left>-136</left>
 								<top>67</top>

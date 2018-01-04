@@ -112,7 +112,6 @@
 			<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
 		</control>
 		<control type="image">
-			<top>0</top>
 			<width>1210</width>
 			<height>90</height>
 			<texture border="5">views/tripanel/listselect_fo.png</texture>

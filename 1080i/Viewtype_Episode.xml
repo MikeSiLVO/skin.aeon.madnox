@@ -1233,10 +1233,8 @@
 						<shadowcolor>floorshadow</shadowcolor>
 						<textcolor>white2</textcolor>
 					</control>
-
 					<control type="label">
 						<left>370</left>
-						<top>0</top>
 						<width>870</width>
 						<align>right</align>
 						<label>$VAR[FirstLabelVar]</label>

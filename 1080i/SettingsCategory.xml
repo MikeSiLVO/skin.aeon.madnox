@@ -103,7 +103,6 @@
 				<description>Default Label</description>
 				<width>1256</width>
 				<textoffsetx>45</textoffsetx>
-				<top>0</top>
 				<height>50</height>
 				<label />
 				<align>center</align>

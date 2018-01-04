@@ -202,7 +202,7 @@
 					<height>550</height>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
-				
+
 				<control type="textbox">
 					<left>145</left>
 					<top>287</top>
@@ -559,7 +559,7 @@
 					<height>550</height>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
-				
+
 				<control type="textbox">
 					<left>102</left>
 					<top>292</top>
@@ -951,7 +951,6 @@
 							</control>
 						</control>
 						<control type="image">
-							<top>0</top>
 							<width>842</width>
 							<height>51</height>
 							<include>PanelGlowFade</include>
@@ -1137,7 +1136,6 @@
 							</control>
 						</control>
 						<control type="image">
-							<top>0</top>
 							<width>842</width>
 							<height>96</height>
 							<texture border="8">views/tripanel/listselect_fo.png</texture>

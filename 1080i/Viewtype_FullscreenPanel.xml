@@ -110,7 +110,6 @@
 					</itemlayout>
 					<focusedlayout height="346" width="1920" condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(addons)] + !Skin.HasSetting(infopanel2columns) + !Skin.HasSetting(infopanelfanart)">
 						<control type="image">
-							<top>0</top>
 							<width>1920</width>
 							<height>360</height>
 							<texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -1594,10 +1593,8 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="FSPanelMusicFocusedlayout">
 		<control type="image">
-			<top>0</top>
 			<width>970</width>
 			<height>360</height>
 			<texture border="8">views/tripanel/listselect_fo.png</texture>
@@ -1733,7 +1730,6 @@
 	</include>
 	<include name="FSPanelTVFocusedLayout">
 		<control type="image">
-			<top>0</top>
 			<width>970</width>
 			<height>220</height>
 			<texture border="8">views/tripanel/listselect_fo.png</texture>

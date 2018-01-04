@@ -88,7 +88,6 @@
 			<animation effect="slide" start="735,0" end="0,0" delay="0" time="300">Visible</animation>
 			<animation effect="slide" end="735,0" time="300">WindowClose</animation>
 			<control type="group">
-				<top>0</top>
 				<left>1172</left>
 				<control type="image">
 					<left>-45</left>
@@ -2082,9 +2081,9 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(ThirdMusicVizRecordPlayer) + !Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
-				<control type="group"> <!--CD Art Display-->
+				<!--CD Art Display-->
+				<control type="group">
 					<left>1180</left>
-					<top>0</top>
 					<control type="image">
 						<width>500</width>
 						<height>500</height>
@@ -2338,12 +2337,10 @@
 				</control>
 			</control>
 		</control>
-<!-- Third Layout End -->
-<!--Fourth Layout -->
+		<!-- Fourth Layout -->
 		<!-- Background-->
 		<control type="image">
 				<visible>Skin.HasSetting(FourthMusicVizLayout) + !Skin.HasSetting(FourthMusicVizLayoutDown)</visible>
-				<top>0</top>
 				<width>2100</width>
 				<height>780</height>
 				<texture flipy="true">home/nowplaying_shadow.png</texture>
@@ -2406,7 +2403,6 @@
 			<height>800</height>
 			<control type="image" id="831844">
 				<left>710</left>
-				<top>0</top>
 				<width>500</width>
 				<height>500</height>
 				<aspectratio>keep</aspectratio>

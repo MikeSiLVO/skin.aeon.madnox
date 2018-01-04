@@ -391,8 +391,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />
@@ -1124,8 +1122,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />
@@ -1182,8 +1178,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />
@@ -2048,8 +2042,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />
@@ -2142,8 +2134,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />
@@ -2318,8 +2308,6 @@
 							</control>
 							<control type="button">
 								<description>Autoplay video</description>
-								<posx>0</posx>
-								<posy>0</posy>
 								<width>0</width>
 								<height>0</height>
 								<texturefocus />
@@ -2399,8 +2387,6 @@
 							</control>
 							<control type="button">
 								<description>Autoplay video</description>
-								<posx>0</posx>
-								<posy>0</posy>
 								<width>0</width>
 								<height>0</height>
 								<texturefocus />
@@ -2659,7 +2645,6 @@
 					</control>
 					<control type="group">
 						<left>450</left>
-						<top>0</top>
 						<!-- Console filter -->
 						<control type="label">
 							<description>Consoles</description>
@@ -2682,7 +2667,6 @@
 							<scrolltime>200</scrolltime>
 							<itemlayout height="48">
 								<control type="image">
-									<top>0</top>
 									<width>300</width>
 									<height>45</height>
 									<texture border="5">button-nofocus.png</texture>
@@ -2690,7 +2674,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2718,7 +2701,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2730,8 +2712,8 @@
 								</control>
 								<control type="button">
 									<description>Autoplay video</description>
-									<posx>0</posx>
-									<posy>0</posy>
+									<left>0</left>
+									<top>0</top>
 									<width>0</width>
 									<height>0</height>
 									<texturefocus />
@@ -2773,7 +2755,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2812,8 +2793,6 @@
 								</control>
 								<control type="button">
 									<description>Autoplay video</description>
-									<posx>0</posx>
-									<posy>0</posy>
 									<width>0</width>
 									<height>0</height>
 									<texturefocus />
@@ -2961,7 +2940,6 @@
 								</control>
 								<control type="label">
 									<left>8</left>
-									<top>0</top>
 									<width>285</width>
 									<height>45</height>
 									<align>left</align>
@@ -2975,8 +2953,6 @@
 						</control>
 						<control type="button">
 							<description>Autoplay video</description>
-							<posx>0</posx>
-							<posy>0</posy>
 							<width>0</width>
 							<height>0</height>
 							<texturefocus />

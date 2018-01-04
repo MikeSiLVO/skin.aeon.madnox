@@ -69,7 +69,6 @@
 				</control>
 				<control type="image">
 					<left>1042</left>
-					<top>0</top>
 					<width>149</width>
 					<height>60</height>
 					<texture>special://home/addons/script.extendedinfo/resources/skins/Default/media/moviedb.png</texture>
@@ -432,7 +431,6 @@
 				<!-- Add Plot Dialogue -->
 				<control type="textbox" id="800">
 					<description>Plot</description>
-					<posx>0</posx>
 					<top>565</top>
 					<width>788</width>
 					<height>402</height>
@@ -447,8 +445,7 @@
 				</control>
 				<control type="textbox" id="800">
 					<description>Plot</description>
-					<posx>0</posx>
-					<posy>560</posy>
+					<top>560</top>
 					<width>1132</width>
 					<height>402</height>
 					<font>font15_textbox</font>
@@ -463,7 +460,6 @@
 				<!-- Plot Resize for Awards Label -->
 				<control type="textbox" id="800">
 					<description>Plot</description>
-					<posx>0</posx>
 					<top>565</top>
 					<width>788</width>
 					<height>352</height>
@@ -478,8 +474,7 @@
 				</control>
 				<control type="textbox" id="800">
 					<description>Plot</description>
-					<posx>0</posx>
-					<posy>560</posy>
+					<top>560</top>
 					<width>1132</width>
 					<height>352</height>
 					<font>font15_textbox</font>
@@ -1311,7 +1306,6 @@
 			</control>
 			<control type="group">
 				<left>3</left>
-				<top>0</top>
 				<control type="image">
 					<top>450</top>
 					<width>594</width>

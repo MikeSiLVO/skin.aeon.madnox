@@ -26,7 +26,6 @@
 			</control>
 			<control type="grouplist" id="0">
 				<left>30</left>
-				<top>0</top>
 				<width>1920</width>
 				<height>300</height>
 				<itemgap>10</itemgap>
@@ -153,8 +152,8 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>270</posx>
-					<posy>137</posy>
+					<left>270</left>
+					<top>137</top>
 					<width>910</width>
 					<height>14</height>
 					<info>PVR.ActStreamProgrSignal</info>
@@ -183,8 +182,8 @@
 				</control>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>270</posx>
-					<posy>167</posy>
+					<left>270</left>
+					<top>167</top>
 					<width>910</width>
 					<height>14</height>
 					<info>PVR.ActStreamProgrSNR</info>
@@ -287,14 +286,14 @@
 			</animation>
 			<visible>[Player.Seeking | [Player.DisplayAfterSeek + [!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.Chapter)]] | Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
 			<control type="image" id="1">
-				<posx>704</posx>
+				<left>704</left>
 				<width>513</width>
 				<height>87</height>
 				<texture flipy="true">osd/osd_top_bar.png</texture>
 				<visible>[[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek] | [[Player.Paused + Player.Caching] + !Player.Seeking] | Player.Seeking|[Player.DisplayAfterSeek + ![player.forwarding | player.rewinding] + !String.IsEmpty(Player.SeekOffset)]</visible>
 			</control>
 			<control type="label" id="1">
-				<posx>750</posx>
+				<left>750</left>
 				<width>420</width>
 				<height>42</height>
 				<align>center</align>

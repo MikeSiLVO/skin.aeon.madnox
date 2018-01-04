@@ -988,7 +988,6 @@
 				<!--Albums lvl -->
 				<control type="image" id="99">
 					<visible>Container.Content(albums)</visible>
-					<top>0</top>
 					<left>220</left>
 					<height>80</height>
 					<width min="0" max="500">auto</width>
@@ -1032,7 +1031,6 @@
 				<!--Artist/Albums-->
 				<itemlayout height="47" width="600" condition="Container.Content(artists) | Container.Content(albums)">
 					<control type="image">
-						<top>0</top>
 						<left>20</left>
 						<width>600</width>
 						<height>60</height>

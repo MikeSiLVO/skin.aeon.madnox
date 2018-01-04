@@ -36,7 +36,6 @@
 					</control>
 					<control type="image">
 						<left>260</left>
-						<top>0</top>
 						<width>70</width>
 						<height>70</height>
 						<texture colordiffuse="grey2">$INFO[ListItem.Icon]</texture>

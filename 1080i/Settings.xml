@@ -17,22 +17,22 @@
 			</animation>
 			<animation effect="zoom" end="91" center="960,360" time="320" tween="cubic" easing="inout" condition="true">Conditional</animation>
 			<control type="image">
-				<posx>52</posx>
-				<posy>50</posy>
+				<left>52</left>
+				<top>50</top>
 				<width>1815</width>
 				<height>1120</height>
 				<texture colordiffuse="$VAR[DialogColorVar]">wall/wall_bg.png</texture>
 			</control>
 			<control type="image">
-				<posx>52</posx>
-				<posy>50</posy>
+				<left>52</left>
+				<top>50</top>
 				<width>1815</width>
 				<height>1120</height>
 				<texture>wall/wall_bg_reflection.png</texture>
 			</control>
 			<control type="image">
-				<posx>55</posx>
-				<posy>118</posy>
+				<left>55</left>
+				<top>118</top>
 				<width>475</width>
 				<height>292</height>
 				<texture colordiffuse="$VAR[FocusTextureColorVar]" border="40">buttons/roundedbutton-focus.png</texture>
@@ -44,8 +44,8 @@
 				<animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Container(9000).Column(4) | Container(9000).Column(3) | Container(9000).Column(2) | Container(9000).Column(1)">Conditional</animation>
 			</control>
 			<control type="panel" id="9000">
-				<posx>92</posx>
-				<posy>140</posy>
+				<left>92</left>
+				<top>140</top>
 				<width>1850</width>
 				<height>819</height>
 				<onleft condition="!Skin.HasSetting(quicknav)">9000</onleft>
@@ -63,8 +63,8 @@
 						<bordersize>5</bordersize>
 					</control>
 					<control type="image">
-						<posy>13</posy>
-						<posx>5</posx>
+						<top>13</top>
+						<left>5</left>
 						<width>390</width>
 						<height>220</height>
 						<texture colordiffuse="55FFFFFF">common/bgcolor.png</texture>
@@ -109,8 +109,8 @@
 							</animation>
 						</control>
 						<control type="textbox">
-							<posx>10</posx>
-							<posy>20</posy>
+							<left>10</left>
+							<top>20</top>
 							<animation type="Focus" reversible="true">
 								<effect type="fade" start="0" end="100" delay="1000" time="500" tween="cubic"/>
 							</animation>
@@ -202,7 +202,6 @@
 					</item>
 				</content>
 			</control>
-			<!--            <control type="textbox">                <posx>555</posx>                <posy>810</posy>                <width>1200</width>                <height>210</height>                <label>$INFO[Container(9000).ListItem.Property(description)]</label>                <font>Font_Reg32</font>            </control>-->
 		</control>
 		<control type="group">
 			<include>Animation_HideBreadCrumbs</include>

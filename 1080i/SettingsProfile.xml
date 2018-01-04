@@ -21,8 +21,8 @@
 			<visible>![Window.isVisible(ProfileSettings) | Window.IsVisible(LockSettings)]</visible>
 			<include>Furniture_SettingsBackPanel</include>
 			<control type="list" id="9000">
-				<posx>63</posx>
-				<posy>195</posy>
+				<left>63</left>
+				<top>195</top>
 				<width>750</width>
 				<height>567</height>
 				<onleft>9100</onleft>
@@ -32,7 +32,7 @@
 				<scrolltime>300</scrolltime>
 				<itemlayout height="74" width="570">
 					<control type="label">
-						<posx>30</posx>
+						<left>30</left>
 						<width>306</width>
 						<height>74</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -48,7 +48,7 @@
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<posx>30</posx>
+						<left>30</left>
 						<width>306</width>
 						<height>74</height>
 						<label>$INFO[ListItem.Label]</label>
@@ -69,8 +69,8 @@
 				</content>
 			</control>
 			<control type="group" id="9100">
-				<posx>387</posx>
-				<posy>195</posy>
+				<left>387</left>
+				<top>195</top>
 				<control type="panel" id="2">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<width>1600</width>
@@ -84,7 +84,6 @@
 					<itemlayout height="350" width="292">
 						<control type="image">
 							<left>23</left>
-							<top>0</top>
 							<width>246</width>
 							<height>246</height>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
@@ -135,7 +134,6 @@
 						</control>
 						<control type="image">
 							<left>23</left>
-							<top>0</top>
 							<width>246</width>
 							<height>246</height>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
@@ -199,8 +197,8 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>358</posx>
-				<posy>100</posy>
+				<left>358</left>
+				<top>100</top>
 				<width>1491</width>
 				<align>center</align>
 				<aligny>top</aligny>

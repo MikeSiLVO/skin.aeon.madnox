@@ -904,7 +904,6 @@
 		<!-- Textures -->
 		<control type="image">
 			<left>$PARAM[Left]</left>
-			<top>0</top>
 			<width>$PARAM[Width]</width>
 			<height>$PARAM[Height]</height>
 			<texture>homewidgets/label_back_mixed.png</texture>
@@ -912,7 +911,6 @@
 		</control>
 		<control type="image">
 			<left>$PARAM[Left]</left>
-			<top>0</top>
 			<width>$PARAM[Width]</width>
 			<height>$PARAM[Height]</height>
 			<texture>homewidgets/label_back_mixed.png</texture>
