@@ -328,7 +328,7 @@
 					<top>31</top>
 					<width>530</width>
 					<height>795</height>
-					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>400</fadetime>
 					<visible>!Skin.HasSetting(genrethumbs)</visible>
 				</control>
@@ -338,7 +338,7 @@
 					<width>530</width>
 					<height>795</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterBackupVar]</texture>
+					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterBackupVar]</texture>
 					<visible>String.IsEmpty(Control.GetLabel(3822))</visible>
 				</control>
 				<control type="image">
@@ -410,7 +410,7 @@
 					<top>29</top>
 					<width>487</width>
 					<height>732</height>
-					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" diffuse="views/tripanel/poster_diffuse.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>400</fadetime>
 					<visible>Skin.HasSetting(genrethumbs)</visible>
 				</control>

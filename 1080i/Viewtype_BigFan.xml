@@ -134,7 +134,7 @@
 					<top>166</top>
 					<width>215</width>
 					<height>315</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>275</fadetime>
 					<visible>Skin.HasSetting(genrethumbs)</visible>
 				</control>
@@ -143,7 +143,7 @@
 					<top>166</top>
 					<width>215</width>
 					<height>315</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>275</fadetime>
 					<visible>!Skin.HasSetting(genrethumbs)</visible>
 				</control>
@@ -178,7 +178,7 @@
 					<top>754</top>
 					<width>204</width>
 					<height>303</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$INFO[ListItem.Art(poster)]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$INFO[ListItem.Art(poster)]</texture>
 					<fadetime>275</fadetime>
 					<visible>String.IsEqual(Window(home).Property(actualViewtype),BigFan) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(genres) | Container.Content(sets)] | Container.Content(seasons)</visible>
 				</control>

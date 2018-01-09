@@ -327,7 +327,7 @@
 					<top>26</top>
 					<width>535</width>
 					<height>745</height>
-					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
 					<bordersize>19</bordersize>
@@ -1187,7 +1187,7 @@
 						<width>550</width>
 						<height>826</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<colordiffuse>FF000000</colordiffuse>
 						<bordersize>17</bordersize>
 						<visible>[!Skin.HasSetting(listcdart) + Container.Content(movies)] | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
@@ -1198,7 +1198,7 @@
 						<width>550</width>
 						<height>825</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<bordertexture border="19,5">thumbs/thumbshadow.png</bordertexture>
 						<bordersize>19</bordersize>
 						<visible>[!Skin.HasSetting(listcdart) + Container.Content(movies)] | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
@@ -1208,7 +1208,7 @@
 						<width>512</width>
 						<height>765</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
-						<texture diffuse="thumbs/diffuse_mirror3.png"  flipy="true" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture diffuse="thumbs/diffuse_mirror3.png"  flipy="true" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<colordiffuse>d0FFFFFF</colordiffuse>
 						<fadetime>IconCrossfadeTime2</fadetime>
 						<visible>[!Skin.HasSetting(listcdart) + Container.Content(movies)] | [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
@@ -1230,7 +1230,7 @@
 						<width>550</width>
 						<height>825</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<bordertexture border="19,5">thumbs/thumbshadow.png</bordertexture>
 						<bordersize>19</bordersize>
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
@@ -1241,7 +1241,7 @@
 						<width>512</width>
 						<height>765</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
-						<texture diffuse="thumbs/diffuse_mirror3.png"  flipy="true" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture diffuse="thumbs/diffuse_mirror3.png"  flipy="true" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<colordiffuse>d0FFFFFF</colordiffuse>
 						<fadetime>IconCrossfadeTime2</fadetime>
 						<visible>Skin.HasSetting(listcdart) + Container.Content(movies)</visible>
@@ -1254,7 +1254,7 @@
 						<top>26</top>
 						<width>535</width>
 						<height>745</height>
-						<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" diffuse="thumbs/movieposter_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<fadetime>IconCrossfadeTime2</fadetime>
 						<bordertexture border="19.5">thumbs/poster_shadow.png</bordertexture>
 						<bordersize>19</bordersize>

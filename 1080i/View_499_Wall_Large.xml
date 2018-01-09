@@ -30,7 +30,7 @@
 				<left>384</left>
 				<width>254</width>
 				<height>423</height>
-				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+				<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>[[!Skin.Hassetting(WallLargeCases) + Container.Content(movies)] | [Container.Content(movies) + !Skin.Hassetting(usecases) + !Skin.Hassetting(clearcases)]]</visible>
 			</control>
@@ -39,7 +39,7 @@
 				<left>384</left>
 				<width>254</width>
 				<height>423</height>
-				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+				<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>ListItem.IsCollection | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			</control>
@@ -48,7 +48,7 @@
 				<left>390</left>
 				<width>242</width>
 				<height>376</height>
-				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+				<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>Skin.Hassetting(WallLargeCases) + Container.Content(movies) + Skin.Hassetting(usecases) + !Skin.Hassetting(clearcases) + !ListItem.IsCollection</visible>
 			</control>
@@ -57,7 +57,7 @@
 				<left>391</left>
 				<width>242</width>
 				<height>408</height>
-				<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+				<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 				<fadetime>400</fadetime>
 				<visible>Skin.Hassetting(WallLargeCases) + Container.Content(movies) + Skin.Hassetting(usecases) + Skin.Hassetting(clearcases) + !ListItem.IsCollection</visible>
 			</control>
@@ -499,7 +499,7 @@
 					<control type="image">
 						<width>185</width>
 						<height>275</height>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<fadetime>400</fadetime>
 						<bordertexture border="2">thumbs/panel_border.png</bordertexture>
 						<bordersize>4</bordersize>
@@ -509,7 +509,7 @@
 					<control type="image">
 						<width>185</width>
 						<height>275</height>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<fadetime>400</fadetime>
 						<bordertexture border="2">thumbs/panel_border.png</bordertexture>
 						<bordersize>4</bordersize>
@@ -654,7 +654,7 @@
 							<top>19</top>
 							<width>182</width>
 							<height>263</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>8</bordersize>
 							<visible>Skin.Hassetting(WallLargeCases) + !Skin.HasSetting(clearcases) + [Container.Content(movies) | Container.Content(sets) | Container.Content(genres)]</visible>
@@ -665,7 +665,7 @@
 							<top>14</top>
 							<width>186</width>
 							<height>271</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>9</bordersize>
 							<visible>Skin.Hassetting(WallLargeCases) + Skin.HasSetting(clearcases) + [Container.Content(movies) | Container.Content(sets) | Container.Content(genres)]</visible>
@@ -676,7 +676,7 @@
 							<top>15</top>
 							<width>182</width>
 							<height>268</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>9</bordersize>
@@ -699,7 +699,7 @@
 							<top>4</top>
 							<width>182</width>
 							<height>268</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[PosterThumbVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[PosterThumbVar]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="8">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>7</bordersize>
@@ -831,7 +831,7 @@
 					<control type="image">                   <!-- transparent inactive poster -->
 						<width>139</width>
 						<height>207</height>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<fadetime>400</fadetime>
 						<bordertexture border="2">thumbs/panel_border.png</bordertexture>
 						<bordersize>3</bordersize>
@@ -841,7 +841,7 @@
 					<control type="image">   <!-- inactive covers -->
 						<width>139</width>
 						<height>207</height>
-						<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<fadetime>400</fadetime>
 						<bordertexture border="3">thumbs/panel_border.png</bordertexture>
 						<bordersize>3</bordersize>
@@ -985,7 +985,7 @@
 							<top>10</top>
 							<width>134</width>
 							<height>192</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>8</bordersize>
 							<visible>Skin.Hassetting(WallLargeCases) + !Skin.HasSetting(clearcases) + [Container.Content(movies) | Container.Content(sets) | Container.Content(genres)]</visible>
@@ -995,7 +995,7 @@
 							<top>6</top>
 							<width>140</width>
 							<height>199</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordersize>9</bordersize>
 							<visible>Skin.Hassetting(WallLargeCases) + Skin.HasSetting(clearcases) + [Container.Content(movies) | Container.Content(sets) | Container.Content(genres)]</visible>
@@ -1005,7 +1005,7 @@
 							<top>15</top>
 							<width>126</width>
 							<height>197.5</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							<fadetime>400</fadetime>
 							<bordertexture border="2">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>9</bordersize>
@@ -1028,7 +1028,7 @@
 							<top>4</top>
 							<width>126</width>
 							<height>188</height>
-							<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[PosterThumbVar]</texture>
+							<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[PosterThumbVar]</texture>
 							<fadetime>200</fadetime>
 							<bordertexture border="2">thumbs/thumbnail_focused.png</bordertexture>
 							<bordersize>7</bordersize>

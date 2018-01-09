@@ -1185,7 +1185,7 @@
 					</control>
 					<control type="image">
 						<include>KodiFlixMovieThumb</include>
-						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<include>KodiFlixOpenCase</include>
 						<visible>Skin.HasSetting(usecases) + [Container.Content(movies) | Container.Content(sets)] + Skin.Hassetting(KodiFlixCases) + !ListItem.IsParentFolder + Skin.HasSetting(KodiFlixOpenCase) + !String.IsEmpty(ListItem.Art(discart))</visible>
 					</control>
@@ -1987,7 +1987,7 @@
 					</control>
 					<control type="image">
 						<include>KodiFlixMovieThumb</include>
-						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+						<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						<include>KodiFlixDVDShelfOpenCase</include>
 						<visible>[Container.Content(movies) | Container.Content(sets)] + !ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(discart))</visible>
 					</control>

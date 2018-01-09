@@ -224,7 +224,7 @@
 					<width>422</width>
 					<height>626</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -237,7 +237,7 @@
 					<width>438</width>
 					<height>637</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterBackupVar]</texture>
+					<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterBackupVar]</texture>
 					<fadetime>IconCrossfadeTime2</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -249,7 +249,7 @@
 					<width>438</width>
 					<height>637</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -261,7 +261,7 @@
 					<width>438</width>
 					<height>637</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+					<texture background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>

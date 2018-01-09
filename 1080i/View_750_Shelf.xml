@@ -252,14 +252,14 @@
 								<top>514</top>
 								<width>205</width>
 								<height>340</height>
-								<texture flipy="true" fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/reflection_diffuse_sq.png" background="true">$VAR[ListPosterVar]</texture>
+								<texture flipy="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/reflection_diffuse_sq.png" background="true">$VAR[ListPosterVar]</texture>
 							</control>
 							<control type="image">
 								<left>-75</left>
 								<top>163</top>
 								<width>207</width>
 								<height>333</height>
-								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
+								<texture fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
 							</control>
 							<control type="image">
 								<left>58</left>
@@ -317,14 +317,14 @@
 								<top>66</top>
 								<width>277</width>
 								<height>470</height>
-								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
+								<texture fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" background="true">$VAR[ListPosterVar]</texture>
 							</control>
 							<control type="image">
 								<left>-115</left>
 								<top>556</top>
 								<width>276</width>
 								<height>480</height>
-								<texture fallback="thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" flipy="true" background="true">$VAR[ListPosterVar]</texture>
+								<texture fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg" diffuse="thumbs/movieposter_mask.png" flipy="true" background="true">$VAR[ListPosterVar]</texture>
 								<colordiffuse>61FFFFFF</colordiffuse>
 							</control>
 							<control type="image">

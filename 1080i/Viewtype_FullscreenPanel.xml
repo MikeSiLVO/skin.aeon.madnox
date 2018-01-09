@@ -290,7 +290,7 @@
 							<width>210</width>
 							<height>315</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+							<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 						</control>
 						<control type="image">
 							<left>13</left>
@@ -550,7 +550,7 @@
 								<width>210</width>
 								<height>315</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
-								<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+								<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 							</control>
 							<control type="image">
 								<left>13</left>
@@ -1230,7 +1230,7 @@
 				<width>210</width>
 				<height>315</height>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+				<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 			</control>
 			<control type="image">
 				<left>13</left>
@@ -1468,7 +1468,7 @@
 			<width>210</width>
 			<height>315</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
+			<texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="special://skin/extras/thumbs/fallback_poster_tp_solid.jpg">$VAR[ListPosterVar]</texture>
 		</control>
 		<control type="image">
 			<left>13</left>
