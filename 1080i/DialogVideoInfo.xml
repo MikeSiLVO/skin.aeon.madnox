@@ -448,7 +448,7 @@
 										<width>150</width>
 										<height>74</height>
 										<aspectratio aligny="center" align="center">keep</aspectratio>
-										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsStudio]</texture>
+										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 										<visible>!String.IsEmpty(Control.GetLabel(800011))</visible>
 									</control>
 									<control type="label">

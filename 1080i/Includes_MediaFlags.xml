@@ -254,7 +254,7 @@
 						<animation effect="slide" end="109" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 						<control type="image" id="75">
 							<top>-7</top>
-							<texture>$VAR[ColorFlagsStudio]</texture>
+							<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 							<width>135</width>
 							<height>82</height>
 							<aspectratio>keep</aspectratio>
@@ -365,7 +365,7 @@
 					<animation effect="slide" end="980" condition="Control.IsVisible(516)">Conditional</animation>
 					<control type="image">
 						<left>60</left>
-						<texture>$VAR[ColorFlagsStudio]</texture>
+						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 						<width>150</width>
 						<height>84</height>
 						<top>-8</top>
@@ -1258,7 +1258,7 @@
 				</control>
 				<control type="image">
 					<top>-10</top>
-					<texture>$VAR[ColorFlagsStudio]</texture>
+					<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 					<width>125</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>

@@ -459,13 +459,13 @@
 		<value>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels]</value>
 	</variable>
 	<variable name="PlayerAudioFlagVar">
-	    <value condition="SubString(Window(Home).Property(SkinHelper.ListItem.Tags),atmos)">$VAR[ColorFlagsAudio]audio\dolbyatmoslogo.png</value>
-	    <value condition="SubString(Window(Home).Property(SkinHelper.ListItem.Tags),dtsx)">$VAR[ColorFlagsAudio]audio\dtsxlogo.png</value>
-	    <value condition="SubString(Window(Home).Property(SkinHelper.ListItem.Tags),auro)">$VAR[ColorFlagsAudio]audio\aurologo.png</value>
-	    <value condition="SubString(Player.Filename,dtsx)">$VAR[ColorFlagsAudio]audio\dtsxlogo.png</value>
-	    <value condition="SubString(Player.Filename,auro)">$VAR[ColorFlagsAudio]audio\aurologo.png</value>
-	    <value condition="SubString(Player.Filename,atmos)">$VAR[ColorFlagsAudio]audio\dolbyatmoslogo.png</value>
-		<value>$VAR[ColorFlagsAudio]audio/$INFO[VideoPlayer.AudioCodec]$INFO[VideoPlayer.AudioChannels,,.png]</value>
+	    <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Tags),atmos)">$VAR[ColorFlagsAudio]audio/dolbyatmoslogo.png</value>
+	    <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Tags),dtsx)">$VAR[ColorFlagsAudio]audio/dtsxlogo.png</value>
+	    <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Tags),auro)">$VAR[ColorFlagsAudio]audio/aurologo.png</value>
+	    <value condition="String.Contains(Player.Filename,dtsx)">$VAR[ColorFlagsAudio]audio/dtsxlogo.png</value>
+	    <value condition="String.Contains(Player.Filename,auro)">$VAR[ColorFlagsAudio]audio/aurologo.png</value>
+	    <value condition="String.Contains(Player.Filename,atmos)">$VAR[ColorFlagsAudio]audio/dolbyatmoslogo.png</value>
+		<value>$VAR[ColorFlags]audio/$INFO[VideoPlayer.AudioCodec]$INFO[VideoPlayer.AudioChannels,,.png]</value>
 	</variable>
 	<variable name="LibraryAudioFlagVar">
 	    <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Tags),atmos)">$VAR[ColorFlags]audio/dolbyatmoslogo.png</value>
@@ -2749,8 +2749,9 @@
 		<value>flags/default/</value>
 	</variable>
 	<variable name="ColorFlagsStudio">
-		<value condition="Skin.HasSetting(ColorFlags) + !Skin.HasSetting(DisableStudiosFlag)">$INFO[ListItem.Studio,resource://resource.images.studios.coloured/,.png]</value>
-		<value>$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</value>
+		<value condition="Skin.HasSetting(DisableStudiosFlag)"></value>
+		<value condition="Skin.HasSetting(ColorFlags) + !Skin.HasSetting(DisableStudiosFlag)">resource://resource.images.studios.coloured/</value>
+		<value>resource://resource.images.studios.white/</value>
 	</variable>
 	<variable name="LanguageFlagsStyleVar">
 		<value condition="String.IsEqual(Skin.String(LanguageFlags),1)">flags/language/round/</value>

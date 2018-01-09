@@ -427,7 +427,7 @@
 					<top>-13</top>
 					<colordiffuse>floor</colordiffuse>
 					<include>MediaFlagVars</include>
-					<texture>$VAR[ColorFlagsStudio]</texture>
+					<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 					<visible>!String.IsEmpty(ListItem.Studio)	+ !Container.Content(tvshows) + !Container.Content(seasons)</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -500,7 +500,7 @@
 						<left>625</left>
 						<colordiffuse>floor</colordiffuse>
 						<include>MediaFlagVars</include>
-						<texture>$VAR[ColorFlagsStudio]</texture>
+						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Title) + !Container.Content(seasons)</visible>
 					</control>
 					<control type="image">

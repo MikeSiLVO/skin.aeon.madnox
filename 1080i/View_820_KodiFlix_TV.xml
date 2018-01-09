@@ -2313,7 +2313,7 @@
 						<left>625</left>
 						<colordiffuse>floor</colordiffuse>
 						<include>MediaFlagVars</include>
-						<texture>$VAR[ColorFlagsStudio]</texture>
+						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Title) + [!Container.Content(seasons) | Skin.HasSetting(KodiFlixTVInfo)]</visible>
 					</control>
 					<control type="image" id="1200">
