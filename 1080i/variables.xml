@@ -8,12 +8,12 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="DayTimeColorVar">
-		<value condition="SubString(System.Time(mm),0,left)">FF69f5ee</value>
-		<value condition="SubString(System.Time(mm),1,left)">FFF3F781</value>
-		<value condition="SubString(System.Time(mm),2,left)">FF69f5ee</value>
-		<value condition="SubString(System.Time(mm),3,left)">FFF3F781</value>
-		<value condition="SubString(System.Time(mm),4,left)">FF69f5ee</value>
-		<value condition="SubString(System.Time(mm),5,left)">FFF3F781</value>
+		<value condition="String.StartsWith(System.Time(mm),0)">FF69f5ee</value>
+		<value condition="String.StartsWith(System.Time(mm),1)">FFF3F781</value>
+		<value condition="String.StartsWith(System.Time(mm),2)">FF69f5ee</value>
+		<value condition="String.StartsWith(System.Time(mm),3)">FFF3F781</value>
+		<value condition="String.StartsWith(System.Time(mm),4)">FF69f5ee</value>
+		<value condition="String.StartsWith(System.Time(mm),5)">FFF3F781</value>
 	</variable>
 	<variable name="QuickConfigIconVar">
 		<value condition="!String.IsEmpty(Window(home).Property(quicknavsetup))">BigIcons/ButtonStop.png</value>
@@ -25,26 +25,26 @@
 	</variable>
 	<variable name="GlobalCaseVar">
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">tvseries.png</value>
-		<value condition="SubString(ListItem.Filename,3D) | SubString(ListItem.Filename,3d)">3d.png</value>
-		<value condition="SubString(ListItem.Filename,.3D.) | SubString(ListItem.Filename,.3d.)">3d.png</value>
-		<value condition="SubString(ListItem.Filename, 3D.) | SubString(ListItem.Filename, 3d.)">3d.png</value>
-		<value condition="SubString(ListItem.Filename,.3DBD.) | SubString(ListItem.Filename,.3dbd.)">3d.png</value>
-		<value condition="SubString(ListItem.Filename, 3DBD.) | SubString(ListItem.Filename, 3dbd.)">3d.png</value>
-		<value condition="SubString(ListItem.Filename,.HDDVD.) | SubString(ListItem.Filename,.hddvd.)">hddvd.png</value>
-		<value condition="SubString(ListItem.Filename, HDDVD.) | SubString(ListItem.Filename, hddvd.)">hddvd.png</value>
-		<value condition="SubString(ListItem.Filename,.SDTV.) | SubString(ListItem.Filename,.sdtv.)">sdtv.png</value>
-		<value condition="SubString(ListItem.Filename, SDTV.) | SubString(ListItem.Filename, sdtv.)">sdtv.png</value>
-		<value condition="SubString(ListItem.Filename,.HDTV.) | SubString(ListItem.Filename,.hdtv.)">hdtv.png</value>
-		<value condition="SubString(ListItem.Filename, HDTV.) | SubString(ListItem.Filename, hdtv.)">hdtv.png</value>
-		<value condition="SubString(ListItem.Filename,WEBDL) | SubString(ListItem.Filename,webdl)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename,WEBDL-) | SubString(ListItem.Filename,webdl-)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename,WEB.DL) | SubString(ListItem.Filename,web.dl)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename,.WEBDL.) | SubString(ListItem.Filename,.webdl.)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename, WEBDL.) | SubString(ListItem.Filename, webdl.)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename,.WEB-DL.) | SubString(ListItem.Filename,.web-dl.)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename, WEB-DL.) | SubString(ListItem.Filename, web-dl.)">webdl.png</value>
-		<value condition="SubString(ListItem.Filename,.4K.) | SubString(ListItem.Filename,.4k.)">4k.png</value>
-		<value condition="SubString(ListItem.Filename, 4K.) | SubString(ListItem.Filename, 4k.)">4k.png</value>
+		<value condition="String.Contains(ListItem.Filename,3D) | String.Contains(ListItem.Filename,3d)">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename,.3D.) | String.Contains(ListItem.Filename,.3d.)">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename, 3D.) | String.Contains(ListItem.Filename, 3d.)">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename,.3DBD.) | String.Contains(ListItem.Filename,.3dbd.)">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename, 3DBD.) | String.Contains(ListItem.Filename, 3dbd.)">3d.png</value>
+		<value condition="String.Contains(ListItem.Filename,.HDDVD.) | String.Contains(ListItem.Filename,.hddvd.)">hddvd.png</value>
+		<value condition="String.Contains(ListItem.Filename, HDDVD.) | String.Contains(ListItem.Filename, hddvd.)">hddvd.png</value>
+		<value condition="String.Contains(ListItem.Filename,.SDTV.) | String.Contains(ListItem.Filename,.sdtv.)">sdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename, SDTV.) | String.Contains(ListItem.Filename, sdtv.)">sdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename,.HDTV.) | String.Contains(ListItem.Filename,.hdtv.)">hdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename, HDTV.) | String.Contains(ListItem.Filename, hdtv.)">hdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename,WEBDL) | String.Contains(ListItem.Filename,webdl)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,WEBDL-) | String.Contains(ListItem.Filename,webdl-)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,WEB.DL) | String.Contains(ListItem.Filename,web.dl)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,.WEBDL.) | String.Contains(ListItem.Filename,.webdl.)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename, WEBDL.) | String.Contains(ListItem.Filename, webdl.)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,.WEB-DL.) | String.Contains(ListItem.Filename,.web-dl.)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename, WEB-DL.) | String.Contains(ListItem.Filename, web-dl.)">webdl.png</value>
+		<value condition="String.Contains(ListItem.Filename,.4K.) | String.Contains(ListItem.Filename,.4k.)">4k.png</value>
+		<value condition="String.Contains(ListItem.Filename, 4K.) | String.Contains(ListItem.Filename, 4k.)">4k.png</value>
 		<value>$INFO[ListItem.VideoResolution]p.png</value>
 	</variable>
 	<variable name="DefaultAreaColorVar">
@@ -83,7 +83,7 @@
 	</variable>
 	<variable name="AreaColorVar">
 		<value condition="[Window.IsActive(1128) | Window.IsActive(1138)] + !String.IsEmpty(Skin.String(diffuse_color))">$INFO[Skin.String(diffuse_color)]</value>
-		<value condition="SubString(Skin.CurrentTheme,whit)">$VAR[WhiteAreaColorVar]</value>
+		<value condition="String.IsEqual(Skin.CurrentTheme,whit)">$VAR[WhiteAreaColorVar]</value>
 		<value>$VAR[DefaultAreaColorVar]</value>
 	</variable>
 	<variable name="DefaultFontColorVar">
@@ -121,11 +121,11 @@
 	</variable>
 	<variable name="FontColorVar">
 		<value condition="[Window.IsActive(1128) | Window.IsActive(1138)] + !String.IsEmpty(Skin.String(font_color))">$INFO[Skin.String(font_color)]</value>
-		<value condition="SubString(Skin.CurrentTheme,whit)">$VAR[WhiteFontColorVar]</value>
+		<value condition="String.IsEqual(Skin.CurrentTheme,whit)">$VAR[WhiteFontColorVar]</value>
 		<value>$VAR[DefaultFontColorVar]</value>
 	</variable>
 	<variable name="SpotColorVar2">
-		<value condition="SubString(Skin.CurrentTheme,whit)">FFAAAAAA</value>
+		<value condition="String.IsEqual(Skin.CurrentTheme,whit)">FFAAAAAA</value>
 		<value>$VAR[ColorDiffuseVar]</value>
 	</variable>
 	<variable name="ColorDiffuseVar">
@@ -133,12 +133,12 @@
 		<value>$VAR[AreaColorVar]</value>
 	</variable>
 	<variable name="DialogColorVar">
-		<value condition="SubString(Skin.CurrentTheme,whit)">FFFFFFFF</value>
+		<value condition="String.IsEqual(Skin.CurrentTheme,whit)">FFFFFFFF</value>
 		<value condition="Skin.HasSetting(colordialogs)">$VAR[ColorDiffuseVar]</value>
 		<value>FFFFFFFF</value>
 	</variable>
 	<variable name="ExtendedColorDiffuseVar">
-		<value condition="SubString(Skin.CurrentTheme,whit)">FFFFFFFF</value>
+		<value condition="String.IsEqual(Skin.CurrentTheme,whit)">FFFFFFFF</value>
 		<value condition="!Skin.HasSetting(randomcolor) + ![Skin.HasSetting(DisableGlowbar) + !Skin.HasSetting(ExtendedGlowMode)]">$VAR[AreaColorVar]</value>
 		<value condition="Skin.HasSetting(randomcolor) + ![Skin.HasSetting(DisableGlowbar) + !Skin.HasSetting(ExtendedGlowMode)]">$VAR[DayTimeColorVar]</value>
 		<value>white</value>
@@ -195,11 +195,11 @@
 		<value condition="[String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,brrip)]">bluray</value>
 		<value condition="String.Contains(Player.Filenameandpath,dvb)">dvb</value>
 		<value condition="String.Contains(Player.Filenameandpath,web-dl)">web-dl</value>
-		<value condition="String.Contains(Player.Filenameandpath,dvd) | String.Contains(Player.Filenameandpath,.iso,Right) | String.Contains(Player.Filenameandpath,.ifo,Right)">dvd</value>
+		<value condition="String.Contains(Player.Filenameandpath,dvd) | String.EndsWith(Player.Filenameandpath,.iso) | String.EndsWith(Player.Filenameandpath,.ifo)">dvd</value>
 		<value>$INFO[VideoPlayer.VideoCodec]</value>
 	</variable>
 	<variable name="VideoPlayerSubTitleVar">
-		<value condition="!String.IsEmpty(Player.ChapterName) + !SubString(Player.ChapterName,0,left)">$INFO[Player.ChapterName]</value>
+		<value condition="!String.IsEmpty(Player.ChapterName) + !String.StartsWith(Player.ChapterName,0)">$INFO[Player.ChapterName]</value>
 		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Tagline]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
@@ -522,7 +522,7 @@
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="FirstLabelVar">
-		<value condition="SubString(Container.FolderPath,videodb://recentlyaddedepisodes/,left) | Container.Content(songs)">[COLOR grey]$INFO[ListItem.TrackNumber,,: ][/COLOR]$INFO[ListItem.Title]</value>
+		<value condition="String.StartsWith(Container.FolderPath,videodb://recentlyaddedepisodes/) | Container.Content(songs)">[COLOR grey]$INFO[ListItem.TrackNumber,,: ][/COLOR]$INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="DialogVideoInfoButtonLabelVar">
@@ -825,7 +825,7 @@
 		<value>$INFO[Container.ListItem.Art(clearlogo)]</value>
 	</variable>
 	<variable name="LogoVar">
-		<value condition="Container.Content(albums) + Substring(Container.FolderPath,musicdb://artists/,left)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.FolderName,,/logo.png]</value>
+		<value condition="Container.Content(albums) + String.StartsWith(Container.FolderPath,musicdb://artists/)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.FolderName,,/logo.png]</value>
 		<value condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.ListItem.Artist,,\logo.png]</value>
 		<value>$VAR[LogoVarList]</value>
 	</variable>
@@ -835,7 +835,7 @@
 		<value>$INFO[ListItem.Art(clearlogo)]</value>
 	</variable>
 	<variable name="LayoutLogoVar">
-		<value condition="Container.Content(albums) + Substring(Container.FolderPath,musicdb://artists/,left)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.FolderName,,/logo.png]</value>
+		<value condition="Container.Content(albums) + String.StartsWith(Container.FolderPath,musicdb://artists/)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[Container.FolderName,,/logo.png]</value>
 		<value condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs)">$INFO[Skin.String(ArtistsLogosPath)]$INFO[ListItem.Artist,,\logo.png]</value>
 		<value>$VAR[LayoutLogoVarList]</value>
 	</variable>
@@ -1339,13 +1339,13 @@
 		<value condition="Control.HasFocus(9010) + String.IsEqual(Container(9010).ListItem.Property(background),Weather.Fanart) + Skin.HasSetting(WeatherFanartDir.multi)">$INFO[Skin.String(WeatherFanartDir.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
 		<value condition="Control.HasFocus(9010) + String.IsEqual(Container(9010).ListItem.Property(background),Weather.Fanart) + !String.IsEmpty(Skin.String(WeatherFanartDir.path))">$INFO[Skin.String(WeatherFanartDir.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
 		<value condition="Control.HasFocus(9010) + String.IsEqual(Container(9010).ListItem.Property(background),Weather.Fanart)">http://aeon-nox-background-packs.googlecode.com/svn/trunk/weather-fanart/default/$INFO[Window(Weather).Property(Current.FanartCode)]</value>
-		<value condition="Control.HasFocus(9010) + SubString(Container(9010).ListItem.Property(background),.Live,right) + !String.IsEmpty(Container(8011).ListItem.Art(fanart))">noop</value>
-		<value condition="Control.HasFocus(9010) + SubString(Container(9010).ListItem.Property(background),FanartList,right) + !SubString(Container(9010).ListItem.Property(background),.Live,right) + Integer.IsGreater(Container(8011).NumItems,0) + !String.IsEmpty(Container(8011).ListItem.Art(fanart))">$INFO[Container(8011).ListItem.Art(fanart)]</value>
+		<value condition="Control.HasFocus(9010) + String.EndsWith(Container(9010).ListItem.Property(background),.Live) + !String.IsEmpty(Container(8011).ListItem.Art(fanart))">noop</value>
+		<value condition="Control.HasFocus(9010) + String.EndsWith(Container(9010).ListItem.Property(background),FanartList) + !String.EndsWith(Container(9010).ListItem.Property(background),.Live) + Integer.IsGreater(Container(8011).NumItems,0) + !String.IsEmpty(Container(8011).ListItem.Art(fanart))">$INFO[Container(8011).ListItem.Art(fanart)]</value>
 		<value condition="Control.HasFocus(9010) + !SubString(Container(9010).ListItem.Property(background),FanartList) + !String.IsEmpty(Container(9010).ListItem.Property(background))">$INFO[Container(9010).ListItem.Property(background)]</value>		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),Weather.Fanart) + Skin.HasSetting(WeatherFanartDir.multi)">$INFO[Skin.String(WeatherFanartDir.path)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),Weather.Fanart) + !String.IsEmpty(Skin.String(WeatherFanartDir.path))">$INFO[Skin.String(WeatherFanartDir.path)]$INFO[Window(Weather).Property(Current.FanartCode),,.jpg]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),Weather.Fanart)">http://aeon-nox-background-packs.googlecode.com/svn/trunk/weather-fanart/default/$INFO[Window(Weather).Property(Current.FanartCode)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(background),FanartList,right) + Integer.IsGreater(Container(8010).NumItems,0) + !String.IsEmpty(Container(8010).ListItem.Art(fanart)) + ![Skin.HasSetting(widgetautoscroll-list) + SubString(Container(9000).ListItem.Property(widgetStyle),List) + SubString(Container(9000).ListItem.Property(background),Widget,left)]">$INFO[Container(8010).ListItem.Art(fanart)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(background),.Live,right)">noop</value>
+		<value condition="String.EndsWith(Container(9000).ListItem.Property(background),FanartList) + Integer.IsGreater(Container(8010).NumItems,0) + !String.IsEmpty(Container(8010).ListItem.Art(fanart)) + ![Skin.HasSetting(widgetautoscroll-list) + SubString(Container(9000).ListItem.Property(widgetStyle),List) + String.StartsWith(Container(9000).ListItem.Property(background),Widget)]">$INFO[Container(8010).ListItem.Art(fanart)]</value>
+		<value condition="String.EndsWith(Container(9000).ListItem.Property(background),.Live)">noop</value>
 		<value condition="!SubString(Container(9000).ListItem.Property(background),FanartList) + !String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
 		<value>special://skin/backgrounds/videos/</value>
 	</variable>
@@ -2496,7 +2496,7 @@
 		<value>$INFO[ListItem.Path,,cdart6.png]</value>
 	</variable>
 	<variable name="colorcdARTVar">
-		<value condition="SubString(ListItem.Album,s,Left) | SubString(ListItem.Album,a,Left) | SubString(ListItem.Album,j,Left)">common/cdart/blank.png</value>
+		<value condition="String.StartsWith(ListItem.Album,s) | String.StartsWith(ListItem.Album,a) | String.StartsWith(ListItem.Album,j)">common/cdart/blank.png</value>
 		<value condition="SubString(ListItem.Album,m,Left) | SubString(ListItem.Album,c,Left) | SubString(ListItem.Album,l,Left)">common/cdart/grey1.png</value>
 		<value condition="SubString(ListItem.Album,t,Left) | SubString(ListItem.Album,k,Left) | SubString(ListItem.Album,b,Left)">common/cdart/blue.png</value>
 		<value condition="SubString(ListItem.Album,e,Left) | SubString(ListItem.Album,r,Left) | SubString(ListItem.Album,d,Left)">common/cdart/golden.png</value>
@@ -2881,55 +2881,55 @@
 	<variable name="SeasonDiscVar1">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season1-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season1-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc1.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc1.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc1.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar2">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season2-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season2-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc2.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc2.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc2.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar3">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season3-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season3-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc3.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc3.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc3.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar4">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season4-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season4-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc4.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc4.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc4.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar5">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season5-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season5-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc5.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc5.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc5.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar6">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season6-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season6-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc6.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc6.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc6.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar7">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season7-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season7-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc7.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc7.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc7.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar8">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season8-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season8-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc8.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc8.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc8.png]</value>
 	</variable>
 	<variable name="SeasonDiscVar9">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]season9-disc.png</value>
 		<value condition="Container.Content(seasons) + SubString(ListItem.Label,* All seasons)">$INFO[ListItem.Path]season9-disc.png</value>
-		<value condition="Container.Content(seasons) + !IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc9.png]</value>
+		<value condition="Container.Content(seasons) + !Integer.IsGreater(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Label]\$INFO[ListItem.Season,season0,-disc9.png]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-disc9.png]</value>
 	</variable>
 	<variable name="KodiFlix.Duration">
@@ -3816,11 +3816,11 @@
 		<value>$INFO[Container(9010).ListItem.Property(backgroundPlaylist)]</value>
 	</variable>
 	<variable name="SubmenuPlaylistSort">
-		<value condition="!SubString(Container(9010).ListItem.Property(background),.Live,right)" />
+		<value condition="!String.EndsWith(Container(9010).ListItem.Property(background),.Live)" />
 		<value>$INFO[Container(9010).ListItem.Property(backgroundSort)]</value>
 	</variable>
 	<variable name="SubmenuPlaylistSortby">
-		<value condition="!SubString(Container(9010).ListItem.Property(background),.Live,right)">random</value>
+		<value condition="!String.EndsWith(Container(9010).ListItem.Property(background),.Live)">random</value>
 		<value>$INFO[Container(9010).ListItem.Property(backgroundSortby)]</value>
 	</variable>
 	<variable name="Shelf3DRLabel1Var">
@@ -4021,10 +4021,10 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="KodilixTVInfoCast">
-		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + IntegerGreaterThan(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;episode=$INFO[ListItem.DBID]</value>
-		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + !IntegerGreaterThan(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[Container.ShowTitle]</value>
-		<value condition="Container.Content(tvshows) + IntegerGreaterThan(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.DBID]</value>
-		<value condition="Container.Content(tvshows) + !IntegerGreaterThan(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.Title]</value>
+		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;episode=$INFO[ListItem.DBID]</value>
+		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[Container.ShowTitle]</value>
+		<value condition="Container.Content(tvshows) + Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.DBID]</value>
+		<value condition="Container.Content(tvshows) + !Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="Col_lyr1">
 		<value condition="[String.EndsWith(Player.Duration,1)] + Skin.HasSetting(Alt_color.lyrics)">ffe16b6b</value>
