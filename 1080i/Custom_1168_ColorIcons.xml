@@ -107,10 +107,10 @@
 						<label>$LOCALIZE[31554]</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="6">
+					<!-- <item id="6">
 						<label>$LOCALIZE[31969]</label>
 						<onclick>noop</onclick>
-					</item>
+					</item> -->
 				</content>
 			</control>
 			<control type="group" id="600">
@@ -143,42 +143,42 @@
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableAspectRatioFlag)</onclick>
-							<selected>Skin.HasSetting(DisableAspectRatioFlag)</selected>
+							<selected>!Skin.HasSetting(DisableAspectRatioFlag)</selected>
 						</control>
 						<control type="radiobutton" id="903">
 							<label>$LOCALIZE[31972]</label>
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableAudioFlag)</onclick>
-							<selected>Skin.HasSetting(DisableAudioFlag)</selected>
+							<selected>!Skin.HasSetting(DisableAudioFlag)</selected>
 						</control>
 						<control type="radiobutton" id="904">
 							<label>$LOCALIZE[31263]</label>
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableRatingFlag)</onclick>
-							<selected>Skin.HasSetting(DisableRatingFlag)</selected>
+							<selected>!Skin.HasSetting(DisableRatingFlag)</selected>
 						</control>
 						<control type="radiobutton" id="905">
 							<label>$LOCALIZE[31973]</label>
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableResolutionFlag)</onclick>
-							<selected>Skin.HasSetting(DisableResolutionFlag)</selected>
+							<selected>!Skin.HasSetting(DisableResolutionFlag)</selected>
 						</control>
 						<control type="radiobutton" id="906">
 							<label>$LOCALIZE[31974]</label>
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableSourceFlag)</onclick>
-							<selected>Skin.HasSetting(DisableSourceFlag)</selected>
+							<selected>!Skin.HasSetting(DisableSourceFlag)</selected>
 						</control>
 						<control type="radiobutton" id="907">
 							<label>$LOCALIZE[20388]</label>
 							<width>475</width>
 							<include>Objects_SubMediaMenuButtonAround</include>
 							<onclick>Skin.ToggleSetting(DisableStudiosFlag)</onclick>
-							<selected>Skin.HasSetting(DisableStudiosFlag)</selected>
+							<selected>!Skin.HasSetting(DisableStudiosFlag)</selected>
 						</control>
 					</control>
 				</control>
