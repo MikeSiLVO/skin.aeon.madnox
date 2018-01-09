@@ -1332,25 +1332,25 @@
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Format.png</texturenofocus>
+				<texturenofocus>BigIcons/Format.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Oscilloscope.png</texturenofocus>
+				<texturenofocus>BigIcons/Oscilloscope.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Controlpanel.png</texturenofocus>
+				<texturenofocus>BigIcons/Controlpanel.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Pin.png</texturenofocus>
+				<texturenofocus>BigIcons/Pin.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 		</control>
@@ -1369,7 +1369,7 @@
 			<control type="button" id="700">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Format.png</texturefocus>
+				<texturefocus>BigIcons/Format.png</texturefocus>
 				<texturenofocus />
 				<label>10517</label>
 				<font />
@@ -1379,7 +1379,7 @@
 			<control type="button" id="500">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Oscilloscope.png</texturefocus>
+				<texturefocus>BigIcons/Oscilloscope.png</texturefocus>
 				<texturenofocus />
 				<label>12006</label>
 				<font />
@@ -1388,7 +1388,7 @@
 			<control type="button" id="701">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Controlpanel.png</texturefocus>
+				<texturefocus>BigIcons/Controlpanel.png</texturefocus>
 				<texturenofocus />
 				<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 				<font />
@@ -1398,7 +1398,7 @@
 			<control type="button" id="702">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Pin.png</texturefocus>
+				<texturefocus>BigIcons/Pin.png</texturefocus>
 				<texturenofocus />
 				<label>31048</label>
 				<font />
@@ -1421,45 +1421,45 @@
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonFirst.png</texturenofocus>
+				<texturenofocus>BigIcons/ButtonFirst.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
+				<texturenofocus>BigIcons/ButtonFRW.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="togglebutton">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
-				<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+				<texturenofocus>BigIcons/ButtonPause.png</texturenofocus>
+				<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
+				<texturenofocus>BigIcons/ButtonStop.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
+				<texturenofocus>BigIcons/ButtonFFW.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ButtonEnd.png</texturenofocus>
+				<texturenofocus>BigIcons/ButtonEnd.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Microphone.png</texturenofocus>
+				<texturenofocus>BigIcons/Microphone.png</texturenofocus>
 				<visible>Player.CanRecord</visible>
 				<colordiffuse>gray</colordiffuse>
 			</control>
@@ -1481,7 +1481,7 @@
 			<control type="button" id="600">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonFirst.png</texturefocus>
+				<texturefocus>BigIcons/ButtonFirst.png</texturefocus>
 				<texturenofocus />
 				<label>210</label>
 				<font />
@@ -1491,7 +1491,7 @@
 			<control type="button" id="601">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonFRW.png</texturefocus>
+				<texturefocus>BigIcons/ButtonFRW.png</texturefocus>
 				<texturenofocus />
 				<label>31354</label>
 				<font />
@@ -1501,10 +1501,10 @@
 			<control type="togglebutton" id="602">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonPause.png</texturefocus>
+				<texturefocus>BigIcons/ButtonPause.png</texturefocus>
 				<texturenofocus />
-				<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
-				<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+				<alttexturefocus>BigIcons/ButtonPlay.png</alttexturefocus>
+				<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 				<label>31351</label>
 				<altlabel>208</altlabel>
 				<font />
@@ -1515,7 +1515,7 @@
 			<control type="button" id="603">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonStop.png</texturefocus>
+				<texturefocus>BigIcons/ButtonStop.png</texturefocus>
 				<texturenofocus />
 				<label>31352</label>
 				<font />
@@ -1526,7 +1526,7 @@
 			<control type="button" id="604">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonFFW.png</texturefocus>
+				<texturefocus>BigIcons/ButtonFFW.png</texturefocus>
 				<texturenofocus />
 				<label>31353</label>
 				<font />
@@ -1536,7 +1536,7 @@
 			<control type="button" id="605">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ButtonEnd.png</texturefocus>
+				<texturefocus>BigIcons/ButtonEnd.png</texturefocus>
 				<texturenofocus />
 				<label>209</label>
 				<font />
@@ -1546,7 +1546,7 @@
 			<control type="button" id="706">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Microphone.png</texturefocus>
+				<texturefocus>BigIcons/Microphone.png</texturefocus>
 				<texturenofocus />
 				<label>264</label>
 				<font />
@@ -1570,8 +1570,8 @@
 			<control type="togglebutton">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Lyrics.png</texturenofocus>
-				<alttexturenofocus>special://skin/extras/BigIcons/Lyrics.png</alttexturenofocus>
+				<texturenofocus>BigIcons/Lyrics.png</texturenofocus>
+				<alttexturenofocus>BigIcons/Lyrics.png</alttexturenofocus>
 				<usealttexture>String.IsEmpty(Skin.String(LyricScript_Path))</usealttexture>
 				<colordiffuse>gray</colordiffuse>
 			</control>
@@ -1590,15 +1590,15 @@
 			<control type="togglebutton">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/ArrowRight.png</texturenofocus>
-				<alttexturenofocus>special://skin/extras/BigIcons/ButtonShuffle.png</alttexturenofocus>
+				<texturenofocus>BigIcons/ArrowRight.png</texturenofocus>
+				<alttexturenofocus>BigIcons/ButtonShuffle.png</alttexturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 			<control type="button">
 				<width>100</width>
 				<height>100</height>
-				<texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
+				<texturenofocus>BigIcons/Gears.png</texturenofocus>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 		</control>
@@ -1619,9 +1619,9 @@
 			<control type="togglebutton" id="703">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Lyrics.png</texturefocus>
+				<texturefocus>BigIcons/Lyrics.png</texturefocus>
 				<texturenofocus />
-				<alttexturefocus>special://skin/extras/BigIcons/Lyrics.png</alttexturefocus>
+				<alttexturefocus>BigIcons/Lyrics.png</alttexturefocus>
 				<alttexturenofocus />
 				<label>24013</label>
 				<font />
@@ -1653,9 +1653,9 @@
 			<control type="togglebutton" id="705">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/ArrowRight.png</texturefocus>
+				<texturefocus>BigIcons/ArrowRight.png</texturefocus>
 				<texturenofocus />
-				<alttexturefocus>special://skin/extras/BigIcons/ButtonShuffle.png</alttexturefocus>
+				<alttexturefocus>BigIcons/ButtonShuffle.png</alttexturefocus>
 				<alttexturenofocus />
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font />
@@ -1666,7 +1666,7 @@
 			<control type="button" id="707">
 				<width>100</width>
 				<height>100</height>
-				<texturefocus>special://skin/extras/BigIcons/Gears.png</texturefocus>
+				<texturefocus>BigIcons/Gears.png</texturefocus>
 				<texturenofocus />
 				<label>31026</label>
 				<font />

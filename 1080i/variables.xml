@@ -16,12 +16,12 @@
 		<value condition="SubString(System.Time(mm),5,left)">FFF3F781</value>
 	</variable>
 	<variable name="QuickConfigIconVar">
-		<value condition="!String.IsEmpty(Window(home).Property(quicknavsetup))">special://skin/extras/BigIcons/ButtonStop.png</value>
-		<value>special://skin/extras/BigIcons/Gears.png</value>
+		<value condition="!String.IsEmpty(Window(home).Property(quicknavsetup))">BigIcons/ButtonStop.png</value>
+		<value>BigIcons/Gears.png</value>
 	</variable>
 	<variable name="WidgetModeIconVar">
-		<value condition="String.IsEmpty(Window(home).Property(DisableWidgets))">special://skin/extras/BigIcons/widgets.png</value>
-		<value>special://skin/extras/BigIcons/mainmenu.png</value>
+		<value condition="String.IsEmpty(Window(home).Property(DisableWidgets))">BigIcons/widgets.png</value>
+		<value>BigIcons/mainmenu.png</value>
 	</variable>
 	<variable name="GlobalCaseVar">
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">tvseries.png</value>
@@ -1284,9 +1284,9 @@
 		<value>mooviz/shuffleoff.png</value>
 	</variable>
 	<variable name="MusicOSDRepeatButtonVar">
-		<value condition="Playlist.IsRepeatOne">special://skin/extras/BigIcons/ButtonRepeatOne.png</value>
-		<value condition="Playlist.IsRepeat">special://skin/extras/BigIcons/ButtonReload.png</value>
-		<value>special://skin/extras/BigIcons/ButtonRepeatOff.png</value>
+		<value condition="Playlist.IsRepeatOne">BigIcons/ButtonRepeatOne.png</value>
+		<value condition="Playlist.IsRepeat">BigIcons/ButtonReload.png</value>
+		<value>BigIcons/ButtonRepeatOff.png</value>
 	</variable>
 	<variable name="MusicOSDRepeatClassicButtonVar">
 		<value condition="[!Playlist.IsRepeat + !Playlist.IsRepeatOne] + !Control.HasFocus(704)">osd/buttons/OSDRepeatNF.png</value>
@@ -1309,8 +1309,8 @@
 		<value>$LOCALIZE[20360]</value>
 	</variable>
 	<variable name="SortImageVar">
-		<value condition="Substring(Control.GetLabel(4),$LOCALIZE[585])">special://skin/extras/BigIcons/Arrowup.png</value>
-		<value>special://skin/extras/BigIcons/Arrowdown.png</value>
+		<value condition="Substring(Control.GetLabel(4),$LOCALIZE[585])">BigIcons/Arrowup.png</value>
+		<value>BigIcons/Arrowdown.png</value>
 	</variable>
 	<variable name="NavBarImageVar">
 		<value condition="Skin.HasSetting(shadowbars)">home/nav_back_shadow.png</value>
@@ -1330,9 +1330,9 @@
 		<value>$LOCALIZE[31221]</value>
 	</variable>
 	<variable name="RepeatImageVar">
-		<value condition="Substring(Control.GetLabel(26),$LOCALIZE[595])">special://skin/extras/BigIcons/ButtonRepeatOff.png</value>
-		<value condition="Substring(Control.GetLabel(26),$LOCALIZE[596])">special://skin/extras/BigIcons/ButtonRepeatOne.png</value>
-		<value>special://skin/extras/BigIcons/ButtonReload.png</value>
+		<value condition="Substring(Control.GetLabel(26),$LOCALIZE[595])">BigIcons/ButtonRepeatOff.png</value>
+		<value condition="Substring(Control.GetLabel(26),$LOCALIZE[596])">BigIcons/ButtonRepeatOne.png</value>
+		<value>BigIcons/ButtonReload.png</value>
 	</variable>
 	<variable name="HomeMenuFanartVar">
 		<value condition="Player.Playing + Skin.HasSetting(artistslideshowhome)">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>

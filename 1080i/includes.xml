@@ -141,7 +141,7 @@
 			<width>133</width>
 			<height>100</height>
 			<aspectratio aligny="top">scale</aspectratio>
-			<texture>special://skin/extras/BigIcons/Exclamation.png</texture>
+			<texture>BigIcons/Exclamation.png</texture>
 			<colordiffuse>white</colordiffuse>
 			<animation effect="fade" start="100" end="70" time="480" pulse="true" condition="true">Conditional</animation>
 		</control>
@@ -163,7 +163,7 @@
 			<width>133</width>
 			<height>100</height>
 			<aspectratio aligny="top">scale</aspectratio>
-			<texture>special://skin/extras/BigIcons/Gears.png</texture>
+			<texture>BigIcons/Gears.png</texture>
 			<colordiffuse>white</colordiffuse>
 		</control>
 	</include>
@@ -1900,13 +1900,13 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Speaker.png</texturenofocus>
+					<texturenofocus>BigIcons/Speaker.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Camcorder.png</texturenofocus>
+					<texturenofocus>BigIcons/Camcorder.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 			</control>
@@ -1927,21 +1927,21 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Arrowup.png</texturenofocus>
+					<texturenofocus>BigIcons/Arrowup.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Arrowdown.png</texturenofocus>
+					<texturenofocus>BigIcons/Arrowdown.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonFRW.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<enable>Player.SeekEnabled</enable>
 					<animation effect="fade" start="100" end="50" time="80" condition="!Player.SeekEnabled">Conditional</animation>
@@ -1949,21 +1949,21 @@
 				<control type="togglebutton">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+					<texturenofocus>BigIcons/ButtonPause.png</texturenofocus>
+					<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonStop.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonFFW.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<enable>Player.SeekEnabled</enable>
 					<animation effect="fade" start="100" end="50" time="80" condition="!Player.SeekEnabled">Conditional</animation>
@@ -1971,8 +1971,8 @@
 				<control type="togglebutton">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonRecord.png</texturenofocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/ButtonRecord.png</alttexturenofocus>
+					<texturenofocus>BigIcons/ButtonRecord.png</texturenofocus>
+					<alttexturenofocus>BigIcons/ButtonRecord.png</alttexturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<usealttexture>Player.Recording</usealttexture>
 					<enable>Player.CanRecord</enable>
@@ -1981,7 +1981,7 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonEPG.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonEPG.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 			</control>
@@ -2003,19 +2003,19 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonTxt.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonTxt.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonPlaylist.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonPlaylist.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
+					<texturenofocus>BigIcons/Gears.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 			</control>
@@ -2035,7 +2035,7 @@
 					<control type="button" id="70015">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Speaker.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Speaker.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>13396</label>
 						<font />
@@ -2044,7 +2044,7 @@
 					<control type="button" id="70016">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Camcorder.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Camcorder.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>13395</label>
 						<font />
@@ -2067,7 +2067,7 @@
 					<control type="button" id="70018">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Arrowup.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Arrowup.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31105</label>
 						<font />
@@ -2077,7 +2077,7 @@
 					<control type="button" id="70019">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Arrowdown.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Arrowdown.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31106</label>
 						<font />
@@ -2087,7 +2087,7 @@
 					<control type="button" id="70020">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonFRW.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonFRW.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31354</label>
 						<font />
@@ -2097,9 +2097,9 @@
 					<control type="togglebutton" id="70021">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonPause.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonPause.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
-						<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
+						<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonPlay.png</alttexturefocus>
 						<alttexturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31351</label>
 						<altlabel>208</altlabel>
@@ -2110,7 +2110,7 @@
 					<control type="button" id="70022">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonStop.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonStop.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31352</label>
 						<font />
@@ -2119,7 +2119,7 @@
 					<control type="button" id="70023">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonFFW.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonFFW.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31353</label>
 						<font />
@@ -2129,9 +2129,9 @@
 					<control type="togglebutton" id="70024">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonRecord.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonRecord.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
-						<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonRecord.png</alttexturefocus>
+						<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonRecord.png</alttexturefocus>
 						<alttexturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31110</label>
 						<altlabel>31111</altlabel>
@@ -2143,7 +2143,7 @@
 					<control type="button" id="70025">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonEPG.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonEPG.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31108</label>
 						<font />
@@ -2168,7 +2168,7 @@
 					<control type="button" id="70027">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonTxt.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonTxt.png</texturefocus>
 						<texturenofocus />
 						<label>31109</label>
 						<font />
@@ -2178,7 +2178,7 @@
 					<control type="button" id="70028">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonPlaylist.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonPlaylist.png</texturefocus>
 						<texturenofocus />
 						<label>31107</label>
 						<font />
@@ -2188,7 +2188,7 @@
 					<control type="button" id="70029">
 						<width>100</width>
 						<height>100</height>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Gears.png</texturefocus>
+						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Gears.png</texturefocus>
 						<texturenofocus />
 						<label>31026</label>
 						<font />
@@ -2369,8 +2369,8 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus>special://skin/extras/BigIcons/Book.png</texturefocus>
-					<texturenofocus>special://skin/extras/BigIcons/Book.png</texturenofocus>
+					<texturefocus>BigIcons/Book.png</texturefocus>
+					<texturenofocus>BigIcons/Book.png</texturenofocus>
 					<label>298</label>
 					<font />
 					<colordiffuse>gray</colordiffuse>
@@ -2379,8 +2379,8 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus>special://skin/extras/BigIcons/Speaker.png</texturefocus>
-					<texturenofocus>special://skin/extras/BigIcons/Speaker.png</texturenofocus>
+					<texturefocus>BigIcons/Speaker.png</texturefocus>
+					<texturenofocus>BigIcons/Speaker.png</texturenofocus>
 					<label>13396</label>
 					<font />
 					<colordiffuse>gray</colordiffuse>
@@ -2389,8 +2389,8 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus>special://skin/extras/BigIcons/Camcorder.png</texturefocus>
-					<texturenofocus>special://skin/extras/BigIcons/Camcorder.png</texturenofocus>
+					<texturefocus>BigIcons/Camcorder.png</texturefocus>
+					<texturenofocus>BigIcons/Camcorder.png</texturenofocus>
 					<label>13395</label>
 					<font />
 					<colordiffuse>gray</colordiffuse>
@@ -2413,39 +2413,39 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonFirst.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonFirst.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonFRW.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonFRW.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="togglebutton">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+					<texturenofocus>BigIcons/ButtonPause.png</texturenofocus>
+					<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonStop.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonStop.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonFFW.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonFFW.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonEnd.png</texturenofocus>
+					<texturenofocus>BigIcons/ButtonEnd.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 			</control>
@@ -2464,15 +2464,15 @@
 				<control type="togglebutton">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Subtitle.png</texturenofocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/Subtitle.png</alttexturenofocus>
+					<texturenofocus>BigIcons/Subtitle.png</texturenofocus>
+					<alttexturenofocus>BigIcons/Subtitle.png</alttexturenofocus>
 					<usealttexture>String.IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/dvdmenu.png</texturenofocus>
+					<texturenofocus>BigIcons/dvdmenu.png</texturenofocus>
 					<enable>VideoPlayer.HasMenu</enable>
 					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.HasMenu">Conditional</animation>
 					<colordiffuse>gray</colordiffuse>
@@ -2480,7 +2480,7 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Button3d.png</texturenofocus>
+					<texturenofocus>BigIcons/Button3d.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 					<enable>VideoPlayer.IsStereoscopic</enable>
 					<animation effect="fade" start="100" end="50" time="80" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
@@ -2488,7 +2488,7 @@
 				<control type="button">
 					<width>100</width>
 					<height>100</height>
-					<texturenofocus>special://skin/extras/BigIcons/Gears.png</texturenofocus>
+					<texturenofocus>BigIcons/Gears.png</texturenofocus>
 					<colordiffuse>gray</colordiffuse>
 				</control>
 			</control>
@@ -2508,7 +2508,7 @@
 				<control type="button" id="700">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Book.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Book.png</texturefocus>
 					<texturenofocus />
 					<label>298</label>
 					<font />
@@ -2517,7 +2517,7 @@
 				<control type="button" id="701">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Speaker.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Speaker.png</texturefocus>
 					<texturenofocus />
 					<label>13396</label>
 					<font />
@@ -2526,7 +2526,7 @@
 				<control type="button" id="702">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Camcorder.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Camcorder.png</texturefocus>
 					<texturenofocus />
 					<label>13395</label>
 					<font />
@@ -2551,7 +2551,7 @@
 				<control type="button" id="600">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonFirst.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonFirst.png</texturefocus>
 					<texturenofocus />
 					<label>210</label>
 					<font />
@@ -2560,7 +2560,7 @@
 				<control type="button" id="601">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonFRW.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonFRW.png</texturefocus>
 					<texturenofocus />
 					<label>31354</label>
 					<font />
@@ -2569,9 +2569,9 @@
 				<control type="togglebutton" id="602">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonPause.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonPause.png</texturefocus>
 					<texturenofocus />
-					<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
+					<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonPlay.png</alttexturefocus>
 					<alttexturenofocus />
 					<label>31351</label>
 					<altlabel>208</altlabel>
@@ -2582,7 +2582,7 @@
 				<control type="button" id="603">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonStop.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonStop.png</texturefocus>
 					<texturenofocus />
 					<label>31352</label>
 					<font />
@@ -2591,7 +2591,7 @@
 				<control type="button" id="604">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonFFW.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonFFW.png</texturefocus>
 					<texturenofocus />
 					<label>31353</label>
 					<font />
@@ -2600,7 +2600,7 @@
 				<control type="button" id="605">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/ButtonEnd.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/ButtonEnd.png</texturefocus>
 					<texturenofocus />
 					<label>209</label>
 					<font />
@@ -2626,9 +2626,9 @@
 					<height>100</height>
 					<label>31356</label>
 					<font />
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Subtitle.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Subtitle.png</texturefocus>
 					<texturenofocus />
-					<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Subtitle.png</alttexturefocus>
+					<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Subtitle.png</alttexturefocus>
 					<alttexturenofocus />
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 					<onclick>ActivateWindow(SubtitleSearch)</onclick>
@@ -2636,7 +2636,7 @@
 				<control type="button" id="704">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/dvdmenu.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/dvdmenu.png</texturefocus>
 					<texturenofocus />
 					<label>31355</label>
 					<font />
@@ -2647,7 +2647,7 @@
 				<control type="button" id="706">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Button3d.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Button3d.png</texturefocus>
 					<texturenofocus />
 					<label>31218</label>
 					<font />
@@ -2658,7 +2658,7 @@
 				<control type="button" id="705">
 					<width>100</width>
 					<height>100</height>
-					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">special://skin/extras/BigIcons/Gears.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Gears.png</texturefocus>
 					<texturenofocus />
 					<label>31026</label>
 					<font />

@@ -86,10 +86,10 @@
 				<control type="togglebutton" id="340">
 					<width>50</width>
 					<height>50</height>
-					<texturefocus>special://skin/extras/BigIcons/ButtonPause.png</texturefocus>
-					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
-					<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+					<texturefocus>BigIcons/ButtonPause.png</texturefocus>
+					<texturenofocus>BigIcons/ButtonPause.png</texturenofocus>
+					<alttexturefocus>BigIcons/ButtonPlay.png</alttexturefocus>
+					<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 					<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 					<usealttexture>[Player.Paused | Player.Forwarding | Player.Rewinding] | Player.HasVideo | !Player.HasMedia</usealttexture>
 					<colordiffuse>grey2</colordiffuse>
@@ -101,9 +101,9 @@
 					<width>50</width>
 					<height>50</height>
 					<texturefocus />
-					<texturenofocus>special://skin/extras/BigIcons/ButtonPause.png</texturenofocus>
-					<alttexturefocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturefocus>
-					<alttexturenofocus>special://skin/extras/BigIcons/ButtonPlay.png</alttexturenofocus>
+					<texturenofocus>BigIcons/ButtonPause.png</texturenofocus>
+					<alttexturefocus>BigIcons/ButtonPlay.png</alttexturefocus>
+					<alttexturenofocus>BigIcons/ButtonPlay.png</alttexturenofocus>
 					<visible>Control.HasFocus(440)</visible>
 					<usealttexture>[Player.Paused | Player.Forwarding | Player.Rewinding] | Player.HasVideo | !Player.HasMedia</usealttexture>
 					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>

@@ -20,7 +20,7 @@
 				<width>133</width>
 				<height>100</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="white">special://skin/extras/BigIcons/Gears.png</texture>
+				<texture colordiffuse="white">BigIcons/Gears.png</texture>
 			</control>
 			<control type="label" id="10">
 				<left>158</left>

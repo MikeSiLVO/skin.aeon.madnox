@@ -22,7 +22,7 @@
 			<top>18</top>
 			<width>90</width>
 			<height>90</height>
-			<texture colordiffuse="grey">special://skin/extras/BigIcons/Magicwand.png</texture>
+			<texture colordiffuse="grey">BigIcons/Magicwand.png</texture>
 		</control>
 		<control type="label" id="2">
 			<left>90</left>

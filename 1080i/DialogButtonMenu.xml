@@ -143,81 +143,81 @@
 					<width>63</width>
 					<height>63</height>
 					<aspectratio aligny="top">scale</aspectratio>
-					<texture>special://skin/extras/BigIcons/exit.png</texture>
+					<texture>BigIcons/exit.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(1)">Conditional</animation>
 					<visible>System.ShowExitButton</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Power.png</texture>
+					<texture>BigIcons/Power.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(2)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 					<visible>System.CanPowerDown</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/AlarmClock.png</texture>
+					<texture>BigIcons/AlarmClock.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(3) + !Control.HasFocus(15)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 					<visible>System.CanPowerDown</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Battery.png</texture>
+					<texture>BigIcons/Battery.png</texture>
 					<include>Objects_ShutdownMenuIcon</include>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(10) + !Control.HasFocus(5)">Conditional</animation>
 					<visible>System.CanHibernate | System.CanSuspend</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/pre.png</texture>
+					<texture>BigIcons/pre.png</texture>
 					<include>Objects_ShutdownMenuIcon</include>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(6)">Conditional</animation>
 					<visible>System.CanReboot</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/CD-DVD.png</texture>
+					<texture>BigIcons/CD-DVD.png</texture>
 					<include>Objects_ShutdownMenuIcon</include>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(4)">Conditional</animation>
 					<visible>System.HasMediadvd + System.Platform.ATV2</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Lock.png</texture>
+					<texture>BigIcons/Lock.png</texture>
 					<include>Objects_ShutdownMenuIcon</include>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(7)">Conditional</animation>
 					<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
 					<visible>System.Loggedon</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Key.png</texture>
+					<texture>BigIcons/Key.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(8)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 					<visible>System.HasLocks</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Controlpanel.png</texture>
+					<texture>BigIcons/Controlpanel.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(9)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/set.png</texture>
+					<texture>BigIcons/set.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(17)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Cabinet.png</texture>
+					<texture>BigIcons/Cabinet.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(12)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Star.png</texture>
+					<texture>BigIcons/Star.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(14)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Gears.png</texture>
+					<texture>BigIcons/Gears.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(13)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 					<visible>System.HasShutdown +!System.IsInhibit</visible>
 				</control>
 				<control type="image">
-					<texture>special://skin/extras/BigIcons/Clock.png</texture>
+					<texture>BigIcons/Clock.png</texture>
 					<animation effect="fade" start="100" end="55" time="0" condition="!Control.HasFocus(16)">Conditional</animation>
 					<include>Objects_ShutdownMenuIcon</include>
 					<visible>System.HasShutdown + System.IsInhibit</visible>

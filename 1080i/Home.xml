@@ -264,7 +264,7 @@
 				<width>65</width>
 				<height>49</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="white">special://skin/extras/BigIcons/ButtonBack.png</texture>
+				<texture colordiffuse="white">BigIcons/ButtonBack.png</texture>
 				<animation effect="zoom" start="80" end="85" delay="400" time="840" center="auto" tween="cubic" easing="out" pulse="true" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
@@ -274,7 +274,7 @@
 				<height>38</height>
 				<aspectratio aligny="top">scale</aspectratio>
 				<animation effect="fade" start="100" end="80" time="440" delay="800" center="auto" tween="cubic" easing="out" pulse="true" condition="true">Conditional</animation>
-				<texture colordiffuse="white4">special://skin/extras/BigIcons/widgets.png</texture>
+				<texture colordiffuse="white4">BigIcons/widgets.png</texture>
 			</control>
 		</control>
 		<control type="group">

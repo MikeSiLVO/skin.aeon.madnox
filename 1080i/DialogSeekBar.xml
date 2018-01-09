@@ -877,7 +877,7 @@
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>IconCrossfadeTime2</fadetime>
-						<texture colordiffuse="white2" fallback="">special://skin/extras/BigIcons/Subtitle.png</texture>
+						<texture colordiffuse="white2" fallback="">BigIcons/Subtitle.png</texture>
 						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 					</control>
 					<control type="image">
@@ -887,7 +887,7 @@
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>IconCrossfadeTime2</fadetime>
-						<texture colordiffuse="white2" fallback="">special://skin/extras/BigIcons/Speaker.png</texture>
+						<texture colordiffuse="white2" fallback="">BigIcons/Speaker.png</texture>
 						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 						<visible>!String.Contains(VideoPlayer.AudioLanguage,und)</visible>
 					</control>

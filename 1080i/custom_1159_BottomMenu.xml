@@ -98,7 +98,7 @@
 					<item id="2">
 						<label>$LOCALIZE[31831]</label>
 						<label2>$INFO[System.DVDLabel]</label2>
-						<thumb>special://skin/extras/BigIcons/CD-DVD.png</thumb>
+						<thumb>BigIcons/CD-DVD.png</thumb>
 						<visible>System.HasMediadvd</visible>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>PlayDVD()</onclick>
@@ -106,7 +106,7 @@
 					<item id="3">
 						<label>31172</label>
 						<label2>$INFO[MusicPlayer.Artist]</label2>
-						<thumb>special://skin/extras/BigIcons/Headphone.png</thumb>
+						<thumb>BigIcons/Headphone.png</thumb>
 						<visible>Player.HasAudio</visible>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>ActivateWindow(1154)</onclick>
@@ -114,7 +114,7 @@
 					<item id="4">
 						<label>31819</label>
 						<label2 fallback="No TVShows Today">$INFO[Window(Home).Property(NextAired.1.ShortTime),,: ]$INFO[Window(Home).Property(NextAired.1.Label)]</label2>
-						<thumb fallback="special://skin/extras/BigIcons/Television.png">$INFO[Window(Home).Property(NextAired.1.Art(clearlogo))]</thumb>
+						<thumb fallback="BigIcons/Television.png">$INFO[Window(Home).Property(NextAired.1.Art(clearlogo))]</thumb>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>RunAddon(script.tv.show.next.aired)</onclick>
 					</item>
@@ -129,7 +129,7 @@
 					<item id="6">
 						<label>19158</label>
 						<label2>$INFO[PVR.NowRecordingTitle]</label2>
-						<thumb>special://skin/extras/BigIcons/Television.png</thumb>
+						<thumb>BigIcons/Television.png</thumb>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
 						<visible>PVR.IsRecording</visible>
@@ -137,7 +137,7 @@
 					<item id="7">
 						<label>19157</label>
 						<label2>$INFO[PVR.NextRecordingDateTime]: $INFO[PVR.NextRecordingTitle]</label2>
-						<thumb>special://skin/extras/BigIcons/ButtonRecord.png</thumb>
+						<thumb>BigIcons/ButtonRecord.png</thumb>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>ActivateWindowAndFocus(PVR, 34,0, 13,0)</onclick>
 						<visible>PVR.HasNonRecordingTimer</visible>
@@ -145,7 +145,7 @@
 					<item id="8">
 						<label>31163</label>
 						<label2>[COLOR grey]$LOCALIZE[20343]:[/COLOR] $INFO[Window(Home).Property(TVShows.Count)]</label2>
-						<thumb>special://skin/extras/BigIcons/Star.png</thumb>
+						<thumb>BigIcons/Star.png</thumb>
 						<onclick>Dialog.Close(1159)</onclick>
 						<onclick>ActivateWindow(1115)</onclick>
 					</item>

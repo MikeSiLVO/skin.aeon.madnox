@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
 	<alwaysRestore>True</alwaysRestore>
-	<thumbnailBrowseDefault>special://skin/extras/BigIcons/</thumbnailBrowseDefault>
+	<thumbnailBrowseDefault>BigIcons/</thumbnailBrowseDefault>
 	<!-- Background Defaults -->
 	<backgrounddefault labelID="pictures">special://skin/backgrounds/pictures/</backgrounddefault>
 	<backgrounddefault labelID="music">special://skin/backgrounds/music/</backgrounddefault>

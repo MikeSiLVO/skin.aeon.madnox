@@ -684,7 +684,7 @@
 			<top>1043</top>
 			<width>42</width>
 			<height>42</height>
-			<texture>special://skin/extras/BigIcons/Fullscreen2.png</texture>
+			<texture>BigIcons/Fullscreen2.png</texture>
 			<animation effect="fade" start="100" end="75" time="100" condition="!Control.HasFocus(9013)">Conditional</animation>
 			<visible>Control.IsVisible(9013)</visible>
 		</control>
@@ -713,7 +713,7 @@
 			<top>1043</top>
 			<width>42</width>
 			<height>42</height>
-			<texture>special://skin/extras/BigIcons/Format.png</texture>
+			<texture>BigIcons/Format.png</texture>
 			<animation effect="fade" start="100" end="75" time="100" condition="!Control.HasFocus(9014)">Conditional</animation>
 			<visible>Control.IsVisible(9014)</visible>
 		</control>
@@ -742,7 +742,7 @@
 			<top>1043</top>
 			<width>42</width>
 			<height>42</height>
-			<texture>special://skin/extras/BigIcons/CD-DVD.png</texture>
+			<texture>BigIcons/CD-DVD.png</texture>
 			<animation effect="fade" start="100" end="75" time="100" condition="!Control.HasFocus(9015)">Conditional</animation>
 			<visible>Control.IsVisible(9015)</visible>
 		</control>
