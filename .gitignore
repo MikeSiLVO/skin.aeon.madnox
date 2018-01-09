@@ -1,4 +1,13 @@
-# Windows image file caches
+*.bat
+*.cmd
+*.log
+*.xbt
+*.exe
+*.py
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+*.sh
 Thumbs.db
 /MadNox-skinshortcuts.sublime-project
 /MadNox-skinshortcuts.sublime-workspace
