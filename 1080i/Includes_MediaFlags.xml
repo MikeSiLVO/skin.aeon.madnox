@@ -5,14 +5,14 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))</visible>
 		</control>
@@ -20,7 +20,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.3))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.3))</visible>
@@ -29,7 +29,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.4),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.4),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.4))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.4))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.4))</visible>
@@ -39,7 +39,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.5),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.5),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.5))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.5))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.5))</visible>
@@ -50,7 +50,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.6),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.6),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.6))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.6))</visible>
 			<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.6))</visible>
@@ -62,42 +62,42 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.7),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.7),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.7))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.8),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.8),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.8))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.9),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.9),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.9))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.10),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.10),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.10))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.11),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.11),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.11))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.12),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.12),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.12))</visible>
 		</control>
 	</include>
@@ -106,14 +106,14 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.1),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.1),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.2),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.2),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.2))</visible>
 		</control>
@@ -121,7 +121,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.3),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.3),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.3))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.2),ListItem.Property(SubtitleLanguage.3))</visible>
@@ -130,7 +130,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.4),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.4),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.4))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.2),ListItem.Property(SubtitleLanguage.4))</visible>
@@ -140,7 +140,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.5),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.5),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.5))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.2),ListItem.Property(SubtitleLanguage.5))</visible>
@@ -151,7 +151,7 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.6),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.6),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.1),ListItem.Property(SubtitleLanguage.6))</visible>
 			<visible>!String.IsEqual(ListItem.Property(SubtitleLanguage.2),ListItem.Property(SubtitleLanguage.6))</visible>
@@ -162,7 +162,7 @@
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.7),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.7),,.png]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.7))</visible>
 		</control>
@@ -170,35 +170,35 @@
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.8),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.8),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.8))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.9),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.9),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.9))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.10),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.10),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.10))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.11),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.11),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.11))</visible>
 		</control>
 		<control type="image">
 			<width>28</width>
 			<height>28</height>
 			<aspectratio>keep</aspectratio>
-			<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(SubtitleLanguage.12),,.png]</texture>
+			<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(SubtitleLanguage.12),,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.12))</visible>
 		</control>
 	</include>
@@ -220,8 +220,6 @@
 		<height>71</height>
 		<texture colordiffuse="$INFO[Window(home).Property(VideoInfo.ImageColor)]">views/tripanel/upright.png</texture>
 	</include>
-
-
 	<include name="AudioFlagsVars">
 		<width>135</width>
 		<height>64</height>
@@ -246,7 +244,7 @@
 					<control type="image">
 						<!--Source logo-->
 						<left>15</left>
-						<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlags]source/$VAR[SourceFlagVar,,.png]</texture>
 						<include>AudioFlagsVars</include>
 						<animation effect="slide" end="64" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 					</control>
@@ -256,7 +254,7 @@
 						<animation effect="slide" end="109" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 						<control type="image" id="75">
 							<top>-7</top>
-							<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+							<texture>$VAR[ColorFlagsStudio]</texture>
 							<width>135</width>
 							<height>82</height>
 							<aspectratio>keep</aspectratio>
@@ -265,7 +263,7 @@
 							<animation effect="fade" time="200">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+							<texture>default-studio.png</texture>
 							<include>AudioFlagsVars</include>
 							<visible>String.IsEmpty(ListItem.Studio)</visible>
 						</control>
@@ -284,13 +282,13 @@
 					</control>
 					<control type="image" id="1160">
 						<left>285</left>
-						<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 						<include>AudioFlagsVars</include>
 						<animation effect="slide" end="138" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 					</control>
 					<control type="image">
 						<left>285</left>
-						<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<texture>$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 						<include>AudioFlagsVars</include>
 						<animation effect="slide" end="138" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
 						<visible>String.IsEmpty(Control.GetLabel(1160))</visible>
@@ -304,13 +302,13 @@
 						<control type="image">
 							<!--AspectRatio logo-->
 							<left>1498</left>
-							<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+							<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 							<include>AudioFlagsVars</include>
 						</control>
 						<control type="image">
 							<!--Resolution logo-->
 							<left>1621</left>
-							<texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+							<texture>$VAR[ColorFlags]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 							<include>AudioFlagsVars</include>
 						</control>
 						<control type="image">
@@ -330,7 +328,7 @@
 							<width>26</width>
 							<height>22</height>
 							<aspectratio>scale</aspectratio>
-							<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+							<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 							<include>Animation_VisibleChange200</include>
 							<fadetime>400</fadetime>
@@ -339,7 +337,7 @@
 							<width>26</width>
 							<height>22</height>
 							<aspectratio>scale</aspectratio>
-							<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+							<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
 							<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))</visible>
 							<include>Animation_VisibleChange200</include>
@@ -349,7 +347,7 @@
 							<width>26</width>
 							<height>22</height>
 							<aspectratio>scale</aspectratio>
-							<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
+							<texture>$VAR[LanguageFlagsStyleVar]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
 							<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.3))</visible>
 							<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.3))</visible>
@@ -367,7 +365,7 @@
 					<animation effect="slide" end="980" condition="Control.IsVisible(516)">Conditional</animation>
 					<control type="image">
 						<left>60</left>
-						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[ColorFlagsStudio]</texture>
 						<width>150</width>
 						<height>84</height>
 						<top>-8</top>
@@ -385,7 +383,7 @@
 						<fadetime>IconCrossfadeTime2</fadetime>
 						<colordiffuse>white2</colordiffuse>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+						<texture>default-studio.png</texture>
 						<visible>String.IsEmpty(ListItem.Studio)</visible>
 					</control>
 					<control type="group">
@@ -524,17 +522,16 @@
 							<colordiffuse>floor</colordiffuse>
 						</control>
 					</control>
-
 					<control type="image" id="1115">
 						<left>1745</left>
-						<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 						<include>AudioFlagsVars</include>
 						<animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
 						<animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
 					</control>
 					<control type="image">
 						<left>1745</left>
-						<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<texture>$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 						<include>AudioFlagsVars</include>
 						<animation effect="slide" time="560" start="0,300" end="0,0" tween="cubic">Visible</animation>
 						<animation effect="slide" time="250" end="0,400" tween="cubic" easing="in">Hidden</animation>
@@ -610,7 +607,7 @@
 			<control type="image">
 				<left>1255</left>
 				<top>-9</top>
-				<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+				<texture>default-studio.png</texture>
 				<width>150</width>
 				<height>84</height>
 				<aspectratio>keep</aspectratio>
@@ -624,20 +621,20 @@
 			</control>
 			<control type="image">
 				<left>1400</left>
-				<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+				<texture>$VAR[ColorFlags]source/$VAR[SourceFlagVar,,.png]</texture>
 				<include>OSDFlagVars</include>
 				<visible>!ListItem.IsFolder</visible>
 				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>1240</left>
-				<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+				<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 				<include>OSDFlagVars</include>
 				<visible>!ListItem.IsFolder</visible>
 			</control>
 			<control type="image">
 				<left>1535</left>
-				<texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+				<texture>$VAR[ColorFlags]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 				<include>OSDFlagVars</include>
 				<visible>!ListItem.IsFolder</visible>
 				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
@@ -649,18 +646,17 @@
 				<visible>!ListItem.IsFolder</visible>
 				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
 			</control>
-
 			<control type="group">
 				<animation effect="slide"  end="-30,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
 				<visible>[Container.Content(episodes) + !String.IsEmpty(ListItem.TVShowTitle)] | [Container.Content(movies) + !ListItem.IsCollection]</visible>
 				<control type="image" id="1126">
 					<left>1820</left>
-					<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 					<include>OSDFlagVars</include>
 				</control>
 				<control type="image">
 					<left>1790</left>
-					<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+					<texture>$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 					<include>OSDFlagVars</include>
 					<visible>String.IsEmpty(Control.GetLabel(1126))</visible>
 				</control>
@@ -669,12 +665,12 @@
 				<visible>Container.Content(tvshows) | [Container.Content(seasons) + !String.IsEmpty(ListItem.TVShowTitle)]</visible>
 				<control type="image" id="1116">
 					<left>1375</left>
-					<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 					<include>OSDFlagVars</include>
 				</control>
 				<control type="image">
 					<left>1375</left>
-					<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+					<texture>$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 					<include>OSDFlagVars</include>
 					<visible>String.IsEmpty(Control.GetLabel(1116))</visible>
 				</control>
@@ -715,7 +711,6 @@
 				</control>
 			</control>
 		</control>
-
 	</include>
 	<include name="MusicMediaFlags">
 		<control type="group">
@@ -775,7 +770,6 @@
 						</control>
 					</control>
 				</control>
-
 				<control type="group">
 					<!--artist newest/oldest-->
 					<left>1500</left>
@@ -839,7 +833,7 @@
 					<control type="image">
 						<left>130</left>
 						<top>12</top>
-						<texture>$VAR[ColorFlagsAudio]audio/$INFO[Window(home).Property(Album.Song.1.FileExtension),,.png]</texture>
+						<texture>$VAR[ColorFlags]audio/$INFO[Window(home).Property(Album.Song.1.FileExtension),,.png]</texture>
 						<include>AudioFlagsVars</include>
 					</control>
 					<control type="group">
@@ -877,7 +871,7 @@
 							<include>AudioFlagsVars</include>
 						</control>
 						<control type="image">
-							<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+							<texture>default-studio.png</texture>
 							<include>AudioFlagsVars</include>
 							<visible>String.IsEmpty(ListItem.Property(Album_Label))</visible>
 						</control>
@@ -975,7 +969,6 @@
 						<animation effect="slide" end="270,70" time="0" condition="Control.IsVisible(512) | Control.IsVisible(810) | Control.IsVisible(750) | Control.IsVisible(509) | Control.IsVisible(53) | Control.IsVisible(500)">Conditional</animation>
 						<animation effect="slide" end="1300,70" time="0" condition="Control.IsVisible(50) | Control.IsVisible(812)">Conditional</animation>
 						<animation effect="slide" end="-130,70" time="0" condition="Control.IsVisible(700)">Conditional</animation>
-
 						<control type="image">
 							<top>-51</top>
 							<left>-5</left>
@@ -1088,7 +1081,7 @@
 				<control type="image">
 					<left>1630</left>
 					<top>10</top>
-					<texture>$VAR[ColorFlagsAudio]audio/$INFO[ListItem.FileExtension,,.png]</texture>
+					<texture>$VAR[ColorFlags]audio/$INFO[ListItem.FileExtension,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<visible>Container.Content(Songs)</visible>
 					<animation effect="slide" end="-1200,0" time="0" condition="Control.IsVisible(514)">Conditional</animation>
@@ -1165,12 +1158,12 @@
 					<visible>[Container.Content(movies) + !ListItem.IsCollection]</visible>
 					<control type="image" id="1285">
 						<left>1230</left>
-						<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 						<include>OSDFlagVars</include>
 					</control>
 					<control type="image">
 						<left>1230</left>
-						<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<texture>$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 						<include>OSDFlagVars</include>
 						<visible>String.IsEmpty(Control.GetLabel(1285))</visible>
 					</control>
@@ -1200,12 +1193,12 @@
 				</control>
 				<control type="image">
 					<left>1670</left>
-					<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlags]source/$VAR[SourceFlagVar,,.png]</texture>
 					<include>AudioFlagsVars</include>
 				</control>
 				<control type="image">
 					<left>1770</left>
-					<texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+					<texture>$VAR[ColorFlags]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 					<include>AudioFlagsVars</include>
 				</control>
 			</control>
@@ -1254,18 +1247,18 @@
 					<width>135</width>
 					<height>38</height>
 					<control type="image" id="1117">
-						<texture >$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<texture >$VAR[ColorFlags]rating/$VAR[RatingFlagVar,,.png]</texture>
 						<include>AudioFlagsVars</include>
 					</control>
 					<control type="image">
-						<texture >$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+						<texture >$VAR[ColorFlags]rating/MPAA_NR_Certificate_US.png</texture>
 						<include>AudioFlagsVars</include>
 						<visible>String.IsEmpty(Control.GetLabel(1117))</visible>
 					</control>
 				</control>
 				<control type="image">
 					<top>-10</top>
-					<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+					<texture>$VAR[ColorFlagsStudio]</texture>
 					<width>125</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>
@@ -1277,7 +1270,7 @@
 				</control>
 				<control type="image">
 					<top>-10</top>
-					<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+					<texture>default-studio.png</texture>
 					<width>125</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>

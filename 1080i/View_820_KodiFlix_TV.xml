@@ -2200,7 +2200,7 @@
 				<control type="image">
 					<left>400</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 					<visible>!ListItem.IsParentFolder</visible>
@@ -2254,7 +2254,7 @@
 					<left>1100</left>
 					<top>-13</top>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+					<texture>default-studio.png</texture>
 					<include>AudioFlagsVars</include>
 					<visible>String.IsEmpty(ListItem.Studio) + !ListItem.IsParentFolder</visible>
 				</control>
@@ -2279,7 +2279,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 						<include>Animation_VisibleChange200</include>
 						<fadetime>400</fadetime>
@@ -2288,7 +2288,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))</visible>
 						<include>Animation_VisibleChange200</include>
@@ -2298,7 +2298,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlagsLanguage]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
+						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.3))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.3))</visible>
@@ -2313,7 +2313,7 @@
 						<left>625</left>
 						<colordiffuse>floor</colordiffuse>
 						<include>MediaFlagVars</include>
-						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[ColorFlagsStudio]</texture>
 						<visible>!String.IsEmpty(ListItem.Title) + [!Container.Content(seasons) | Skin.HasSetting(KodiFlixTVInfo)]</visible>
 					</control>
 					<control type="image" id="1200">

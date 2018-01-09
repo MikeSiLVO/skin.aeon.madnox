@@ -321,7 +321,7 @@
 					<width>200</width>
 					<height>135</height>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="special://skin/extras/Alticons/colorstudios/studios/Default-Studio.png">$VAR[StudioImageVar]</texture>
+					<texture fallback="special://skin/extras/Alticons/Default-Studio.png">$VAR[StudioImageVar]</texture>
 					<bordersize>5</bordersize>
 				</control>
 			</control>
@@ -339,7 +339,7 @@
 					<width>200</width>
 					<height>135</height>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="special://skin/extras/Alticons/colorstudios/studios/Default-Studio.png">$VAR[StudioImageVar]</texture>
+					<texture fallback="special://skin/extras/Alticons/Default-Studio.png">$VAR[StudioImageVar]</texture>
 				</control>
 				<control type="image">
 					<left>-6</left>

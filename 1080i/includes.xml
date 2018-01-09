@@ -3210,7 +3210,7 @@
 		<!-- Resolution -->
 		<onfocus>SetProperty(Widget.FlagsResolution,$VAR[ColorFlagsResolution]resolution/$INFO[Container($PARAM[id]).ListItem.VideoResolution,,.png],Home)</onfocus>
 		<!-- Aspect -->
-		<onfocus>SetProperty(Widget.FlagsAspect,$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[Container($PARAM[id]).ListItem.VideoAspect,,.png],Home)</onfocus>
+		<onfocus>SetProperty(Widget.FlagsAspect,$VAR[ColorFlags]aspectratio/$INFO[Container($PARAM[id]).ListItem.VideoAspect,,.png],Home)</onfocus>
 		<!-- Audio Codec -->
 		<onfocus>SetProperty(Widget.FlagsAudio,$VAR[ColorFlagsAudio]audio/$INFO[Container($PARAM[id]).ListItem.AudioCodec]$INFO[Container($PARAM[id]).ListItem.AudioChannels,,.png],Home)</onfocus>
 		<!-- Audio Channels -->
@@ -3219,13 +3219,13 @@
 		<!-- Subtitle Language -->
 		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.SubtitleLanguage)">SetProperty(Widget.FlagsCC,$VAR[ColorFlags]cc.png,Home)</onfocus>
 		<!--Audio Languages-->
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.1))">SetProperty(Widget.FlagsAL1,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.1),,.png],Home)</onfocus>
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.2))">SetProperty(Widget.FlagsAL2,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.2),,.png],Home)</onfocus>
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.3))">SetProperty(Widget.FlagsAL3,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.3),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.1))">SetProperty(Widget.FlagsAL1,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.1),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.2))">SetProperty(Widget.FlagsAL2,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.2),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(AudioLanguage.3))">SetProperty(Widget.FlagsAL3,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(AudioLanguage.3),,.png],Home)</onfocus>
 		<!--Subtitle Languages-->
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.1))">SetProperty(Widget.FlagsSL1,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.1),,.png],Home)</onfocus>
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.2))">SetProperty(Widget.FlagsSL2,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.2),,.png],Home)</onfocus>
-		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.3))">SetProperty(Widget.FlagsSL3,$VAR[ColorFlagsLanguage]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.3),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.1))">SetProperty(Widget.FlagsSL1,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.1),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.2))">SetProperty(Widget.FlagsSL2,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.2),,.png],Home)</onfocus>
+		<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Property(SubtitleLanguage.3))">SetProperty(Widget.FlagsSL3,$VAR[ColorFlags]$INFO[Container($PARAM[id]).ListItem.Property(SubtitleLanguage.3),,.png],Home)</onfocus>
 		<!-- Open Window -->
 		<onfocus>ActivateWindow(1199)</onfocus>
 	</include>

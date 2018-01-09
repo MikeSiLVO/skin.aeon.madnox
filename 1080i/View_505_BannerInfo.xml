@@ -626,7 +626,7 @@
 				<control type="image">
 					<left>235</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 				</control>
@@ -643,7 +643,7 @@
 					<left>365</left>
 					<top>-13</top>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+					<texture>default-studio.png</texture>
 					<include>AudioFlagsVars</include>
 					<visible>String.IsEmpty(ListItem.Studio)</visible>
 				</control>

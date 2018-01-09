@@ -352,11 +352,11 @@
 					<left>165</left>
 					<visible>!VideoPlayer.Content(files)</visible>
 					<control type="image" id="76">
-						<texture>$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
+						<texture>String.Contains$INFO[VideoPlayer.Studio,,.png]</texture>
 						<include>OSDFlagVars</include>
 					</control>
 					<control type="image">
-						<texture>$VAR[ColorFlagsStudio]default-studio.png</texture>
+						<texture>default-studio.png</texture>
 						<include>OSDFlagVars</include>
 						<visible>String.IsEmpty(VideoPlayer.Studio)</visible>
 					</control>
@@ -387,7 +387,7 @@
 				</control>
 				<control type="image">
 					<left>1470</left>
-					<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlags]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 					<include>OSDFlagVars</include>
 					<animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
 				</control>
@@ -454,7 +454,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime2</fadetime>
-					<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsLanguage]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
+					<texture colordiffuse="white2" fallback="">$VAR[ColorFlags]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
 				</control>
 				<control type="image">
 					<left>1860</left>
@@ -463,7 +463,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime2</fadetime>
-					<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsLanguage]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
+					<texture colordiffuse="white2" fallback="">$VAR[ColorFlags]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 				</control>
 			</control>
@@ -541,7 +541,7 @@
 							<width>42</width>
 							<height>35</height>
 							<aspectratio aligny="center" align="left">keep</aspectratio>
-							<texture colordiffuse="white2" background="true">$VAR[ColorFlagsLanguage]$INFO[VideoPlayer.Country,,.png]</texture>
+							<texture colordiffuse="white2" background="true">$VAR[ColorFlags]$INFO[VideoPlayer.Country,,.png]</texture>
 							<fadetime>200</fadetime>
 							<visible>!String.IsEmpty(Control.GetLabel(12020))</visible>
 							<animation effect="fade" delay="240" time="240" reversible="false">Hidden</animation>
@@ -722,7 +722,7 @@
 						<width>116</width>
 						<height>79</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
-						<texture colordiffuse="grey">$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
+						<texture colordiffuse="grey">String.Contains$INFO[VideoPlayer.Studio,,.png]</texture>
 						<visible>!String.IsEmpty(Control.GetLabel(800011))</visible>
 					</control>
 					<control type="label">
@@ -906,7 +906,7 @@
 						<height>83</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
 						<animation effect="slide" end="0,-7" condition="true">Conditional</animation>
-						<texture colordiffuse="grey">$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
+						<texture colordiffuse="grey">$VAR[ColorFlags]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 						<visible>!String.IsEmpty(Control.GetLabel(900015))</visible>
 					</control>
 					<control type="image">
@@ -1219,7 +1219,7 @@
 						<width>132</width>
 						<height>70</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
-						<texture colordiffuse="grey" fallback="flags/aspectratio/defaultaspect.png">$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
+						<texture colordiffuse="grey" fallback="flags/aspectratio/defaultaspect.png">$VAR[ColorFlags]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 					</control>
 					<control type="image">
 						<include>Furniture_FlagUpright</include>

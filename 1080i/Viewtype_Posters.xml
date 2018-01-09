@@ -2830,7 +2830,7 @@
 					<control type="image" id="7801">
 						<top>470</top>
 						<left>78</left>
-						<texture>$VAR[ColorFlagsStudio]$INFO[ListItem.Studio,,.png]</texture>
+						<texture>$VAR[ColorFlagsStudio]</texture>
 						<width>67</width>
 						<height>41</height>
 						<aspectratio>keep</aspectratio>

@@ -506,7 +506,7 @@
 					<control type="image">
 						<left>350</left>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsAspectRatio]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+						<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">
