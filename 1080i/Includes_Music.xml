@@ -1252,8 +1252,8 @@
 					<texturenofocus>osd/buttons/OSDRecordNF.png</texturenofocus>
 					<label>264</label>
 					<include>ClassicOSDButton</include>
-					<onclick>PlayerControl(record)</onclick>
-					<visible>Player.CanRecord</visible>
+					<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+					<visible>PVR.CanRecordPlayingChannel</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="651">
@@ -1460,7 +1460,7 @@
 				<width>100</width>
 				<height>100</height>
 				<texturenofocus>BigIcons/Microphone.png</texturenofocus>
-				<visible>Player.CanRecord</visible>
+				<visible>PVR.CanRecordPlayingChannel</visible>
 				<colordiffuse>gray</colordiffuse>
 			</control>
 		</control>
@@ -1551,8 +1551,8 @@
 				<label>264</label>
 				<font />
 				<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-				<onclick>PlayerControl(record)</onclick>
-				<visible>Player.CanRecord</visible>
+				<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+				<visible>PVR.CanRecordPlayingChannel</visible>
 			</control>
 		</control>
 		<control type="grouplist">

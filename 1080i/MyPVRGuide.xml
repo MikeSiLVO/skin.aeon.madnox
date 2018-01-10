@@ -50,7 +50,7 @@
 						<font>Font_Reg26_2</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>$VAR[FontColorVar]</selectedcolor>
-						<label>$INFO[ListItem.ChannelNumber]</label>
+						<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						<align>center</align>
 					</control>
 					<control type="image">
@@ -113,7 +113,7 @@
 						<font>Font_Reg26_2</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>$VAR[FontColorVar]</selectedcolor>
-						<label>$INFO[ListItem.ChannelNumber]</label>
+						<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						<align>center</align>
 					</control>
 					<control type="image">

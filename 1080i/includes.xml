@@ -1974,9 +1974,9 @@
 					<texturenofocus>BigIcons/ButtonRecord.png</texturenofocus>
 					<alttexturenofocus>BigIcons/ButtonRecord.png</alttexturenofocus>
 					<colordiffuse>gray</colordiffuse>
-					<usealttexture>Player.Recording</usealttexture>
-					<enable>Player.CanRecord</enable>
-					<animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
+					<usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
+					<enable>PVR.CanRecordPlayingChannel</enable>
+					<animation effect="fade" start="100" end="50" time="80" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>
 				</control>
 				<control type="button">
 					<width>100</width>
@@ -2136,9 +2136,9 @@
 						<label>31110</label>
 						<altlabel>31111</altlabel>
 						<font />
-						<usealttexture>Player.Recording</usealttexture>
-						<onclick>PlayerControl(Record)</onclick>
-						<enable>Player.CanRecord</enable>
+						<usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
+						<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+						<enable>PVR.CanRecordPlayingChannel</enable>
 					</control>
 					<control type="button" id="70025">
 						<width>100</width>
@@ -2147,7 +2147,7 @@
 						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" />
 						<label>31108</label>
 						<font />
-						<onclick>ActivateWindow(PVROSDGuide)</onclick>
+						<onclick>ActivateWindow(pvrchannelguide)</onclick>
 						<onclick>Dialog.Close(VideoOSD)</onclick>
 					</control>
 				</control>
@@ -2305,7 +2305,7 @@
 					<height>100</height>
 					<texturefocus>osd/buttons/OSDEpgFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDEpgNF.png</texturenofocus>
-					<onclick>ActivateWindow(PVROSDGuide)</onclick>
+					<onclick>ActivateWindow(pvrchannelguide)</onclick>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 				</control>
 			</control>
@@ -2336,10 +2336,10 @@
 					<height>100</height>
 					<texturefocus>osd/buttons/OSDRecordFO.png</texturefocus>
 					<texturenofocus>osd/buttons/OSDRecordNF.png</texturenofocus>
-					<usealttexture>Player.Recording</usealttexture>
-					<onclick>PlayerControl(Record)</onclick>
-					<enable>Player.CanRecord</enable>
-					<animation effect="fade" start="100" end="50" time="80" condition="!Player.CanRecord">Conditional</animation>
+					<usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
+					<onclick>PVR.ToggleRecordPlayingChannel</onclick>
+					<enable>PVR.CanRecordPlayingChannel</enable>
+					<animation effect="fade" start="100" end="50" time="80" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>
 				</control>
 				<control type="button" id="70045">
 					<width>100</width>

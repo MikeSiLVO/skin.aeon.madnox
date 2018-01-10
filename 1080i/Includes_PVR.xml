@@ -230,6 +230,13 @@
 			<description>View As button</description>
 			<label />
 			<include>ViewtypeSettingsButton</include>
+			<visible>!Window.IsActive(tvrecordings)</visible>
+		</control>
+		<control type="button" id="10">
+			<description>View As button</description>
+			<label>20367</label>
+			<include>ViewtypeSettingsButton</include>
+			<visible>Window.IsActive(tvrecordings)</visible>
 		</control>
 		<control type="button" id="3">
 			<description>Sort by button</description>
@@ -437,7 +444,7 @@
 				<align>left</align>
 				<font>Font_Bold56</font>
 				<textcolor>$VAR[FontColorVar]</textcolor>
-				<label>$INFO[VideoPlayer.ChannelNumber]</label>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
 				<scroll>true</scroll>
 			</control>
 			<control type="label" id="1">
@@ -506,10 +513,10 @@
 				<scroll>true</scroll>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
-				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
+				<visible>![VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel]</visible>
 			</control>
 			<control type="group" id="1">
-				<visible>VideoPlayer.Content(LiveTV) + Player.Recording</visible>
+				<visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel</visible>
 				<control type="image" id="1">
 					<left>499</left>
 					<top>896</top>
@@ -600,7 +607,7 @@
 				<scroll>true</scroll>
 				<label>No EPG</label>
 				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
-				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
+				<visible>![VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel]</visible>
 			</control>
 		</control>
 		<!-- Bottom right Info (Stream status, SNR & Signal, Time-shift) -->
@@ -1012,7 +1019,7 @@
 				<align>left</align>
 				<font>Font_Bold56</font>
 				<textcolor>$VAR[FontColorVar]</textcolor>
-				<label>$INFO[VideoPlayer.ChannelNumber]</label>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
 				<scroll>true</scroll>
 			</control>
 			<control type="label" id="1">
@@ -1137,7 +1144,7 @@
 				<scroll>true</scroll>
 				<label>$INFO[VideoPlayer.Title]</label>
 				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
-				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
+				<visible>![VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel]</visible>
 			</control>
 			<control type="label" id="1">
 				<left>1450</left>
@@ -1150,7 +1157,7 @@
 				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
 			</control>
 			<control type="group" id="1">
-				<visible>VideoPlayer.Content(LiveTV) + Player.Recording</visible>
+				<visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel</visible>
 				<control type="image" id="1">
 					<left>499</left>
 					<width>40</width>
@@ -1208,7 +1215,7 @@
 				<top>49</top>
 				<width>1225</width>
 				<height>12</height>
-				<info>Pvr.Progress</info>
+				<info>Pvr.EpgEventProgress</info>
 				<midtexture border="0">new_pvr/texturebg_white.png</midtexture>
 				<texturebg border="3,0,3,0">new_pvr/texturebg_border_white.png</texturebg>
 				<lefttexture />
@@ -1227,7 +1234,7 @@
 				<scroll>true</scroll>
 				<label>No EPG</label>
 				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
-				<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
+				<visible>![VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel]</visible>
 			</control>
 		</control>
 	</include>
@@ -1295,7 +1302,7 @@
 						<textcolor>grey</textcolor>
 						<selectedcolor>orange</selectedcolor>
 						<font>Font_Reg29</font>
-						<info>ListItem.ChannelNumber</info>
+						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="group">
 						<control type="image">
@@ -1381,7 +1388,7 @@
 						<textcolor>grey</textcolor>
 						<selectedcolor>white</selectedcolor>
 						<font>Font_Reg29</font>
-						<info>ListItem.ChannelNumber</info>
+						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="group">
 						<control type="image">
@@ -1661,7 +1668,7 @@
 					<width>60</width>
 					<height>45</height>
 					<font>Font_Bold34_Caps</font>
-					<info>ListItem.ChannelNumber</info>
+					<info>ListItem.ChannelNumberLabel</info>
 				</control>
 				<control type="image">
 					<left>102</left>
@@ -1741,7 +1748,7 @@
 					<width>60</width>
 					<height>45</height>
 					<font>Font_Bold34_Caps</font>
-					<info>ListItem.ChannelNumber</info>
+					<info>ListItem.ChannelNumberLabel</info>
 				</control>
 				<control type="image">
 					<left>102</left>

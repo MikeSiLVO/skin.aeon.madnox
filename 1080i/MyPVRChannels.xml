@@ -50,7 +50,7 @@
 								<textcolor>grey</textcolor>
 								<selectedcolor>$VAR[AreaColorVar]</selectedcolor>
 								<font>Font_Reg29</font>
-								<info>ListItem.ChannelNumber</info>
+								<info>ListItem.ChannelNumberLabel</info>
 							</control>
 							<control type="image">
 								<width>1060</width>
@@ -118,7 +118,7 @@
 								<textcolor>white</textcolor>
 								<selectedcolor>$VAR[AreaColorVar]</selectedcolor>
 								<font>Font_Reg29</font>
-								<info>ListItem.ChannelNumber</info>
+								<info>ListItem.ChannelNumberLabel</info>
 							</control>
 							<control type="image">
 								<visible>!String.IsEqual(ListItem.Icon,DefaultVideo.png)</visible>
@@ -689,7 +689,7 @@
 							<width>60</width>
 							<height>45</height>
 							<align>center</align>
-							<label>$INFO[ListItem.ChannelNumber]</label>
+							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 							<font>Font_Reg32</font>
 						</control>
 						<control type="image">
@@ -783,7 +783,7 @@
 							<width>60</width>
 							<height>45</height>
 							<align>center</align>
-							<label>$INFO[ListItem.ChannelNumber]</label>
+							<label>$INFO[ListItem.ChannelNumberLabel]</label>
 							<font>Font_Reg32</font>
 						</control>
 						<control type="image">
@@ -941,7 +941,7 @@
 						<textcolor>grey</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
-						<label>[B]$INFO[ListItem.ChannelNumber]  $INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.ChannelNumberLabel]  $INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="image">
 						<visible>!String.IsEqual(ListItem.Icon,DefaultVideo.png)</visible>
@@ -1027,7 +1027,7 @@
 						<font>Font_Reg32</font>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
-						<label>[B]$INFO[ListItem.ChannelNumber]  $INFO[ListItem.Label][/B]</label>
+						<label>[B]$INFO[ListItem.ChannelNumberLabel]  $INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="group">
 						<left>15</left>

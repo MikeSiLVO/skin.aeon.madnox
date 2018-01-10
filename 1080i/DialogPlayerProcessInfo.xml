@@ -12,7 +12,7 @@
 		</control>
 		<control type="group">
 			<description>Player Process Information</description>
-			<visible>![Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsActive(subtitlesearch) | Window.IsActive(osdcmssettings)]</visible>
+			<visible>![Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(pvrchannelguide) | Window.IsActive(subtitlesearch) | Window.IsActive(osdcmssettings)]</visible>
 			<depth>0.40</depth>
 			<animation effect="fade" start="0" end="100" time="300">VisibleChange</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
@@ -321,7 +321,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>[[Pvr.IsPlayingTv + Window.IsActive(FullscreenVideo)]  | [Pvr.IsPlayingRadio | Window.IsActive(visualisation)]] + system.getbool(pvrplayback.signalquality) + ![Player.ShowInfo | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsActive(subtitlesearch) | Window.IsActive(osdcmssettings)]</visible>
+			<visible>[[Pvr.IsPlayingTv + Window.IsActive(FullscreenVideo)]  | [Pvr.IsPlayingRadio | Window.IsActive(visualisation)]] + system.getbool(pvrplayback.signalquality) + ![Player.ShowInfo | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(pvrchannelguide) | Window.IsActive(subtitlesearch) | Window.IsActive(osdcmssettings)]</visible>
 			<left>42</left>
 			<top>250</top>
 			<control type="image">
