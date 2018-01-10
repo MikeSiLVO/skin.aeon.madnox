@@ -51,7 +51,6 @@
 			<include>PanelSpot</include>
 			<include>Neon_Floor</include>
 		</control>
-		<!--<include>NextAired_Layout3</include>-->
 		<include condition="!Skin.HasSetting(ClassicNextAired2)">NextAired_Layout4</include>
 		<include condition="Skin.HasSetting(ClassicNextAired2)">NextAired_Layout3</include>
 		<control type="image">

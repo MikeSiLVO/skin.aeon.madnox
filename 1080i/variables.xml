@@ -19,10 +19,6 @@
 		<value condition="!String.IsEmpty(Window(home).Property(quicknavsetup))">BigIcons/ButtonStop.png</value>
 		<value>BigIcons/Gears.png</value>
 	</variable>
-	<variable name="WidgetModeIconVar">
-		<value condition="String.IsEmpty(Window(home).Property(DisableWidgets))">BigIcons/widgets.png</value>
-		<value>BigIcons/mainmenu.png</value>
-	</variable>
 	<variable name="GlobalCaseVar">
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">tvseries.png</value>
 		<value condition="String.Contains(ListItem.Filename,3D) | String.Contains(ListItem.Filename,3d)">3d.png</value>
@@ -228,140 +224,20 @@
 		<value condition="String.IsEqual(Window(Home).Property(NextAired.StatusID),-1)">$LOCALIZE[31251]</value>
 	</variable>
 	<variable name="TvGuideVarTxtScript">
-		<value condition="String.IsEqual(ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
+		<value condition="String.Contains(ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
 	</variable>
-	<variable name="TvGuideVarTxtScript215">
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(215).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript214">
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(214).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript213">
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(213).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript212">
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(212).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript211">
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(211).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript210">
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(210).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript209">
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(209).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript208">
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(208).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript207">
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(207).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript206">
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(206).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript205">
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(205).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript204">
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(204).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript203">
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(203).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript202">
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(202).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript201">
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(201).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
-	</variable>
-	<variable name="TvGuideVarTxtScript200">
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
-		<value condition="String.IsEqual(Container(200).ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
+	<variable name="TvGuideVarTxtScriptContainer">
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),0)">$LOCALIZE[31245]</value>
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),1)">$LOCALIZE[31246]</value>
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),2)">$LOCALIZE[31247]</value>
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),4)">$LOCALIZE[31249]</value>
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),6)">$LOCALIZE[31250]</value>
+		<value condition="String.Contains(Container.ListItem.Property(StatusID),-1)">$LOCALIZE[31251]</value>
 	</variable>
 	<variable name="RatingFlagVar">
 		<value condition="String.Contains(ListItem.mpaa,TV-G) | String.Contains(ListItem.mpaa,TV - G)">TV-G_Certificate_US</value>
@@ -948,23 +824,8 @@
 		<value>$INFO[ListItem.Art(characterart)]</value>
 	</variable>
 	<variable name="TVGuideInfoFanart">
-		<value condition="String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">special://skin/backgrounds/tvguide/</value>
-		<value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(207)">$INFO[Container(207).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(208)">$INFO[Container(208).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(209)">$INFO[Container(209).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(210)">$INFO[Container(210).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(211)">$INFO[Container(211).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(212)">$INFO[Container(212).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(213)">$INFO[Container(213).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(214)">$INFO[Container(214).ListItem.Property(Art(fanart))]</value>
-		<value condition="Control.HasFocus(215)">$INFO[Container(215).ListItem.Property(Art(fanart))]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Property(Art(fanart)))">$INFO[Container.ListItem.Property(Art(fanart))]</value>
+		<value>special://skin/backgrounds/tvguide/</value>
 	</variable>
 	<variable name="TVDayLabelMon">
 		<value condition="!Integer.IsGreater(Container(200).NumItems,0)">$LOCALIZE[11]</value>
@@ -2766,12 +2627,6 @@
 		<value condition="String.IsEqual(Skin.String(LanguageFlags),2)">New</value>
 		<value>Default</value>
 	</variable>
-	<variable name="ColorFlagsAspect">
-		<value condition="Skin.HasSetting(AspectRatioColorFlag) + !Skin.HasSetting(DisableAspectRatioFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-		<value condition="Skin.HasSetting(AspectRatioColorFlagreloaded) + !Skin.HasSetting(DisableAspectRatioFlag)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
-		<value condition="Skin.HasSetting(DisableAspectRatioFlag)" />
-		<value>flags/</value>
-	</variable>
 	<variable name="ColorFlagsAudio">
 		<value condition="Skin.HasSetting(AudioColorFlag) + !Skin.HasSetting(DisableAudioFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
 		<value condition="Skin.HasSetting(AudioColorFlagreloaded) + !Skin.HasSetting(DisableAudioFlag)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
@@ -2945,33 +2800,6 @@
 		<value condition="Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes))">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 		<value condition="Container.Content(Episodes) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</value>
 		<value condition="!String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Label2]</value>
-	</variable>
-	<variable name="value_texturecolor">
-		<value condition="String.Contains(skin.string(colortexture),nocolor)">FFFFFFFF</value>
-		<value condition="String.Contains(skin.string(colortexture),lightblue)">FFADD8E6</value>
-		<value condition="String.Contains(skin.string(colortexture),aqua)">FF66CCC4</value>
-		<value condition="String.Contains(skin.string(colortexture),ocean)">FF00BFFF</value>
-		<value condition="String.Contains(skin.string(colortexture),sky)">FF00AFFF</value>
-		<value condition="String.Contains(skin.string(colortexture),deepblue)">FF007399</value>
-		<value condition="String.Contains(skin.string(colortexture),royal)">FF4169E1</value>
-		<value condition="String.Contains(skin.string(colortexture),turquoise)">FF00A5A7</value>
-		<value condition="String.Contains(skin.string(colortexture),digital)">FF90AEAE</value>
-		<value condition="String.Contains(skin.string(colortexture),olive)">FF556B2F</value>
-		<value condition="String.Contains(skin.string(colortexture),red)">FFFF0000</value>
-		<value condition="String.Contains(skin.string(colortexture),blood)">FFB20000</value>
-		<value condition="String.Contains(skin.string(colortexture),brown)">FF7D391F</value>
-		<value condition="String.Contains(skin.string(colortexture),chocolate)">FFC56520</value>
-		<value condition="String.Contains(skin.string(colortexture),lightyellow)">FFF0DBA6</value>
-		<value condition="String.Contains(skin.string(colortexture),goldyellow)">FFDAA520</value>
-		<value condition="String.Contains(skin.string(colortexture),orange)">FFFFA500</value>
-		<value condition="String.Contains(skin.string(colortexture),spring)">FF39ED92</value>
-		<value condition="String.Contains(skin.string(colortexture),forest)">FF004D00</value>
-		<value condition="String.Contains(skin.string(colortexture),violet)">FF8A2BE2</value>
-		<value condition="String.Contains(skin.string(colortexture),purple)">FF9370D8</value>
-		<value condition="String.Contains(skin.string(colortexture),white)">FFFFFFFF</value>
-		<value condition="String.Contains(skin.string(colortexture),silver)">FFC0C0C0</value>
-		<value condition="String.Contains(skin.string(colortexture),grey)">FF898A8C</value>
-		<value condition="String.Contains(skin.string(colortexture),graphite)">FF3B3B3B</value>
 	</variable>
 	<variable name="MovieSetsSourceFlagVar">
 		<value condition="[String.Contains(Container(5801).ListItem.filename,PDTV) | String.Contains(Container(5801).ListItem.filename,sdtv) | String.Contains(Container(5801).ListItem.filename,sd tv)]">sdtv</value>
