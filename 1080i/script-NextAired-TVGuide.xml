@@ -4,14 +4,12 @@
 		<control type="group">
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<control type="group">
-				<control type="multiimage">
-					<aspectratio>scale</aspectratio>
-					<imagepath background="true" fallback="special://skin/backgrounds/tvguide/">$VAR[TVGuideInfoFanart]</imagepath>
-					<fadetime>500</fadetime>
-					<include>FullscreenDimensions</include>
-					<include>Animation_VisibleChange400</include>
-				</control>
+			<control type="multiimage">
+				<aspectratio>scale</aspectratio>
+				<imagepath background="true" fallback="special://skin/backgrounds/tvguide/">$INFO[Container.ListItem.Property(Art(fanart))]</imagepath>
+				<fadetime>500</fadetime>
+				<include>FullscreenDimensions</include>
+				<include>Animation_VisibleChange400</include>
 			</control>
 			<include>CommonMediaPlayingBackground</include>
 		</control>
@@ -115,11 +113,6 @@
 						<onclick>RunScript(script.tv.show.next.aired,force=True)</onclick>
 						<include>Objects_MediaMenuButtonAlt</include>
 					</control>
-					<control type="button" id="10">
-						<label>$LOCALIZE[10035] &amp; $LOCALIZE[24069]</label>
-						<onclick>RunScript(script.tv.show.next.aired,reset=True)</onclick>
-						<include>Objects_MediaMenuButtonAlt</include>
-					</control>
 					<control type="button" id="1601">
 						<label>$LOCALIZE[31383]</label>
 						<font>Font_Bold26_Caps</font>
@@ -162,9 +155,7 @@
 						<label2>[COLOR $VAR[FontColorVar]]$VAR[NextAiredLayoutVar][/COLOR]</label2>
 						<include>Objects_MediaMenuButtonAlt</include>
 						<onclick>Skin.ToggleSetting(ClassicNextAired)</onclick>
-						<onclick>SetProperty(activewindow,tvguide,home)</onclick>
-						<onclick>ActivateWindow(1141)</onclick>
-						<onclick>RunAddon(script.tv.show.next.aired)</onclick>
+						<onclick>Dialog.Close(script-NextAired-TVGuide.xml)</onclick>
 					</control>
 					<control type="button" id="1603">
 						<label>$LOCALIZE[31176]</label>

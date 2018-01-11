@@ -5,12 +5,8 @@
 	<onload condition="String.IsEqual(Window(home).Property(activewindow),addonbrowser)">ReplaceWindow(addonbrowser)</onload>
 	<onload condition="String.IsEqual(Window(home).Property(activewindow),programs)">ReplaceWindow(programs)</onload>
 	<onload condition="String.IsEqual(Window(home).Property(activewindow),music)">ReplaceWindow(music,$ESCINFO[Window(home).Property(containerpath)],return)</onload>
-	<!-- <onload condition="String.IsEqual(Window(home).Property(activewindow),music)">ReplaceWindow(music)</onload> -->
 	<onload condition="String.IsEqual(Window(home).Property(activewindow),musicplaylist)">ReplaceWindow(musicplaylist)</onload>
 	<onload condition="String.IsEqual(Window(home).Property(activewindow),videoplaylist)">ReplaceWindow(videoplaylist)</onload>
-	<onload condition="String.IsEqual(Window(home).Property(activewindow),tvguide)">ReplaceWindow(home)</onload>
-	<!-- 	<onload condition="String.IsEmpty(Window(home).Property(activewindow))">ReplaceWindow(home)</onload>
- -->
 	<coordinates>
 		<system>1</system>
 	</coordinates>
