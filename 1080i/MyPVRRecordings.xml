@@ -218,7 +218,12 @@
 			<font />
 			<include>HiddenObject</include>
 		</control>
-		<include>BreadcrumbsContent</include>
+		<control type="group">
+			<include>Animation_HideBreadCrumbs</include>
+			<include>Breadcrumbs_BackBar</include>
+			<include>BreadcrumbsContent</include>
+			<include>Breadcrumbs_Furniture</include>
+		</control>
 		<include>Media_Menu_Furniture</include>
 		<include>PVRSideblade</include>
 		<include>ContextMenuOverlay</include>
