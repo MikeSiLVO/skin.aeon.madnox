@@ -4,7 +4,6 @@
 	<onload condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onload>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;group=mainmenu|madnox-quicknav)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,7)</onload>
-	<onload condition="!Skin.HasSetting(backendmode)">Skin.SetBool(backendmode)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>

@@ -143,40 +143,26 @@
 						<onclick condition="Skin.HasSetting(hideoptions)">Skin.Reset(hideoptions)</onclick>
 						<onclick condition="Skin.HasSetting(kioskmode)">Skin.Reset(kioskmode)</onclick>
 					</control>
-					<!--control type="radiobutton" id="262">
-						<label>31268</label>
+					<control type="radiobutton" id="107">
+						<label>$LOCALIZE[31492]</label>
 						<include>Default_SettingRadioButton</include>
-						<onclick>Skin.ToggleSetting(backendmode)</onclick>
-						<selected>Skin.HasSetting(backendmode)</selected-->
-						<!--onclick>RunScript(script.moreinfo,backend=true)</onclick-->
-						<!--visible>System.HasAddon(script.moreinfo)</visible-->
-						<!--/control-->
-						<control type="radiobutton" id="107">
-							<label>$LOCALIZE[31492]</label>
-							<include>Default_SettingRadioButton</include>
-							<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
-							<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
-						</control>
-						<control type="button" id="108">
-							<label>- $LOCALIZE[559]:</label>
-							<label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(Startup_Playlist_Path)][/COLOR]</label2>
-							<include>Default_SettingRadioButton</include>
-							<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
-							<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
-						</control>
-						<control type="radiobutton" id="110">
-							<include>Default_SettingRadioButton</include>
-							<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
-							<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
-							<label>$LOCALIZE[31216]</label>
-							<visible>System.HasAddon(script.artwork.downloader)</visible>
-						</control>
-					<!-- <control type="radiobutton" id="120">
+						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
+						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
+					</control>
+					<control type="button" id="108">
+						<label>- $LOCALIZE[559]:</label>
+						<label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(Startup_Playlist_Path)][/COLOR]</label2>
 						<include>Default_SettingRadioButton</include>
-						<selected>Skin.HasSetting(CasesonWidgets)</selected>
-						<onclick>Skin.ToggleSetting(CasesonWidgets)</onclick>
-						<label>Cases on Widgets</label>
-					</control> -->
+						<onclick>Skin.SetFile(Startup_Playlist_Path,.m3u|.xsp,special://profile/playlists/music/)</onclick>
+						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
+					</control>
+					<control type="radiobutton" id="110">
+						<include>Default_SettingRadioButton</include>
+						<selected>Skin.HasSetting(UpdateArt.Enabled)</selected>
+						<onclick>Skin.ToggleSetting(UpdateArt.Enabled)</onclick>
+						<label>$LOCALIZE[31216]</label>
+						<visible>System.HasAddon(script.artwork.downloader)</visible>
+					</control>
 					<control type="radiobutton" id="17031">
 						<label>31280</label>
 						<include>Default_SettingRadioButton</include>
@@ -254,11 +240,6 @@
 						<onclick>ActivateWindow(home)</onclick>
 						<onclick>ActivateWindow(1131)</onclick>
 					</control>
-					<!-- <control type="button" id="514">
-                        <label>$LOCALIZE[31600]</label>
-                        <include>Default_SettingButton</include>
-                        <onclick>ActivateWindow(1124)</onclick>
-                    </control> -->
                     <control type="button" id="526">
                     	<label>$LOCALIZE[31010]</label>
                     	<include>Default_SettingButton</include>

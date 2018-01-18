@@ -454,7 +454,7 @@
 	</variable>
 	<variable name="VideoFanartVar">
 		<value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/fanart/,.jpg]</value>
-		<value condition="skin.hassetting(backendmode) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years)]">$INFO[Control.GetLabel(4324)]</value>
+		<value condition="!Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years)]">$INFO[Control.GetLabel(4324)]</value>
 		<value condition="Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/video/fanart/,.jpg]</value>
 		<value condition="[Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums)]">$VAR[MusicVideosFanartVar]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart) + !String.IsEmpty(Skin.String(VideosBackground))">$INFO[Skin.String(VideosBackground)]</value>
@@ -467,7 +467,7 @@
 	</variable>
 	<variable name="VideoFanartVar1">
 		<value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/fanartBW/,.jpg]</value>
-		<value condition="skin.hassetting(backendmode) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years)]">$INFO[Control.GetLabel(4324)]</value>
+		<value condition="!Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years)]">$INFO[Control.GetLabel(4324)]</value>
 		<value condition="Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/genre/video/fanartBW/,.jpg]</value>
 		<value condition="Container.Content(years)">$INFO[ListItem.Label,special://skin/extras/year/video/fanart/,.jpg]</value>
 		<value condition="[Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums)]">$VAR[MusicVideosFanartVar]</value>
@@ -491,7 +491,7 @@
 		<value>special://skin/backgrounds/musicvideos/</value>
 	</variable>
 	<variable name="MovieFanartVar">
-		<value condition="Skin.HasSetting(RotateFanart) + !String.IsEmpty(Window(Home).Property(Detail.Movie.1.Art(fanart))) + skin.hassetting(backendmode) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Control.GetLabel(4324)]</value>
+		<value condition="Skin.HasSetting(RotateFanart) + !String.IsEmpty(Window(Home).Property(Detail.Movie.1.Art(fanart))) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Control.GetLabel(4324)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart) + !String.IsEmpty(Skin.String(MoviesBackground))">$INFO[Skin.String(MoviesBackground)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart)">special://skin/backgrounds/movies/</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrafanart1)) + Skin.HasSetting(extrafanartmovies)">$INFO[Control.GetLabel(4325)]</value>
@@ -547,7 +547,7 @@
 		<value>$LOCALIZE[20364]:</value>
 	</variable>
 	<variable name="FanartPanelValue1Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
 		<value condition="Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Director]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[ListItem.TVShowTitle]</value>
@@ -557,7 +557,7 @@
 		<value>$LOCALIZE[13279]:</value>
 	</variable>
 	<variable name="FanartPanelValue2Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
 		<value condition="Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Writer]</value>
 		<value>$INFO[ListItem.Studio]</value>
 	</variable>
@@ -569,7 +569,7 @@
 	</variable>
 	<variable name="FanartPanelValue3Var">
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + [Skin.HasSetting(wallgenre) | Skin.HasSetting(FloorLabelTagline)]">$INFO[ListItem.Year]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[Window(home).Property(NextAired.Genre)]</value>
@@ -589,7 +589,7 @@
 		<value>$LOCALIZE[31189]:</value>
 	</variable>
 	<variable name="FanartPanelValue5Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR grey]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value>$VAR[LastEpisodeVar]</value>
@@ -602,27 +602,27 @@
 	</variable>
 	<variable name="FanartPanelValue6Var">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">$INFO[ListItem.OriginalTitle]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Country]</value>
 		<value condition="Container.Content(episodes) + !ListItem.Property(IsSpecial)">$INFO[ListItem.Season,$LOCALIZE[20373] ], $INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20381],$INFO[ListItem.Episode, $LOCALIZE[20359] ]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$VAR[NextEpisodeVar]$INFO[Window(Home).Property(NextAired.NextSeasonNumber), - S] $INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]</value>
 	</variable>
 	<variable name="FanartPanelPlotVar">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
 		<value condition="!Skin.HasSetting(preferplot) + !String.IsEmpty(ListItem.PlotOutline) + Control.IsVisible(7550)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonDescription]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="GlobalPlotVar">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="!Skin.HasSetting(preferplot) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="GlobalPlotOutlineVar">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
 		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value>$INFO[ListItem.Plot]</value>
@@ -666,7 +666,7 @@
 		<value>$LOCALIZE[31190]:</value>
 	</variable>
 	<variable name="PosterPanelValue5Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR white3]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value>$VAR[NextEpisodeVar]</value>
@@ -678,7 +678,7 @@
 	</variable>
 	<variable name="PosterPanelValue6Var">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">$INFO[ListItem.OriginalTitle]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Country]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$VAR[LastEpisodeVar]</value>
 	</variable>
@@ -687,7 +687,7 @@
 		<value condition="Container.Content(tvshows) + !Control.IsVisible(503)">$LOCALIZE[2050]:</value>
 	</variable>
 	<variable name="PosterPanelValue7Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) | [Container.Content(tvshows)+ Control.isVisible(503)]">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(tvshows) + !Control.isVisible(503)">$INFO[Window(Home).Property(NextAired.Runtime),, $LOCALIZE[12391]]</value>
 	</variable>
@@ -1055,7 +1055,7 @@
 		<value>$LOCALIZE[571]</value>
 	</variable>
 	<variable name="InfoWallSubTitleVar">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
 		<value condition="!Skin.HasSetting(InfoWallTagLine) + Container.Content(movies)">$INFO[ListItem.Tagline]</value>
 		<value condition="Skin.HasSetting(InfoWallTagLine) + Container.Content(movies)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Artist]</value>
@@ -1066,7 +1066,7 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="InfoWallBottomLabel1Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
 		<value condition="Container.Content(movies) | Container.Content(episodes)">$INFO[ListItem.Director,$LOCALIZE[31156] ]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonVersion,[COLOR floorlabel]$LOCALIZE[24051] [/COLOR]]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
@@ -1091,10 +1091,10 @@
 		<value condition="Container.Content(musicvideos)">$INFO[ListItem.RatingAndVotes]</value>
 	</variable>
 	<variable name="InfoWallTextboxVar">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonDescription]</value>
 		<value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-		<value condition="skin.hassetting(backendmode) + Container.Content(albums)">$INFO[Window(home).Property(Album.Songs.Tracklist)]</value>
+		<value condition="Container.Content(albums)">$INFO[Window(home).Property(Album.Songs.Tracklist)]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[414]</value>
 		<value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[547]</value>
@@ -1788,32 +1788,32 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ExtraThumb1Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.1.Art(clearlogo))]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.1.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.1.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.1.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season01-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb1))">$INFO[ListItem.Art(extrathumb1)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb1))">$INFO[Container.ListItem.Art(extrathumb1)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb2Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.2.Art(clearlogo))]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.2.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.2.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.2.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season02-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb2))">$INFO[ListItem.Art(extrathumb2)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb2))">$INFO[Container.ListItem.Art(extrathumb2)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb3Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.3.Art(clearlogo))]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.3.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.3.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.3.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season03-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb3))">$INFO[ListItem.Art(extrathumb3)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb3))">$INFO[Container.ListItem.Art(extrathumb3)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb3.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb4Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.4.Art(clearlogo))]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.4.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.4.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.4.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season04-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb4))">$INFO[ListItem.Art(extrathumb4)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb4))">$INFO[Container.ListItem.Art(extrathumb4)]</value>
@@ -1998,7 +1998,7 @@
 	</variable>
 	<variable name="LowListInfoValue3">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Property(TotalSeasons)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Studio)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Studio)]</value>
 		<value>$INFO[ListItem.Studio]</value>
 	</variable>
 	<variable name="LowListInfoDetail4">
@@ -2015,7 +2015,7 @@
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$LOCALIZE[4]:</value>
 	</variable>
 	<variable name="LowListInfoValue5">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)]">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR grey]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$INFO[Window(Home).Property(NextAired.AirTime)]</value>
@@ -2052,7 +2052,7 @@
 		<value>$LOCALIZE[515]:</value>
 	</variable>
 	<variable name="TriPanelValue2Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
@@ -2065,7 +2065,7 @@
 		<value>$LOCALIZE[20339]:</value>
 	</variable>
 	<variable name="TriPanelValue3Var">
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$VAR[NextEpisodeVar]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.LatestDay))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Premiered]</value>
@@ -3068,8 +3068,8 @@
 		<value condition="System.HasAddon(script.skin.helper.service) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Window(Home).Property(SkinHelper.ListItem.0.Art.FanArt)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + Container.Content(movies) + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.0)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.0)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.0.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.0.Art.Clearlogo)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.0.Art.FanArt)]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.0.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.0.Art.Clearlogo)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.0.Art.FanArt)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season01-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb1))">$INFO[ListItem.Art(extrathumb1)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</value>
@@ -3078,8 +3078,8 @@
 		<value condition="System.HasAddon(script.skin.helper.service) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Window(Home).Property(SkinHelper.ListItem.1.Art.FanArt)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + Container.Content(movies) + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.1)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.1)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.1.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.ClearLogo)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.FanArt)]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.1.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.ClearLogo)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.FanArt)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season02-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb2))">$INFO[ListItem.Art(extrathumb2)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</value>
@@ -3088,8 +3088,8 @@
 		<value condition="System.HasAddon(script.skin.helper.service) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Window(Home).Property(SkinHelper.ListItem.2.Art.FanArt)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + Container.Content(movies) + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.2)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.2)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.2.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.2.Art.ClearLogo)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.2.Art.FanArt)]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.2.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.2.Art.ClearLogo)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.2.Art.FanArt)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season03-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb3))">$INFO[ListItem.Art(extrathumb3)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb3.jpg]</value>
@@ -3098,8 +3098,8 @@
 		<value condition="System.HasAddon(script.skin.helper.service) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Window(Home).Property(SkinHelper.ListItem.3.Art.FanArt)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + Container.Content(movies) + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.3)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(ListUseThumbsOnBack)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt.3)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.3.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.3.Art.ClearLogo)]</value>
-		<value condition="skin.hassetting(backendmode) + ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.3.Art.FanArt)]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.3.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.3.Art.ClearLogo)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(SkinHelper.ListItem.3.Art.FanArt)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season04-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb4))">$INFO[ListItem.Art(extrathumb4)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb4.jpg]</value>
