@@ -2768,7 +2768,7 @@
 				<font>Font_Reg28_Caps</font>
 				<textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 				<scroll>true</scroll>
-				<visible>!Skin.HasSetting(DisableLibraryStats) + !String.IsEqual(Control.GetLabel(4326),mixed)</visible>
+				<visible>!Skin.HasSetting(DisableLibraryStats)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>15</left>
@@ -2788,7 +2788,7 @@
 				<textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 				<pauseatend>10000</pauseatend>
 				<resetonlabelchange>false</resetonlabelchange>
-				<visible>!Skin.HasSetting(DisableLibraryStats) + String.IsEqual(Control.GetLabel(4326),mixed)</visible>
+				<visible>!Skin.HasSetting(DisableLibraryStats)</visible>
 			</control>
 			<control type="label">
 				<left>780</left>

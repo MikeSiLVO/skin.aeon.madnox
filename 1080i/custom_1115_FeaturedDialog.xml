@@ -13,186 +13,6 @@
 			<label>watchlisttv watchlistmovies recentmovies randommovies recenttv randomtv randomalbums randomartists watchlistalbums recentalbums</label>
 			<include>HiddenObject</include>
 		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,episodes,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">5002</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">episodes</param>
-				<param name="Texture">$VAR[featured5002Art]</param>
-				<param name="Title">$ESCVAR[featured5002Title]</param>
-				<param name="subTitle">$ESCVAR[featured5002SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured5002Info1]</param>
-				<param name="Info2">$ESCVAR[featured5002Info2]</param>
-				<param name="Plot">$ESCVAR[featured5002Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(5009)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,movies,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">5003</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">movies</param>
-				<param name="Texture">$VAR[featured5003Art]</param>
-				<param name="Title">$ESCVAR[featured5003Title]</param>
-				<param name="subTitle">$ESCVAR[featured5003SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured5003Info1]</param>
-				<param name="Info2">$ESCVAR[featured5003Info2]</param>
-				<param name="Plot">$ESCVAR[featured5003Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(5011)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,movies,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">6002</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">movies</param>
-				<param name="Texture">$VAR[featured6002Art]</param>
-				<param name="Title">$ESCVAR[featured6002Title]</param>
-				<param name="subTitle">$ESCVAR[featured6002SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured6002Info1]</param>
-				<param name="Info2">$ESCVAR[featured6002Info2]</param>
-				<param name="Plot">$ESCVAR[featured6002Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(6010)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,movies,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">6003</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">movies</param>
-				<param name="Texture">$VAR[featured6003Art]</param>
-				<param name="Title">$ESCVAR[featured6003Title]</param>
-				<param name="subTitle">$ESCVAR[featured6003SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured6003Info1]</param>
-				<param name="Info2">$ESCVAR[featured6003Info2]</param>
-				<param name="Plot">$ESCVAR[featured6003Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(6011)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,episodes,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">7002</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">episodes</param>
-				<param name="Texture">$VAR[featured7002Art]</param>
-				<param name="Title">$ESCVAR[featured7002Title]</param>
-				<param name="subTitle">$ESCVAR[featured7002SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured7002Info1]</param>
-				<param name="Info2">$ESCVAR[featured7002Info2]</param>
-				<param name="Plot">$ESCVAR[featured7002Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(7010)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,episodes,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">7003</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">episodes</param>
-				<param name="Texture">$VAR[featured7003Art]</param>
-				<param name="Title">$ESCVAR[featured7003Title]</param>
-				<param name="subTitle">$ESCVAR[featured7003SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured7003Info1]</param>
-				<param name="Info2">$ESCVAR[featured7003Info2]</param>
-				<param name="Plot">$ESCVAR[featured7003Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(7003)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Poster,movies,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">8002</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">albums</param>
-				<param name="Texture">$VAR[featured8002Art]</param>
-				<param name="Title">$ESCVAR[featured8002Title]</param>
-				<param name="subTitle">$ESCVAR[featured8002SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured8002Info1]</param>
-				<param name="Info2">$ESCVAR[featured8002Info2]</param>
-				<param name="Plot">$ESCVAR[featured8002Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(8010)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Target,music,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">8003</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">albums</param>
-				<param name="Texture">$VAR[featured8003Art]</param>
-				<param name="Title">$ESCVAR[featured8003Title]</param>
-				<param name="subTitle">$ESCVAR[featured8003SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured8003Info1]</param>
-				<param name="Info2">$ESCVAR[featured8003Info2]</param>
-				<param name="Plot">$ESCVAR[featured8003Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(8003)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Target,music,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">9003</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">albums</param>
-				<param name="Texture">$VAR[featured9003Art]</param>
-				<param name="Title">$ESCVAR[featured9003Title]</param>
-				<param name="subTitle">$ESCVAR[featured9003SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured9003Info1]</param>
-				<param name="Info2">$ESCVAR[featured9003Info2]</param>
-				<param name="Plot">$ESCVAR[featured9003Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(9003)</visible>
-		</control>
-		<control type="button" id="5014">
-			<onfocus>SetProperty(Widget.Target,music,Home)</onfocus>
-			<include>HiddenObject</include>
-			<include content="featuredOnFocus">
-				<param name="id">9002</param>
-				<param name="Widget">library</param>
-				<param name="widgetType">songs</param>
-				<param name="Texture">$VAR[featured9002Art]</param>
-				<param name="Title">$ESCVAR[featured9002Title]</param>
-				<param name="subTitle">$ESCVAR[featured9002SubTitle]</param>
-				<param name="Info1">$ESCVAR[featured9002Info1]</param>
-				<param name="Info2">$ESCVAR[featured9002Info2]</param>
-				<param name="Plot">$ESCVAR[featured9002Plot]</param>
-			</include>
-			<onfocus>SetFocus(5055)</onfocus>
-			<animation effect="fade" delay="140" time="1" reversible="false">Hidden</animation>
-			<visible>Control.HasFocus(9010)</visible>
-		</control>
 		<!-- Main Group -->
 		<control type="grouplist" id="40">
 			<left>-135</left>
@@ -350,7 +170,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(5002,1),00:04,silent,loop)</onright> -->
 							<onright>5011</onright>
 							<ondown>Control.Move(5002,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="5002">
@@ -359,7 +178,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">1200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5002) + !Control.HasFocus(5009)</autoscroll>
 							<itemlayout width="894" height="550">
 								<control type="image">
@@ -423,7 +241,6 @@
 							<onleft>5009</onleft>
 							<onright>6010</onright>
 							<ondown>Control.Move(5003,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(TileTwo,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="5003">
@@ -432,7 +249,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5003) + !Control.HasFocus(5011)</autoscroll>
 							<itemlayout width="366" height="550">
 								<control type="image">
@@ -548,7 +364,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(6002,1),00:04,silent,loop)</onright> -->
 							<onright>6011</onright>
 							<ondown>Control.Move(6002,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="6002">
@@ -557,7 +372,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6002) + !Control.HasFocus(6010)</autoscroll>
 							<itemlayout width="894" height="550">
 								<control type="image">
@@ -621,7 +435,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(7002,1),00:04,silent,loop)</onright> -->
 							<onright>7010</onright>
 							<ondown>Control.Move(6003,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(TileTwo,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="6003">
@@ -630,7 +443,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6003) + !Control.HasFocus(6011)</autoscroll>
 							<itemlayout width="366" height="550">
 								<control type="image">
@@ -746,7 +558,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(7002,1),00:04,silent,loop)</onright> -->
 							<onright>7003</onright>
 							<ondown>Control.Move(7002,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="7002">
@@ -755,7 +566,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(7002) + !Control.HasFocus(7010)</autoscroll>
 							<itemlayout width="894" height="550">
 								<control type="image">
@@ -823,7 +633,6 @@
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<itemlayout width="366" height="140">
 								<control type="image">
 									<width>376</width>
@@ -981,7 +790,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onright> -->
 							<onright>8003</onright>
 							<ondown>Control.Move(8002,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="8002">
@@ -990,7 +798,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(8002) + !Control.HasFocus(8010)</autoscroll>
 							<itemlayout width="550" height="550">
 								<control type="image">
@@ -1060,7 +867,6 @@
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<itemlayout width="710" height="140">
 								<control type="image">
 									<width>720</width>
@@ -1216,7 +1022,6 @@
 							<!-- <onright>AlarmClock(Tile,Control.Move(9002,1),00:04,silent,loop)</onright> -->
 							<onright>9003</onright>
 							<ondown>Control.Move(9002,1)</ondown>
-							<onclick>SetFocus(5014)</onclick>
 							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
 						</control>
 						<control type="wraplist" id="9002">
@@ -1225,7 +1030,6 @@
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(9002) + !Control.HasFocus(9010)</autoscroll>
 							<itemlayout width="550" height="550">
 								<control type="image">
@@ -1294,7 +1098,6 @@
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<onclick>SetFocus(5014)</onclick>
 							<itemlayout width="710" height="140">
 								<control type="image">
 									<width>720</width>

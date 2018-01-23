@@ -299,21 +299,6 @@
 		<radiowidth>98</radiowidth>
 		<radioleft>378</radioleft>
 	</include>
-	<include name="Objects_MediaMenuButtonAlt3">
-		<width>640</width>
-		<height>60</height>
-		<textoffsetx>15</textoffsetx>
-		<textoffsety>2</textoffsety>
-		<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-		<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="1">settings/listselect_nf.png</texturenofocus>
-		<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">views/tripanel/listselect_fo.png</alttexturefocus>
-		<alttexturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="1">settings/listselect_nf.png</alttexturenofocus>
-		<font>Font_Reg30_2</font>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white6</focusedcolor>
-		<radiowidth>98</radiowidth>
-		<radioleft>378</radioleft>
-	</include>
 	<include name="Objects_MediaBackgroundsButton">
 		<width>470</width>
 		<height>60</height>
