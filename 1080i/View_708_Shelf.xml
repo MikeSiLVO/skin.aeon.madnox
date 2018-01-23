@@ -242,7 +242,7 @@
 						<top>6</top>
 						<colordiffuse>grey2</colordiffuse>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 						<visible>!ListItem.IsParentFolder</visible>
 					</control>
 					<control type="image">

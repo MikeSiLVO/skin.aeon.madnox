@@ -74,12 +74,12 @@
 				<control type="image">
 					<colordiffuse>grey</colordiffuse>
 					<include>AudioFlagsVars</include>
-					<texture>$VAR[ColorFlags]aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect),,.png]</texture>
 				</control>
 				<control type="image">
 					<colordiffuse>grey</colordiffuse>
 					<include>AudioFlagsVars</include>
-					<texture>$VAR[ColorFlagsAudio]audio/$INFO[Container(100).ListItem.Property(AudioCodec)]$INFO[Container(100).ListItem.Property(AudioChannels)].png</texture>
+					<texture>$VAR[ColorFlagsPathVar]audio/$INFO[Container(100).ListItem.Property(AudioCodec)]$INFO[Container(100).ListItem.Property(AudioChannels)].png</texture>
 				</control>
 			</control>
 			<control type="group" id="101">

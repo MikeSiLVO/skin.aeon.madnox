@@ -2443,7 +2443,7 @@
 						<height>30</height>
 						<animation effect="rotate" end="-90" center="auto" time="0" condition="true">Conditional</animation>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColorDefaultIcons]DefaultFolderBack.png</texture>
+						<texture>$VAR[IconsColorVar]DefaultFolderBack.png</texture>
 						<colordiffuse>grey</colordiffuse>
 					</control>
 				</control>

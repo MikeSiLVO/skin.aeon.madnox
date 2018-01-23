@@ -831,7 +831,7 @@
 					<left>1480</left>
 					<top>30</top>
 					<include>OSDFlagVars</include>
-					<texture>$VAR[ColorFlags]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 					<animation effect="slide" end="-1305" condition="VideoPlayer.Content(files)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -898,7 +898,7 @@
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>IconCrossfadeTime2</fadetime>
-						<texture colordiffuse="white2" fallback="">$VAR[ColorFlags]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
+						<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
 					</control>
 					<control type="image">
 						<left>1860</left>
@@ -907,7 +907,7 @@
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>IconCrossfadeTime2</fadetime>
-						<texture colordiffuse="white2" fallback="">$VAR[ColorFlags]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
+						<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
 						<animation effect="fade" time="200">VisibleChange</animation>
 					</control>
 				</control>

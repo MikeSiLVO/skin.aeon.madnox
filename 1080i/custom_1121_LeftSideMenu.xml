@@ -648,7 +648,7 @@
 			<onup>9011</onup>
 			<ondown>SetFocus(9011,0)</ondown>
 			<ondown>9011</ondown>
-			<visible>!Skin.HasSetting(kioskmode) + !String.IsEmpty(Window(home).Property(viewtypeselect))</visible>
+
 		</control>
 		<control type="image">
 			<left>10</left>

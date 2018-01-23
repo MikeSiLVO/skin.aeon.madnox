@@ -9484,7 +9484,6 @@
 			</control>
 		</controls>
 	</other>
-
 	<other include="backgroundFanart">
 		<condition tag="property" attribute="name|background">Widget1.FanartList</condition>
 		<condition tag="property" attribute="name|widgetPath" />
@@ -9503,7 +9502,6 @@
 			</control>
 		</controls>
 	</other>
-
 	<other include="backgroundFanart">
 		<condition tag="property" attribute="name|background">Widget2.FanartList</condition>
 		<condition tag="property" attribute="name|widgetPath.2" />
@@ -9522,7 +9520,6 @@
 			</control>
 		</controls>
 	</other>
-
 	<!-- MadNox playlist background -->
 	<other include="backgroundFanart">
 		<condition tag="property" attribute="name|background">Playlist.FanartList</condition>
@@ -9543,16 +9540,12 @@
 			</control>
 		</controls>
 	</other>
-
 	<!-- MadNox live playlist background -->
 	<other include="liveBackground">
 		<condition tag="property" attribute="name|background">Playlist.Live</condition>
 		<condition tag="property" attribute="name|background">RecentlyAddedAlbums.Live</condition>
 		<condition tag="property" attribute="name|background">MyPics.Live</condition>
 		<match>any</match>
-		<!--condition tag="property" attribute="name|background">DailyBabe.Live</condition>
-		<match>any</match>
-		<property name="content" tag="property" attribute="name|background" value="DailyBabe.Live">plugin://script.extendedinfo?info=dailybabes</property-->
 		<property name="content" tag="property" attribute="name|background" value="RecentlyAddedAlbums.Live">plugin://script.skin.helper.service/?action=recentalbums</property>
 		<property name="content" tag="property" attribute="name|background" value="MyPics.Live">RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</property><property name="content" tag="property" attribute="name|backgroundPlaylist" />
 		<property name="content" tag="property" attribute="name|backgroundPlaylist" />
@@ -9572,5 +9565,4 @@
 			</control>
 		</controls>
 	</other>
-
 </template>

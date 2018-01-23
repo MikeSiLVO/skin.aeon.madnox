@@ -33,11 +33,7 @@
 					<visible>String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp)</visible>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) |	String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>105</left>
 					<top>122</top>
 					<width>350</width>
@@ -1105,7 +1101,7 @@
 							<top>12</top>
 							<width>70</width>
 							<height>70</height>
-							<texture>$VAR[ColorDefaultIcons]$VAR[SmallListIconVar]</texture>
+							<texture>$VAR[IconsColorVar]$VAR[SmallListIconVar]</texture>
 							<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
 							<visible>String.IsEmpty(ListItem.Year)</visible>
 						</control>
@@ -1189,7 +1185,7 @@
 							<top>12</top>
 							<width>70</width>
 							<height>70</height>
-							<texture>$VAR[ColorDefaultIcons]$VAR[SmallListIconVar]</texture>
+							<texture>$VAR[IconsColorVar]$VAR[SmallListIconVar]</texture>
 							<colordiffuse>white2</colordiffuse>
 							<visible>String.IsEmpty(ListItem.Year)</visible>
 						</control>

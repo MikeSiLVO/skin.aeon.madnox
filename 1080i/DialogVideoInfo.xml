@@ -271,7 +271,7 @@
 									<top>5</top>
 									<width>285</width>
 									<height>67</height>
-									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + Skin.HasSetting(ExtendedRatingVideoinfo) + !Skin.HasSetting(DisableRatingFlag)</visible>
+									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
 									<control type="image" id="9108">
 										<aspectratio align="center">keep</aspectratio>
 										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
@@ -286,7 +286,7 @@
 									<top>5</top>
 									<width>135</width>
 									<height>67</height>
-									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + !Skin.HasSetting(ExtendedRatingVideoinfo) + !Skin.HasSetting(DisableRatingFlag)</visible>
+									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + !Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
 									<control type="image" id="9109">
 										<aspectratio align="center">keep</aspectratio>
 										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsRatingextended]$VAR[RatingFlagVar,,.png]</texture>
@@ -300,7 +300,7 @@
 								<control type="group">
 									<width>135</width>
 									<height>67</height>
-									<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(ExtendedTVRatingVideoinfo) + !Skin.HasSetting(DisableRatingFlag)</visible>
+									<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(ExtendedTVRatingVideoinfo)</visible>
 									<control type="image" id="9110">
 										<top>5</top>
 										<aspectratio align="center">keep</aspectratio>
@@ -317,7 +317,7 @@
 									<left>10</left>
 									<width>285</width>
 									<height>77</height>
-									<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + Skin.HasSetting(ExtendedTVRatingVideoinfo) + !Skin.HasSetting(DisableRatingFlag)</visible>
+									<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + Skin.HasSetting(ExtendedTVRatingVideoinfo)</visible>
 									<control type="image" id="9111">
 										<top>5</top>
 										<aspectratio align="center">keep</aspectratio>
@@ -333,7 +333,7 @@
 								<control type="image">
 									<height>79</height>
 									<include>Furniture_FlagUpright1</include>
-									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(DisableRatingFlag)</visible>
+									<visible>[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]</visible>
 								</control>
 								<control type="group">
 									<width>155</width>
@@ -379,7 +379,7 @@
 										<width>155</width>
 										<height>68</height>
 										<aspectratio>keep</aspectratio>
-										<texture colordiffuse="white2" background="true">$VAR[ColortvguideFlags]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+										<texture colordiffuse="white2" background="true">$VAR[IconsTVGuideColorVar]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
 									</control>
 								</control>
 								<control type="group">
@@ -483,7 +483,7 @@
 									<height>45</height>
 									<top>2</top>
 									<aspectratio align="center">keep</aspectratio>
-									<texture colordiffuse="white" background="true">$VAR[ColorDefaultIcons]DefaultCountry.png</texture>
+									<texture colordiffuse="white" background="true">$VAR[IconsColorVar]DefaultCountry.png</texture>
 								</control>
 								<control type="label">
 									<width>840</width>
@@ -505,7 +505,7 @@
 									<width>50</width>
 									<height>50</height>
 									<aspectratio align="right">keep</aspectratio>
-									<texture colordiffuse="white" background="true">$VAR[ColorDefaultIcons]director-icon.png</texture>
+									<texture colordiffuse="white" background="true">$VAR[IconsColorVar]director-icon.png</texture>
 								</control>
 								<control type="label">
 									<left>180</left>
@@ -528,7 +528,7 @@
 									<top>2</top>
 									<height>45</height>
 									<aspectratio align="center">keep</aspectratio>
-									<texture colordiffuse="white">$VAR[ColorDefaultIcons]DefaultInProgressShows.png</texture>
+									<texture colordiffuse="white">$VAR[IconsColorVar]DefaultInProgressShows.png</texture>
 								</control>
 								<control type="label">
 									<width>840</width>
@@ -548,7 +548,7 @@
 									<width>50</width>
 									<height>50</height>
 									<aspectratio align="right">keep</aspectratio>
-									<texture colordiffuse="white">$VAR[ColorDefaultIcons]writer-icon.png</texture>
+									<texture colordiffuse="white">$VAR[IconsColorVar]writer-icon.png</texture>
 								</control>
 								<control type="label">
 									<left>180</left>
@@ -700,7 +700,7 @@
 									<width>126</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlagsAudio]audio/$INFO[Window.Property(AudioCodec.2)]$INFO[Window.Property(AudioChannels.2),,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]audio/$INFO[Window.Property(AudioCodec.2)]$INFO[Window.Property(AudioChannels.2),,.png]</texture>
 									<visible>!String.IsEmpty(Control.GetLabel(90013)) + ![String.IsEqual(Window.Property(AudioCodec.1),Window.Property(AudioCodec.2)) + String.IsEqual(Window.Property(AudioChannels.1),Window.Property(AudioChannels.2))]</visible>
 								</control>
 								<control type="image">
@@ -724,7 +724,7 @@
 									<width>126</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 									<visible>!String.IsEmpty(Control.GetLabel(900015))</visible>
 								</control>
 								<control type="image">
@@ -736,7 +736,7 @@
 									<width>100</width>
 									<height>62</height>
 									<aspectratio aligny="center" align="center">keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlags]cc.png</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]cc.png</texture>
 									<visible>!String.String.IsEmpty(ListItem.SubtitleLanguage)</visible>
 								</control>
 								<!-- Language flags -->
@@ -874,7 +874,7 @@
 									<width>97</width>
 									<height>75</height>
 									<aspectratio aligny="top" align="right">keep</aspectratio>
-									<texture colordiffuse="white">$VAR[ColorDefaultIcons]DefaultTVShows.png</texture>
+									<texture colordiffuse="white">$VAR[IconsColorVar]DefaultTVShows.png</texture>
 								</control>
 								<control type="group">
 									<control type="label">
@@ -1565,8 +1565,8 @@
 					<height>40</height>
 					<onup>60</onup>
 					<ondown>5000</ondown>
-					<texturefocus>defaulticons/DefaultScript2.png</texturefocus>
-					<texturenofocus>defaulticons/DefaultScript.png</texturenofocus>
+					<texturefocus>icons/defaulticons/DefaultScript2.png</texturefocus>
+					<texturenofocus>icons/defaulticons/DefaultScript.png</texturenofocus>
 					<onclick>ActivateWindow(1165)</onclick>
 					<include>Animation_VisibleChange200</include>
 				</control>

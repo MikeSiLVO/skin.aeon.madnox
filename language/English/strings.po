@@ -2644,14 +2644,7 @@ msgctxt "#31735"
 msgid "Artwork"
 msgstr ""
 
-
-
-
-
-
-###########################################################################
 # skinshortcuts Locals start here
-
 msgctxt "#31742"
 msgid "Edit submenu"
 msgstr ""
@@ -2729,11 +2722,9 @@ msgid "Configure widget 2"
 msgstr ""
 
 # skinshortcuts Locals END here
-###########################################################################
-
-###########################################################################
+#
+#
 # Widgets Locals START here
-
 msgctxt "#31765"
 msgid "Extended List"
 msgstr ""
@@ -2922,27 +2913,24 @@ msgctxt "#31859"
 msgid "Show case on widget info"
 msgstr ""
 
-#	List 			#535
-#	None 			#231
-#	Mixed 			#20395
-#	Clear 			#386
-#	Panel 			#31804
-#	Default 		#571
-#	Favourites		#1036
-#	Programs		#10001
-#	Weather			#24027
-#	Next aired		#31819
-#	System uptime	#12390
-#	Style			#29902
-#	Music library	#31852
-#	ascending		#21430
-#	descending		#21431
+# 	List 			#535
+# 	None 			#231
+# 	Mixed 			#20395
+# 	Clear 			#386
+# 	Panel 			#31804
+# 	Default 		#571
+# 	Favourites		#1036
+# 	Programs		#10001
+# 	Weather			#24027
+# 	Next aired		#31819
+# 	System uptime	#12390
+# 	Style			#29902
+# 	Music library	#31852
+# 	ascending		#21430
+# 	descending		#21431
 #
 # Widgets Locals END here
-###########################################################################
-
-
-
+#
 msgctxt "#31807"
 msgid "Choose Icon"
 msgstr ""
@@ -3516,7 +3504,7 @@ msgid "Colored Studios"
 msgstr ""
 
 msgctxt "#31987"
-msgid "Round Language"
+msgid "Language"
 msgstr ""
 
 msgctxt "#31988"

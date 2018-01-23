@@ -4352,12 +4352,7 @@
 			</control>
 		</control>
 		<control type="wraplist" id="8020">
-			<left>-1000</left>
-			<top>-1000</top>
-			<width>100</width>
-			<height>100</height>
-			<itemlayout height="100" width="100" />
-			<focusedlayout height="100" width="100" />
+			<include>HiddenList</include>
 			<autoscroll time="7000" delay="7000" repeat="7000">!String.Contains(Control.GetLabel(4322),case)</autoscroll>
 			<content sortby="random">$VAR[MusicVisBackgroundVar]</content>
 		</control>

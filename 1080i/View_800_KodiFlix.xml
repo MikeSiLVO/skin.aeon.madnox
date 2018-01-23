@@ -2501,7 +2501,7 @@
 				<control type="image">
 					<left>400</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 					<visible>!ListItem.IsParentFolder</visible>
@@ -2536,7 +2536,7 @@
 				<control type="image">
 					<left>600</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsAudio]audio/$VAR[AudioFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]audio/$VAR[AudioFlagVar,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
 					<include>VisibleFadeEffect</include>
@@ -2591,7 +2591,7 @@
 					<font>Font_Reg22_Caps</font>
 					<textcolor>grey</textcolor>
 					<wrapmultiline>true</wrapmultiline>
-					<visible>String.IsEmpty(ListItem.Studio) + !Skin.HasSetting(DisableStudiosColorFlag) + !ListItem.IsParentFolder</visible>
+					<visible>String.IsEmpty(ListItem.Studio) + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="grouplist" id="12100">
 					<animation effect="fade" start="100" end="85" time="0" condition="true">Conditional</animation>
@@ -2602,7 +2602,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 						<include>Animation_VisibleChange200</include>
 						<fadetime>400</fadetime>
@@ -2611,7 +2611,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))</visible>
 						<include>Animation_VisibleChange200</include>
@@ -2621,7 +2621,7 @@
 						<width>26</width>
 						<height>22</height>
 						<aspectratio>scale</aspectratio>
-						<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.3))</visible>
 						<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.3))</visible>

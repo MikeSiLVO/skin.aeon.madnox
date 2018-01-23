@@ -90,7 +90,6 @@
 				<animation effect="slide" start="-15,-15" end="15,15" time="6000" pulse="true" condition="Skin.HasSetting(animatedbg)">Conditional</animation>
 				<animation effect="fade" start="100" end="50" time="640">Hidden</animation>
 				<visible>Container.Content(movies) | Container.Content(sets)</visible>
-				<!--visible>[[Container.Content(movies) + !ListItem.IsCollection] | [Container.Content(movies) + Skin.HasSetting(RotateFanart) + ListItem.IsCollection]] | [Container.Content(sets) + Skin.HasSetting(RotateFanart)]</visible-->
 			</control>
 			<control type="multiimage" id="4200">
 				<imagepath background="true" fallback="special://skin/backgrounds/tvshows/">$VAR[TVShowFanartVar]</imagepath>
@@ -209,7 +208,6 @@
 				<animation effect="zoom" start="100" end="195" time="640" easing="inout" tween="circle" center="960,970" condition="Control.IsVisible(501) + Skin.HasSetting(showcasezoom)">Conditional</animation>
 				<animation effect="zoom" start="100" end="170" time="640" easing="inout" tween="circle" center="160,970" condition="Control.IsVisible(52) + String.IsEqual(Skin.String(TriPanelPosition),2)">Conditional</animation>
 				<animation effect="zoom" start="100" end="170" time="640" easing="inout" tween="circle" center="960,970" condition="Control.IsVisible(52) + String.IsEqual(Skin.String(TriPanelPosition),1)">Conditional</animation>
-				<!--             <animation effect="zoom" start="100" end="170" time="640" easing="inout" tween="circle" center="160,970" condition="Control.IsVisible(50)">Conditional</animation>				-->
 				<animation effect="zoom" start="100" end="195" time="640" easing="inout" tween="circle" center="460,985" condition="Control.IsVisible(52) + String.IsEqual(Skin.String(TriPanelPosition),4)">Conditional</animation>
 				<animation type="WindowClose" reversible="false">
 					<effect type="fade" start="100" end="0" time="240"/>

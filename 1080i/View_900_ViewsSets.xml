@@ -88,13 +88,13 @@
 			<control type="image">
 				<top>915</top>
 				<left>715</left>
-				<texture>$VAR[ColorFlags]aspectratio/$INFO[Container(5801).ListItem.VideoAspect,,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[Container(5801).ListItem.VideoAspect,,.png]</texture>
 				<include>AudioFlagsVars</include>
 			</control>
 			<control type="image">
 				<top>915</top>
 				<left>1015</left>
-				<texture>$VAR[ColorFlagsAudio]audio/$VAR[MovieSetsAudioFlagVar,,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]audio/$VAR[MovieSetsAudioFlagVar,,.png]</texture>
 				<!--Audio logo-->
 				<include>AudioFlagsVars</include>
 				<animation effect="slide" end="-5" condition="Control.IsVisible(12100)">Conditional</animation>
@@ -130,7 +130,7 @@
 				<font>Font_Reg22_Caps</font>
 				<textcolor>grey</textcolor>
 				<wrapmultiline>true</wrapmultiline>
-				<visible>String.IsEmpty(Control.GetLabel(76)) + !Skin.HasSetting(DisableStudiosColorFlag)</visible>
+				<visible>String.IsEmpty(Control.GetLabel(76))</visible>
 			</control>
 			<control type="image" id="1110">
 				<animation effect="slide" end="109" condition="Control.IsVisible(512) | Control.IsVisible(550)">Conditional</animation>
@@ -153,7 +153,7 @@
 				<width>26</width>
 				<height>22</height>
 				<aspectratio>scale</aspectratio>
-				<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.1),,.png]</texture>
 				<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 				<include>Animation_VisibleChange200</include>
 				<fadetime>400</fadetime>
@@ -163,7 +163,7 @@
 				<width>26</width>
 				<height>22</height>
 				<aspectratio>scale</aspectratio>
-				<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.2),,.png]</texture>
 				<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
 				<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.2))</visible>
 				<include>Animation_VisibleChange200</include>
@@ -174,7 +174,7 @@
 				<width>26</width>
 				<height>22</height>
 				<aspectratio>scale</aspectratio>
-				<texture>$VAR[ColorFlags]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]$INFO[ListItem.Property(AudioLanguage.3),,.png]</texture>
 				<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
 				<visible>!String.IsEqual(ListItem.Property(AudioLanguage.1),ListItem.Property(AudioLanguage.3))</visible>
 				<visible>!String.IsEqual(ListItem.Property(AudioLanguage.2),ListItem.Property(AudioLanguage.3))</visible>

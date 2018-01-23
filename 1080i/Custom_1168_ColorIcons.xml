@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="1168" type="dialog">
-	<defaultcontrol always="true">500</defaultcontrol>
+	<defaultcontrol always="true">90000</defaultcontrol>
 	<coordinates>
 		<left>180</left>
 		<top>-400</top>
@@ -34,21 +34,21 @@
 				<height>30</height>
 				<texture border="1">osd/osd_settings_buttonnf.png</texture>
 			</control>
-			<control type="list" id="500">
+			<control type="list" id="90000">
 				<orientation>vertical</orientation>
 				<left>325</left>
 				<top>660</top>
-				<onright>600</onright>
-				<width>324</width>
+				<onright>90001</onright>
+				<width>400</width>
 				<height>500</height>
-				<onup>500</onup>
-				<ondown>500</ondown>
+				<onup>90000</onup>
+				<ondown>90000</ondown>
 				<scrolltime tween="sine">300</scrolltime>
 				<itemlayout height="60" width="324">
 					<control type="label">
-						<width>400</width>
+						<width>324</width>
 						<height>60</height>
-						<textoffsetx>45</textoffsetx>
+						<textoffsetx>10</textoffsetx>
 						<textoffsety>2</textoffsety>
 						<label>$INFO[ListItem.Label]</label>
 						<font>Font_Reg30_2</font>
@@ -60,12 +60,12 @@
 						<width>324</width>
 						<height>60</height>
 						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texture>
-						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(500)">Conditional</animation>
+						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(90000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<width>400</width>
+						<width>324</width>
 						<height>60</height>
-						<textoffsetx>45</textoffsetx>
+						<textoffsetx>10</textoffsetx>
 						<textoffsety>2</textoffsety>
 						<label>$INFO[ListItem.Label]</label>
 						<font>Font_Reg30_2</font>
@@ -73,628 +73,345 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>Flags</label>
+						<label>$LOCALIZE[536]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>$LOCALIZE[31988]</label>
-						<onclick>noop</onclick>
-						<visible>!String.IsEmpty(Skin.String(ReloadedFlagsPath))</visible>
-					</item>
-					<item id="7">
-						<label>$LOCALIZE[20388]</label>
-						<onclick>noop</onclick>
-						<visible>!String.IsEmpty(Skin.String(StudioFlagsPath))</visible>
-					</item>
-					<item id="8">
 						<label>$LOCALIZE[248]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
-						<label>$LOCALIZE[31262]</label>
+						<label>$LOCALIZE[135]</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="4">
-						<label>$LOCALIZE[31290]</label>
-						<onclick>noop</onclick>
-					</item>
-					<item id="5">
-						<label>$LOCALIZE[31967]</label>
-						<onclick>noop</onclick>
-						<visible>!String.IsEmpty(Skin.String(ColorFlagsPath))</visible>
-					</item>
-					<item id="10">
-						<label>$LOCALIZE[31554]</label>
-						<onclick>noop</onclick>
-					</item>
-					<!-- <item id="6">
-						<label>$LOCALIZE[31969]</label>
-						<onclick>noop</onclick>
-					</item> -->
 				</content>
 			</control>
-			<control type="group" id="600">
+			<control type="group" id="90001">
 				<control type="grouplist">
 					<orientation>vertical</orientation>
 					<left>650</left>
 					<top>660</top>
-					<onleft>500</onleft>
+					<onleft>90000</onleft>
 					<height>600</height>
 					<width>660</width>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<usecontrolcoords>true</usecontrolcoords>
-					<visible>Container(500).Hasfocus(1)</visible>
-					<control type="radiobutton" id="901">
-						<label>Color flags</label>
+					<onup>90001</onup>
+					<ondown>90001</ondown>
+					<control type="button" id="9901">
+						<label>Style</label>
 						<width>660</width>
 						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(ColorFlags)</onclick>
-						<selected>Skin.HasSetting(ColorFlags)</selected>
-						<ondown>9001</ondown>
+						<onclick>$VAR[ColorFlagsPathOnClickVar]</onclick>
+						<label2>$VAR[ColorFlagsPathOnClickLabelVar]</label2>
+						<visible>Container(90000).Hasfocus(1)</visible>
 					</control>
-					<control type="grouplist" id="9001">
-						<left>45</left>
-						<height>480</height>
-						<onup>901</onup>
-						<control type="radiobutton" id="902">
-							<label>$LOCALIZE[31971]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableAspectRatioFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableAspectRatioFlag)</selected>
-						</control>
-						<control type="radiobutton" id="903">
-							<label>$LOCALIZE[31972]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableAudioFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableAudioFlag)</selected>
-						</control>
-						<control type="radiobutton" id="904">
-							<label>$LOCALIZE[31263]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableRatingFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableRatingFlag)</selected>
-						</control>
-						<control type="radiobutton" id="905">
-							<label>$LOCALIZE[31973]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableResolutionFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableResolutionFlag)</selected>
-						</control>
-						<control type="radiobutton" id="906">
-							<label>$LOCALIZE[31974]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableSourceFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableSourceFlag)</selected>
-						</control>
-						<control type="radiobutton" id="907">
-							<label>$LOCALIZE[20388]</label>
-							<width>475</width>
-							<include>Objects_SubMediaMenuButtonAround</include>
-							<onclick>Skin.ToggleSetting(DisableStudiosFlag)</onclick>
-							<selected>!Skin.HasSetting(DisableStudiosFlag)</selected>
-						</control>
-					</control>
-				</control>
-				<control type="group">
-					<left>1205</left>
-					<top>725</top>
-					<height>580</height>
-					<visible>Container(500).Hasfocus(1)</visible>
-					<control type="image">
-						<width>96</width>
-						<height>47</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]aspectratio/2.55.png</texture>
-						<visible>!Skin.HasSetting(DisableAspectRatioFlag)</visible>
-					</control>
-					<control type="image">
-						<top>58</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]audio/ac33.png</texture>
-						<visible>!Skin.HasSetting(DisableAudioFlag)</visible>
-					</control>
-					<control type="image">
-						<top>118</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]rating/MPAA_NC-17_Certificate_US.png</texture>
-						<visible>!Skin.HasSetting(DisableRatingFlag)</visible>
-					</control>
-					<control type="image">
-						<top>178</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]resolution/1080.png</texture>
-						<visible>!Skin.HasSetting(DisableResolutionFlag)</visible>
-					</control>
-					<control type="image">
-						<top>240</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]source/bluray.png</texture>
-						<visible>!Skin.HasSetting(DisableSourceFlag)</visible>
-					</control>
-					<control type="image">
-						<top>295</top>
-						<width>96</width>
-						<height>55</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]Warner.png</texture>
-						<visible>!Skin.HasSetting(DisableStudiosFlag)</visible>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(2)</visible>
-					<control type="radiobutton" id="599">
-						<label>$LOCALIZE[31970]</label>
+					<control type="button" id="9902">
+						<label>$LOCALIZE[31987]</label>
+						<width>660</width>
 						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(AllColorFlagsreloaded)</onclick>
-						<onclick>Skin.SetBool(AspectRatioColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(RatingColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(ResolutionColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(SourceColorFlagreloaded)</onclick>
-						<onclick>Skin.SetBool(StudiosColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AspectRatioColorFlag)</onclick>
-						<onclick>Skin.Reset(AudioColorFlag)</onclick>
-						<onclick>Skin.Reset(RatingColorFlag)</onclick>
-						<onclick>Skin.Reset(ResolutionColorFlag)</onclick>
-						<onclick>Skin.Reset(SourceColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(AllColorFlagsreloaded)</selected>
+						<onclick>$VAR[LanguageFlagStyleOnClickVar]</onclick>
+						<label2>$VAR[LanguageFlagStyleLabelVar]</label2>
+						<visible>Container(90000).Hasfocus(2)</visible>
 					</control>
-					<control type="radiobutton" id="601">
-						<label>$LOCALIZE[31971]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(AspectRatioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AspectRatioColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(AspectRatioColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
-					</control>
-					<control type="radiobutton" id="602">
-						<label>$LOCALIZE[31972]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AudioColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(AudioColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
-					</control>
-					<control type="radiobutton" id="604">
-						<label>$LOCALIZE[31263]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(RatingColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(RatingColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(RatingColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
-					</control>
-					<control type="radiobutton" id="605">
-						<label>$LOCALIZE[31973]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(ResolutionColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(ResolutionColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(ResolutionColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
-					</control>
-					<control type="radiobutton" id="606">
-						<label>$LOCALIZE[31974]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(SourceColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(SourceColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<selected>Skin.HasSetting(SourceColorFlagreloaded)</selected>
-						<enable>!Skin.HasSetting(AllColorFlagsreloaded)</enable>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(3)</visible>
-					<control type="radiobutton" id="602">
-						<label>$LOCALIZE[31975]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(ColorDefaultIcons)</onclick>
-						<selected>Skin.HasSetting(ColorDefaultIcons)</selected>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(4)</visible>
-					<control type="radiobutton" id="601">
-						<label>$LOCALIZE[31976]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(ColortvguideFlags)</onclick>
-						<selected>Skin.HasSetting(ColortvguideFlags)</selected>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(10)</visible>
-					<control type="radiobutton" id="601">
+					<control type="radiobutton" id="9903">
 						<label>$LOCALIZE[31553]</label>
+						<width>660</width>
 						<include>Objects_SubMediaMenuButtonAround</include>
 						<onclick>Skin.ToggleSetting(genrethumbs)</onclick>
 						<selected>Skin.HasSetting(genrethumbs)</selected>
+						<visible>Container(90000).Hasfocus(3)</visible>
 					</control>
 				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(5)</visible>
-					<control type="radiobutton" id="601">
-						<label>$LOCALIZE[31977]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(ColorFlags)</onclick>
-						<selected>Skin.HasSetting(ColorFlags)</selected>
+				<control type="group">
+					<left>690</left>
+					<top>730</top>
+					<visible>Container(90000).Hasfocus(1)</visible>
+					<control type="group">
+						<height>580</height>
+						<control type="group">
+							<control type="label">
+								<left>-18</left>
+								<top>-8</top>
+								<width>155</width>
+								<height>38</height>
+								<align>center</align>
+								<label>$LOCALIZE[31245]</label>
+								<font>Font_Reg19_Caps</font>
+								<textcolor>floor</textcolor>
+							</control>
+							<control type="image">
+								<top>5</top>
+								<width>122</width>
+								<height>60</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]0.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<top>80</top>
+							<control type="label">
+								<left>-18</left>
+								<top>-8</top>
+								<width>155</width>
+								<height>38</height>
+								<align>center</align>
+								<label>$LOCALIZE[31246]</label>
+								<font>Font_Reg19_Caps</font>
+								<textcolor>floor</textcolor>
+							</control>
+							<control type="image">
+								<top>5</top>
+								<width>122</width>
+								<height>60</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]1.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<top>160</top>
+							<control type="label">
+								<left>-18</left>
+								<top>-8</top>
+								<width>155</width>
+								<height>38</height>
+								<align>center</align>
+								<label>$LOCALIZE[31247]</label>
+								<font>Font_Reg19_Caps</font>
+								<textcolor>floor</textcolor>
+							</control>
+							<control type="image">
+								<top>5</top>
+								<width>122</width>
+								<height>60</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]2.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<top>240</top>
+							<control type="label">
+								<left>-18</left>
+								<top>-8</top>
+								<width>155</width>
+								<height>38</height>
+								<align>center</align>
+								<label>$LOCALIZE[31249]</label>
+								<font>Font_Reg19_Caps</font>
+								<textcolor>floor</textcolor>
+							</control>
+							<control type="image">
+								<top>5</top>
+								<width>122</width>
+								<height>60</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]4.png</texture>
+							</control>
+						</control>
+						<control type="group">
+							<top>320</top>
+							<control type="label">
+								<left>-18</left>
+								<top>-8</top>
+								<width>155</width>
+								<height>38</height>
+								<align>center</align>
+								<label>$LOCALIZE[31250]</label>
+								<font>Font_Reg19_Caps</font>
+								<textcolor>floor</textcolor>
+							</control>
+							<control type="image">
+								<top>5</top>
+								<width>122</width>
+								<height>60</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]6.png</texture>
+							</control>
+						</control>
 					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(6)</visible>
-					<control type="button" id="601">
-						<label>$LOCALIZE[31981]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<onclick>Skin.SetPath(ColorFlagsPath)</onclick>
+					<control type="grouplist">
+						<orientation>vertical</orientation>
+						<left>150</left>
+						<height>580</height>
+						<itemgap>10</itemgap>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultFolderBackList.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultRecentlyAddedMusicVideos.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultAddonVideo.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultActor.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultAddonMusicVideoInfo.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]DefaultMoviesRecentlyPlayed.png</texture>
+						</control>
 					</control>
-					<control type="label" id="602">
-						<label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(ColorFlagsPath)][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!String.IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
+					<control type="grouplist">
+						<orientation>vertical</orientation>
+						<left>290</left>
+						<height>580</height>
+						<itemgap>10</itemgap>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[IconsColorVar]posters/imdb.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]cc.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]time.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]IMDB.png</texture>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>122</width>
+							<height>60</height>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]year.png</texture>
+						</control>
 					</control>
-					<control type="label" id="603">
-						<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31978][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>String.IsEmpty(Skin.String(ColorFlagsPath)) + Control.HasFocus(601)</visible>
-					</control>
-					<control type="button" id="604">
-						<label>$LOCALIZE[31982]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<onclick>Skin.SetPath(ReloadedFlagsPath)</onclick>
-					</control>
-					<control type="label" id="800">
-						<label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(ReloadedFlagsPath)][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!String.IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
-					</control>
-					<control type="label" id="801">
-						<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31978][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>String.IsEmpty(Skin.String(ReloadedFlagsPath)) + Control.HasFocus(604)</visible>
-					</control>
-					<control type="button" id="613">
-						<label>$LOCALIZE[31983]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<onclick>Skin.SetPath(StudioFlagsPath)</onclick>
-					</control>
-					<control type="label" id="614">
-						<label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(StudioFlagsPath)][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!String.IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
-					</control>
-					<control type="label" id="615">
-						<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31979][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>String.IsEmpty(Skin.String(StudioFlagsPath)) + Control.HasFocus(613)</visible>
-					</control>
-					<control type="button" id="813">
-						<label>$LOCALIZE[31984]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<onclick>Skin.SetPath(languageFlagsPath)</onclick>
-					</control>
-					<control type="label" id="814">
-						<label>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(languageFlagsPath)][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>!String.IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
-					</control>
-					<control type="label" id="815">
-						<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31980][/COLOR]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<scroll>true</scroll>
-						<visible>String.IsEmpty(Skin.String(languageFlagsPath)) + Control.HasFocus(813)</visible>
-					</control>
-					<control type="button" id="630">
-						<label>$LOCALIZE[31985]</label>
-						<include>Objects_MediaMenuButtonAlt3</include>
-						<onclick>Skin.Reset(StudioFlagsPath)</onclick>
-						<onclick>Skin.Reset(languageFlagsPath)</onclick>
-						<onclick>Skin.Reset(ReloadedFlagsPath)</onclick>
-						<onclick>Skin.Reset(ColorFlagsPath)</onclick>
-						<onclick>Skin.Reset(NextAiredFlagsPath)</onclick>
-						<onclick>Skin.Reset(AspectRatioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AudioColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(RatingColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(ResolutionColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(SourceColorFlagreloaded)</onclick>
-						<onclick>Skin.Reset(AllColorFlagsreloaded)</onclick>
-						<onclick>Skin.Reset(AspectRatioColorFlag)</onclick>
-						<onclick>Skin.Reset(AudioColorFlag)</onclick>
-						<onclick>Skin.Reset(LanguageColorFlag)</onclick>
-						<onclick>Skin.Reset(RatingColorFlag)</onclick>
-						<onclick>Skin.Reset(ResolutionColorFlag)</onclick>
-						<onclick>Skin.Reset(SourceColorFlag)</onclick>
-						<onclick>Skin.Reset(StudiosColorFlag)</onclick>
-						<onclick>Skin.Reset(AllColorFlags)</onclick>
-						<onclick>Skin.Reset(ColorDefaultIcons)</onclick>
-						<onclick>Skin.Reset(ColorFlags)</onclick>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<width>660</width>
-					<pagecontrol>60</pagecontrol>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(8)</visible>
-					<control type="button" id="601">
-						<label>$LOCALIZE[31987]</label>
+					<control type="grouplist">
+						<left>450</left>
+						<height>600</height>
 						<width>660</width>
-						<height>60</height>
-						<textoffsetx>45</textoffsetx>
-						<textoffsety>2</textoffsety>
-						<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
-						<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="1">settings/listselect_nf.png</texturenofocus>
-						<font>Font_Reg30_2</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white6</focusedcolor>
-						<onclick>$VAR[LanguageFlagStyleOnClickVar]</onclick>
-						<label2>$VAR[LanguageFlagStyleLabelVar]</label2>
+						<itemgap>15</itemgap>
+						<control type="image">
+							<height>60</height>
+							<include>MediaFlagVars</include>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]aspectratio/2.55.png</texture>
+						</control>
+						<control type="image">
+							<height>55</height>
+							<include>MediaFlagVars</include>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]audio/ac33.png</texture>
+						</control>
+						<control type="image">
+							<height>55</height>
+							<include>MediaFlagVars</include>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]rating/MPAA_NC-17_Certificate_US.png</texture>
+						</control>
+						<control type="image">
+							<height>55</height>
+							<include>MediaFlagVars</include>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]resolution/1080.png</texture>
+						</control>
+						<control type="image">
+							<height>55</height>
+							<include>MediaFlagVars</include>
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]source/bluray.png</texture>
+						</control>
+						<control type="image">
+							<height>55</height>
+							<include>MediaFlagVars</include>`
+							<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]Warner.png</texture>
+						</control>
 					</control>
 				</control>
-			</control>
-			<control type="group" id="700">
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<left>650</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>480</height>
-					<onup>600</onup>
-					<ondown>600</ondown>
-					<visible>Container(500).Hasfocus(7)</visible>
-					<control type="radiobutton" id="601">
-						<label>$LOCALIZE[31986]</label>
-						<include>Objects_SubMediaMenuButtonAround</include>
-						<onclick>Skin.ToggleSetting(StudiosColorFlag)</onclick>
-						<selected>Skin.HasSetting(StudiosColorFlag)</selected>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>1120</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>580</height>
-					<itemgap>3</itemgap>
-					<visible>Container(500).Hasfocus(7)</visible>
-					<control type="image">
-						<top>5</top>
-						<width>167</width>
-						<height>109</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">String.ContainsWarner Brothers.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>167</width>
-						<height>109</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">String.ContainsWalt Disney Pictures.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>167</width>
-						<height>109</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">String.ContainsFox 2000 Pictures.png</texture>
-					</control>
-				</control>
-				<!-- Item 8 -->
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>1195</left>
+					<left>1185</left>
 					<top>725</top>
-					<onleft>500</onleft>
 					<height>580</height>
 					<width>660</width>
 					<itemgap>5</itemgap>
-					<visible>Container(500).Hasfocus(8)</visible>
+					<visible>Container(90000).Hasfocus(2)</visible>
 					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]eng.png</texture>
 					</control>
 					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]ger.png</texture>
 					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>1130</left>
-					<top>730</top>
-					<onleft>500</onleft>
-					<height>580</height>
-					<itemgap>3</itemgap>
-					<visible>Container(500).Hasfocus(2)</visible>
 					<control type="image">
-						<top>5</top>
-						<width>96</width>
-						<height>47</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlags]aspectratio/2.55.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlagsAudio]audio/ac33.png</texture>
+						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]fre.png</texture>
 					</control>
 					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlagsRating]rating/MPAA_NC-17_Certificate_US.png</texture>
+						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]spa.png</texture>
 					</control>
 					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlagsResolution]resolution/1080.png</texture>
+						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]dut.png</texture>
 					</control>
 					<control type="image">
-						<top>5</top>
 						<width>96</width>
 						<height>55</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorFlagsSource]source/bluray.png</texture>
+						<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]chi.png</texture>
 					</control>
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
-					<left>1130</left>
-					<top>660</top>
-					<onleft>500</onleft>
-					<height>580</height>
-					<itemgap>5</itemgap>
-					<visible>Container(500).Hasfocus(3)</visible>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultFolderBackList.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultRecentlyAddedMusicVideos.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultAddonVideo.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultActor.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultAddonMusicVideoInfo.png</texture>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColorDefaultIcons]DefaultMoviesRecentlyPlayed.png</texture>
-					</control>
-				</control>
-				<control type="grouplist">
-					<orientation>vertical</orientation>
-					<left>980</left>
+					<left>1040</left>
 					<top>740</top>
 					<onleft>500</onleft>
 					<height>580</height>
 					<itemgap>5</itemgap>
-					<visible>Container(500).Hasfocus(10)</visible>
+					<visible>Container(90000).Hasfocus(3)</visible>
 					<control type="image">
 						<top>5</top>
 						<width>240</width>
 						<height>335</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="white2">special://skin/extras/genre/video/iconsBW/DefaultGrayGenre.jpg</texture>
+						<texture colordiffuse="white2">special://skin/extras/genre/video/posters/default/DefaultGrayGenre.jpg</texture>
 						<visible>!Skin.HasSetting(genrethumbs)</visible>
 					</control>
 					<control type="image">
@@ -702,175 +419,10 @@
 						<width>240</width>
 						<height>335</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="white2">special://skin/extras/genre/video/icons/DefaultColorGenre.jpg</texture>
+						<texture colordiffuse="white2">special://skin/extras/genre/video/posters/color/DefaultColorGenre.jpg</texture>
 						<visible>Skin.HasSetting(genrethumbs)</visible>
 					</control>
 				</control>
-			</control>
-			<control type="group">
-				<left>1130</left>
-				<top>660</top>
-				<height>580</height>
-				<visible>Container(500).Hasfocus(4)</visible>
-				<control type="group">
-					<control type="label">
-						<left>-18</left>
-						<top>-8</top>
-						<width>155</width>
-						<height>38</height>
-						<align>center</align>
-						<label>$LOCALIZE[31245]</label>
-						<font>Font_Reg19_Caps</font>
-						<textcolor>floor</textcolor>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColortvguideFlags]0.png</texture>
-					</control>
-				</control>
-				<control type="group">
-					<top>80</top>
-					<control type="label">
-						<left>-18</left>
-						<top>-8</top>
-						<width>155</width>
-						<height>38</height>
-						<align>center</align>
-						<label>$LOCALIZE[31246]</label>
-						<font>Font_Reg19_Caps</font>
-						<textcolor>floor</textcolor>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColortvguideFlags]1.png</texture>
-					</control>
-				</control>
-				<control type="group">
-					<top>160</top>
-					<control type="label">
-						<left>-18</left>
-						<top>-8</top>
-						<width>155</width>
-						<height>38</height>
-						<align>center</align>
-						<label>$LOCALIZE[31247]</label>
-						<font>Font_Reg19_Caps</font>
-						<textcolor>floor</textcolor>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColortvguideFlags]2.png</texture>
-					</control>
-				</control>
-				<control type="group">
-					<top>240</top>
-					<control type="label">
-						<left>-18</left>
-						<top>-8</top>
-						<width>155</width>
-						<height>38</height>
-						<align>center</align>
-						<label>$LOCALIZE[31249]</label>
-						<font>Font_Reg19_Caps</font>
-						<textcolor>floor</textcolor>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColortvguideFlags]4.png</texture>
-					</control>
-				</control>
-				<control type="group">
-					<top>320</top>
-					<control type="label">
-						<left>-18</left>
-						<top>-8</top>
-						<width>155</width>
-						<height>38</height>
-						<align>center</align>
-						<label>$LOCALIZE[31250]</label>
-						<font>Font_Reg19_Caps</font>
-						<textcolor>floor</textcolor>
-					</control>
-					<control type="image">
-						<top>5</top>
-						<width>122</width>
-						<height>60</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="white2">$VAR[ColortvguideFlags]6.png</texture>
-					</control>
-				</control>
-			</control>
-			<control type="grouplist">
-				<left>1130</left>
-				<top>660</top>
-				<onleft>500</onleft>
-				<width>580</width>
-				<height>90</height>
-				<itemgap>5</itemgap>
-				<visible>Container(500).Hasfocus(5)</visible>
-				<control type="image">
-					<top>5</top>
-					<width>122</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlags]posters/imdb.png</texture>
-				</control>
-				<control type="image">
-					<top>5</top>
-					<width>122</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlags]cc.png</texture>
-				</control>
-				<control type="image">
-					<top>5</top>
-					<width>122</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlags]time.png</texture>
-				</control>
-				<control type="image">
-					<top>5</top>
-					<width>122</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlags]IMDB.png</texture>
-				</control>
-				<control type="image">
-					<top>5</top>
-					<width>122</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlags]year.png</texture>
-				</control>
-			</control>
-			<control type="label">
-				<top>610</top>
-				<left>150</left>
-				<width>720</width>
-				<label>$LOCALIZE[536]</label>
-				<include>Objects_MediaMenuLabelAlt2</include>
-				<align>center</align>
-			</control>
-			<control type="label">
-				<top>610</top>
-				<left>480</left>
-				<width>720</width>
-				<label>$LOCALIZE[467]</label>
-				<include>Objects_MediaMenuLabelAlt2</include>
-				<align>center</align>
 			</control>
 		</control>
 	</controls>

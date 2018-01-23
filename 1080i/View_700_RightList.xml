@@ -449,7 +449,7 @@
 					<font>Font_Reg22_Caps</font>
 					<textcolor>grey</textcolor>
 					<wrapmultiline>true</wrapmultiline>
-					<visible>String.IsEmpty(ListItem.Studio) + !Skin.HasSetting(DisableStudiosColorFlag)</visible>
+					<visible>String.IsEmpty(ListItem.Studio)</visible>
 				</control>
 				<!--control type="image">
 					<top>12</top>
@@ -489,7 +489,7 @@
 				<control type="image">
 					<left>800</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlags]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 				</control>

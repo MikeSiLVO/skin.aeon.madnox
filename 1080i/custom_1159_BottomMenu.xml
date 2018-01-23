@@ -153,12 +153,7 @@
 			</control>
 		</control>
 		<control type="wraplist" id="8014">
-			<left>-1000</left>
-			<top>-1000</top>
-			<width>100</width>
-			<height>100</height>
-			<itemlayout height="100" width="100" />
-			<focusedlayout height="100" width="100" />
+			<include>HiddenList</include>
 			<content>special://skin/extras/Playlists/MoviesInProgress.xsp</content>
 			<autoscroll time="7000" delay="7000" repeat="7000">True</autoscroll>
 		</control>

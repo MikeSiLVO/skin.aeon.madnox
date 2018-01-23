@@ -153,7 +153,7 @@
 						<width>120</width>
 						<height>62</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ColortvguideFlags]$INFO[ListItem.Property(StatusID)].png</texture>
+						<texture>$VAR[IconsTVGuideColorVar]$INFO[ListItem.Property(StatusID)].png</texture>
 						<colordiffuse>floor</colordiffuse>
 					</control>
 				</control>
@@ -162,7 +162,7 @@
 					<top>491</top>
 					<width>35</width>
 					<height>35</height>
-					<texture>$VAR[ColortvguideFlags]clock.png</texture>
+					<texture>$VAR[IconsTVGuideColorVar]clock.png</texture>
 					<colordiffuse>floor</colordiffuse>
 					<animation type="Conditional" condition="!String.IsEmpty(Window(Home).property(TVGuide.PreviewThumbs))  + !Skin.HasSetting(NextAiredLogo)">
 						<effect type="slide" end="0,25" time="0" />

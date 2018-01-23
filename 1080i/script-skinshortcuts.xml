@@ -133,6 +133,7 @@
 					<include>Default_SettingButton</include>
 					<label>31756</label>
 					<label2>$VAR[backgroundSortByLabelVar]</label2>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<visible>String.EndsWith(Window.Property(background),.Live) | String.EndsWith(Window.Property(background),.FanartList)</visible>
 				</control>
 				<control type="button" id="604">
@@ -140,6 +141,7 @@
 					<include>Default_SettingButton</include>
 					<label>31757</label>
 					<label2>$VAR[backgroundSortLabelVar]</label2>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<visible>String.EndsWith(Window.Property(background),.Live) | String.EndsWith(Window.Property(background),.FanartList)</visible>
 				</control>
 				<!-- End Background -->

@@ -146,13 +146,6 @@
 				<onleft>451</onleft>
 				<onright>450</onright>
 				<height>1080</height>
-				<control type="radiobutton" id="1199">
-					<label>$LOCALIZE[31262]</label>
-					<include>Objects_MediaMenuButtonAround</include>
-					<onclick>Skin.ToggleSetting(ColorDefaultIcons)</onclick>
-					<selected>Skin.HasSetting(ColorDefaultIcons)</selected>
-					<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
-				</control>
 				<control type="button" id="1200">
 					<label>$LOCALIZE[31263]</label>
 					<label2>[COLOR $VAR[FontColorVar]]$VAR[RatingLabelVar][/COLOR]</label2>
@@ -303,7 +296,7 @@
 					<width>155</width>
 					<height>68</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColortvguideFlags]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
+					<texture colordiffuse="white2">$VAR[IconsTVGuideColorVar]$INFO[Window(Home).Property(NextAired.StatusID)].png</texture>
 				</control>
 			</control>
 		</control>
