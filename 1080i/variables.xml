@@ -470,7 +470,6 @@
 	<variable name="MusicVideosFanartVar">
 		<value condition="Skin.HasSetting(NoVideoLibraryFanartMusicVideos) + !String.IsEmpty(Skin.String(MoviesBackground))">$INFO[Skin.String(MusicVideosBackground)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanartMusicVideos)">special://skin/backgrounds/musicvideos/</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Art(extrafanart1)) + Skin.HasSetting(extrafanartmusicvideos)">$INFO[Control.GetLabel(4325)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Skin.String(MusicVideosBackground))">$INFO[Skin.String(MusicVideosBackground)]</value>
 		<value>special://skin/backgrounds/musicvideos/</value>
@@ -479,7 +478,6 @@
 		<value condition="Skin.HasSetting(RotateFanart) + !String.IsEmpty(Window(Home).Property(Detail.Movie.1.Art(fanart))) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Control.GetLabel(4324)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart) + !String.IsEmpty(Skin.String(MoviesBackground))">$INFO[Skin.String(MoviesBackground)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart)">special://skin/backgrounds/movies/</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Art(extrafanart1)) + Skin.HasSetting(extrafanartmovies)">$INFO[Control.GetLabel(4325)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrafanart1))">$INFO[Container.ListItem.Art(extrafanart1)]</value>
 		<value condition="!String.IsEmpty(Skin.String(MoviesBackground))">$INFO[Skin.String(MoviesBackground)]</value>
@@ -488,7 +486,6 @@
 	<variable name="TVShowFanartVar">
 		<value condition="Skin.HasSetting(NoVideoLibraryFanartTVShows) + String.IsEmpty(Skin.String(TVShowsBackground))">special://skin/backgrounds/tvshows/</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanartTVShows)">$INFO[Skin.String(TVShowsBackground)]</value>
-		<value condition="!String.IsEmpty(Container.ListItem.Art(extrafanart1)) + Skin.HasSetting(extrafanarttvshows)">$INFO[Control.GetLabel(4325)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Skin.String(TVShowsBackground))">$INFO[Skin.String(TVShowsBackground)]</value>
 		<value>special://skin/backgrounds/tvshows/</value>

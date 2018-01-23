@@ -387,7 +387,7 @@
 						<texture background="true">$INFO[ListItem.Art(discart)]</texture>
 					</control>
 				</focusedlayout>
-				<content target="video" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
+				<content target="videos" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 			</control>
 			<control type="label">
 				<left>1113</left>

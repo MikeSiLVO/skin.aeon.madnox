@@ -9,10 +9,6 @@
 		<system>1</system>
 	</coordinates>
 	<controls>
-		<control type="label" id="4321">
-			<label>watchlisttv watchlistmovies recentmovies randommovies recenttv randomtv randomalbums randomartists watchlistalbums recentalbums</label>
-			<include>HiddenObject</include>
-		</control>
 		<!-- Main Group -->
 		<control type="grouplist" id="40">
 			<left>-135</left>
@@ -150,7 +146,6 @@
 				<control type="button" id="5012">
 					<include>HiddenObject</include>
 					<onup>Dialog.Close(1115)</onup>
-					<ondown>5001</ondown>
 					<onright>6012</onright>
 					<onleft>3012</onleft>
 					<ondown>5001</ondown>
@@ -163,30 +158,21 @@
 					<control type="group">
 						<left>31</left>
 						<top>31</top>
-						<control type="button" id="5009">
-							<include>HiddenObject</include>
-							<onup>5012</onup>
-							<onleft>3001</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(5002,1),00:04,silent,loop)</onright> -->
-							<onright>5011</onright>
-							<ondown>Control.Move(5002,1)</ondown>
-							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="5002">
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">1200</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5002) + !Control.HasFocus(5009)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5002)</autoscroll>
+							<onup>5012</onup>
+							<ondown>5003</ondown>
 							<itemlayout width="894" height="550">
 								<control type="image">
 									<width>894</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<texture background="true">DefaultTVShows.png</texture>
-									<animation effect="fade" time="480">Focus</animation>
-									<info>ListItem.Art(fanart)</info>
+									<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -201,9 +187,7 @@
 									<width>894</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<texture background="true">DefaultTVShows.png</texture>
-									<animation effect="fade" time="480">Focus</animation>
-									<info>ListItem.Art(fanart)</info>
+									<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -213,7 +197,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content limit="8" target="video">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</content>
+							<content limit="8" target="videos">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -229,34 +213,35 @@
 							<width>138</width>
 							<height>12</height>
 							<texture>$INFO[Container(5002).CurrentItem,featured/panel_mid/item,.png]</texture>
-							<!--texture>$INFO[Container(5002).ListItem.Property(NavItem),featured/panel_mid/]</texture-->
 						</control>
+					</control>
+					<control type="image">
+						<left>26</left>
+						<top>26</top>
+						<width>904</width>
+						<height>560</height>
+						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
+						<include>Animation_VisibleChange200</include>
+						<visible>Control.HasFocus(5002)</visible>
 					</control>
 					<control type="group">
 						<left>935</left>
 						<top>31</top>
-						<control type="button" id="5011">
-							<include>HiddenObject</include>
-							<onup>5012</onup>
-							<onleft>5009</onleft>
-							<onright>6010</onright>
-							<ondown>Control.Move(5003,1)</ondown>
-							<!-- <onfocus>CancelAlarm(TileTwo,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="5003">
 							<width>366</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5003) + !Control.HasFocus(5011)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(5003)</autoscroll>
+							<onup>5012</onup>
+							<ondown>5002</ondown>
 							<itemlayout width="366" height="550">
 								<control type="image">
 									<width>366</width>
 									<height>550</height>
 									<aspectratio>scale</aspectratio>
 									<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -272,7 +257,6 @@
 									<height>550</height>
 									<aspectratio>scale</aspectratio>
 									<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -282,7 +266,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="5">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]</content>
+							<content target="videos" limit="5">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -298,17 +282,7 @@
 							<width>84</width>
 							<height>12</height>
 							<texture>$INFO[Container(5003).CurrentItem,featured/panel_right/item,.png]</texture>
-							<!--texture>$INFO[Container(5003).ListItem.Property(NavItem),featured/panel_right/]</texture-->
 						</control>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>26</top>
-						<width>904</width>
-						<height>560</height>
-						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
-						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(5009)</visible>
 					</control>
 					<control type="image">
 						<left>930</left>
@@ -317,7 +291,7 @@
 						<height>560</height>
 						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
 						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(5011)</visible>
+						<visible>Control.HasFocus(5003)</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -345,9 +319,6 @@
 					<ondown>6001</ondown>
 					<onright>7012</onright>
 					<onleft>5012</onleft>
-					<ondown>6001</ondown>
-					<!-- <onfocus>AlarmClock(Tile,Control.Move(6002,1),00:04,silent,loop)</onfocus>
-                    <onfocus>AlarmClock(TileTwo,Control.Move(6003,1),00:07,silent,loop)</onfocus> -->
 					<onclick>Action(Close)</onclick>
 					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 				</control>
@@ -357,29 +328,21 @@
 					<control type="group" id="6001">
 						<left>31</left>
 						<top>31</top>
-						<control type="button" id="6010">
-							<include>HiddenObject</include>
-							<onup>6012</onup>
-							<onleft>5011</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(6002,1),00:04,silent,loop)</onright> -->
-							<onright>6011</onright>
-							<ondown>Control.Move(6002,1)</ondown>
-							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="6002">
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6002) + !Control.HasFocus(6010)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6002)</autoscroll>
+							<onup>6012</onup>
+							<ondown>6003</ondown>
 							<itemlayout width="894" height="550">
 								<control type="image">
 									<width>894</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
 									<texture background="true" fallback="DefaulTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -395,7 +358,6 @@
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
 									<texture background="true" fallback="DefaulTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -405,7 +367,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="8">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]</content>
+							<content target="videos" limit="8">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -421,36 +383,35 @@
 							<width>138</width>
 							<height>12</height>
 							<texture>$INFO[Container(6002).CurrentItem,featured/panel_mid/item,.png]</texture>
-							<!--texture>$INFO[Container(6002).ListItem.Property(NavItem),featured/panel_mid/]</texture-->
 						</control>
+					</control>
+					<control type="image">
+						<left>26</left>
+						<top>26</top>
+						<width>904</width>
+						<height>560</height>
+						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
+						<include>Animation_VisibleChange200</include>
+						<visible>Control.HasFocus(6002)</visible>
 					</control>
 					<control type="group">
 						<left>935</left>
 						<top>31</top>
-						<control type="button" id="6011">
-							<include>HiddenObject</include>
-							<onup>6012</onup>
-							<!-- <onleft>AlarmClock(TileTwo,Control.Move(6003,1),00:07,silent,loop)</onleft> -->
-							<onleft>6010</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(7002,1),00:04,silent,loop)</onright> -->
-							<onright>7010</onright>
-							<ondown>Control.Move(6003,1)</ondown>
-							<!-- <onfocus>CancelAlarm(TileTwo,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="6003">
 							<width>366</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6003) + !Control.HasFocus(6011)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(6003)</autoscroll>
+							<onup>6012</onup>
+							<ondown>6002</ondown>
 							<itemlayout width="366" height="550">
 								<control type="image">
 									<width>366</width>
 									<height>550</height>
 									<aspectratio>scale</aspectratio>
 									<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -466,7 +427,6 @@
 									<height>550</height>
 									<aspectratio>scale</aspectratio>
 									<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -476,7 +436,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="5">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</content>
+							<content target="videos" limit="5">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -492,17 +452,7 @@
 							<width>84</width>
 							<height>12</height>
 							<texture>$INFO[Container(6003).CurrentItem,featured/panel_right/item,.png]</texture>
-							<!--texture>$INFO[Container(6003).ListItem.Property(NavItem),featured/panel_right/]</texture-->
 						</control>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>26</top>
-						<width>904</width>
-						<height>560</height>
-						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
-						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(6010)</visible>
 					</control>
 					<control type="image">
 						<left>930</left>
@@ -511,7 +461,7 @@
 						<height>560</height>
 						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
 						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(6011)</visible>
+						<visible>Control.HasFocus(6003)</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -536,14 +486,11 @@
 				<control type="button" id="7012">
 					<include>HiddenObject</include>
 					<onup>Dialog.Close(1115)</onup>
-					<ondown>7001</ondown>
 					<onright>8012</onright>
 					<onleft>6012</onleft>
 					<ondown>7001</ondown>
 					<onclick>Action(Close)</onclick>
 					<onclick>ActivateWindow(videos,tvshowtitles,return)</onclick>
-					<!-- <onfocus>AlarmClock(Tile,Control.Move(7002,1),00:04,silent,loop)</onfocus>
-                    <onfocus>CancelAlarm(TileTwo,true)</onfocus> -->
 				</control>
 				<control type="group">
 					<left>450</left>
@@ -551,29 +498,21 @@
 					<control type="group" id="7001">
 						<left>31</left>
 						<top>31</top>
-						<control type="button" id="7010">
-							<include>HiddenObject</include>
-							<onup>7012</onup>
-							<onleft>6011</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(7002,1),00:04,silent,loop)</onright> -->
-							<onright>7003</onright>
-							<ondown>Control.Move(7002,1)</ondown>
-							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="7002">
 							<width>894</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(7002) + !Control.HasFocus(7010)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(7002)</autoscroll>
+							<onup>7012</onup>
+							<ondown>7003</ondown>
 							<itemlayout width="894" height="550">
 								<control type="image">
 									<width>894</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<texture background="true" fallback="DefaulTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
+									<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -588,8 +527,7 @@
 									<width>894</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<texture background="true" fallback="DefaulTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
-									<animation effect="fade" time="480">Focus</animation>
+									<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Art(fanart)]</texture>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -599,7 +537,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="8">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</content>
+							<content target="videos" limit="8">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -615,8 +553,16 @@
 							<width>138</width>
 							<height>12</height>
 							<texture>$INFO[Container(7002).CurrentItem,featured/panel_mid/item,.png]</texture>
-							<!--texture>$INFO[Container(7002).ListItem.Property(NavItem),featured/panel_mid/]</texture-->
 						</control>
+					</control>
+					<control type="image">
+						<left>26</left>
+						<top>26</top>
+						<width>904</width>
+						<height>560</height>
+						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
+						<include>Animation_VisibleChange200</include>
+						<visible>Control.HasFocus(7002)</visible>
 					</control>
 					<control type="group">
 						<left>935</left>
@@ -627,9 +573,8 @@
 							<width>380</width>
 							<height>560</height>
 							<onup>7012</onup>
-							<onleft>7010</onleft>
-							<!--onright>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onright-->
-							<onright>8001</onright>
+							<onleft>7002</onleft>
+							<onright>8002</onright>
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
 							<preloaditems>2</preloaditems>
@@ -734,17 +679,8 @@
 									<visible>Control.HasFocus(7003)</visible>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="4">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</content>
+							<content target="videos" limit="4">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</content>
 						</control>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>26</top>
-						<width>904</width>
-						<height>560</height>
-						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
-						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(7010)</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -772,10 +708,8 @@
 					<ondown>8001</ondown>
 					<onright>9012</onright>
 					<onleft>7012</onleft>
-					<ondown>8001</ondown>
 					<onclick>Action(Close)</onclick>
 					<onclick>ActivateWindow(musiclibrary,Albums,return)</onclick>
-					<!-- <onfocus>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onfocus> -->
 				</control>
 				<control type="group" id="8001">
 					<left>450</left>
@@ -783,15 +717,6 @@
 					<control type="group">
 						<left>31</left>
 						<top>31</top>
-						<control type="button" id="8010">
-							<include>HiddenObject</include>
-							<onup>8012</onup>
-							<onleft>7003</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onright> -->
-							<onright>8003</onright>
-							<ondown>Control.Move(8002,1)</ondown>
-							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="8002">
 							<width>550</width>
 							<height>550</height>
@@ -799,14 +724,14 @@
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
 							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(8002) + !Control.HasFocus(8010)</autoscroll>
+							<onup>8012</onup>
+							<ondown>8003</ondown>
 							<itemlayout width="550" height="550">
 								<control type="image">
-									<texture background="true" />
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 									<width>550</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<animation effect="fade" time="480">Focus</animation>
-									<info>ListItem.Icon</info>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -818,12 +743,10 @@
 							</itemlayout>
 							<focusedlayout width="550" height="550">
 								<control type="image">
-									<texture background="true" />
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 									<width>550</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<animation effect="fade" time="480">Focus</animation>
-									<info>ListItem.Icon</info>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -833,7 +756,7 @@
 									<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="8">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</content>
+							<content target="videos" limit="8">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -849,8 +772,16 @@
 							<width>138</width>
 							<height>12</height>
 							<texture>$INFO[Container(8002).CurrentItem,featured/panel_mid/item,.png]</texture>
-							<!--texture>$INFO[Container(8002).ListItem.Property(NavItem),featured/panel_mid/]</texture-->
 						</control>
+					</control>
+					<control type="image">
+						<left>26</left>
+						<top>26</top>
+						<width>560</width>
+						<height>560</height>
+						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
+						<include>Animation_VisibleChange200</include>
+						<visible>Control.HasFocus(8002)</visible>
 					</control>
 					<control type="group">
 						<left>591</left>
@@ -861,9 +792,8 @@
 							<width>724</width>
 							<height>560</height>
 							<onup>8012</onup>
-							<onleft>8010</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(9002,1),00:04,silent,loop)</onright> -->
-							<onright>9001</onright>
+							<onleft>8002</onleft>
+							<onright>9002</onright>
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
 							<preloaditems>2</preloaditems>
@@ -928,14 +858,6 @@
 								<control type="group">
 									<top>5</top>
 									<animation effect="fade" end="80" start="100" time="0" condition="!Control.HasFocus(8003)">Conditional</animation>
-									<control type="image">
-										<top>-5</top>
-										<width>720</width>
-										<height>140</height>
-										<texture colordiffuse="$VAR[FocusTextureColorVar]">common/blank.png</texture>
-										<bordersize>5</bordersize>
-										<visible>Control.HasFocus(8003)</visible>
-									</control>
 									<control type="label">
 										<top>5</top>
 										<width>710</width>
@@ -963,19 +885,19 @@
 										<font>Font_Reg26</font>
 										<textcolor>white2</textcolor>
 									</control>
+									<control type="image">
+										<top>-5</top>
+										<width>720</width>
+										<height>140</height>
+										<texture colordiffuse="$VAR[FocusTextureColorVar]">common/blank.png</texture>
+										<bordertexture border="5">views/addonwall_select.png</bordertexture>
+										<bordersize>5</bordersize>
+										<visible>Control.HasFocus(8003)</visible>
+									</control>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="4">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]</content>
+							<content target="videos" limit="4">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]</content>
 						</control>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>26</top>
-						<width>560</width>
-						<height>560</height>
-						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
-						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(8010)</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -1000,13 +922,11 @@
 				<control type="button" id="9012">
 					<include>HiddenObject</include>
 					<onup>Dialog.Close(1115)</onup>
-					<ondown>9001</ondown>
 					<onright>3012</onright>
 					<onleft>8012</onleft>
 					<ondown>9001</ondown>
 					<onclick>Action(Close)</onclick>
 					<onclick>ActivateWindow(musiclibrary,root,return)</onclick>
-					<!-- <onfocus>AlarmClock(Tile,Control.Move(9002,1),00:04,silent,loop)</onfocus> -->
 				</control>
 				<control type="group" id="9001">
 					<left>450</left>
@@ -1014,31 +934,21 @@
 					<control type="group">
 						<left>31</left>
 						<top>31</top>
-						<control type="button" id="9010">
-							<include>HiddenObject</include>
-							<onup>9012</onup>
-							<!-- <onleft>AlarmClock(Tile,Control.Move(8002,1),00:04,silent,loop)</onleft> -->
-							<onleft>8003</onleft>
-							<!-- <onright>AlarmClock(Tile,Control.Move(9002,1),00:04,silent,loop)</onright> -->
-							<onright>9003</onright>
-							<ondown>Control.Move(9002,1)</ondown>
-							<!-- <onfocus>CancelAlarm(Tile,true)</onfocus> -->
-						</control>
 						<control type="wraplist" id="9002">
 							<width>550</width>
 							<height>550</height>
 							<orientation>horizontal</orientation>
 							<scrolltime tween="quadratic">800</scrolltime>
 							<preloaditems>2</preloaditems>
-							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(9002) + !Control.HasFocus(9010)</autoscroll>
+							<autoscroll time="10000" delay="10000" repeat="10000">!Control.HasFocus(9002)</autoscroll>
+							<onup>9012</onup>
+							<ondown>9003</ondown>
 							<itemlayout width="550" height="550">
 								<control type="image">
-									<texture background="true" />
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 									<width>550</width>
 									<height>550</height>
 									<aspectratio align="center">scale</aspectratio>
-									<animation effect="fade" time="480">Focus</animation>
-									<info>ListItem.Icon</info>
 								</control>
 								<control type="image">
 									<top>510</top>
@@ -1065,7 +975,7 @@
 									<animation effect="fade" end="80" start="100" time="40" condition="true">Conditional</animation>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="8">plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]</content>
+							<content target="videos" limit="8">plugin://service.library.data.provider?type=randomsongs&amp;reload=$INFO[Window.Property(randomsongs)]</content>
 						</control>
 						<control type="label">
 							<top>510</top>
@@ -1081,8 +991,16 @@
 							<width>138</width>
 							<height>12</height>
 							<texture>$INFO[Container(9002).CurrentItem,featured/panel_mid/item,.png]</texture>
-							<!--texture>$INFO[Container(9002).ListItem.Property(NavItem),featured/panel_mid/]</texture-->
 						</control>
+					</control>
+					<control type="image">
+						<left>26</left>
+						<top>26</top>
+						<width>560</width>
+						<height>560</height>
+						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
+						<include>Animation_VisibleChange200</include>
+						<visible>Control.HasFocus(9002)</visible>
 					</control>
 					<control type="group">
 						<left>591</left>
@@ -1093,7 +1011,7 @@
 							<width>724</width>
 							<height>560</height>
 							<onup>9012</onup>
-							<onleft>9010</onleft>
+							<onleft>9002</onleft>
 							<onright>3001</onright>
 							<orientation>vertical</orientation>
 							<scrolltime tween="quadratic">200</scrolltime>
@@ -1197,17 +1115,8 @@
 									<visible>Control.HasFocus(9003)</visible>
 								</control>
 							</focusedlayout>
-							<content target="video" limit="4">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
+							<content target="videos" limit="4">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</content>
 						</control>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>26</top>
-						<width>560</width>
-						<height>560</height>
-						<texture colordiffuse="$VAR[FocusTextureColorVar]" border="6">views/addonwall_select.png</texture>
-						<include>Animation_VisibleChange200</include>
-						<visible>Control.HasFocus(9010)</visible>
 					</control>
 					<control type="image">
 						<left>21</left>

@@ -1021,7 +1021,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="video" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
+				<content target="videos" sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 			</control>
 		</control>
 		<!-- Fullscreen Poster Art -->
