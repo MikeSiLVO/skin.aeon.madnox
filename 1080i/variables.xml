@@ -2599,16 +2599,6 @@
 		<value condition="String.IsEqual(Skin.String(MediaflagStyle),Colored)">icons/tvguide/color/</value>
 		<value>icons/tvguide/default/</value>
 	</variable>
-	<variable name="ColorFlagsAudio">
-		<value condition="Skin.HasSetting(AudioColorFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-		<value condition="Skin.HasSetting(AudioColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
-		<value>flags/</value>
-	</variable>
-	<variable name="ColorFlagsRating">
-		<value condition="Skin.HasSetting(RatingColorFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-		<value condition="Skin.HasSetting(RatingColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
-		<value>flags/</value>
-	</variable>
 	<variable name="ColorFlagsRatingextended">
 		<value condition="[Skin.HasSetting(RatingColorFlag) + Skin.HasSetting(ExtendedRatingVideoinfo)]">$INFO[Skin.String(ColorFlagsPath)]rating/info/</value>
 		<value condition="[Skin.HasSetting(RatingColorFlagreloaded) + Skin.HasSetting(ExtendedRatingVideoinfo)]">$INFO[Skin.String(ReloadedFlagsPath)]rating/info/</value>
@@ -2622,18 +2612,6 @@
 		<value condition="Skin.HasSetting(RatingColorFlag)">$INFO[Skin.String(ColorFlagsPath)]rating/</value>
 		<value condition="Skin.HasSetting(RatingColorFlagreloaded)">$INFO[Skin.String(ReloadedFlagsPath)]rating/</value>
 		<value>flags/rating/</value>
-	</variable>
-	<variable name="ColorFlagsResolution">
-		<value condition="Skin.HasSetting(ResolutionColorFlag) + !Skin.HasSetting(DisableResolutionColorFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-		<value condition="Skin.HasSetting(ResolutionColorFlagreloaded) + !Skin.HasSetting(DisableResolutionColorFlag)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
-		<value condition="Skin.HasSetting(DisableResolutionColorFlag)" />
-		<value>flags/</value>
-	</variable>
-	<variable name="ColorFlagsSource">
-		<value condition="Skin.HasSetting(SourceColorFlag) + !Skin.HasSetting(DisableSourceColorFlag)">$INFO[Skin.String(ColorFlagsPath)]</value>
-		<value condition="Skin.HasSetting(SourceColorFlagreloaded) + !Skin.HasSetting(DisableSourceColorFlag)">$INFO[Skin.String(ReloadedFlagsPath)]</value>
-		<value condition="Skin.HasSetting(DisableSourceColorFlag)" />
-		<value>flags/</value>
 	</variable>
 	<variable name="RatingLabelVar">
 		<value condition="Skin.HasSetting(RatingColorFlag) + !Skin.HasSetting(RatingColorFlagreloaded)">$LOCALIZE[31182]</value>

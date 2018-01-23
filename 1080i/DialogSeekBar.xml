@@ -804,7 +804,7 @@
 					<left>15</left>
 					<top>30</top>
 					<include>OSDFlagVars</include>
-					<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsSource]source/$VAR[VideoSourceFlagVar,,.png]</texture>
+					<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsPathVar]source/$VAR[VideoSourceFlagVar,,.png]</texture>
 				</control>
 				<control type="group">
 					<left>165</left>
@@ -823,7 +823,7 @@
 				<control type="image" id="2117">
 					<left>325</left>
 					<top>30</top>
-					<texture>$VAR[ColorFlagsRating]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]rating/$VAR[VideoRatingFlagVar,,.png]</texture>
 					<include>OSDFlagVars</include>
 					<visible>!VideoPlayer.Content(files) + !String.IsEmpty(VideoPlayer.mpaa)</visible>
 				</control>
@@ -838,7 +838,7 @@
 					<left>1600</left>
 					<top>30</top>
 					<include>OSDFlagVars</include>
-					<texture fallback="flags/resolution/defaultscreen.png">$VAR[ColorFlagsResolution]resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
+					<texture fallback="flags/resolution/defaultscreen.png">$VAR[ColorFlagsPathVar]resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
 				</control>
 				<control type="image">
 					<left>1745</left>

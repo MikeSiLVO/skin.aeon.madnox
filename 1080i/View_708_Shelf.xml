@@ -208,21 +208,21 @@
 						<aspectratio>keep</aspectratio>
 						<colordiffuse>grey2</colordiffuse>
 						<aspectratio scalediffuse="false">center</aspectratio>
-						<texture fallback="flags/mpaa/NR.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+						<texture fallback="flags/mpaa/NR.png">$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 						<include>MediaFlagVarsShelf</include>
 					</control>
 					<control type="image">
 						<left>-20</left>
 						<colordiffuse>grey2</colordiffuse>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec)</visible>
 					</control>
 					<control type="image">
 						<left>150</left>
 						<colordiffuse>grey2</colordiffuse>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<control type="image">
@@ -640,7 +640,7 @@
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>C9FFFFFF</colordiffuse>
 								<!--PROBLEM-->
-								<texture fallback="flags/mpaa/NR.png">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+								<texture fallback="flags/mpaa/NR.png">$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 							</control>
 							<control type="image">
 								<left>250</left>
@@ -649,7 +649,7 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>C9FFFFFF</colordiffuse>
-								<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 							</control>
 							<control type="image">
 								<left>295</left>
@@ -720,7 +720,7 @@
 								<height>30</height>
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>55FFFFFF</colordiffuse>
-								<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 							</control>
 							<control type="image">
 								<left>250</left>
@@ -728,7 +728,7 @@
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 							</control>
 							<control type="image">
 								<left>295</left>
@@ -820,7 +820,7 @@
 								<width>45</width>
 								<height>32</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 								<include>OSDFlagVars</include>
 							</control>
 							<control type="image">
@@ -829,7 +829,7 @@
 								<width>60</width>
 								<height>60</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 								<include>AudioFlagsVars</include>
 							</control>
 							<control type="image">

@@ -64,12 +64,12 @@
 				<control type="image">
 					<colordiffuse>grey</colordiffuse>
 					<include>AudioFlagsVars</include>
-					<texture>$VAR[ColorFlagsResolution]resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]resolution/$INFO[Container(100).ListItem.Property(VideoResolution),,.png]</texture>
 				</control>
 				<control type="image">
 					<colordiffuse>grey</colordiffuse>
 					<include>AudioFlagsVars</include>
-					<texture>$VAR[ColorFlagsSource]source/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$INFO[Container(100).ListItem.Property(VideoCodec),,.png]</texture>
 				</control>
 				<control type="image">
 					<colordiffuse>grey</colordiffuse>

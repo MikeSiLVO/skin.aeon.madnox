@@ -345,7 +345,7 @@
 				<top>30</top>
 				<control type="image">
 					<left>15</left>
-					<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsPathVar]source/$VAR[VideoSourceFlagVar,,.png]</texture>
+					<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsPathVar]source/$VAR[VideoSourceFlagVar]</texture>
 					<include>OSDFlagVars</include>
 				</control>
 				<control type="group">

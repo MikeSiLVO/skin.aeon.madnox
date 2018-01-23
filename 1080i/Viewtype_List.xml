@@ -673,14 +673,14 @@
 					<width>87</width>
 					<height>41</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 				</control>
 				<control type="image">
 					<top>415</top>
 					<left>148</left>
 					<width>87</width>
 					<height>51</height>
-					<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+					<texture>$VAR[ColorFlagsPathVar]rating/MPAA_NR_Certificate_US.png</texture>
 					<visible>String.IsEmpty(Control.GetLabel(6802)) + !ListItem.IsCollection</visible>
 				</control>
 				<control type="image">
@@ -689,7 +689,7 @@
 					<width>87</width>
 					<height>41</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 				</control>
 				<control type="label">
 					<left>56</left>

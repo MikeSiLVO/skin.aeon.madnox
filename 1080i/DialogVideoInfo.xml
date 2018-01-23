@@ -304,12 +304,12 @@
 									<control type="image" id="9110">
 										<top>5</top>
 										<aspectratio align="center">keep</aspectratio>
-										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 									</control>
 									<control type="image">
 										<top>5</top>
 										<aspectratio align="center">keep</aspectratio>
-										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+										<texture colordiffuse="white2" background="true">$VAR[ColorFlagsPathVar]rating/MPAA_NR_Certificate_US.png</texture>
 										<visible>String.IsEmpty(Control.GetLabel(9110))</visible>
 									</control>
 								</control>
@@ -667,7 +667,7 @@
 									<width>100</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 									<visible>!String.IsEmpty(Control.GetLabel(900011))</visible>
 								</control>
 								<control type="image" id="900012">
@@ -675,7 +675,7 @@
 									<width>126</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlagsSource]Source/$INFO[ListItem.VideoCodec,,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]Source/$INFO[ListItem.VideoCodec,,.png]</texture>
 									<visible>String.IsEmpty(Control.GetLabel(900011))</visible>
 									<visible>!String.IsEmpty(Control.GetLabel(900012))</visible>
 								</control>
@@ -712,7 +712,7 @@
 									<width>80</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 									<visible>!String.IsEmpty(Control.GetLabel(900014))</visible>
 								</control>
 								<control type="image">

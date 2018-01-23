@@ -253,7 +253,7 @@
 					<width>200</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 					<visible>!Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
 				</control>
 				<control type="image">
@@ -262,7 +262,7 @@
 					<width>330</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlagsRating]rating/info/$VAR[RatingFlagVar,,.png]</texture>
+					<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]rating/info/$VAR[RatingFlagVar,,.png]</texture>
 					<visible>Skin.HasSetting(ExtendedRatingVideoinfo)</visible>
 				</control>
 			</control>
@@ -275,7 +275,7 @@
 					<width>200</width>
 					<height>90</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 				</control>
 			</control>
 			<control type="group">

@@ -2486,14 +2486,14 @@
 				<visible>![ListItem.IsCollection + !ListItem.IsParentFolder]</visible>
 				<control type="image">
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsSource]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
 					<left>200</left>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsResolution]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<visible>![String.IsEmpty(ListItem.VideoResolution) + !ListItem.IsParentFolder]</visible>
 					<include>VisibleFadeEffect</include>
@@ -2521,14 +2521,14 @@
 					<left>800</left>
 					<width>200</width>
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsRating]rating/$VAR[RatingFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]rating/$VAR[RatingFlagVar,,.png]</texture>
 					<include>AudioFlagsVars</include>
 					<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<left>800</left>
 					<width>200</width>
-					<texture>$VAR[ColorFlagsRating]rating/MPAA_NR_Certificate_US.png</texture>
+					<texture>$VAR[ColorFlagsPathVar]rating/MPAA_NR_Certificate_US.png</texture>
 					<include>AudioFlagsVars</include>
 					<visible>String.IsEmpty(Control.GetLabel(1180))</visible>
 					<visible>!Container.Content(tvshows) + !Container.Content(seasons) + !String.IsEmpty(ListItem.Title) + !ListItem.IsParentFolder</visible>
