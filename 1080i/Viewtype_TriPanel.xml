@@ -9,7 +9,6 @@
 				<animation effect="slide" end="-5,0" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.String(TriPanelPosition),3)">Conditional</animation>
 				<include>Animation_TriPanelRight</include>
 				<visible>Control.IsVisible(52)</visible>
-				<visible>Control.IsVisible(9900)</visible>
 				<control type="image">
 					<width>650</width>
 					<height>1080</height>
@@ -45,11 +44,7 @@
 					<textcolor>ffe8b854</textcolor>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>408</left>
 					<top>128</top>
 					<width>200</width>
@@ -62,11 +57,7 @@
 					<shadowcolor>66000000</shadowcolor>
 				</control>
 				<control type="label">
-					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) |
-					String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>428</left>
 					<top>183</top>
 					<width>162</width>
@@ -79,16 +70,7 @@
 					<shadowcolor>66000000</shadowcolor>
 				</control>
 				<control type="grouplist">
-					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>140</left>
 					<top>135</top>
 					<width>445</width>
@@ -109,16 +91,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>140</left>
 					<top>180</top>
 					<width>445</width>
@@ -139,16 +112,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) +
-					!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+					<visible>!String.IsEqual(container.folderpath,special://profile/playlists/video/IMDBTop250.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 					<left>140</left>
 					<top>225</top>
 					<width>445</width>
@@ -198,7 +162,6 @@
 					<height>550</height>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
-
 				<control type="textbox">
 					<left>145</left>
 					<top>287</top>
@@ -225,11 +188,7 @@
 						<visible>!Skin.HasSetting(DisableGlowbar)</visible>
 					</control>
 					<control type="image">
-						<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) |
-						String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) |
-						String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) |
-						String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) |
-						String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+						<visible>String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) |  String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) | String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 						<texture background="true" diffuse="thumbs/multiplex_tvmask.png">oscars2.jpg</texture>
 						<animation effect="fade" start="100" end="90" time="50" condition="true">Conditional</animation>
 						<aspectratio scalediffuse="false">scale</aspectratio>
@@ -241,16 +200,7 @@
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
 					<control type="image">
-						<visible>!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) +
-						!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
+						<visible>!String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestpicture.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestdirector.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactor.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestsuppactress.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestvisualeffects.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestanimated.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestoriginalscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestadaptedscreenplay.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestforeign.xsp) + !String.IsEqual(container.folderpath,special://skin/extras/Playlists/oscars/bestscore.xsp)</visible>
 						<texture background="true" diffuse="thumbs/multiplex_tvmask.png" fallback="thumbs/fallback_episode_tp.png">$VAR[InfoWallPreviewTextureVar]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<bordersize>9</bordersize>
@@ -449,7 +399,6 @@
 				<include>Animation_TriPanelMid</include>
 				<visible>Control.IsVisible(52)</visible>
 				<visible>String.IsEqual(Skin.String(TriPanelPosition),2)</visible>
-				<visible>Control.IsVisible(9900)</visible>
 				<control type="image">
 					<width>650</width>
 					<height>1080</height>
@@ -555,7 +504,6 @@
 					<height>550</height>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
-
 				<control type="textbox">
 					<left>102</left>
 					<top>292</top>
@@ -658,8 +606,6 @@
 					<height>765</height>
 					<pagecontrol>70</pagecontrol>
 					<onright>5211</onright>
-<!-- 				<onleft condition="!Integer.IsGreater(Container.NumPages,1)">9000</onleft>
-					<onleft condition="Integer.IsGreater(Container.NumPages,1)">70</onleft> -->
 					<onleft condition="!Skin.HasSetting(AlphabetScrollbar)">70</onleft>
 					<onleft condition="Skin.HasSetting(AlphabetScrollbar)">6010</onleft>
 					<onup>52</onup>
@@ -1204,54 +1150,51 @@
 					<animation effect="fade" time="0" start="100" end="20" condition="!Control.HasFocus(70)">Conditional</animation>
 					<visible>!Skin.HasSetting(AlphabetScrollbar)</visible>
 				</control>
-
-			<!-- Letter-Scrollbar -->
-			<control type="image">
-				<left>27</left>
-				<top>27</top>
-				<width>48</width>
-				<height>890</height>
-				<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6010)">Conditional</animation>
-				<texture>views/directory/sbl_framevertical.png</texture>
-				<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-				<visible>Control.HasFocus(6010) + Skin.HasSetting(AlphabetScrollbar)</visible>
-			</control>
-			<control type="list" id="6010">
-				<onright>52</onright>
-				<onleft>9000</onleft>
-				<left>37</left>
-				<top>37</top>
-				<width>88</width>
-				<height>900</height>
-				<orientation>vertical</orientation>
-				<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6010)">Conditional</animation>
-				<itemlayout height="32" width="30">
-					<control type="label">
-						<align>center</align>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>white</textcolor>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-					<control type="label">
-						<align>center</align>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
-						<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="33" width="30">
-					<control type="label">
-						<align>center</align>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-				</focusedlayout>
-				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
-			</control>
-
-
+				<!-- Letter-Scrollbar -->
+				<control type="image">
+					<left>27</left>
+					<top>27</top>
+					<width>48</width>
+					<height>890</height>
+					<animation effect="fade" start="100" end="100" time="50" condition="Control.HasFocus(6010)">Conditional</animation>
+					<texture>views/directory/sbl_framevertical.png</texture>
+					<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+					<visible>Control.HasFocus(6010) + Skin.HasSetting(AlphabetScrollbar)</visible>
+				</control>
+				<control type="list" id="6010">
+					<onright>52</onright>
+					<onleft>9000</onleft>
+					<left>37</left>
+					<top>37</top>
+					<width>88</width>
+					<height>900</height>
+					<orientation>vertical</orientation>
+					<animation effect="fade" start="100" end="0" time="50" condition="!Control.HasFocus(6010)">Conditional</animation>
+					<itemlayout height="32" width="30">
+						<control type="label">
+							<align>center</align>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+						</control>
+						<control type="label">
+							<align>center</align>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>$VAR[TitleColorVar]</textcolor>
+							<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+							<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+						</control>
+					</itemlayout>
+					<focusedlayout height="33" width="30">
+						<control type="label">
+							<align>center</align>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>$VAR[TitleColorVar]</textcolor>
+							<animation effect="fade" start="100" end="20" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+						</control>
+					</focusedlayout>
+					<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+				</control>
 			</control>
 		</control>
 	</include>
