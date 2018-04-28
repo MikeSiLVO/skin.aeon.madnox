@@ -29,7 +29,6 @@
 			<!-- no info-->
 			<include>HiddenObject</include>
 			<visible>!Container.Content()</visible>
-			<visible>!ListItem.IsCollection</visible>
 			<visible>!ListItem.IsParentFolder</visible>
 			<visible>!Container.Content(years)</visible>
 			<visible>!Container.Content(genres)</visible>

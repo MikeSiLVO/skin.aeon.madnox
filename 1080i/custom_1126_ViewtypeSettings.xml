@@ -7,7 +7,7 @@
 			<top>100</top>
 			<label>$VAR[InfoPanelVar]</label>
 			<include>HiddenObject</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+			<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 		</control>
 		<control type="group">
 			<animation type="Conditional" condition="Window.IsActive(1128) | Window.IsActive(1127) | Window.IsActive(1112) | Window.IsActive(1166)  | Window.IsActive(1174)">
@@ -64,7 +64,6 @@
 					<visible>[String.IsEqual(Window(home).Property(actualViewtype),ShowcaseMovies) + !Skin.HasSetting(showcasezoom)] | [String.IsEqual(Window(home).Property(actualViewtype),ShowcaseSquare) + !Skin.HasSetting(showcasesquarezoom)] | String.IsEqual(Window(home).Property(actualViewtype),Shift) | String.IsEqual(Window(home).Property(actualViewtype),Landscape) | String.IsEqual(Window(home).Property(actualViewtype),Banners)</visible>
 					<visible>![String.IsEqual(Window(home).Property(actualViewtype),Shift) + !Skin.HasSetting(smallshiftview) + Window.IsActive(videos)]</visible>
 					<visible>!Container.Content(songs)</visible>
-					<visible>!Container.Content(sets)</visible>
 				</control>
 				<control type="button" id="1614">
 					<label>$LOCALIZE[31876]</label>
