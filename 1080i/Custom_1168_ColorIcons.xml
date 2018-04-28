@@ -6,6 +6,7 @@
 		<top>-400</top>
 		<system>1</system>
 	</coordinates>
+	<onunload condition="String.IsEqual(Skin.String(MediaflagStyle),Colored) + !System.HasAddon(resource.images.studios.coloured)">InstallAddon(resource.images.studios.coloured)</onunload>
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="group">
