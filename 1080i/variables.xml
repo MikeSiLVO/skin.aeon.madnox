@@ -2380,6 +2380,7 @@
 		<value>$INFO[Skin.String(MusicViz.MultiFanart)]</value>
 	</variable>
 	<variable name="InfoPanelStyleVar">
+		<value condition="Control.IsVisible(501) + Container.Content(sets)">$INFO[Skin.String(InfoPanelSetsShowcaseMovies)]</value>
 		<value condition="Control.IsVisible(501) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesShowcaseMovies)]</value>
 		<value condition="Control.IsVisible(503) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesLandscape)]</value>
 		<value condition="Control.IsVisible(508) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesBanners)]</value>
@@ -2396,6 +2397,7 @@
 		<value condition="Control.IsVisible(57) + Container.Content(albums)">$INFO[Skin.String(InfoPanelAlbumsShift)]</value>
 	</variable>
 	<variable name="1112StyleVar">
+		<value condition="String.IsEqual(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(sets)">$INFO[Skin.String(InfoPanelSetsShowcaseMovies)]</value>
 		<value condition="String.IsEqual(Window(home).Property(actualViewtype),ShowcaseMovies) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesShowcaseMovies)]</value>
 		<value condition="String.IsEqual(Window(home).Property(actualViewtype),Landscape) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesLandscape)]</value>
 		<value condition="String.IsEqual(Window(home).Property(actualViewtype),Banners) + Container.Content(movies)">$INFO[Skin.String(InfoPanelMoviesBanners)]</value>

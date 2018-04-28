@@ -13,7 +13,7 @@
 		<control type="label" id="4421">
 			<label>$VAR[InfoPanelVar]</label>
 			<include>HiddenObject</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | [Container.Content(sets)]</visible>
+			<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | [Container.Content(sets)]</visible>
 		</control>
 		<control type="group">
 			<top>-20</top>
