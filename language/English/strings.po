@@ -1437,7 +1437,7 @@ msgid "Movie menu"
 msgstr ""
 
 msgctxt "#31356"
-msgid "Download Subtitles"
+msgid "Subtitle Settings"
 msgstr ""
 
 msgctxt "#31357"

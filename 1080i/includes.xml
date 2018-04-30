@@ -2623,8 +2623,7 @@
 					<texturenofocus />
 					<alttexturefocus colordiffuse="$VAR[FocusTextureColorVar]">BigIcons/Subtitle.png</alttexturefocus>
 					<alttexturenofocus />
-					<onclick>Dialog.Close(VideoOSD)</onclick>
-					<onclick>ActivateWindow(SubtitleSearch)</onclick>
+					<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
 				</control>
 				<control type="button" id="704">
 					<width>100</width>
@@ -2777,8 +2776,7 @@
 					<alttexturenofocus>osd/buttons/OSDSubtitlesNF.png</alttexturenofocus>
 					<label>31356</label>
 					<include>ClassicOSDButton</include>
-					<onclick>Dialog.Close(VideoOSD)</onclick>
-					<onclick>ActivateWindow(SubtitleSearch)</onclick>
+					<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
 				</control>
 				<control type="button" id="804">
 					<texturefocus>osd/buttons/OSDDvdFO.png</texturefocus>
