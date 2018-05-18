@@ -541,10 +541,10 @@
 					</control>
 <!-- 					TV Thumb instead of Tv channel logo on right side - Small List END -->
 				<control type="videowindow">
-					<left>45</left>
-					<top>2</top>
-					<width>654</width>
-					<height>398</height>
+					<left>20</left>
+					<top>17</top>
+					<width>704</width>
+					<height>396</height>
 					<visible>Player.HasVideo</visible>
 					<animation effect="slide" end="-3000,0" time="0">WindowClose</animation>
 				</control>
@@ -555,14 +555,14 @@
 				<animation effect="fade" end="70" time="500">VisibleChange</animation>
 				<height>40</height>
 				<left>143</left>
-				<top>70</top>
+				<top>80</top>
 				<control type="image">
-					<width>657</width>
+					<left>-23</left>
+					<width>704</width>
 					<height>32</height>
 					<texture>common/black.png</texture>
 				</control>
 				<control type="label">
-					<left>30</left>
 					<width>550</width>
 					<height>30</height>
 					<align>left</align>
@@ -584,7 +584,7 @@
 					</control>
 					<control type="label">
 						<left>20</left>
-						<top>23</top>
+						<top>43</top>
 						<width>764</width>
 						<height>30</height>
 						<align>center</align>
@@ -595,7 +595,7 @@
 					</control>
 					<control type="label">
 						<left>45</left>
-						<top>65</top>
+						<top>85</top>
 						<width>100</width>
 						<height>30</height>
 						<label>$INFO[Container(51).ListItem.StartTime]</label>
@@ -605,7 +605,7 @@
 					</control>
 					<control type="progress">
 						<left>150</left>
-						<top>72</top>
+						<top>92</top>
 						<width>540</width>
 						<height>18</height>
 						<midtexture border="0">new_pvr/texturebg_white.png</midtexture>
@@ -618,7 +618,7 @@
 					</control>
 					<control type="label">
 						<left>700</left>
-						<top>65</top>
+						<top>85</top>
 						<width>100</width>
 						<height>30</height>
 						<label>$INFO[Container(51).ListItem.EndTime]</label>
@@ -629,7 +629,7 @@
 				</control>
 				<control type="group">
 					<left>65</left>
-					<top>575</top>
+					<top>585</top>
 					<width>825</width>
 					<height>400</height>
 					<include>Animation_WindowFade200</include>
@@ -788,7 +788,7 @@
 						</control>
 						<control type="image">
 							<visible>!String.IsEqual(ListItem.Icon,DefaultVideo.png)</visible>
-							<left>58</left>
+							<left>50</left>
 							<width>104</width>
 							<height>104</height>
 							<aspectratio>keep</aspectratio>
