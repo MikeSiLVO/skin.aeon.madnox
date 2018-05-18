@@ -594,7 +594,7 @@
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
-						<left>45</left>
+						<left>46</left>
 						<top>85</top>
 						<width>100</width>
 						<height>30</height>
@@ -604,7 +604,7 @@
 						<visible>Container(51).ListItem.HasEpg</visible>
 					</control>
 					<control type="progress">
-						<left>150</left>
+						<left>136</left>
 						<top>92</top>
 						<width>540</width>
 						<height>18</height>
@@ -617,7 +617,7 @@
 						<info>Container(51).ListItem.Progress</info>
 					</control>
 					<control type="label">
-						<left>700</left>
+						<left>711</left>
 						<top>85</top>
 						<width>100</width>
 						<height>30</height>
