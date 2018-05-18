@@ -175,7 +175,7 @@
 					<align>left</align>
 					<font>Font_Bold28</font>
 					<textcolor>FF017196</textcolor>
-					<label>PLOT</label>
+					<label>$LOCALIZE[31551]</label>
 				</control>
 
 				<control type="textbox">
@@ -201,7 +201,7 @@
 					<align>left</align>
 					<font>Font_Bold28</font>
 					<textcolor>FF017196</textcolor>
-					<label>PLOT</label>
+					<label>$LOCALIZE[31551]</label>
 				</control>
 				<control type="textbox">
 					<visible>Skin.HasSetting(DisableVideoThumb)</visible>
