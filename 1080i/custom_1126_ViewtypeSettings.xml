@@ -750,7 +750,7 @@
 				</control>
 				<control type="radiobutton" id="70606">
 					<description>Logo</description>
-					<label>31481</label>
+					<label>31562</label>
 					<include>Objects_MediaMenuButtonAlt2</include>
 					<onclick>Skin.ToggleSetting(MusicPanelLogo)</onclick>
 					<!--onclick>Skin.Reset(MusicPanelDown)</onclick-->

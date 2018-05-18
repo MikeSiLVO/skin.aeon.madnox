@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MADNOX\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-01-26 18:24+0100\n"
+"PO-Revision-Date: 2018-05-18 09:44+0400\n"
 "Last-Translator: Team Madnox\n"
 "Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
 "MIME-Version: 1.0\n"
@@ -1213,7 +1213,7 @@ msgid "Data provider"
 msgstr ""
 
 msgctxt "#31300"
-msgid "       •  Background"
+msgid "  •  Background"
 msgstr ""
 
 msgctxt "#31301"
@@ -1325,11 +1325,11 @@ msgid "Most played ROMs"
 msgstr ""
 
 msgctxt "#31328"
-msgid "     Alternate Music Visualisation 1"
+msgid "         Music Viz Settings"
 msgstr ""
 
 msgctxt "#31329"
-msgid "     Alternate Music Visualisation 2"
+msgid "Music Visualisation"
 msgstr ""
 
 msgctxt "#31330"
@@ -1765,27 +1765,27 @@ msgid "Show Playlist"
 msgstr ""
 
 msgctxt "#31438"
-msgid "         •  Show 10 Tracks"
+msgid "  •  Show 10 Tracks"
 msgstr ""
 
 msgctxt "#31439"
-msgid "         •  Move Down"
+msgid "  •  Move Down"
 msgstr ""
 
 msgctxt "#31440"
-msgid "         •  fade Background"
+msgid "  •  Fade Background"
 msgstr ""
 
 msgctxt "#31441"
-msgid "         •  Show Numbers"
+msgid "  •  Show Numbers"
 msgstr ""
 
 msgctxt "#31442"
-msgid "         •  Rating/Codec Switch"
+msgid "  •  Rating/Codec Switch"
 msgstr ""
 
 msgctxt "#31443"
-msgid "         •  Genre Text/Icons Switch"
+msgid "  •  Genre Text/Icons Switch"
 msgstr ""
 
 msgctxt "#31444"
@@ -1934,10 +1934,6 @@ msgstr ""
 
 msgctxt "#31480"
 msgid "More Album Covers"
-msgstr ""
-
-msgctxt "#31481"
-msgid "Show Logo"
 msgstr ""
 
 msgctxt "#31482"
@@ -2266,6 +2262,18 @@ msgstr ""
 
 msgctxt "#31563"
 msgid "List Xtra"
+msgstr ""
+
+msgctxt "#31564"
+msgid "  •  Show Rating"
+msgstr ""
+
+msgctxt "#31565"
+msgid "  •  Show Time and Progress"
+msgstr ""
+
+msgctxt "#31566"
+msgid "Original"
 msgstr ""
 
 msgctxt "#31600"
