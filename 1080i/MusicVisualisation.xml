@@ -88,75 +88,66 @@
 			<animation effect="slide" start="735,0" end="0,0" delay="0" time="300">Visible</animation>
 			<animation effect="slide" end="735,0" time="300">WindowClose</animation>
 			<control type="group">
-				<left>1172</left>
-				<control type="image">
-					<left>-45</left>
-					<width>794</width>
-					<height>87</height>
-					<texture flipy="true">home/timepanel_mid.png</texture>
-					<colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
-					<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
-				</control>
-				<control type="image">
-					<left>150</left>
-					<width>700</width>
-					<height>87</height>
-					<texture flipy="true">home/timepanel_mid.png</texture>
-					<colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
-					<visible>Skin.HasSetting(WeatherConditionVis)</visible>
+				<left>890</left>
+				<top>-3</top>
+				<control type="group">
+					<animation effect="slide" end="200,0" condition="!Skin.HasSetting(WeatherBreadcrumVis) + Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
+					<animation effect="slide" end="440,0" condition="Skin.HasSetting(WeatherBreadcrumVis)">Conditional</animation>
+					<control type="image">
+						<width>1120</width>
+						<height>87</height>
+						<texture flipy="true">home/timepanel_mid.png</texture>
+						<colordiffuse>$VAR[ExtendedColorVar]</colordiffuse>
+					</control>
+					<control type="grouplist">
+						<left>110</left>
+						<width>500</width>
+						<orientation>horizontal</orientation>
+						<visible>!Skin.HasSetting(WeatherBreadcrumVis) + Weather.IsFetched</visible>
+						<itemgap>10</itemgap>
+						<control type="label">
+							<height>40</height>
+							<aligny>top</aligny>
+							<width min="15" max="1920">auto</width>
+							<font>Font_Reg33_Caps</font>
+							<textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
+							<label>$INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+						</control>
+						<control type="label">
+							<height>40</height>
+							<aligny>top</aligny>
+							<width min="1" max="1920">auto</width>
+							<font>Font_Reg33_Caps</font>
+							<textcolor>white</textcolor>
+							<label>•</label>
+						</control>
+						<control type="label">
+							<height>40</height>
+							<aligny>top</aligny>
+							<width min="15" max="294">auto</width>
+							<font>Font_Reg33_Caps</font>
+							<textcolor>white</textcolor>
+							<scroll>false</scroll>
+							<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+							<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
+						</control>
+						<control type="image">
+							<height>40</height>
+							<aligny>top</aligny>
+							<width>40</width>
+							<texture>weather/small/colored/$INFO[Weather.FanartCode].png</texture>
+							<visible>Skin.HasSetting(WeatherConditionVis)</visible>
+						</control>
+					</control>
 				</control>
 				<control type="label">
-					<left>734</left>
-					<top>-2</top>
+					<left>420</left>
 					<width>600</width>
 					<height>40</height>
 					<align>right</align>
 					<font>Font_Reg33_Caps</font>
 					<textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
 					<label>[COLOR white]$INFO[System.Date(ddd)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)]  •[/COLOR]  $INFO[System.Time]</label>
-				</control>
-				<control type="grouplist">
-					<left>-100</left>
-					<top>-2</top>
-					<width>500</width>
-					<align>right</align>
-					<orientation>horizontal</orientation>
-					<visible>Weather.IsFetched</visible>
-					<include>Animation_VisibleChange400</include>
-					<itemgap>10</itemgap>
-					<control type="label">
-						<height>40</height>
-						<aligny>top</aligny>
-						<width min="15" max="1920">auto</width>
-						<font>Font_Reg33_Caps</font>
-						<textcolor>$VAR[HomeMenuWidgetTextVar]</textcolor>
-						<label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
-					</control>
-					<control type="label">
-						<height>40</height>
-						<aligny>top</aligny>
-						<width min="1" max="1920">auto</width>
-						<font>Font_Reg33_Caps</font>
-						<textcolor>white</textcolor>
-						<label>•</label>
-					</control>
-					<control type="label">
-						<height>40</height>
-						<aligny>top</aligny>
-						<width min="15" max="294">auto</width>
-						<font>Font_Reg33_Caps</font>
-						<textcolor>white</textcolor>
-						<scroll>false</scroll>
-						<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-						<visible>!Skin.HasSetting(WeatherConditionVis)</visible>
-					</control>
-					<control type="image">
-						<height>40</height>
-						<aligny>top</aligny>
-						<width>40</width>
-						<texture>weather/small/colored/$INFO[Weather.FanartCode].png</texture>
-						<visible>Skin.HasSetting(WeatherConditionVis)</visible>
-					</control>
 				</control>
 			</control>
 		</control>
@@ -848,7 +839,7 @@
 				</control>
 			</control>
 		</control>
-<!-- MooViz layout -->
+		<!-- MooViz layout -->
 		<control type="image">
 			<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,50" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutProgress)">Conditional</animation>
@@ -894,16 +885,16 @@
 				</animation>
 				<animation effect="slide" end="-180" time="400" tween="cubic">Hidden</animation>
 				<animation effect="rotate" end="-360" center="455,-53" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-					<aspectratio>keep</aspectratio>
-					<width>387</width>
-					<height>381</height>
-					<left>262</left>
-					<top>-243</top>
-					<visible>Skin.HasSetting(cdartinvis)</visible>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image">
+				<aspectratio>keep</aspectratio>
+				<width>387</width>
+				<height>381</height>
+				<left>262</left>
+				<top>-243</top>
+				<visible>Skin.HasSetting(cdartinvis)</visible>
+				<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="image">
 				<visible>Skin.HasSetting(cdartinvis)</visible>
 				<animation effect="slide" start="-180" end="0" time="500" tween="cubic" delay="50">VisibleChange</animation>
 				<animation effect="slide" start="-180" end="0" time="700" tween="cubic" delay="400">WindowOpen</animation>
@@ -924,7 +915,7 @@
 				<visible>Skin.HasSetting(vinylart) + String.IsEmpty(Control.GetLabel(2336))</visible>
 				<aspectratio aligny="bottom">keep</aspectratio>
 			</control>
-				<control type="image" id="2337">
+			<control type="image" id="2337">
 				<animation effect="slide" start="-180" end="0" time="500" tween="cubic" delay="50">VisibleChange</animation>
 				<animation type="WindowClose">
 					<effect type="slide" end="-180" time="400" tween="cubic" easing="in" delay="0"/>
@@ -940,7 +931,7 @@
 				<visible>String.IsEmpty(Control.GetLabel(2336)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
 				<texture background="true">$VAR[mviscdARTVar]</texture>
 				<aspectratio>keep</aspectratio>
-				</control>
+			</control>
 			<!--handwriting-->
 			<control type="label">
 				<animation effect="slide" start="-180" end="0" time="500" tween="cubic" delay="50">VisibleChange</animation>
@@ -1178,115 +1169,115 @@
 			</control>
 			<!-- Next track info -->
 			<control type="group">
-			<visible>!Skin.HasSetting(AltMusicVizLayoutPlaylistNext)</visible>
-			<control type="label">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !MusicPartyMode.Enabled</visible>
-				<left>858</left>
-				<top>50</top>
-				<width>800</width>
-				<height>36</height>
-				<align>right</align>
-				<font>Font_Reg19_Caps</font>
-				<label>[COLOR gray]Next:[/COLOR]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="label">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + MusicPartyMode.Enabled</visible>
-				<left>858</left>
-				<top>50</top>
-				<width>800</width>
-				<height>36</height>
-				<align>right</align>
-				<font>Font_Reg19_Caps</font>
-				<label>[COLOR gray]Party Mode$INFO[MusicPartyMode.SongsPlayed, (,)  ·  ]Next:[/COLOR]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="label">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutArtist)</visible>
-				<left>858</left>
-				<top>80</top>
-				<width>800</width>
-				<height>36</height>
-				<align>right</align>
-				<font>Font_Reg19_Caps</font>
-				<label>$INFO[MusicPlayer.offset(1).Artist]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="label">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutArtist)</visible>
-				<left>858</left>
-				<top>80</top>
-				<width>800</width>
-				<height>36</height>
-				<align>right</align>
-				<font>Font_Reg19_Caps</font>
-				<label>$INFO[MusicPlayer.offset(1).Artist]</label>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="label">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext)</visible>
-				<left>858</left>
-				<top>110</top>
-				<width>800</width>
-				<height>36</height>
-				<align>right</align>
-				<font>Font_Reg19_Caps</font>
-				<label>[COLOR=white]$INFO[MusicPlayer.offset(1).Title,“,”][/COLOR]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="image">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutCover) + !Skin.HasSetting(AltMusicVizLayoutNext)</visible>
-				<left>1678</left>
-				<top>50</top>
-				<height>150</height>
-				<width>150</width>
-				<texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
-			</control>
-			<control type="group">
-				<animation effect="fade" time="250">VisibleChange</animation>
-				<visible>Skin.HasSetting(AltMusicVizLayoutCover) + !Skin.HasSetting(AltMusicVizLayoutNext) </visible>
-				<left>1678</left>
-				<top>50</top>
-				<control type="image">
-					<height>150</height>
-					<width>200</width>
-					<texture fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
-					<aspectratio align="left">keep</aspectratio>
-					<bordertexture border="-10">thumbs/cd_shadow2.png</bordertexture>
+				<visible>!Skin.HasSetting(AltMusicVizLayoutPlaylistNext)</visible>
+				<control type="label">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !MusicPartyMode.Enabled</visible>
+					<left>858</left>
+					<top>50</top>
+					<width>800</width>
+					<height>36</height>
+					<align>right</align>
+					<font>Font_Reg19_Caps</font>
+					<label>[COLOR gray]Next:[/COLOR]</label>
+					<textcolor>$VAR[TitleColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<include>Animation_VisibleChange400</include>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + MusicPartyMode.Enabled</visible>
+					<left>858</left>
+					<top>50</top>
+					<width>800</width>
+					<height>36</height>
+					<align>right</align>
+					<font>Font_Reg19_Caps</font>
+					<label>[COLOR gray]Party Mode$INFO[MusicPartyMode.SongsPlayed, (,)  ·  ]Next:[/COLOR]</label>
+					<textcolor>$VAR[TitleColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<include>Animation_VisibleChange400</include>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutArtist)</visible>
+					<left>858</left>
+					<top>80</top>
+					<width>800</width>
+					<height>36</height>
+					<align>right</align>
+					<font>Font_Reg19_Caps</font>
+					<label>$INFO[MusicPlayer.offset(1).Artist]</label>
+					<textcolor>$VAR[TitleColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<include>Animation_VisibleChange400</include>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutArtist)</visible>
+					<left>858</left>
+					<top>80</top>
+					<width>800</width>
+					<height>36</height>
+					<align>right</align>
+					<font>Font_Reg19_Caps</font>
+					<label>$INFO[MusicPlayer.offset(1).Artist]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<include>Animation_VisibleChange400</include>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext)</visible>
+					<left>858</left>
+					<top>110</top>
+					<width>800</width>
+					<height>36</height>
+					<align>right</align>
+					<font>Font_Reg19_Caps</font>
+					<label>[COLOR=white]$INFO[MusicPlayer.offset(1).Title,“,”][/COLOR]</label>
+					<textcolor>$VAR[TitleColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<include>Animation_VisibleChange400</include>
 				</control>
 				<control type="image">
-					<animation effect="fade" start="100" end="10" time="0" condition="true">Conditional</animation>
+					<visible>!Skin.HasSetting(AltMusicVizLayoutCover) + !Skin.HasSetting(AltMusicVizLayoutNext)</visible>
+					<left>1678</left>
+					<top>50</top>
 					<height>150</height>
-					<width>200</width>
-					<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
-					<aspectratio align="left">keep</aspectratio>
-					<bordertexture border="-10">thumbs/cd_shadow2.png</bordertexture>
+					<width>150</width>
+					<texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
 				</control>
-			</control>
-			<control type="image">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
-				<animation effect="slide" start="1950" end="0" time="700" tween="cubic" delay="1100">WindowOpen</animation>
-				<left>1325</left>
-				<top>140</top>
-				<width>350</width>
-				<height>4</height>
-				<texture>views/list_divider.png</texture>
-			</control>
+				<control type="group">
+					<animation effect="fade" time="250">VisibleChange</animation>
+					<visible>Skin.HasSetting(AltMusicVizLayoutCover) + !Skin.HasSetting(AltMusicVizLayoutNext) </visible>
+					<left>1678</left>
+					<top>50</top>
+					<control type="image">
+						<height>150</height>
+						<width>200</width>
+						<texture fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
+						<aspectratio align="left">keep</aspectratio>
+						<bordertexture border="-10">thumbs/cd_shadow2.png</bordertexture>
+					</control>
+					<control type="image">
+						<animation effect="fade" start="100" end="10" time="0" condition="true">Conditional</animation>
+						<height>150</height>
+						<width>200</width>
+						<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
+						<aspectratio align="left">keep</aspectratio>
+						<bordertexture border="-10">thumbs/cd_shadow2.png</bordertexture>
+					</control>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
+					<animation effect="slide" start="1950" end="0" time="700" tween="cubic" delay="1100">WindowOpen</animation>
+					<left>1325</left>
+					<top>140</top>
+					<width>350</width>
+					<height>4</height>
+					<texture>views/list_divider.png</texture>
+				</control>
 			</control>
 			<!--PLAYLIST-->
 			<!--Backgorund 10 Tracks-->
@@ -1302,15 +1293,15 @@
 			</control>
 			<!--Backgorund 5 Tracks-->
 			<control type="image">
-			<animation effect="slide" start="0,0" end="0,870" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext)">Conditional</animation>
-			<animation effect="fade" start="50" time="100" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistFadeBG)">Conditional</animation>
-			<left>1280</left>
-			<top>-850</top>
-			<width>600</width>
-			<height>225</height>
-			<texture border="40">listpanel_back.png</texture>
-			<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-			<visible>Skin.HasSetting(AltMusicVizLayoutPlaylist) + !Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutPlaylistTen)</visible>
+				<animation effect="slide" start="0,0" end="0,870" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext)">Conditional</animation>
+				<animation effect="fade" start="50" time="100" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistFadeBG)">Conditional</animation>
+				<left>1280</left>
+				<top>-850</top>
+				<width>600</width>
+				<height>225</height>
+				<texture border="40">listpanel_back.png</texture>
+				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+				<visible>Skin.HasSetting(AltMusicVizLayoutPlaylist) + !Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutPlaylistTen)</visible>
 			</control>
 			<!--Background Partymodus -->
 			<control type="image">
@@ -1325,15 +1316,15 @@
 			</control>
 			<!--List-->
 			<control type="group">
-			<animation effect="slide" start="0,0" end="0,860" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext)">Conditional</animation>
-			<control type="grouplist">
-			<left>1220</left>
-			<top>-815</top>
-			<width>700</width>
-			<height>500</height>
-			<orientation>vertical</orientation>
-			<animation effect="fade" time="320">VisibleChange</animation>
-			<visible>Skin.HasSetting(AltMusicVizLayoutPlaylist)</visible>
+				<animation effect="slide" start="0,0" end="0,860" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext)">Conditional</animation>
+				<control type="grouplist">
+					<left>1220</left>
+					<top>-815</top>
+					<width>700</width>
+					<height>500</height>
+					<orientation>vertical</orientation>
+					<animation effect="fade" time="320">VisibleChange</animation>
+					<visible>Skin.HasSetting(AltMusicVizLayoutPlaylist)</visible>
 			<!--control type="label">
 				<align>right</align>
 				<width>600</width>
@@ -1669,663 +1660,663 @@
 				</control>
 			</control>
 		</control>
+	</control>
+	<!-- Progress/buttons -->
+	<control type="image">
+		<visible>!Skin.HasSetting(AltMusicVizLayoutShuffle) + Player.HasDuration</visible>
+		<animation effect="slide" start="0,0" end="-50,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + !Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="100,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-125,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-650,-120" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<left>1535</left>
+		<top>145</top>
+		<width>50</width>
+		<height>50</height>
+		<texture>$VAR[MusicVizOSDRepeatButtonVar]</texture>
+		<!--colordiffuse>$VAR[TitleColorVar]</colordiffuse-->
+		<aspectratio>keep</aspectratio>
+	</control>
+	<control type="image">
+		<visible>!Skin.HasSetting(AltMusicVizLayoutShuffle) + Player.HasDuration</visible>
+		<animation effect="slide" start="0,0" end="-30,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + !Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="130,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-80,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-950,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-650,-120" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
+		<left>1610</left>
+		<top>145</top>
+		<width>50</width>
+		<height>50</height>
+		<texture>$VAR[MusicVizOSDShuffleButtonVar]</texture>
+		<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
+	</control>
+	<control type="group">
+		<animation effect="slide" start="0,0" end="155,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutShuffle)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-170,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutProgress)">Conditional</animation>
+		<left>970</left>
+		<top>153</top>
+		<width>520</width>
+		<height>150</height>
+		<control type="label">
+			<width min="10" max="550">auto</width>
+			<height>70</height>
+			<font>Font_MainClassic22</font>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
+			<label>$INFO[MusicPlayer.Time,, / ]$INFO[MusicPlayer.Duration]</label>
+			<shadowcolor>black</shadowcolor>
+			<align>right</align>
+			<aligny>bottom</aligny>
+			<visible>Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
 		</control>
-		<!-- Progress/buttons -->
-			<control type="image">
-				<visible>!Skin.HasSetting(AltMusicVizLayoutShuffle) + Player.HasDuration</visible>
-					<animation effect="slide" start="0,0" end="-50,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + !Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="100,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-125,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-650,-120" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<left>1535</left>
-					<top>145</top>
-					<width>50</width>
-					<height>50</height>
-					<texture>$VAR[MusicVizOSDRepeatButtonVar]</texture>
-					<!--colordiffuse>$VAR[TitleColorVar]</colordiffuse-->
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image">
-					<visible>!Skin.HasSetting(AltMusicVizLayoutShuffle) + Player.HasDuration</visible>
-					<animation effect="slide" start="0,0" end="-30,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + !Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="130,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-80,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-950,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutProgress) + Skin.HasSetting(AltMusicVizLayoutNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-650,20" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-650,-120" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + Skin.HasSetting(AltMusicVizLayoutInfo)">Conditional</animation>
-					<left>1610</left>
-					<top>145</top>
-					<width>50</width>
-					<height>50</height>
-					<texture>$VAR[MusicVizOSDShuffleButtonVar]</texture>
-					<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
-				</control>
-				 <control type="group">
-					<animation effect="slide" start="0,0" end="155,0" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext) + Skin.HasSetting(AltMusicVizLayoutShuffle)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-170,35" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutPlaylistNext) + !Skin.HasSetting(AltMusicVizLayoutProgress)">Conditional</animation>
-					<left>970</left>
-					<top>153</top>
-					<width>520</width>
-					<height>150</height>
-					<control type="label">
-					<width min="10" max="550">auto</width>
-					<height>70</height>
-					<font>Font_MainClassic22</font>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<label>$INFO[MusicPlayer.Time,, / ]$INFO[MusicPlayer.Duration]</label>
-					<shadowcolor>black</shadowcolor>
-					<align>right</align>
-					<aligny>bottom</aligny>
-					<visible>Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
-				</control>
-				<control type="label">
-					<width min="10" max="1250">auto</width>
-					<height>75</height>
-					<font>Font_MainClassic22</font>
-					<label>$INFO[MusicPlayer.Time,, / ]∞</label>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>right</align>
-					<aligny>bottom</aligny>
-					<visible>!Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
-				</control>
-			</control>
-			<control type="progress">
-				<left>1370</left>
-				<top>205</top>
-				<width>460</width>
-				<height>15</height>
-				<reveal>true</reveal>
-				<texturebg border="3">mooviz/progress.border.png</texturebg>
-				<midtexture>mooviz/progress.png</midtexture>
-				<lefttexture />
-				<righttexture />
-				<info>Player.Progress</info>
-				<animation effect="fade" end="80" condition="true">Conditional</animation>
-				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-				<visible>Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
-			</control>
-			<!-- Codec/genre -->
-			<control type="group">
-				<visible>Skin.HasSetting(AltMusicVizLayoutInfo)</visible>
-				<control type="image" id="8309">
-					<left>720</left>
-					<top>150</top>
-					<width>100</width>
-					<height>65</height>
-					<colordiffuse>white</colordiffuse>
-					<texture fallback="empty.png">$INFO[MusicPlayer.Codec,mooviz/,.png]</texture>
-				</control>
-				<control type="label">
-					<left>657</left>
-					<top>139</top>
-					<width>210</width>
-					<height>86</height>
-					<align>center</align>
-					<scroll>false</scroll>
-					<font>Font_MainClassic4.low</font>
-					<shadowcolor>black</shadowcolor>
-					<wrapmultiline>true</wrapmultiline>
-					<visible>String.IsEqual(Control.GetLabel(8309),empty.png)</visible>
-					<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]</label>
-				</control>
-				<control type="image">
-					<visible>Skin.HasSetting(AltMusicVizLayoutRating)</visible>
-					<left>830</left>
-					<top>137</top>
-					<width>200</width>
-					<height>89</height>
-					<aspectratio>keep</aspectratio>
-					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-					<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[MusicPlayer.UserRating].png</texture>
-				</control>
-				<control type="label">
-					<visible>!Skin.HasSetting(AltMusicVizLayoutRating)</visible>
-					<left>860</left>
-					<top>140</top>
-					<width>150</width>
-					<height>89</height>
-					<font>font10</font>
-					<align>left</align>
-					<textcolor>grey</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR] $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR][CR]$INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR] $INFO[MusicPlayer.Channels][COLOR=$VAR[TitleColorVar]] Ch[/COLOR]</label>
-				</control>
-				<control type="image">
-					<visible>Skin.HasSetting(AltMusicVizLayoutGenre)</visible>
-					<left>1050</left>
-					<top>120</top>
-					<width>99</width>
-					<height>99</height>
-					<aspectratio>keep</aspectratio>
-					<visible>!String.IsEmpty(MusicPlayer.Genre)</visible>
-					<texture background="true" diffuse="thumbs/cdcover_mask.png" fallback="DefaultAudio.png">$INFO[MusicPlayer.Genre,special://skin/extras/genre/music/icons/,.jpg]</texture>
-					<bordertexture border="-10">thumbs/cd_shadow3.png</bordertexture>
-				</control>
-				<control type="label">
-					<visible>!Skin.HasSetting(AltMusicVizLayoutGenre)</visible>
-					<left>1070</left>
-					<top>139</top>
-					<width>210</width>
-					<height>86</height>
-					<scroll>false</scroll>
-					<font>Font_Reg19_Caps</font>
-					<align>left</align>
-					<shadowcolor>black</shadowcolor>
-					<wrapmultiline>true</wrapmultiline>
-					<label>[COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
-				</control>
-				<control type="image" id="8669">
-					<left>551</left>
-					<top>136</top>
-					<width>130</width>
-					<height>89</height>
-					<colordiffuse>white</colordiffuse>
-					<texture fallback="empty.png">$INFO[MusicPlayer.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
-				</control>
-			</control>
+		<control type="label">
+			<width min="10" max="1250">auto</width>
+			<height>75</height>
+			<font>Font_MainClassic22</font>
+			<label>$INFO[MusicPlayer.Time,, / ]∞</label>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>right</align>
+			<aligny>bottom</aligny>
+			<visible>!Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
 		</control>
+	</control>
+	<control type="progress">
+		<left>1370</left>
+		<top>205</top>
+		<width>460</width>
+		<height>15</height>
+		<reveal>true</reveal>
+		<texturebg border="3">mooviz/progress.border.png</texturebg>
+		<midtexture>mooviz/progress.png</midtexture>
+		<lefttexture />
+		<righttexture />
+		<info>Player.Progress</info>
+		<animation effect="fade" end="80" condition="true">Conditional</animation>
+		<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+		<visible>Player.HasDuration + !Skin.HasSetting(AltMusicVizLayoutProgress)</visible>
+	</control>
+	<!-- Codec/genre -->
+	<control type="group">
+		<visible>Skin.HasSetting(AltMusicVizLayoutInfo)</visible>
+		<control type="image" id="8309">
+			<left>720</left>
+			<top>150</top>
+			<width>100</width>
+			<height>65</height>
+			<colordiffuse>white</colordiffuse>
+			<texture fallback="empty.png">$INFO[MusicPlayer.Codec,mooviz/,.png]</texture>
+		</control>
+		<control type="label">
+			<left>657</left>
+			<top>139</top>
+			<width>210</width>
+			<height>86</height>
+			<align>center</align>
+			<scroll>false</scroll>
+			<font>Font_MainClassic4.low</font>
+			<shadowcolor>black</shadowcolor>
+			<wrapmultiline>true</wrapmultiline>
+			<visible>String.IsEqual(Control.GetLabel(8309),empty.png)</visible>
+			<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]</label>
+		</control>
+		<control type="image">
+			<visible>Skin.HasSetting(AltMusicVizLayoutRating)</visible>
+			<left>830</left>
+			<top>137</top>
+			<width>200</width>
+			<height>89</height>
+			<aspectratio>keep</aspectratio>
+			<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+			<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[MusicPlayer.UserRating].png</texture>
+		</control>
+		<control type="label">
+			<visible>!Skin.HasSetting(AltMusicVizLayoutRating)</visible>
+			<left>860</left>
+			<top>140</top>
+			<width>150</width>
+			<height>89</height>
+			<font>font10</font>
+			<align>left</align>
+			<textcolor>grey</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR] $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR][CR]$INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR] $INFO[MusicPlayer.Channels][COLOR=$VAR[TitleColorVar]] Ch[/COLOR]</label>
+		</control>
+		<control type="image">
+			<visible>Skin.HasSetting(AltMusicVizLayoutGenre)</visible>
+			<left>1050</left>
+			<top>120</top>
+			<width>99</width>
+			<height>99</height>
+			<aspectratio>keep</aspectratio>
+			<visible>!String.IsEmpty(MusicPlayer.Genre)</visible>
+			<texture background="true" diffuse="thumbs/cdcover_mask.png" fallback="DefaultAudio.png">$INFO[MusicPlayer.Genre,special://skin/extras/genre/music/icons/,.jpg]</texture>
+			<bordertexture border="-10">thumbs/cd_shadow3.png</bordertexture>
+		</control>
+		<control type="label">
+			<visible>!Skin.HasSetting(AltMusicVizLayoutGenre)</visible>
+			<left>1070</left>
+			<top>139</top>
+			<width>210</width>
+			<height>86</height>
+			<scroll>false</scroll>
+			<font>Font_Reg19_Caps</font>
+			<align>left</align>
+			<shadowcolor>black</shadowcolor>
+			<wrapmultiline>true</wrapmultiline>
+			<label>[COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
+		</control>
+		<control type="image" id="8669">
+			<left>551</left>
+			<top>136</top>
+			<width>130</width>
+			<height>89</height>
+			<colordiffuse>white</colordiffuse>
+			<texture fallback="empty.png">$INFO[MusicPlayer.Property(Album_Label),flags/music/recordlabel/,.png]</texture>
+		</control>
+	</control>
+</control>
 <!-- MooViz layout end -->
 <!-- Third Layout Start -->
-		<control type="group"> <!--OnScreen Info-->
-			<left>-20</left>
-			<top>540</top>
-			<visible>Player.ShowInfo | Skin.HasSetting(showvisinfo) | Window.IsActive(musicosd)</visible>
-			<visible>!Window.IsActive(1112) + Skin.HasSetting(ThirdMusicVizLayout)</visible>
-			<include>VisibleFadeEffect</include>
-			<include>Animation_OpenCloseZoom</include>
-			<control type="visualisation">
-				<top>35</top>
-				<width>1960</width>
-				<height>435</height>
-				<visible>Skin.HasSetting(ThirdMusicVizShowViz) + Skin.HasSetting(HideVizBG)</visible>
-			</control>
+<control type="group"> <!--OnScreen Info-->
+	<left>-20</left>
+	<top>540</top>
+	<visible>Player.ShowInfo | Skin.HasSetting(showvisinfo) | Window.IsActive(musicosd)</visible>
+	<visible>!Window.IsActive(1112) + Skin.HasSetting(ThirdMusicVizLayout)</visible>
+	<include>VisibleFadeEffect</include>
+	<include>Animation_OpenCloseZoom</include>
+	<control type="visualisation">
+		<top>35</top>
+		<width>1960</width>
+		<height>435</height>
+		<visible>Skin.HasSetting(ThirdMusicVizShowViz) + Skin.HasSetting(HideVizBG)</visible>
+	</control>
 
-			<control type="image"> <!--Set Panel-->
+	<control type="image"> <!--Set Panel-->
+		<top>20</top>
+		<width>1960</width>
+		<height>460</height>
+		<texture border="40">listpanel_back.png</texture>
+		<colordiffuse>E0FFFFFF</colordiffuse>
+	</control>
+	<control type="group"> <!--Next Up Info-->
+		<left>48</left>
+		<top>54</top>
+		<width>227</width>
+		<height>352</height>
+		<control type="label">
+			<height>40</height>
+			<font>font10</font>
+			<align>right</align>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
+			<shadowcolor>shadow</shadowcolor>
+			<label>• • • $LOCALIZE[19031]</label>
+			<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
+		</control>
+		<control type="image">
+			<left>22</left>
+			<top>41</top>
+			<width>200</width>
+			<height>200</height>
+			<texture>musicviz/cdinside.png</texture>
+			<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
+		</control>
+		<control type="image">
+			<left>22</left>
+			<top>41</top>
+			<width>200</width>
+			<height>200</height>
+			<texture>$INFO[MusicPlayer.offset(1).Cover]</texture>
+			<visible>!String.Contains(MusicPlayer.offset(1).Cover,DefaultAlbumCover.png)</visible>
+		</control>
+		<control type="image">
+			<top>37</top>
+			<height>208</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>musicviz/cdcase.png</texture>
+			<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
+		</control>
+		<control type="grouplist">
+			<top>247</top>
+			<height>100</height>
+			<itemgap>5</itemgap>
+			<control type="label">
+				<height>20</height>
+				<font>font10</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<label>$INFO[MusicPlayer.offset(1).Title]</label>
+				<scroll>true</scroll>
+			</control>
+			<control type="label">
+				<height>20</height>
+				<font>font10</font>
+				<textcolor>$VAR[TitleColorVar]</textcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<label>[B][UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,][/UPPERCASE][/B]</label>
+			</control>
+			<control type="label">
+				<height>60</height>
+				<font>font10</font>
+				<textcolor>$VAR[TitleColorVar]</textcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<wrapmultiline>true</wrapmultiline>
+				<label>[I]$INFO[MusicPlayer.offset(1).Album,][/I]</label>
+			</control>
+		</control>
+	</control>
+	<control type="group"> <!--Song Info Panel-->
+		<animation effect="slide" start="0,0" end="250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="420,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation>
+		<left>297</left>
+		<top>60</top>
+		<width>810</width>
+		<height>410</height>
+
+		<control type="image">
+			<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation>
+			<left>10</left>
+			<top>10</top>
+			<width>500</width>
+			<height>317</height>
+			<aspectratio>keep</aspectratio>
+			<texture border="5" colordiffuse="77777777" background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+		</control>
+		<control type="group">
+			<visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
+			<control type="image">
+				<top>258</top>
+				<left>514</left>
+				<colordiffuse>floor</colordiffuse>
+				<include>MediaFlagVars</include>
+				<texture>userratings/frame.png</texture>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="image">
+				<top>245</top>
+				<left>564</left>
+				<height>55</height>
+				<width>55</width>
+				<colordiffuse>floor</colordiffuse>
+				<texture>userratings/$INFO[MusicPlayer.UserRating].png</texture>
+				<include>VisibleFadeEffect</include>
+			</control>
+		</control>
+		<control type="image">
+			<left>600</left>
+			<top>240</top>
+			<width>200</width>
+			<height>89</height>
+			<aspectratio>keep</aspectratio>
+			<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+			<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[ListItem.Rating].png</texture>
+		</control>
+		<control type="progress">
+			<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation><left>10</left>
+			<top>265</top>
+			<width>420</width>
+			<height>120</height>
+			<info>Player.Progress</info>
+			<texturebg border="3">musicviz/progress.border.png</texturebg>
+			<midtexture>musicviz/progress.png</midtexture>
+			<lefttexture />
+			<righttexture />
+			<info>Player.Progress</info>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<visible>Player.HasDuration + Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
+			<reveal>true</reveal>
+		</control>
+		<control type="progress">
+			<left>465</left>
+			<top>305</top>
+			<width>330</width>
+			<height>10</height>
+			<reveal>true</reveal>
+			<texturebg border="3">mooviz/progress.border.png</texturebg>
+			<midtexture>mooviz/progress.png</midtexture>
+			<lefttexture />
+			<righttexture />
+			<info>Player.Progress</info>
+			<animation effect="fade" end="80" condition="true">Conditional</animation>
+			<visible>Player.HasDuration + !Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
+		</control>
+		<control type="image">
+			<left>699</left>
+			<top>323</top>
+			<width>100</width>
+			<height>65</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+			<visible>Skin.HasSetting(ThirdMusicVizLayoutInfo)</visible>
+		</control>
+		<control type="label"> <!--Song Info Text-->
+			<top>-15</top>
+			<height>80</height>
+			<font>Font_MainClassic2.low</font>
+			<align>right</align>
+			<textoffsetx>13</textoffsetx>
+			<textcolor>grey</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<scroll>true</scroll>
+			<scrollsuffix>   •   </scrollsuffix>
+			<label>$INFO[MusicPlayer.Artist]</label>
+		</control>
+		<control type="grouplist">
+			<top>55</top>
+			<width>813</width>
+			<height>450</height>
+			<itemgap>10</itemgap>
+			<control type="label">
+				<height>40</height>
+				<align>right</align>
+				<aligny>top</aligny>
+				<font>Font_MainClassic3.low</font>
+				<textoffsetx>13</textoffsetx>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<scrollsuffix>   •   </scrollsuffix>
+				<label>[COLOR $VAR[TitleColorVar]]$INFO[MusicPlayer.TrackNumber,,. ][/COLOR]$INFO[Player.Title]</label>
+			</control>
+			<control type="label">
+				<height>21</height>
+				<label />
+			</control>
+			<control type="label">
+				<height>40</height>
+				<font>Font_MainClassic3.low</font>
+				<align>right</align>
+				<textoffsetx>13</textoffsetx>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<scrollsuffix>   •   </scrollsuffix>
+				<label>$INFO[MusicPlayer.Album] [COLOR $VAR[TitleColorVar]]$INFO[MusicPlayer.Year, [,] ][/COLOR]</label>
+			</control>
+			<control type="label">
+				<height>1</height>
+				<label />
+			</control>
+			<control type="label">
+				<height>50</height>
+				<align>right</align>
+				<font>Font_MainClassic3.low</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<textoffsetx>13</textoffsetx>
+				<label>$INFO[Player.Time] [COLOR=$VAR[TitleColorVar]]/[/COLOR] $INFO[Player.Duration]</label>
+			</control>
+		</control>
+		<control type="label">
+			<top>333</top>
+			<left>25</left>
+			<width>667</width>
+			<height>50</height>
+			<font>font10</font>
+			<align>right</align>
+			<textcolor>grey</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR] $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR][CR]$INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR] $INFO[MusicPlayer.Channels][COLOR=$VAR[TitleColorVar]] Ch[/COLOR]</label>
+			<visible>Skin.HasSetting(ThirdMusicVizLayoutInfo)</visible>
+		</control>
+	</control>
+	<control type="group">
+		<visible>!Skin.HasSetting(ThirdMusicVizRecordPlayer) + !Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
+		<!--CD Art Display-->
+		<control type="group">
+			<left>1180</left>
+			<control type="image">
+				<width>500</width>
+				<height>500</height>
+				<aspectratio align="right">keep</aspectratio>
+				<texture>musicviz/cdinside.png</texture>
+			</control>
+			<control type="image">
+				<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>470</width>
+				<height>470</height>
+				<left>262</left>
 				<top>20</top>
-				<width>1960</width>
-				<height>460</height>
-				<texture border="40">listpanel_back.png</texture>
-				<colordiffuse>E0FFFFFF</colordiffuse>
+				<visible>Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + Skin.HasSetting(MusicFakeDisc) + String.IsEmpty(Control.GetLabel(3333))</visible>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[MusicPlayer.Cover]</texture>
 			</control>
-			<control type="group"> <!--Next Up Info-->
-				<left>48</left>
-				<top>54</top>
-				<width>227</width>
-				<height>352</height>
-				<control type="label">
-					<height>40</height>
-					<font>font10</font>
-					<align>right</align>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>shadow</shadowcolor>
-					<label>• • • $LOCALIZE[19031]</label>
-					<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
-				</control>
-				<control type="image">
-					<left>22</left>
-					<top>41</top>
-					<width>200</width>
-					<height>200</height>
-					<texture>musicviz/cdinside.png</texture>
-					<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
-				</control>
-				<control type="image">
-					<left>22</left>
-					<top>41</top>
-					<width>200</width>
-					<height>200</height>
-					<texture>$INFO[MusicPlayer.offset(1).Cover]</texture>
-					<visible>!String.Contains(MusicPlayer.offset(1).Cover,DefaultAlbumCover.png)</visible>
-				</control>
-				<control type="image">
-					<top>37</top>
-					<height>208</height>
-					<aspectratio align="right">keep</aspectratio>
-					<texture>musicviz/cdcase.png</texture>
-					<visible>!String.IsEmpty(MusicPlayer.offset(1).Cover)</visible>
-				</control>
-				<control type="grouplist">
-					<top>247</top>
-					<height>100</height>
-					<itemgap>5</itemgap>
-					<control type="label">
-						<height>20</height>
-						<font>font10</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>shadow</shadowcolor>
-						<align>right</align>
-						<aligny>top</aligny>
-						<label>$INFO[MusicPlayer.offset(1).Title]</label>
-						<scroll>true</scroll>
-					</control>
-					<control type="label">
-						<height>20</height>
-						<font>font10</font>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<shadowcolor>shadow</shadowcolor>
-						<align>right</align>
-						<aligny>top</aligny>
-						<label>[B][UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,][/UPPERCASE][/B]</label>
-					</control>
-					<control type="label">
-						<height>60</height>
-						<font>font10</font>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<shadowcolor>shadow</shadowcolor>
-						<align>right</align>
-						<aligny>top</aligny>
-						<wrapmultiline>true</wrapmultiline>
-						<label>[I]$INFO[MusicPlayer.offset(1).Album,][/I]</label>
-					</control>
-				</control>
+			<control type="image" id="3334">
+				<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<aspectratio>keep</aspectratio>
+				<width>470</width>
+				<height>470</height>
+				<left>262</left>
+				<top>20</top>
+				<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
+				<texture background="true">$VAR[mviscdARTVar]</texture>
+				<aspectratio>keep</aspectratio>
 			</control>
-			<control type="group"> <!--Song Info Panel-->
-				<animation effect="slide" start="0,0" end="250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="420,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation>
-				<left>297</left>
+			<control type="label">
+				<!--animation effect="rotate" end="-360" center="255,53" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation-->
+				<animation effect="rotate" end="-360" center="497,256" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>260</width>
+				<height>70</height>
+				<left>370</left>
+				<top>65</top>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Hand_26</font>
+				<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
+				<label> $INFO[MusicPlayer.AlbumArtist]</label>
+				<textcolor>black</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+			</control>
+			<control type="label">
+				<!--animation effect="rotate" end="-360" center="455,-53" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation-->
+				<animation effect="rotate" end="-360" center="497,256" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<width>230</width>
+				<height>75</height>
+				<left>370</left>
+				<top>330</top>
+				<align>center</align>
+				<font>Hand_26</font>
+				<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
+				<aligny>center</aligny>
+				<label> $INFO[MusicPlayer.Album]</label>
+				<textcolor>black</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+			</control>
+			<control type="image">
+				<left>16</left>
+				<top>17</top>
+				<width>470</width>
+				<height>470</height>
+				<aligny>top</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="slide" end="240,0" time="1500" reversible="true" condition="!String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
+				<animation effect="slide" end="0,0" reversible="true" time="1500" condition="String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" fallback="special://skin/extras/cdart/default.png" diffuse="thumbs/cdart_mask.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+				<visible>Skin.HasSetting(cdartinvis)</visible>
+			</control>
+			<control type="image" id="3333">
+				<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<aspectratio>keep</aspectratio>
+				<width>470</width>
+				<height>470</height>
+				<left>262</left>
+				<top>20</top>
+				<visible>Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart)</visible>
+				<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<left>-226</left>
+				<top>235</top>
+				<width>400</width>
+				<height>40</height>
+				<angle>270</angle>
+				<align>center</align>
+				<font>font10</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Property(Album_Label)]  [/UPPERCASE]</label>
+			</control>
+			<control type="image">
+				<include>VisibleFadeEffect</include>
+				<width>500</width>
+				<height>500</height>
+				<aspectratio align="right">keep</aspectratio>
+				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<visible>!String.Contains(Player.Art(thumb),DefaultAlbumCover.png)</visible>
+			</control>
+			<control type="image">
+				<left>-54</left>
+				<top>-10</top>
+				<width>566</width>
+				<height>520</height>
+				<aspectratio align="right">keep</aspectratio>
+				<texture>musicviz/cdcase.png</texture>
+			</control>
+		</control>
+	</control>
+	<!-- Start LPPlayer Mod -->
+	<control type="group">
+		<visible>Skin.HasSetting(ThirdMusicVizRecordPlayer) + !Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
+		<control type="group">
+			<animation effect="slide" start="250,450" end="250,0" time="1500" tween="cubic" easing="out" delay="400">WindowOpen</animation>
+			<animation effect="slide" start="0" end="0,450" time="1500" tween="cubic" easing="in">WindowClose</animation>
+			<control type="image">
+				<description>Player Base</description>
+				<left>1130</left>
 				<top>60</top>
-				<width>810</width>
-				<height>410</height>
-
-				<control type="image">
-					<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation>
-					<left>10</left>
-					<top>10</top>
-					<width>500</width>
-					<height>317</height>
-					<aspectratio>keep</aspectratio>
-					<texture border="5" colordiffuse="77777777" background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
-				</control>
-				<control type="group">
-					<visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
-					<control type="image">
-						<top>258</top>
-						<left>514</left>
-						<colordiffuse>floor</colordiffuse>
-						<include>MediaFlagVars</include>
-						<texture>userratings/frame.png</texture>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<top>245</top>
-						<left>564</left>
-						<height>55</height>
-						<width>55</width>
-						<colordiffuse>floor</colordiffuse>
-						<texture>userratings/$INFO[MusicPlayer.UserRating].png</texture>
-						<include>VisibleFadeEffect</include>
-					</control>
-				</control>
-				<control type="image">
-					<left>600</left>
-					<top>240</top>
-					<width>200</width>
-					<height>89</height>
-					<aspectratio>keep</aspectratio>
-					<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-					<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[ListItem.Rating].png</texture>
-				</control>
-				<control type="progress">
-					<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizRecordPlayer)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-250,0" time="1500" tween="cubic" easing="out" delay="400" condition="Skin.HasSetting(ThirdMusicVizSimArtists)">Conditional</animation><left>10</left>
-					<top>265</top>
-					<width>420</width>
-					<height>120</height>
-					<info>Player.Progress</info>
-					<texturebg border="3">musicviz/progress.border.png</texturebg>
-					<midtexture>musicviz/progress.png</midtexture>
-					<lefttexture />
-					<righttexture />
-					<info>Player.Progress</info>
-					<animation effect="fade" end="80" condition="true">Conditional</animation>
-					<visible>Player.HasDuration + Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
-					<reveal>true</reveal>
-				</control>
-				<control type="progress">
-					<left>465</left>
-					<top>305</top>
-					<width>330</width>
-					<height>10</height>
-					<reveal>true</reveal>
-					<texturebg border="3">mooviz/progress.border.png</texturebg>
-					<midtexture>mooviz/progress.png</midtexture>
-					<lefttexture />
-					<righttexture />
-					<info>Player.Progress</info>
-					<animation effect="fade" end="80" condition="true">Conditional</animation>
-					<visible>Player.HasDuration + !Skin.HasSetting(ThirdMusicVizLayoutWaveform)</visible>
-				</control>
-				<control type="image">
-					<left>699</left>
-					<top>323</top>
-					<width>100</width>
-					<height>65</height>
-					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
-					<visible>Skin.HasSetting(ThirdMusicVizLayoutInfo)</visible>
-				</control>
-				<control type="label"> <!--Song Info Text-->
-					<top>-15</top>
-					<height>80</height>
-					<font>Font_MainClassic2.low</font>
-					<align>right</align>
-					<textoffsetx>13</textoffsetx>
-					<textcolor>grey</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<scrollsuffix>   •   </scrollsuffix>
-					<label>$INFO[MusicPlayer.Artist]</label>
-				</control>
-				<control type="grouplist">
-					<top>55</top>
-					<width>813</width>
-					<height>450</height>
-					<itemgap>10</itemgap>
-					<control type="label">
-						<height>40</height>
-						<align>right</align>
-						<aligny>top</aligny>
-						<font>Font_MainClassic3.low</font>
-						<textoffsetx>13</textoffsetx>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
-						<scrollsuffix>   •   </scrollsuffix>
-						<label>[COLOR $VAR[TitleColorVar]]$INFO[MusicPlayer.TrackNumber,,. ][/COLOR]$INFO[Player.Title]</label>
-					</control>
-					<control type="label">
-						<height>21</height>
-						<label />
-					</control>
-					<control type="label">
-						<height>40</height>
-						<font>Font_MainClassic3.low</font>
-						<align>right</align>
-						<textoffsetx>13</textoffsetx>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
-						<scrollsuffix>   •   </scrollsuffix>
-						<label>$INFO[MusicPlayer.Album] [COLOR $VAR[TitleColorVar]]$INFO[MusicPlayer.Year, [,] ][/COLOR]</label>
-					</control>
-					<control type="label">
-						<height>1</height>
-						<label />
-					</control>
-					<control type="label">
-						<height>50</height>
-						<align>right</align>
-						<font>Font_MainClassic3.low</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<textoffsetx>13</textoffsetx>
-						<label>$INFO[Player.Time] [COLOR=$VAR[TitleColorVar]]/[/COLOR] $INFO[Player.Duration]</label>
-					</control>
-				</control>
-				<control type="label">
-					<top>333</top>
-					<left>25</left>
-					<width>667</width>
-					<height>50</height>
-					<font>font10</font>
-					<align>right</align>
-					<textcolor>grey</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR] $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR][CR]$INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR] $INFO[MusicPlayer.Channels][COLOR=$VAR[TitleColorVar]] Ch[/COLOR]</label>
-					<visible>Skin.HasSetting(ThirdMusicVizLayoutInfo)</visible>
-				</control>
+				<width>480</width>
+				<height>370</height>
+				<texture>recordplayer/recordplayer.png</texture>
+				<aspectratio aligny="bottom">stretch</aspectratio>
 			</control>
 			<control type="group">
-				<visible>!Skin.HasSetting(ThirdMusicVizRecordPlayer) + !Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
-				<!--CD Art Display-->
-				<control type="group">
-					<left>1180</left>
-					<control type="image">
-						<width>500</width>
-						<height>500</height>
-						<aspectratio align="right">keep</aspectratio>
-						<texture>musicviz/cdinside.png</texture>
-					</control>
-					<control type="image">
-						<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<width>470</width>
-						<height>470</height>
-						<left>262</left>
-						<top>20</top>
-						<visible>Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + Skin.HasSetting(MusicFakeDisc) + String.IsEmpty(Control.GetLabel(3333))</visible>
-						<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[MusicPlayer.Cover]</texture>
-					</control>
-					<control type="image" id="3334">
-						<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<aspectratio>keep</aspectratio>
-						<width>470</width>
-						<height>470</height>
-						<left>262</left>
-						<top>20</top>
-						<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
-						<texture background="true">$VAR[mviscdARTVar]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
+				<control type="image">
+					<description>Vinyl record</description>
+					<animation effect="rotate" end="-360" center="auto" time="1800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<left>1163</left>
+					<top>87</top>
+					<width>316</width>
+					<height>316</height>
+					<texture>recordplayer/vinyl.png</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+				<control type="image">
+					<description>CDart as vinyl label</description>
+					<animation effect="rotate" end="-360" center="auto" time="1800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<left>1265</left>
+					<top>190</top>
+					<width>110</width>
+					<height>110</height>
+					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+					<aspectratio aligny="bottom">keep</aspectratio>
+				</control>
+			</control>
+			<control type="image">
+				<description>Tonearm</description>
+				<animation effect="rotate" center="auto" start="-25" end="-46" time="200000" loop="true" condition="Player.Playing">Conditional</animation>
+				<animation effect="rotate" center="auto" end="20" time="1000" condition="Player.Paused">Conditional</animation>
+				<left>1493</left>
+				<top>-123</top>
+				<width>90</width>
+				<height>540</height>
+				<texture>recordplayer/tonearm.png</texture>
+				<aspectratio aligny="bottom">keep</aspectratio>
+			</control>
+		</control>
+	</control>
+	<!-- Start Similiar Artists Mod -->
+	<control type="group">
+		<visible>Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
+		<control type="label">
+			<left>1525</left>
+			<top>60</top>
+			<height>40</height>
+			<font>font_musicviz_small</font>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
+			<shadowcolor>shadow</shadowcolor>
+			<label>$INFO[ListItem.Label2]</label>
+		</control>
+		<control type="group">
+			<control type="wraplist" id="3001">
+				<viewtype label="icon">list</viewtype>
+				<left>1530</left>
+				<top>60</top>
+				<width>350</width>
+				<height>400</height>
+				<orientation>horizontal</orientation>
+				<autoscroll delay="13000" time="10000" repeat="10000">true</autoscroll>
+				<itemlayout height="400" width="350">
+				</itemlayout>
+				<focusedlayout height="400" width="350">
 					<control type="label">
-						<!--animation effect="rotate" end="-360" center="255,53" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation-->
-						<animation effect="rotate" end="-360" center="497,256" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<width>260</width>
-						<height>70</height>
-						<left>370</left>
-						<top>65</top>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>Hand_26</font>
-						<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
-						<label> $INFO[MusicPlayer.AlbumArtist]</label>
-						<textcolor>black</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-					</control>
-					<control type="label">
-						<!--animation effect="rotate" end="-360" center="455,-53" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation-->
-						<animation effect="rotate" end="-360" center="497,256" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<width>230</width>
-						<height>75</height>
-						<left>370</left>
-						<top>330</top>
-						<align>center</align>
-						<font>Hand_26</font>
-						<visible>String.IsEmpty(Control.GetLabel(3333)) + Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart) + !Skin.HasSetting(MusicFakeDisc)</visible>
-						<aligny>center</aligny>
-						<label> $INFO[MusicPlayer.Album]</label>
-						<textcolor>black</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-					</control>
-					<control type="image">
-						<left>16</left>
-						<top>17</top>
-						<width>470</width>
-						<height>470</height>
-						<aligny>top</aligny>
-						<aspectratio align="left">keep</aspectratio>
-						<fadetime>300</fadetime>
-						<animation effect="slide" end="240,0" time="1500" reversible="true" condition="!String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
-						<animation effect="slide" end="0,0" reversible="true" time="1500" condition="String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
-						<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<texture background="true" fallback="special://skin/extras/cdart/default.png" diffuse="thumbs/cdart_mask.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
-						<visible>Skin.HasSetting(cdartinvis)</visible>
-					</control>
-					<control type="image" id="3333">
-						<animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-						<aspectratio>keep</aspectratio>
-						<width>470</width>
-						<height>470</height>
-						<left>262</left>
-						<top>20</top>
-						<visible>Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart)</visible>
-						<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="label">
-						<left>-226</left>
-						<top>235</top>
-						<width>400</width>
+						<left>-2</left>
+						<top>5</top>
 						<height>40</height>
-						<angle>270</angle>
+						<font>font_musicviz_small</font>
+						<textcolor>$VAR[TitleColorVar]</textcolor>
+						<shadowcolor>shadow</shadowcolor>
 						<align>center</align>
-						<font>font10</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>[UPPERCASE]$INFO[MusicPlayer.Property(Album_Label)]  [/UPPERCASE]</label>
+						<!--label>• • Similar Artists • •</label-->
+						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="image">
-						<include>VisibleFadeEffect</include>
-						<width>500</width>
-						<height>500</height>
-						<aspectratio align="right">keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Cover]</texture>
-						<visible>!String.Contains(Player.Art(thumb),DefaultAlbumCover.png)</visible>
+						<left>25</left>
+						<top>55</top>
+						<width>300</width>
+						<height>300</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<aspectratio>scale</aspectratio>
+						<include>Animation_CommonFade</include>
+						<texture fallback="defaultartist.png" background="true">$INFO[ListItem.Icon]</texture>
+						<visible>!String.Contains(ListItem.Label2,discography)</visible>
+					</control>
+					<control type="label">
+						<left>25</left>
+						<top>360</top>
+						<width>300</width>
+						<height>34</height>
+						<font>Font_Info_Caps</font>
+						<textcolor>$VAR[TitleColorVar]</textcolor>
+						<align>center</align>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>-54</left>
-						<top>-10</top>
-						<width>566</width>
-						<height>520</height>
-						<aspectratio align="right">keep</aspectratio>
+						<left>50</left>
+						<top>70</top>
+						<width>270</width>
+						<height>270</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<aspectratio>scale</aspectratio>
+						<include>Animation_CommonFade</include>
+						<texture fallback="defaultartist.png" background="true">$INFO[ListItem.Icon]</texture>
+						<visible>String.Contains(ListItem.Label2,discography)</visible>
+					</control>
+					<control type="image">
+						<left>25</left>
+						<top>55</top>
+						<width>300</width>
+						<height>300</height>
+						<aspectratio align="center">keep</aspectratio>
 						<texture>musicviz/cdcase.png</texture>
+						<visible>String.Contains(ListItem.Label2,discography)</visible>
 					</control>
-				</control>
+				</focusedlayout>
+				<include>ThirdVizSimArtists</include>
 			</control>
-			<!-- Start LPPlayer Mod -->
-			<control type="group">
-				<visible>Skin.HasSetting(ThirdMusicVizRecordPlayer) + !Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
-				<control type="group">
-					<animation effect="slide" start="250,450" end="250,0" time="1500" tween="cubic" easing="out" delay="400">WindowOpen</animation>
-					<animation effect="slide" start="0" end="0,450" time="1500" tween="cubic" easing="in">WindowClose</animation>
-					<control type="image">
-						<description>Player Base</description>
-						<left>1130</left>
-						<top>60</top>
-						<width>480</width>
-						<height>370</height>
-						<texture>recordplayer/recordplayer.png</texture>
-						<aspectratio aligny="bottom">stretch</aspectratio>
-					</control>
-					<control type="group">
-						<control type="image">
-							<description>Vinyl record</description>
-							<animation effect="rotate" end="-360" center="auto" time="1800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-							<left>1163</left>
-							<top>87</top>
-							<width>316</width>
-							<height>316</height>
-							<texture>recordplayer/vinyl.png</texture>
-							<aspectratio aligny="bottom">keep</aspectratio>
-						</control>
-						<control type="image">
-							<description>CDart as vinyl label</description>
-							<animation effect="rotate" end="-360" center="auto" time="1800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-							<left>1265</left>
-							<top>190</top>
-							<width>110</width>
-							<height>110</height>
-							<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
-							<aspectratio aligny="bottom">keep</aspectratio>
-						</control>
-					</control>
-					<control type="image">
-                        <description>Tonearm</description>
-                        <animation effect="rotate" center="auto" start="-25" end="-46" time="200000" loop="true" condition="Player.Playing">Conditional</animation>
-						<animation effect="rotate" center="auto" end="20" time="1000" condition="Player.Paused">Conditional</animation>
-                        <left>1493</left>
-                        <top>-123</top>
-                        <width>90</width>
-                        <height>540</height>
-                        <texture>recordplayer/tonearm.png</texture>
-                        <aspectratio aligny="bottom">keep</aspectratio>
-                    </control>
-				</control>
-			</control>
-			<!-- Start Similiar Artists Mod -->
-			<control type="group">
-				<visible>Skin.HasSetting(ThirdMusicVizSimArtists)</visible>
-				<control type="label">
-					<left>1525</left>
-					<top>60</top>
-					<height>40</height>
-					<font>font_musicviz_small</font>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>shadow</shadowcolor>
-					<label>$INFO[ListItem.Label2]</label>
-				</control>
-				<control type="group">
-					<control type="wraplist" id="3001">
-						<viewtype label="icon">list</viewtype>
-						<left>1530</left>
-						<top>60</top>
-						<width>350</width>
-						<height>400</height>
-						<orientation>horizontal</orientation>
-						<autoscroll delay="13000" time="10000" repeat="10000">true</autoscroll>
-						<itemlayout height="400" width="350">
-						</itemlayout>
-						<focusedlayout height="400" width="350">
-						<control type="label">
-							<left>-2</left>
-							<top>5</top>
-							<height>40</height>
-							<font>font_musicviz_small</font>
-							<textcolor>$VAR[TitleColorVar]</textcolor>
-							<shadowcolor>shadow</shadowcolor>
-							<align>center</align>
-							<!--label>• • Similar Artists • •</label-->
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
-						<control type="image">
-							<left>25</left>
-							<top>55</top>
-							<width>300</width>
-							<height>300</height>
-							<aligny>center</aligny>
-							<align>center</align>
-							<aspectratio>scale</aspectratio>
-							<include>Animation_CommonFade</include>
-							<texture fallback="defaultartist.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>!String.Contains(ListItem.Label2,discography)</visible>
-						</control>
-						<control type="label">
-							<left>25</left>
-							<top>360</top>
-							<width>300</width>
-							<height>34</height>
-							<font>Font_Info_Caps</font>
-							<textcolor>$VAR[TitleColorVar]</textcolor>
-							<align>center</align>
-							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="image">
-							<left>50</left>
-							<top>70</top>
-							<width>270</width>
-							<height>270</height>
-							<aligny>center</aligny>
-							<align>center</align>
-							<aspectratio>scale</aspectratio>
-							<include>Animation_CommonFade</include>
-							<texture fallback="defaultartist.png" background="true">$INFO[ListItem.Icon]</texture>
-							<visible>String.Contains(ListItem.Label2,discography)</visible>
-						</control>
-						<control type="image">
-							<left>25</left>
-							<top>55</top>
-							<width>300</width>
-							<height>300</height>
-							<aspectratio align="center">keep</aspectratio>
-							<texture>musicviz/cdcase.png</texture>
-							<visible>String.Contains(ListItem.Label2,discography)</visible>
-						</control>
-					</focusedlayout>
-						<include>ThirdVizSimArtists</include>
-					</control>
 					<!--control type="label">
 						<left>-340</left>
 							<top>310</top>
@@ -2340,228 +2331,228 @@
 		<!-- Fourth Layout -->
 		<!-- Background-->
 		<control type="image">
-				<visible>Skin.HasSetting(FourthMusicVizLayout) + !Skin.HasSetting(FourthMusicVizLayoutDown)</visible>
-				<width>2100</width>
-				<height>780</height>
-				<texture flipy="true">home/nowplaying_shadow.png</texture>
-				<include>Animation_VisibleChange400</include>
-			</control>
-			<control type="image">
-				<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutDown)</visible>
-				<top>480</top>
-				<width>2100</width>
-				<height>600</height>
-				<texture>home/nowplaying_shadow.png</texture>
-				<include>Animation_VisibleChange400</include>
-			</control>
+			<visible>Skin.HasSetting(FourthMusicVizLayout) + !Skin.HasSetting(FourthMusicVizLayoutDown)</visible>
+			<width>2100</width>
+			<height>780</height>
+			<texture flipy="true">home/nowplaying_shadow.png</texture>
+			<include>Animation_VisibleChange400</include>
+		</control>
+		<control type="image">
+			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutDown)</visible>
+			<top>480</top>
+			<width>2100</width>
+			<height>600</height>
+			<texture>home/nowplaying_shadow.png</texture>
+			<include>Animation_VisibleChange400</include>
+		</control>
 		<!-- cdArt-->
 		<control type="image">
 			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutcdArt)</visible>
 			<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" delay="720">WindowOpen</animation><animation type="WindowClose">
-				<effect type="slide" end="0,180" time="220" tween="cubic" easing="in" />
-				<effect type="fade" start="100" end="0" time="200" />
-				<condition type="!Player.Playing" />
-			</animation>
-			<animation type="Conditional" condition="true">
-				<effect type="fade" end="15" />
-				<effect type="rotatex" end="60" center="960,540" time="0" />
-			</animation>
-			<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-			<aspectratio>keep</aspectratio>
-			<width>500</width>
-			<height>500</height>
-			<top>1400</top>
-			<left>710</left>
-			<fadetime>300</fadetime>
-			<texture background="true" fallback="common/cdart/vinyl.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
-			<aspectratio aligny="bottom">keep</aspectratio>
-		</control>
-		<!-- Cover-->
-		<control type="image">
-			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutCover)</visible>
-			<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" delay="720">WindowOpen</animation><animation type="WindowClose">
-				<effect type="slide" end="0,180" time="220" tween="cubic" easing="in" />
-				<effect type="fade" start="100" end="0" time="200" />
-				<condition type="!Player.Playing" />
-			</animation>
-			<animation type="Conditional" condition="true">
-				<effect type="fade" end="15" />
-				<effect type="rotatex" end="65" center="960,540" time="0" />
-			</animation>
-			<top>1350</top>
-			<left>710</left>
-			<height>500</height>
-			<width>500</width>
-			<texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
-			<aspectratio>keep</aspectratio>
-		</control>
-		<!-- Logo Artist-->
-		<control type="group">
-			<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
-			<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
-			<width>1920</width>
-			<height>800</height>
-			<control type="image" id="831844">
-				<left>710</left>
-				<width>500</width>
-				<height>500</height>
-				<aspectratio>keep</aspectratio>
-				<animation effect="fade" start="100" end="0" time="500" condition="String.Contains(Control.GetLabel(831844),empty.png)">Conditional</animation>
-				<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
-			</control>
-			<control type="label">
-				<left>460</left>
-				<top>-200</top>
-				<width>1000</width>
-				<align>center</align>
-				<scroll>true</scroll>
-				<font>Font_MainClassic2.low</font>
-				<visible>String.Contains(Control.GetLabel(831844),empty.png)</visible>
-				<label>$INFO[MusicPlayer.Artist]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<!-- Title -->
-			<control type="image">
-				<left>460</left>
-				<top>350</top>
-				<width>1000</width>
-				<height>4</height>
-				<texture>views/list_divider.png</texture>
-			</control>
-			<control type="label">
-				<left>460</left>
-				<top>359</top>
-				<width>1000</width>
-				<height>45</height>
-				<align>center</align>
-				<font>Font_MainClassic3.low</font>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<label>[COLOR=white]$INFO[MusicPlayer.Title, “ , ”][/COLOR]</label>
-			</control>
-			<!-- Album-->
-			<control type="image">
-				<left>460</left>
-				<top>420</top>
-				<width>1000</width>
-				<height>4</height>
-				<texture>views/list_divider.png</texture>
-			</control>
-			<control type="label">
-				<left>460</left>
-				<top>425</top>
-				<width>1000</width>
-				<height>36</height>
-				<align>center</align>
-				<font>Font_MainClassic22</font>
-				<label>[COLOR white]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-			</control>
-			<!-- Repeat/Shuffle-->
-			<control type="image">
-				<visible>Player.HasDuration + !MusicPartyMode.Enabled</visible>
-				<left>710</left>
-				<top>505</top>
-				<width>45</width>
-				<height>45</height>
-				<texture>$VAR[MusicVizOSDRepeatButtonVar]</texture>
-				<aspectratio>keep</aspectratio>
-			</control>
-			<control type="image">
-				<visible>Player.HasDuration + !MusicPartyMode.Enabled</visible>
-				<left>1150</left>
-				<top>505</top>
-				<width>45</width>
-				<height>45</height>
-				<texture>$VAR[MusicVizOSDShuffleButtonVar]</texture>
-				<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
-			</control>
-			<!-- Progressbar/Time-->
-			<control type="progress">
-				<visible>Player.HasDuration + Skin.HasSetting(FourthMusicVizLayoutProgress)</visible>
-				<animation effect="fade" end="80" condition="true">Conditional</animation>
-				<left>710</left>
-				<top>490</top>
-				<width>500</width>
-				<height>10</height>
-				<reveal>true</reveal>
-				<texturebg border="3">mooviz/progress.border.png</texturebg>
-				<midtexture>mooviz/progress.png</midtexture>
-				<lefttexture />
-				<righttexture />
-				<info>Player.Progress</info>
-				<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-			</control>
-			<control type="group">
-				<visible>Player.HasDuration + Skin.HasSetting(FourthMusicVizLayoutProgress)</visible>
-				<left>460</left>
-				<top>490</top>
-				<width>1000</width>
-				<height>75</height>
-				<control type="label">
-					<width>1000</width>
-					<font>Font_MainClassic22</font>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<label>$INFO[MusicPlayer.Time,, / ]$INFO[MusicPlayer.Duration]</label>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-				</control>
-				<control type="label">
-					<visible>!Player.HasDuration</visible>
-					<width>1000</width>
-					<font>Font_MainClassic22</font>
-					<label>$INFO[MusicPlayer.Time,, / ]∞</label>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<align>center</align>
-				</control>
-			</control>
-		</control>
-		<!-- Info -->
+			<effect type="slide" end="0,180" time="220" tween="cubic" easing="in" />
+			<effect type="fade" start="100" end="0" time="200" />
+			<condition type="!Player.Playing" />
+		</animation>
+		<animation type="Conditional" condition="true">
+			<effect type="fade" end="15" />
+			<effect type="rotatex" end="60" center="960,540" time="0" />
+		</animation>
+		<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+		<aspectratio>keep</aspectratio>
+		<width>500</width>
+		<height>500</height>
+		<top>1400</top>
+		<left>710</left>
+		<fadetime>300</fadetime>
+		<texture background="true" fallback="common/cdart/vinyl.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+		<aspectratio aligny="bottom">keep</aspectratio>
+	</control>
+	<!-- Cover-->
+	<control type="image">
+		<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutCover)</visible>
+		<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" delay="720">WindowOpen</animation><animation type="WindowClose">
+		<effect type="slide" end="0,180" time="220" tween="cubic" easing="in" />
+		<effect type="fade" start="100" end="0" time="200" />
+		<condition type="!Player.Playing" />
+	</animation>
+	<animation type="Conditional" condition="true">
+		<effect type="fade" end="15" />
+		<effect type="rotatex" end="65" center="960,540" time="0" />
+	</animation>
+	<top>1350</top>
+	<left>710</left>
+	<height>500</height>
+	<width>500</width>
+	<texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
+	<aspectratio>keep</aspectratio>
+</control>
+<!-- Logo Artist-->
+<control type="group">
+	<visible>Skin.HasSetting(FourthMusicVizLayout)</visible>
+	<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
+	<width>1920</width>
+	<height>800</height>
+	<control type="image" id="831844">
+		<left>710</left>
+		<width>500</width>
+		<height>500</height>
+		<aspectratio>keep</aspectratio>
+		<animation effect="fade" start="100" end="0" time="500" condition="String.Contains(Control.GetLabel(831844),empty.png)">Conditional</animation>
+		<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+	</control>
+	<control type="label">
+		<left>460</left>
+		<top>-200</top>
+		<width>1000</width>
+		<align>center</align>
+		<scroll>true</scroll>
+		<font>Font_MainClassic2.low</font>
+		<visible>String.Contains(Control.GetLabel(831844),empty.png)</visible>
+		<label>$INFO[MusicPlayer.Artist]</label>
+		<textcolor>$VAR[TitleColorVar]</textcolor>
+		<shadowcolor>black</shadowcolor>
+	</control>
+	<!-- Title -->
+	<control type="image">
+		<left>460</left>
+		<top>350</top>
+		<width>1000</width>
+		<height>4</height>
+		<texture>views/list_divider.png</texture>
+	</control>
+	<control type="label">
+		<left>460</left>
+		<top>359</top>
+		<width>1000</width>
+		<height>45</height>
+		<align>center</align>
+		<font>Font_MainClassic3.low</font>
+		<textcolor>$VAR[TitleColorVar]</textcolor>
+		<shadowcolor>black</shadowcolor>
+		<scroll>true</scroll>
+		<label>[COLOR=white]$INFO[MusicPlayer.Title, “ , ”][/COLOR]</label>
+	</control>
+	<!-- Album-->
+	<control type="image">
+		<left>460</left>
+		<top>420</top>
+		<width>1000</width>
+		<height>4</height>
+		<texture>views/list_divider.png</texture>
+	</control>
+	<control type="label">
+		<left>460</left>
+		<top>425</top>
+		<width>1000</width>
+		<height>36</height>
+		<align>center</align>
+		<font>Font_MainClassic22</font>
+		<label>[COLOR white]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
+		<textcolor>$VAR[TitleColorVar]</textcolor>
+		<shadowcolor>black</shadowcolor>
+		<scroll>true</scroll>
+	</control>
+	<!-- Repeat/Shuffle-->
+	<control type="image">
+		<visible>Player.HasDuration + !MusicPartyMode.Enabled</visible>
+		<left>710</left>
+		<top>505</top>
+		<width>45</width>
+		<height>45</height>
+		<texture>$VAR[MusicVizOSDRepeatButtonVar]</texture>
+		<aspectratio>keep</aspectratio>
+	</control>
+	<control type="image">
+		<visible>Player.HasDuration + !MusicPartyMode.Enabled</visible>
+		<left>1150</left>
+		<top>505</top>
+		<width>45</width>
+		<height>45</height>
+		<texture>$VAR[MusicVizOSDShuffleButtonVar]</texture>
+		<colordiffuse>$VAR[TitleColorVar]</colordiffuse>
+	</control>
+	<!-- Progressbar/Time-->
+	<control type="progress">
+		<visible>Player.HasDuration + Skin.HasSetting(FourthMusicVizLayoutProgress)</visible>
+		<animation effect="fade" end="80" condition="true">Conditional</animation>
+		<left>710</left>
+		<top>490</top>
+		<width>500</width>
+		<height>10</height>
+		<reveal>true</reveal>
+		<texturebg border="3">mooviz/progress.border.png</texturebg>
+		<midtexture>mooviz/progress.png</midtexture>
+		<lefttexture />
+		<righttexture />
+		<info>Player.Progress</info>
+		<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+	</control>
+	<control type="group">
+		<visible>Player.HasDuration + Skin.HasSetting(FourthMusicVizLayoutProgress)</visible>
+		<left>460</left>
+		<top>490</top>
+		<width>1000</width>
+		<height>75</height>
 		<control type="label">
-			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowInfo) + !Skin.HasSetting(FourthMusicVizLayoutShowInfoShort)</visible>
-			<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
-			<left>460</left>
-			<top>540</top>
 			<width>1000</width>
-			<height>40</height>
-			<align>center</align>
-			<font>font.ml</font>
+			<font>Font_MainClassic22</font>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
+			<label>$INFO[MusicPlayer.Time,, / ]$INFO[MusicPlayer.Duration]</label>
 			<shadowcolor>black</shadowcolor>
-			<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR]  [COLOR=gray]•[/COLOR]  [COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
+			<align>center</align>
 		</control>
-		<!--Short Info-->
 		<control type="label">
-			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowInfo) + Skin.HasSetting(FourthMusicVizLayoutShowInfoShort)</visible>
-			<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
-			<left>460</left>
-			<top>540</top>
+			<visible>!Player.HasDuration</visible>
 			<width>1000</width>
-			<height>40</height>
-			<align>center</align>
-			<font>font.ml</font>
+			<font>Font_MainClassic22</font>
+			<label>$INFO[MusicPlayer.Time,, / ]∞</label>
+			<textcolor>$VAR[TitleColorVar]</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR]  [COLOR=gray]•[/COLOR]  [COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
+			<align>center</align>
 		</control>
-		<!-- UserRating-->
-		<control type="image">
-			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowRating)</visible>
-			<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-35" time="100" tween="cubic" condition="!Skin.HasSetting(FourthMusicVizLayoutShowInfo)">Conditional</animation>
-			<left>860</left>
-			<top>550</top>
-			<width>200</width>
-			<height>89</height>
-			<aspectratio>keep</aspectratio>
-			<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
-			<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[MusicPlayer.UserRating].png</texture>
-			<!--texture fallback="rating0.png">$INFO[Player.Rating]</texture-->
-		</control>
-		<!-- UserRating-->
+	</control>
+</control>
+<!-- Info -->
+<control type="label">
+	<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowInfo) + !Skin.HasSetting(FourthMusicVizLayoutShowInfoShort)</visible>
+	<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
+	<left>460</left>
+	<top>540</top>
+	<width>1000</width>
+	<height>40</height>
+	<align>center</align>
+	<font>font.ml</font>
+	<shadowcolor>black</shadowcolor>
+	<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Samplerate][COLOR=$VAR[TitleColorVar]] kHz[/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.BitsPerSample][COLOR=$VAR[TitleColorVar]] Bits[/COLOR]  [COLOR=gray]•[/COLOR]  [COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
+</control>
+<!--Short Info-->
+<control type="label">
+	<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowInfo) + Skin.HasSetting(FourthMusicVizLayoutShowInfoShort)</visible>
+	<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
+	<left>460</left>
+	<top>540</top>
+	<width>1000</width>
+	<height>40</height>
+	<align>center</align>
+	<font>font.ml</font>
+	<shadowcolor>black</shadowcolor>
+	<label>[COLOR=white]$INFO[MusicPlayer.Codec][/COLOR]  [COLOR=gray]•[/COLOR]  $INFO[MusicPlayer.Bitrate][COLOR=$VAR[TitleColorVar]] kbps[/COLOR]  [COLOR=gray]•[/COLOR]  [COLOR=white]$INFO[MusicPlayer.Genre][/COLOR]</label>
+</control>
+<!-- UserRating-->
+<control type="image">
+	<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowRating)</visible>
+	<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,-35" time="100" tween="cubic" condition="!Skin.HasSetting(FourthMusicVizLayoutShowInfo)">Conditional</animation>
+	<left>860</left>
+	<top>550</top>
+	<width>200</width>
+	<height>89</height>
+	<aspectratio>keep</aspectratio>
+	<colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+	<texture fallback="flags/music/ratingnew/0.png">flags/music/ratingnew/$INFO[MusicPlayer.UserRating].png</texture>
+	<!--texture fallback="rating0.png">$INFO[Player.Rating]</texture-->
+</control>
+<!-- UserRating-->
 		<!--control type="image">
 			<visible>Skin.HasSetting(FourthMusicVizLayout) + Skin.HasSetting(FourthMusicVizLayoutShowRating)</visible>
 			<animation effect="slide" start="0,0" end="0,450" time="200" tween="cubic" condition="Skin.HasSetting(FourthMusicVizLayoutDown)">Conditional</animation>
@@ -2573,8 +2564,8 @@
 			<colordiffuse>white</colordiffuse>
 			<texture>userratings/$INFO[MusicPlayer.UserRating].png</texture>
 		</control-->
-<!--Fourth Layout End -->
-<!--Stuff -->
+		<!--Fourth Layout End -->
+		<!--Stuff -->
 		<control type="group">
 			<left>1480</left>
 			<top>510</top>
