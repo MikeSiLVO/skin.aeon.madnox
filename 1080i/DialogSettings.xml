@@ -8,108 +8,121 @@
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<controls>
-		<control type="image">
-			<left>-64</left>
-			<width>662</width>
-			<height>1080</height>
-			<texture colordiffuse="$VAR[DialogColorVar]">dialogs/context_middle.png</texture>
-		</control>
 		<control type="group">
-			<left>550</left>
-			<include>Neon_VerticalBar</include>
-		</control>
-		<control type="image">
-			<top>18</top>
-			<width>90</width>
-			<height>90</height>
-			<texture colordiffuse="grey">BigIcons/Magicwand.png</texture>
-		</control>
-		<control type="label" id="2">
-			<left>90</left>
-			<top>24</top>
-			<width>1080</width>
-			<height>60</height>
-			<label>587</label>
-			<font>Font_Bold33</font>
-			<textcolor>$VAR[FontColorVar]</textcolor>
-		</control>
-		<control type="grouplist" id="5">
-			<top>100</top>
-			<width>570</width>
-			<height>910</height>
-			<pagecontrol>6</pagecontrol>
-			<onup>9001</onup>
-			<ondown>9001</ondown>
-			<onleft>Action(Close)</onleft>
-			<onright>Action(Close)</onright>
-		</control>
-		<control type="button" id="7">
-			<height>70</height>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-			<font>Font_Reg30</font>
-			<textcolor>grey2</textcolor>
-		</control>
-		<control type="radiobutton" id="8">
-			<height>70</height>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-			<font>Font_Reg30</font>
-			<textcolor>grey2</textcolor>
-		</control>
-		<control type="spincontrolex" id="9">
-			<height>70</height>
-			<aligny>center</aligny>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-			<font>Font_Reg30</font>
-			<textcolor>grey2</textcolor>
-		</control>
-		<control type="edit" id="12">
-			<height>70</height>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-			<font>Font_Reg30</font>
-			<textcolor>grey2</textcolor>
-		</control>
-		<control type="sliderex" id="13">
-			<height>70</height>
-			<textoffsetx>13</textoffsetx>
-			<aligny>center</aligny>
-			<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-			<font>Font_Reg30</font>
-			<textcolor>grey2</textcolor>
-		</control>
-		<control type="label" id="14">
-			<description>Default label</description>
-			<height>70</height>
-		</control>
-		<control type="grouplist" id="9001">
-			<top>1010</top>
-			<onup>5</onup>
-			<ondown>5</ondown>
-			<control type="button" id="28">
-				<description>Ok Button</description>
-				<height>70</height>
-				<width>570</width>
-				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-				<font>Font_Reg30</font>
-				<textcolor>grey2</textcolor>
-				<label>186</label>
+			<control type="image">
+				<left>36</left>
+				<top>36</top>
+				<width>1846</width>
+				<height>1006</height>
+				<texture colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_panelback_shadow.png</texture>
+				<visible>!Skin.HasSetting(DisableGlowbar)</visible>
 			</control>
-			<control type="button" id="29">
-				<description>Cancel Button</description>
-				<height>70</height>
-				<width>570</width>
-				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
-				<font>Font_Reg30</font>
-				<textcolor>grey2</textcolor>
-				<label>222</label>
+			<control type="image">
+				<left>34</left>
+				<top>34</top>
+				<width>1850</width>
+				<height>1010</height>
+				<texture colordiffuse="$VAR[DialogColorVar]">settings/settings_panelback-mod.png</texture>
 			</control>
-			<control type="button" id="30">
-				<description>Clear Button</description>
+			<control type="label" id="2">
+				<left>418</left>
+				<top>-850</top>
+				<width>800</width>
+				<align>left</align>
+				<label />
+				<font>Font_ShowcaseMainLabel2</font>
+			</control>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<left>388</left>
+				<top>180</top>
+				<width>1464</width>
+				<height>690</height>
+				<itemgap>5</itemgap>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>9001</onleft>
+				<onright>9001</onright>
+			</control>
+			<control type="button" id="7">
+				<textoffsetx>40</textoffsetx>
+				<include>Default_SettingButton</include>
+			</control>
+			<control type="radiobutton" id="8">
+				<textoffsetx>40</textoffsetx>
+				<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]">settings/settings_radiobuttonoff.png</texturenofocus>
+				<textcolor>grey2</textcolor>
+				<font>Font_Reg32</font>
+			</control>
+			<control type="spincontrolex" id="9">
+				<textoffsetx>40</textoffsetx>
+				<include>Default_SettingButton</include>
+			</control>
+			<control type="edit" id="12">
 				<height>70</height>
-				<width>570</width>
 				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
 				<font>Font_Reg30</font>
 				<textcolor>grey2</textcolor>
-				<label>192</label>
+			</control>
+			<control type="sliderex" id="13">
+				<height>70</height>
+				<textoffsetx>13</textoffsetx>
+				<aligny>center</aligny>
+				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
+				<font>Font_Reg30</font>
+				<textcolor>grey2</textcolor>
+			</control>
+			<control type="label" id="14">
+				<height>60</height>
+				<textoffsetx>20</textoffsetx>
+				<textoffsety>20</textoffsety>
+				<font>Font_Reg32</font>
+			</control>
+			<control type="grouplist" id="9001">
+				<left>62</left>
+				<top>155</top>
+				<width>1464</width>
+				<height>690</height>
+				<itemgap>5</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<control type="button" id="28">
+					<width>324</width>
+					<height>97</height>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus />
+					<label>186</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_Bold34</font>
+					<textcolor>grey</textcolor>
+				</control>
+				<control type="button" id="29">
+					<width>324</width>
+					<height>97</height>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus />
+					<label>222</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_Bold34</font>
+					<textcolor>grey</textcolor>
+				</control>
+				<control type="button" id="30">
+					<width>324</width>
+					<height>97</height>
+					<texturefocus colordiffuse="$VAR[FocusTextureColorVar]" border="8">views/tripanel/listselect_fo.png</texturefocus>
+					<texturenofocus />
+					<label>409</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_Bold34</font>
+					<textcolor>grey</textcolor>
+				</control>
 			</control>
 		</control>
 	</controls>
