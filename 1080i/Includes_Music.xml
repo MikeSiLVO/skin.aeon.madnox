@@ -1199,7 +1199,7 @@
 				<onup>Dialog.Close(musicosd)</onup>
 				<ondown condition="!Window.IsActive(playercontrols)">40</ondown>
 				<ondown condition="Window.IsActive(playercontrols)">9011</ondown>
-				<onleft>801</onleft>
+				<onleft>702</onleft>
 				<onright>703</onright>
 				<control type="button" id="600">
 					<texturefocus>osd/buttons/OSDPrevTrackFO.png</texturefocus>
