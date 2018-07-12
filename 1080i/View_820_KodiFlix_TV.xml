@@ -2185,7 +2185,7 @@
 				<animation effect="slide" start="0,0" end="300,0" delay="0" time="800" tween="cubic" easing="inout" condition="Skin.Hassetting(KodiFlixTVInfo) + Container.Content(episodes)">Conditional</animation>
 				<control type="image">
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 				</control>

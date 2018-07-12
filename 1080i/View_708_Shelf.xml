@@ -215,7 +215,7 @@
 						<left>-20</left>
 						<colordiffuse>grey2</colordiffuse>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec)</visible>
 					</control>
 					<control type="image">
@@ -649,7 +649,7 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<colordiffuse>C9FFFFFF</colordiffuse>
-								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 							</control>
 							<control type="image">
 								<left>295</left>
@@ -728,7 +728,7 @@
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 							</control>
 							<control type="image">
 								<left>295</left>
@@ -829,7 +829,7 @@
 								<width>60</width>
 								<height>60</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+								<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 								<include>AudioFlagsVars</include>
 							</control>
 							<control type="image">

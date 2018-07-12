@@ -621,7 +621,7 @@
 			</control>
 			<control type="image">
 				<left>1400</left>
-				<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+				<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 				<include>OSDFlagVars</include>
 				<visible>!ListItem.IsFolder</visible>
 				<animation effect="slide"  end="-20,0" time="100" delay="150" condition="Container.Content(movies)">Conditional</animation>
@@ -1192,7 +1192,7 @@
 				</control>
 				<control type="image">
 					<left>1670</left>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 					<include>AudioFlagsVars</include>
 				</control>
 				<control type="image">

@@ -108,7 +108,7 @@
 				<visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<control type="image">
 					<colordiffuse>floor</colordiffuse>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 					<include>AudioFlagsVars</include>
 					<include>VisibleFadeEffect</include>
 				</control>

@@ -667,7 +667,7 @@
 									<width>100</width>
 									<height>62</height>
 									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+									<texture colordiffuse="white2">$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 									<visible>!String.IsEmpty(Control.GetLabel(900011))</visible>
 								</control>
 								<control type="image" id="900012">

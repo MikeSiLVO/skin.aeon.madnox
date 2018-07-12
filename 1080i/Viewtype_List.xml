@@ -667,7 +667,7 @@
 					<width>87</width>
 					<height>41</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 				</control>
 				<control type="label">
 					<left>56</left>

@@ -387,7 +387,7 @@
 					<height>30</height>
 					<align>center</align>
 					<colordiffuse>grey2</colordiffuse>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 					<visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
 					<animation effect="rotatey" center="50" start="8" end="8" time="0" condition="true">Conditional</animation>
 				</control>
@@ -487,13 +487,13 @@
 					<control type="image">
 						<left>140</left>
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec)</visible>
 						<visible>!Skin.HasSetting(coloredflags)</visible>
 					</control>
 					<control type="image">
 						<include>MediaFlagVarsShelf</include>
-						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 						<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec)</visible>
 						<visible>Skin.HasSetting(coloredflags)</visible>
 					</control>
@@ -1105,7 +1105,7 @@
 					<height>30</height>
 					<align>center</align>
 					<colordiffuse>grey2</colordiffuse>
-					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar,,.png]</texture>
+					<texture>$VAR[ColorFlagsPathVar]source/$VAR[SourceFlagVar]</texture>
 					<visible>!Container.Content(tvshows) + !String.IsEmpty(ListItem.VideoCodec) + Skin.HasSetting(Shelf3DSpineText)</visible>
 				</control>
 
