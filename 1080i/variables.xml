@@ -3310,10 +3310,10 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="KodilixTVInfoCast">
-		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;episode=$INFO[ListItem.DBID]</value>
-		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[Container.ShowTitle]</value>
-		<value condition="Container.Content(tvshows) + Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.DBID]</value>
-		<value condition="Container.Content(tvshows) + !Integer.IsGreater(ListItem.DBID),0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.Title]</value>
+		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + Integer.IsGreater(ListItem.DBID,0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;episode=$INFO[ListItem.DBID]</value>
+		<value condition="[Container.Content(episodes) | Container.Content(seasons)] + !Integer.IsGreater(ListItem.DBID,0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[Container.ShowTitle]</value>
+		<value condition="Container.Content(tvshows) + Integer.IsGreater(ListItem.DBID,0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.DBID]</value>
+		<value condition="Container.Content(tvshows) + !Integer.IsGreater(ListItem.DBID,0)">plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="Col_lyr1">
 		<value condition="[String.EndsWith(Player.Duration,1)] + Skin.HasSetting(Alt_color.lyrics)">ffe16b6b</value>
