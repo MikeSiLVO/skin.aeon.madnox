@@ -1164,6 +1164,7 @@
 					<texturenofocus>osd/buttons/OSDPlaylistNF.png</texturenofocus>
 					<label>10517</label>
 					<include>ClassicOSDButton</include>
+					<onclick>Close</onclick>
 					<onclick>ActivateWindow(MusicPlaylist)</onclick>
 				</control>
 				<control type="button" id="500">
