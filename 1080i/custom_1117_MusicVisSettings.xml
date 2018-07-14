@@ -432,7 +432,7 @@
 					<label>$LOCALIZE[31252]</label>
 					<include>Objects_CommonSettingsButton</include>
 					<onclick>Skin.ToggleSetting(WeatherConditionVis)</onclick>
-					<selected>Skin.HasSetting(WeatherConditionVis)</selected>
+					<selected>!Skin.HasSetting(WeatherConditionVis)</selected>
 					<enable>!Skin.HasSetting(WeatherBreadcrumVis)</enable>
 				</control>
 			</control>

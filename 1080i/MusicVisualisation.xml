@@ -88,7 +88,7 @@
 			<animation effect="slide" start="735,0" end="0,0" delay="0" time="300">Visible</animation>
 			<animation effect="slide" end="735,0" time="300">WindowClose</animation>
 			<control type="group">
-				<left>890</left>
+				<left>950</left>
 				<top>-3</top>
 				<control type="group">
 					<animation effect="slide" end="200,0" condition="!Skin.HasSetting(WeatherBreadcrumVis) + Skin.HasSetting(WeatherConditionVis)">Conditional</animation>
@@ -141,7 +141,7 @@
 					</control>
 				</control>
 				<control type="label">
-					<left>420</left>
+					<left>360</left>
 					<width>600</width>
 					<height>40</height>
 					<align>right</align>
@@ -710,7 +710,7 @@
 						<width>100</width>
 						<height>65</height>
 						<colordiffuse>white</colordiffuse>
-						<texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+						<texture fallback="empty.png">$VAR[ColorFlagsPathVar]$INFO[MusicPlayer.Codec,audio/,.png]</texture>
 					</control>
 					<control type="label">
 						<left>588</left>
@@ -1996,7 +1996,7 @@
 			<width>100</width>
 			<height>65</height>
 			<aspectratio align="left">keep</aspectratio>
-			<texture fallback="empty.png">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+			<texture fallback="empty.png">$VAR[ColorFlagsPathVar]$INFO[MusicPlayer.Codec,audio/,.png]</texture>
 			<visible>Skin.HasSetting(ThirdMusicVizLayoutInfo)</visible>
 		</control>
 		<control type="label"> <!--Song Info Text-->
