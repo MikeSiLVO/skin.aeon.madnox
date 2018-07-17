@@ -2214,7 +2214,6 @@
 		<value>$LOCALIZE[31036]</value>
 	</variable>
 	<variable name="ContextMenuLabel2001">
-		<value condition="Container.Content(Artists) + Window.IsVisible(music)">$LOCALIZE[31074]</value>
 		<value condition="Container.Content(Actors)">$LOCALIZE[31073]</value>
 		<value condition="Container.Content(Directors)">$LOCALIZE[31080]</value>
 		<value>$LOCALIZE[21891]</value>
