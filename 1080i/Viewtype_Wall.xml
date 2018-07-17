@@ -149,7 +149,7 @@
 				</control>
 				<control type="group">
 					<visible>!Container.Content(artists)</visible>
-					<control type="image">
+					<!-- <control type="image">
 						<left>14</left>
 						<top>191</top>
 						<width>217</width>
@@ -158,7 +158,7 @@
 						<texture>common/bgcolor.png</texture>
 						<animation effect="fade" start="100" end="70" time="40" condition="true">Conditional</animation>
 						<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(genres)</visible>
-					</control>
+					</control> -->
 					<!-- disable rating -->
 					<control type="label">   <!-- version number -->
 						<top>172</top>
@@ -248,7 +248,7 @@
 				</control>
 				<control type="group">
 					<visible>!Container.Content(artists)</visible>
-					<control type="image">
+					<!-- <control type="image">
 						<left>5</left>
 						<top>191</top>
 						<width>235</width>
@@ -257,7 +257,7 @@
 						<texture>common/bgcolor.png</texture>
 						<animation effect="fade" start="100" end="90" time="40" condition="true">Conditional</animation>
 						<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(genres)</visible>
-					</control>
+					</control> -->
 					<!-- disable rating -->
 					<control type="label">
 						<top>172</top>
