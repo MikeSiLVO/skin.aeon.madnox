@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
-	<onload condition="Skin.HasSetting(UseExtendedInfo) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)]">Action(close)</onload>
+	<onload condition="Skin.HasSetting(UseExtendedInfo) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]">Action(close)</onload>
 	<onload condition="Skin.HasSetting(UseExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onload>
 	<onload condition="Skin.HasSetting(UseExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onload>
+	<onload condition="Skin.HasSetting(UseExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,dbid=$INFO[ListItem.DBID],,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</onload>
+	<!-- <onload condition="Skin.HasSetting(UseExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,dbid=$INFO[ListItem.DBID],,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season])</onload> -->
 	<onload condition="!Skin.HasSetting(UseExtendedInfo)">ClearProperty(ActorFade)</onload>
 	<onload condition="!Skin.HasSetting(UseExtendedInfo) + Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="!Skin.HasSetting(UseExtendedInfo) + System.HasAddon(script.videoextras) + !Skin.HasSetting(Enable.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
@@ -14,9 +16,9 @@
 	<onunload>ClearProperty(ImageFilter,home)</onunload>
 	<controls>
 		<control type="group">
-			<visible>!Skin.HasSetting(UseExtendedInfo) | [!String.IsEqual(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/)]</visible>
+			<visible>!Skin.HasSetting(UseExtendedInfo) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]</visible>
 			<control type="group">
-				<visible>!Skin.HasSetting(UseExtendedInfo) | [!String.IsEqual(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/)]</visible>
+				<visible>!Skin.HasSetting(UseExtendedInfo) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)]</visible>
 				<animation effect="slide" start="2242,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
 				<animation effect="slide" end="2242,0" time="320" tween="quadratic">WindowClose</animation>
 				<animation effect="slide" start="0,0" end="-729,0" time="320" tween="quadratic" condition="Skin.HasSetting(VideoInfoInverse)">Conditional</animation>
