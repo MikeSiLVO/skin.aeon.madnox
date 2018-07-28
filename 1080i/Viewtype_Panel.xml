@@ -322,7 +322,7 @@
 							<font>Font_Reg32</font>
 							<textcolor>white6</textcolor>
 							<scroll>true</scroll>
-							<visible> + !ListItem.IsCollection</visible>
+							<visible>!ListItem.IsCollection</visible>
 						</control>
 					</control>
 					<control type="grouplist">

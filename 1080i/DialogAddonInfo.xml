@@ -100,7 +100,7 @@
 					<width>240</width>
 					<height>38</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="white2">$INFO[ListItem.AddonStarRating)]</texture>
+					<texture colordiffuse="white2">$INFO[ListItem.AddonStarRating]</texture>
 				</control>
 				<control type="label">
 					<left>30</left>
@@ -169,7 +169,7 @@
 						<top>735</top>
 						<width>1380</width>
 						<height>60</height>
-						<label>$INFO[ListItem.AddonDisclaimer)]</label>
+						<label>$INFO[ListItem.AddonDisclaimer]</label>
 						<font>Font_Info</font>
 						<scroll>true</scroll>
 						<wrapmultiline>true</wrapmultiline>
@@ -292,7 +292,7 @@
 					<height>68</height>
 					<align>left</align>
 					<aligny>top</aligny>
-					<label>$INFO[ListItem.Addonbroken)]</label>
+					<label>$INFO[ListItem.Addonbroken]</label>
 					<font>Font_Reg30_2</font>
 					<textcolor>white3</textcolor>
 				</control>

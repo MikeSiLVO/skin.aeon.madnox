@@ -950,7 +950,7 @@
 	<variable name="LiveBG1">
 		<value condition="Control.HasFocus(9010) + !String.IsEmpty(Container(9010).ListItem.Property(background)) + !String.IsEmpty(Container(8011).ListItem(0).Art(tvshow.poster))">$INFO[Container(8011).ListItem(0).Art(tvshow.poster)]</value>
 		<value condition="Control.HasFocus(9010) + !String.IsEmpty(Container(9010).ListItem.Property(background)) + !String.IsEmpty(Container(8011).ListItem(0).Art(poster))">$INFO[Container(8011).ListItem(0).Art(poster)]</value>
-		<value condition="Control.HasFocus(9010) + !String.IsEmpty(Container(9010).ListItem.Property(background)) + ">$INFO[Container(8011).ListItem(0).Icon]</value>
+		<value condition="Control.HasFocus(9010) + !String.IsEmpty(Container(9010).ListItem.Property(background))">$INFO[Container(8011).ListItem(0).Icon]</value>
 		<value condition="!String.IsEmpty(Container(8020).ListItem(0).Art(tvshow.poster))">$INFO[Container(8020).ListItem(0).Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(Container(8020).ListItem(0).Art(poster))">$INFO[Container(8020).ListItem(0).Art(poster)]</value>
 		<value>$INFO[Container(8020).ListItem(0).Icon]</value>
