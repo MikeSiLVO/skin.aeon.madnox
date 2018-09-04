@@ -12,7 +12,7 @@
 	<include file="View_499_Wall_Large.xml" />
 	<include file="View_700_RightList.xml" />
 	<include file="View_706_MusicPanel.xml" />
-	<include file="View_707_MusicBanner.xml" />
+	<!-- <include file="View_707_MusicBanner.xml" /> -->
 	<include file="View_507_FanartList.xml" />
 	<include file="View_505_BannerInfo.xml" />
 	<include file="View_800_KodiFlix.xml" />
@@ -21,7 +21,7 @@
 	<include file="View_804_GamesFlixWide.xml" />
 	<include file="View_803_GamesFlixSquare.xml" />
 	<include file="View_810_MusicFlix.xml" />
-	<include file="View_811_MusicFan.xml" />
+	<!-- <include file="View_811_MusicFan.xml" /> -->
 	<include file="View_812_List_Xtra.xml" />
 	<include file="View_900_ViewsSets.xml" />
 	<include file="View_750_Shelf.xml" />

@@ -104,6 +104,14 @@
 				<textoffsety>20</textoffsety>
 				<font>Font_Reg32</font>
 			</control>
+			<control type="sliderex" id="13">
+				<height>70</height>
+				<textoffsetx>13</textoffsetx>
+				<aligny>center</aligny>
+				<texturenofocus colordiffuse="$VAR[FocusTextureColorVar]" border="5">button-nofocus.png</texturenofocus>
+				<font>Font_Reg30</font>
+				<textcolor>grey2</textcolor>
+			</control>
 			<control type="grouplist" id="9001">
 				<left>600</left>
 				<top>918</top>
