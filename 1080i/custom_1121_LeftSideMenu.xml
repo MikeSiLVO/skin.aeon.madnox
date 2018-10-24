@@ -271,7 +271,7 @@
 				<item>
 					<label>MusicFlix</label>
 					<onclick>Container.SetViewMode(810)</onclick>
-					<visible>Container.Content(albums)</visible>
+					<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					<visible>![Window.IsActive(videos) + !String.IsEmpty(Skin.String(DisableMusicFlixVL))]</visible>
 					<visible>String.IsEmpty(Window(home).Property(quicknavsetup))</visible>
 				</item>

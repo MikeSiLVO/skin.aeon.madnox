@@ -1238,7 +1238,7 @@
 		<control type="group" id="9006">
 			<animation effect="slide" start="0,1080" end="0,60" time="400" easing="out" tween="back">WindowOpen</animation>
 			<animation effect="slide" start="0,60" end="0,1080" time="400" easing="in" tween="back">WindowClose</animation>
-			<visible>VideoPlayer.Content(LiveTV) + !Window.IsActive(notification) + !Control.IsVisible(9001) + !Control.IsVisible(9002)</visible>
+			<visible>VideoPlayer.Content(LiveTV) + !Window.IsActive(notification)</visible>
 			<control type="image">
 				<left>260</left>
 				<width>1400</width>
@@ -1390,7 +1390,7 @@
 		</control>
 		<!-- Include FullScreenInfoBarLiveTV for LiveTV -->
 		<control type="group" id="9007">
-			<visible>VideoPlayer.Content(LiveTV) + Control.IsVisible(9006)</visible>
+			<visible>VideoPlayer.Content(LiveTV) + !Window.IsActive(notification)</visible>
 			<include condition="String.IsEmpty(Skin.String(LiveTV.InfobarType)) | String.IsEqual(Skin.String(LiveTV.InfobarType),2)">FullScreenInfoBarLiveTV</include>
 			<include condition="String.IsEqual(Skin.String(LiveTV.InfobarType),1)">FullScreenInfoBarLiveTV_Compact</include>
 		</control>
