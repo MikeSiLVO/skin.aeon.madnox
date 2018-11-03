@@ -304,11 +304,5 @@
 				<textcolor>FF363636</textcolor>
 			</control>
 		</control>
-		<control type="group" id="2">
-			<visible>[Player.ShowInfo|Player.Forwarding|Player.Seeking] + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(pvrchannelguide)]</visible>
-			<visible>VideoPlayer.Content(LiveTV) + !String.IsEmpty(VideoPlayer.ChannelName)</visible>
-			<include condition="String.IsEmpty(Skin.String(LiveTV.InfobarType)) | String.IsEqual(Skin.String(LiveTV.InfobarType),2)">FullScreenInfoBarLiveTV</include>
-			<include condition="String.IsEqual(Skin.String(LiveTV.InfobarType),1)">FullScreenInfoBarLiveTV_Compact</include>
-		</control>
 	</controls>
 </window>

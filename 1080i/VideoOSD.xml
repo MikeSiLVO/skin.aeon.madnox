@@ -44,12 +44,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation effect="slide" end="0,260" time="240" tween="quadratic" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(pvrchannelguide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(1118)">Conditional</animation>
-			<visible>!Window.IsActive(fullscreeninfo)</visible>
-			<include condition="String.IsEmpty(Skin.String(LiveTV.InfobarType)) | String.IsEqual(Skin.String(LiveTV.InfobarType),2)">FullScreenInfoBarLiveTV</include>
-			<include condition="String.IsEqual(Skin.String(LiveTV.InfobarType),1)">FullScreenInfoBarLiveTV_Compact</include>
-		</control>
-		<control type="group">
 			<visible>!Window.IsActive(fullscreeninfo)</visible>
 			<animation type="Visible">
 				<effect type="fade" time="160" end="100"/>
