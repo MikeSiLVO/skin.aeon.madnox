@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="MusicFlixView">
-		<visible>Control.IsVisible(810)</visible>
 		<control type="group">
+			<visible>Control.IsVisible(810)</visible>
 			<include>ViewAnimation</include>
 			<include>CommonSlideAnimations</include>
 			<control type="image">
