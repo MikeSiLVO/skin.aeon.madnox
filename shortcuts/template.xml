@@ -9546,8 +9546,9 @@
 		<condition tag="property" attribute="name|background">RecentlyAddedAlbums.Live</condition>
 		<condition tag="property" attribute="name|background">MyPics.Live</condition>
 		<match>any</match>
-		<property name="content" tag="property" attribute="name|background" value="RecentlyAddedAlbums.Live">plugin://script.skin.helper.service/?action=recentalbums</property>
-		<property name="content" tag="property" attribute="name|background" value="MyPics.Live">RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</property><property name="content" tag="property" attribute="name|backgroundPlaylist" />
+		<property name="content" tag="property" attribute="name|background" value="RecentlyAddedAlbums.Live">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</property>
+		<property name="content" tag="property" attribute="name|background" value="MyPics.Live">RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</property>
+		<property name="content" tag="property" attribute="name|backgroundPlaylist" />
 		<property name="content" tag="property" attribute="name|backgroundPlaylist" />
 		<property name="sortby" tag="property" attribute="name|backgroundSortby" />
 		<property name="sortby">random</property>

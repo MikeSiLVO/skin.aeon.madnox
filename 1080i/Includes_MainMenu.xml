@@ -36,7 +36,6 @@
 		<scrolltime tween="quadratic">300</scrolltime>
 		<include condition="Skin.HasSetting(mainmenuicons)">FocusPosition4</include>
 		<include condition="!Skin.HasSetting(mainmenuicons)">FocusPosition2</include>
-		<include>DefaultControl</include>
 		<visible>![Player.HasMedia + System.IdleTime(8)]</visible>
 		<orientation>horizontal</orientation>
 		<animation effect="slide" end="-302,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
@@ -221,129 +220,6 @@
 	<include name="FocusPosition2">
 		<focusposition>2</focusposition>
 	</include>
-	<include name="DefaultControl">
-		<include condition="String.Contains(Skin.String(MainMenuFocus),30)">DefaultControl30</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),29)">DefaultControl29</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),28)">DefaultControl28</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),27)">DefaultControl27</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),26)">DefaultControl26</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),25)">DefaultControl25</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),24)">DefaultControl24</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),23)">DefaultControl23</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),22)">DefaultControl22</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),21)">DefaultControl21</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),20)">DefaultControl20</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),19)">DefaultControl19</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),18)">DefaultControl18</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),17)">DefaultControl17</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),16)">DefaultControl16</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),15)">DefaultControl15</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),14)">DefaultControl14</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),13)">DefaultControl13</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),12)">DefaultControl12</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),11)">DefaultControl11</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),10)">DefaultControl10</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),9)">DefaultControl9</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),8)">DefaultControl8</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),7)">DefaultControl7</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),6)">DefaultControl6</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),5)">DefaultControl5</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),4)">DefaultControl4</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),3)">DefaultControl3</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),2)">DefaultControl2</include>
-		<include condition="String.Contains(Skin.String(MainMenuFocus),1)">DefaultControl1</include>
-	</include>
-	<include name="DefaultControl1">
-		<defaultcontrol>1</defaultcontrol>
-	</include>
-	<include name="DefaultControl2">
-		<defaultcontrol>2</defaultcontrol>
-	</include>
-	<include name="DefaultControl3">
-		<defaultcontrol>3</defaultcontrol>
-	</include>
-	<include name="DefaultControl4">
-		<defaultcontrol>4</defaultcontrol>
-	</include>
-	<include name="DefaultControl5">
-		<defaultcontrol>5</defaultcontrol>
-	</include>
-	<include name="DefaultControl6">
-		<defaultcontrol>6</defaultcontrol>
-	</include>
-	<include name="DefaultControl7">
-		<defaultcontrol>7</defaultcontrol>
-	</include>
-	<include name="DefaultControl8">
-		<defaultcontrol>8</defaultcontrol>
-	</include>
-	<include name="DefaultControl9">
-		<defaultcontrol>9</defaultcontrol>
-	</include>
-	<include name="DefaultControl10">
-		<defaultcontrol>10</defaultcontrol>
-	</include>
-	<include name="DefaultControl11">
-		<defaultcontrol>11</defaultcontrol>
-	</include>
-	<include name="DefaultControl12">
-		<defaultcontrol>12</defaultcontrol>
-	</include>
-	<include name="DefaultControl13">
-		<defaultcontrol>13</defaultcontrol>
-	</include>
-	<include name="DefaultControl14">
-		<defaultcontrol>14</defaultcontrol>
-	</include>
-	<include name="DefaultControl15">
-		<defaultcontrol>15</defaultcontrol>
-	</include>
-	<include name="DefaultControl16">
-		<defaultcontrol>16</defaultcontrol>
-	</include>
-	<include name="DefaultControl17">
-		<defaultcontrol>17</defaultcontrol>
-	</include>
-	<include name="DefaultControl18">
-		<defaultcontrol>18</defaultcontrol>
-	</include>
-	<include name="DefaultControl19">
-		<defaultcontrol>19</defaultcontrol>
-	</include>
-	<include name="DefaultControl20">
-		<defaultcontrol>20</defaultcontrol>
-	</include>
-	<include name="DefaultControl21">
-		<defaultcontrol>21</defaultcontrol>
-	</include>
-	<include name="DefaultControl22">
-		<defaultcontrol>22</defaultcontrol>
-	</include>
-	<include name="DefaultControl23">
-		<defaultcontrol>23</defaultcontrol>
-	</include>
-	<include name="DefaultControl24">
-		<defaultcontrol>24</defaultcontrol>
-	</include>
-	<include name="DefaultControl25">
-		<defaultcontrol>25</defaultcontrol>
-	</include>
-	<include name="DefaultControl26">
-		<defaultcontrol>26</defaultcontrol>
-	</include>
-	<include name="DefaultControl27">
-		<defaultcontrol>27</defaultcontrol>
-	</include>
-	<include name="DefaultControl28">
-		<defaultcontrol>28</defaultcontrol>
-	</include>
-	<include name="DefaultControl29">
-		<defaultcontrol>29</defaultcontrol>
-	</include>
-	<include name="DefaultControl30">
-		<defaultcontrol>30</defaultcontrol>
-	</include>
-
 	<include name="MainMenuBottomBar">
 		<control type="group">
 			<visible>!Window.IsActive(1159) + Skin.HasSetting(bottomMenu)</visible>

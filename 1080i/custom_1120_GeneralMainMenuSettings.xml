@@ -58,19 +58,6 @@
 				<onclick>Skin.ToggleSetting(animatedbghome)</onclick>
 				<selected>Skin.HasSetting(animatedbghome)</selected>
 			</control>
-			<!-- <control type="radiobutton" id="312">
-                <label>31803</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick>Skin.ToggleSetting(randomizehome)</onclick>
-                <selected>Skin.HasSetting(randomizehome)</selected>
-            </control>
-            <control type="radiobutton" id="313">
-                <label>31882</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick condition="!Skin.HasSetting(DisableWidgetToggle)">ClearProperty(DisableWidgets,home)</onclick>
-                <onclick>Skin.ToggleSetting(DisableWidgetToggle)</onclick>
-                <selected>Skin.HasSetting(DisableWidgetToggle)</selected>
-            </control> -->
 			<control type="radiobutton" id="317">
 				<label>31955</label>
 				<include>Objects_CommonSettingsButton</include>
@@ -84,18 +71,6 @@
 				<selected>Skin.HasSetting(bottomMenu)</selected>
 				<visible>Skin.HasSetting(bottomindicator)</visible>
 			</control>
-			<control type="button" id="314">
-				<label>31613</label>
-				<label2>[COLOR $VAR[FontColorVar]]$INFO[Skin.String(CustomFocusOffset)][/COLOR]</label2>
-				<include>Objects_CommonSettingsButton</include>
-				<onclick>SetProperty(StartupFocus,1,home)</onclick>
-				<onclick>ActivateWindow(1151)</onclick>
-			</control>
-			<!-- <control type="button" id="319">
-                <label>$LOCALIZE[31479]: $LOCALIZE[1045]</label>
-                <include>Objects_CommonSettingsButton</include>
-                <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
-            </control> -->
 			<control type="label" id="320">
 				<label> $LOCALIZE[31479]</label>
 				<include>Objects_CommonSettingsButton</include>
