@@ -66,11 +66,6 @@
 			<include>Objects_MediaMenuButtonIcons</include>
 			<visible>Window.IsActive(Addonbrowser)</visible>
 		</control>
-		<!--control type="radiobutton" id="6">
-			<label>25000</label>
-			<include>Objects_MediaMenuButtonIcons</include>
-			<visible>Window.IsActive(Addonbrowser)</visible>
-		</control-->
 		<control type="radiobutton" id="7">
 			<label>25001</label>
 			<include>Objects_MediaMenuButtonIcons</include>
@@ -633,13 +628,6 @@
 		<control type="button" id="9000">
 			<include>HiddenObject</include>
 			<visible>Skin.HasSetting(kioskmode)</visible>
-			<onfocus>SetFocus(50)</onfocus>
-		</control>
-		<control type="button" id="1801">
-			<include>HiddenObject</include>
-			<visible>Skin.HasSetting(kioskmode)</visible>
-			<onfocus condition="!Skin.HasSetting(fstrailer)">PlayMedia($ESCINFO[ListItem.Trailer],1)</onfocus>
-			<onfocus condition="Skin.HasSetting(fstrailer)">PlayMedia($ESCINFO[ListItem.Trailer])</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
 		</control>
 		<control type="button">

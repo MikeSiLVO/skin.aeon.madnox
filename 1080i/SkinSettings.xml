@@ -115,13 +115,6 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="298">
-						<description>Play trailers in fullscreen</description>
-						<label>31279</label>
-						<include>Default_SettingRadioButton</include>
-						<onclick>Skin.ToggleSetting(fstrailer)</onclick>
-						<selected>Skin.HasSetting(fstrailer)</selected>
-					</control>
 					<control type="radiobutton" id="290">
 						<label>31265</label>
 						<include>Default_SettingRadioButton</include>

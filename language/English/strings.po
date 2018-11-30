@@ -19,6 +19,11 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
+#: /1080i/Settings.xml
+msgctxt "#31000"
+msgid "[B]CONFIGURE GAME SETTINGS[/B][CR]Change gameplay options· Keyboard settings"
+msgstr ""
+
 msgctxt "#31002"
 msgid "Auto"
 msgstr ""

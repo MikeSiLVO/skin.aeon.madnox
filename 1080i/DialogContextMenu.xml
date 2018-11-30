@@ -119,7 +119,7 @@
 				<textcolor>context</textcolor>
 				<focusedcolor>white2</focusedcolor>
 				<visible>Container.Content(movies) | [!String.IsEmpty(Window.Property(SongToMusicVideo.Path)) + Window.IsActive(music)]</visible>
-				<onclick condition="Container.Content(movies) + !String.IsEmpty(ListItem.Trailer)">Dialog.Close(contextmenu)</onclick>
+				<onclick condition="Container.Content(movies) + !String.IsEmpty(ListItem.Trailer)">Dialog.Close(all,true)</onclick>
 				<onclick condition="Container.Content(movies) + !String.IsEmpty(ListItem.Trailer)">SetFocus(7566)</onclick>
 				<onclick condition="Container.Content(movies) + String.IsEmpty(ListItem.Trailer)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])</onclick>
 				<onclick condition="!String.IsEmpty(Window.Property(SongToMusicVideo.Path)) + Window.IsActive(music)">PlayMedia($ESCINFO[Window.Property(SongToMusicVideo.Path)])</onclick>

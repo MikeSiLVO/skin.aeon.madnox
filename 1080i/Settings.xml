@@ -134,71 +134,77 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<item id="1">
+					<item>
 						<label>$LOCALIZE[14207]</label>
 						<property name="description">$LOCALIZE[31400]</property>
 						<onclick>ActivateWindow(InterfaceSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/interfacesetting.jpg</icon>
 					</item>
-					<item id="4">
+					<item>
 						<label>$LOCALIZE[20077]</label>
 						<property name="description">$LOCALIZE[31403]</property>
 						<onclick>ActivateWindow(SkinSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/skinsettings.jpg</icon>
 					</item>
-					<item id="2">
+					<item>
 						<label>$LOCALIZE[14201]</label>
 						<property name="description">$LOCALIZE[31401]</property>
 						<onclick>ActivateWindow(PlayerSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/videos.jpg</icon>
 					</item>
-					<item id="3">
+					<item>
 						<label>$LOCALIZE[14203]</label>
 						<property name="description">$LOCALIZE[31402]</property>
 						<onclick>ActivateWindow(MediaSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/library.jpg</icon>
 					</item>
-					<item id="6">
+					<item>
 						<label>24001</label>
 						<property name="description">$LOCALIZE[31408]</property>
 						<onclick>ActivateWindow(AddonBrowser)</onclick>
 						<icon>special://skin/backgrounds/system_icons/programs.jpg</icon>
 					</item>
-					<item id="7">
+					<item>
 						<label>$LOCALIZE[14208]</label>
 						<property name="description">$LOCALIZE[31405]</property>
 						<onclick>ActivateWindow(ServiceSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/services.jpg</icon>
 					</item>
-					<item id="8">
+					<item>
 						<label>$LOCALIZE[14209]</label>
 						<property name="description">$LOCALIZE[31406]</property>
 						<onclick>ActivateWindow(SystemSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/system.jpg</icon>
 					</item>
-					<item id="21">
+					<item>
 						<label>$LOCALIZE[14205]</label>
 						<property name="description">$LOCALIZE[31016]</property>
 						<onclick>ActivateWindow(PVRSettings)</onclick>
 						<icon>special://skin/backgrounds/system_icons/livetv.jpg</icon>
 					</item>
-					<item id="9">
+					<item>
 						<label>$LOCALIZE[14210]</label>
 						<property name="description">$LOCALIZE[31410]</property>
 						<onclick>ActivateWindow(Profiles)</onclick>
 						<icon>special://skin/backgrounds/system_icons/profile.jpg</icon>
 					</item>
-					<item id="9">
+					<item>
 						<label>$LOCALIZE[20094]</label>
 						<property name="description">$LOCALIZE[31412]</property>
 						<onclick>ActivateWindow(filemanager)</onclick>
 						<icon>special://skin/backgrounds/system_icons/file_manager.jpg</icon>
 					</item>
-					<item id="10">
+					<item>
 						<label>$LOCALIZE[138]</label>
 						<property name="description">$LOCALIZE[31409]</property>
 						<onclick>ActivateWindow(systeminfo)</onclick>
 						<icon>special://skin/backgrounds/system_icons/hardware.jpg</icon>
+					</item>
+					<item>
+						<label>$LOCALIZE[15016]</label>
+						<property name="description">$LOCALIZE[31000]</property>
+						<onclick>ActivateWindow(gamesettings)</onclick>
+						<icon>special://skin/backgrounds/system_icons/games.jpg</icon>
 					</item>
 				</content>
 			</control>

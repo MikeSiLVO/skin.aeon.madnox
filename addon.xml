@@ -8,7 +8,6 @@
     <import addon="script.toolbox" version="1.1.0"/>
     <import addon="script.image.resource.select" version="0.0.5"/>
 	<import addon="resource.images.studios.white" version="0.0.1"/>
-	<import addon="resource.images.studios.coloured" version="0.0.1"/>
 </requires>
 <extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
@@ -91,8 +90,8 @@
     <disclaimer lang="th">Aeon Madnox เป็นสกินที่ใช้พื้นฐานการออกแบบจาก Aeon โดย djh_. ในทุกส่วนของพื้นผิวที่นำมาใช้ ล้วนมาจากAeonและmodของมัน. เครดิตทั้งหมดขอให้แก่ผู้สร้างสกินและmodนี้.</disclaimer>
     <disclaimer lang="zh">Aeon Madnox是在djh_的Aeon皮肤设计思路上发展而来。许多纹理图片来源于Aeon及其修改版。感谢这些皮肤和修改版的开发者。</disclaimer>
     <platform>all</platform>
-    <source>https://github.com/MadMikeDoc/skin.aeon.madnox</source>
+    <source>https://github.com/mikesilvo164/skin.aeon.madnox</source>
     <forum>http://forum.kodi.tv/showthread.php?tid=230821</forum>
-    <website>https://github.com/MadMikeDoc/skin.aeon.madnox</website>
+    <website>https://github.com/mikesilvo164/skin.aeon.madnox</website>
 </extension>
 </addon>
