@@ -1794,20 +1794,20 @@
 			<onclick>noop</onclick>
 			<icon>homewidgets/systeminfo/square/connected.png</icon>
 			<property name="Fanart">homewidgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$LOCALIZE[443]: $INFO[System.InternetState]</property>
+			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
 			<property name="isSystemInfo">true</property>
-			<visible>System.InternetState</visible>
+			<visible>!String.IsEmpty(Network.IPAddress)</visible>
 			<onclick>ActivateWindow(systeminfo)</onclick>
 		</item>
 		<item>
 			<label>705</label>
-			<label2>Local Network: $INFO[Network.LinkState]</label2>
+			<label2>$INFO[Network.LinkState]</label2>
 			<onclick>noop</onclick>
 			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
 			<property name="Fanart">homewidgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">Internet: $INFO[System.InternetState]</property>
+			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
 			<property name="isSystemInfo">true</property>
-			<visible>!System.InternetState</visible>
+			<visible>String.IsEmpty(Network.IPAddress)</visible>
 			<onclick>ActivateWindow(systeminfo)</onclick>
 		</item>
 		<item>
@@ -1961,20 +1961,20 @@
 			<onclick>noop</onclick>
 			<icon>homewidgets/systeminfo/square/connected.png</icon>
 			<property name="Fanart">homewidgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$LOCALIZE[443]: $INFO[System.InternetState]</property>
+			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
 			<property name="isSystemInfo">true</property>
-			<visible>System.InternetState</visible>
+			<visible>!String.IsEmpty(Network.IPAddress)</visible>
 			<onclick>ActivateWindow(systeminfo)</onclick>
 		</item>
 		<item>
 			<label>705</label>
-			<label2>Local Network: $INFO[Network.LinkState]</label2>
+			<label2>$INFO[Network.LinkState]</label2>
 			<onclick>noop</onclick>
 			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
 			<property name="Fanart">homewidgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">Internet: $INFO[System.InternetState]</property>
+			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
 			<property name="isSystemInfo">true</property>
-			<visible>!System.InternetState</visible>
+			<visible>String.IsEmpty(Network.IPAddress)</visible>
 			<onclick>ActivateWindow(systeminfo)</onclick>
 		</item>
 	</include>

@@ -454,7 +454,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime2</fadetime>
-					<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]language/$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
+					<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
 				</control>
 				<control type="image">
 					<left>1860</left>
@@ -463,7 +463,7 @@
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime2</fadetime>
-					<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]language/$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
+					<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 				</control>
 			</control>

@@ -8,57 +8,13 @@
 	<controls>
 		<control type="group">
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
-			<control type="group" id="10125">
-				<visible>Skin.HasSetting(Plotinfoscreen)</visible>
+			<control type="group">
 				<top>130</top>
-				<visible>Player.Paused + VideoPlayer.Content(movies) + Skin.HasSetting(Show_Info_Paused)</visible>
+				<visible>Player.Paused</visible>
+				<!--  Weather Info  -->
 				<control type="group">
-					<visible>!Skin.HasSetting(DarkOverlayinfoscreen)</visible>
-					<top>309</top>
-					<control type="image" id="1">
-						<width>1919</width>
-						<height>460</height>
-						<texture border="8">panels/panel.png</texture>
-					</control>
-					<control type="image" id="1">
-						<left>4</left>
-						<top>4</top>
-						<width>1909</width>
-						<height>40</height>
-						<texture border="5">panels/panel-content-border2.png</texture>
-						<animation effect="fade" end="5" condition="true">Conditional</animation>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-					<visible>Player.Paused + VideoPlayer.Content(movies) + Skin.HasSetting(Show_Info_Paused)</visible>
-					<control type="label">
-						<visible>!Skin.HasSetting(DisableVideoThumb) + Skin.HasSetting(Discinfoscreen)</visible>
-						<left>440</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31551]</label>
-					</control>
-					<control type="textbox">
-						<visible>!Skin.HasSetting(DisableVideoThumb) + Skin.HasSetting(Discinfoscreen)</visible>
-						<description>Plot</description>
-						<left>440</left>
-						<top>370</top>
-						<width>840</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>justify</align>
-						<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
-					<!--  Weather Info  -->
-					<control type="image" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="image">
 						<description>media info background image</description>
 						<left>16</left>
 						<top>16</top>
@@ -68,7 +24,6 @@
 					</control>
 					<!--  Today's Weather   -->
 					<control type="image">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
 						<left>22</left>
 						<top>8</top>
 						<width>160</width>
@@ -76,8 +31,7 @@
 						<aspectratio align="right" aligny="top">keep</aspectratio>
 						<texture>weather/small/colored/$INFO[Weather.FanartCode].png</texture>
 					</control>
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>current temp Value</description>
 						<left>187</left>
 						<top>23</top>
@@ -90,8 +44,7 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>predicted high label</description>
 						<left>187</left>
 						<top>31</top>
@@ -106,8 +59,7 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<!--  Next 2 Days   -->
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>low label</description>
 						<left>35</left>
 						<top>78</top>
@@ -121,8 +73,7 @@
 						<textcolor>gray</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>low label</description>
 						<left>187</left>
 						<top>78</top>
@@ -136,8 +87,7 @@
 						<textcolor>gray</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>tomorrow high label</description>
 						<left>35</left>
 						<top>104</top>
@@ -151,8 +101,7 @@
 						<textcolor>gray</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<control type="label" id="19547">
-						<visible>Skin.HasSetting(WeatherInfoOnPause)</visible>
+					<control type="label">
 						<description>tomorrow high label</description>
 						<left>187</left>
 						<top>104</top>
@@ -166,95 +115,17 @@
 						<textcolor>gray</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
-					<!-- Weather Info End -->
-
-					<control type="label">
-						<visible>!Skin.HasSetting(DisableVideoThumb) + !Skin.HasSetting(Discinfoscreen)</visible>
-						<left>380</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>PLOT</label>
-					</control>
-
-					<control type="textbox">
-						<visible>!Skin.HasSetting(DisableVideoThumb) + !Skin.HasSetting(Discinfoscreen)</visible>
-						<description>Plot</description>
-						<left>380</left>
-						<top>370</top>
-						<width>900</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>justify</align>
-						<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
-
-					<control type="label">
-						<visible>Skin.HasSetting(DisableVideoThumb)</visible>
-						<left>130</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>PLOT</label>
-					</control>
-					<control type="textbox">
-						<visible>Skin.HasSetting(DisableVideoThumb)</visible>
-						<description>Plot</description>
-						<left>130</left>
-						<top>370</top>
-						<width>950</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>justify</align>
-						<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
-					<control type="label">
-						<left>1350</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31552]</label>
-					</control>
-					<control type="textbox">
-						<description>Cast</description>
-						<left>1350</left>
-						<top>370</top>
-						<width>525</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>left</align>
-						<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
 				</control>
-			</control>
-			<control type="group" id="10125">
-				<top>130</top>
-				<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-				<visible>Player.Paused + VideoPlayer.Content(episodes) + Skin.HasSetting(Show_Info_Paused)</visible>
+				<!-- Dark Overlay -->
 				<control type="group">
-					<visible>!Skin.HasSetting(DarkOverlayinfoscreen)</visible>
+					<visible>Skin.HasSetting(Plotinfoscreen) + Skin.HasSetting(Show_Info_Paused) + !Skin.HasSetting(DarkOverlayinfoscreen)</visible>
 					<top>309</top>
-					<control type="image" id="1">
+					<control type="image">
 						<width>1919</width>
 						<height>460</height>
 						<texture border="8">panels/panel.png</texture>
 					</control>
-					<control type="image" id="1">
+					<control type="image">
 						<left>4</left>
 						<top>4</top>
 						<width>1909</width>
@@ -263,132 +134,213 @@
 						<animation effect="fade" end="5" condition="true">Conditional</animation>
 					</control>
 				</control>
+				<!-- Paused Info -->
 				<control type="group">
-					<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-					<visible>Player.Paused + VideoPlayer.Content(episodes) + Skin.HasSetting(Show_Info_Paused)</visible>
-					<control type="label">
-						<left>380</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31551]</label>
+					<visible>Skin.HasSetting(Plotinfoscreen) + Skin.HasSetting(Show_Info_Paused)</visible>
+					<!-- Movies -->
+					<control type="group">
+						<visible>VideoPlayer.Content(movies)</visible>
+						<control type="group">
+							<visible>!Skin.HasSetting(DisableVideoThumb)</visible>
+							<control type="group">
+								<visible>Skin.HasSetting(Discinfoscreen)</visible>
+								<control type="label">
+									<left>440</left>
+									<top>320</top>
+									<width>300</width>
+									<height>25</height>
+									<align>left</align>
+									<font>Font_Bold28</font>
+									<textcolor>FF017196</textcolor>
+									<label>$LOCALIZE[31551]</label>
+								</control>
+								<control type="textbox">
+									<description>Plot</description>
+									<left>440</left>
+									<top>370</top>
+									<width>840</width>
+									<height>355</height>
+									<font>Font_Reg28_2</font>
+									<textcolor>FFE5E5E5</textcolor>
+									<align>justify</align>
+									<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
+									<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+								</control>
+							</control>
+							<control type="group">
+								<visible>!Skin.HasSetting(Discinfoscreen)</visible>
+								<control type="label">
+									<left>380</left>
+									<top>320</top>
+									<width>300</width>
+									<height>25</height>
+									<align>left</align>
+									<font>Font_Bold28</font>
+									<textcolor>FF017196</textcolor>
+									<label>PLOT</label>
+								</control>
+								<control type="textbox">
+									<description>Plot</description>
+									<left>380</left>
+									<top>370</top>
+									<width>900</width>
+									<height>355</height>
+									<font>Font_Reg28_2</font>
+									<textcolor>FFE5E5E5</textcolor>
+									<align>justify</align>
+									<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
+									<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+								</control>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Skin.HasSetting(DisableVideoThumb)</visible>
+							<control type="label">
+								<left>130</left>
+								<top>320</top>
+								<width>300</width>
+								<height>25</height>
+								<align>left</align>
+								<font>Font_Bold28</font>
+								<textcolor>FF017196</textcolor>
+								<label>PLOT</label>
+							</control>
+							<control type="textbox">
+								<description>Plot</description>
+								<left>130</left>
+								<top>370</top>
+								<width>950</width>
+								<height>355</height>
+								<font>Font_Reg28_2</font>
+								<textcolor>FFE5E5E5</textcolor>
+								<align>justify</align>
+								<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
+								<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+							</control>
+						</control>
+						<control type="label">
+							<left>1350</left>
+							<top>320</top>
+							<width>300</width>
+							<height>25</height>
+							<align>left</align>
+							<font>Font_Bold28</font>
+							<textcolor>FF017196</textcolor>
+							<label>$LOCALIZE[31552]</label>
+						</control>
+						<control type="textbox">
+							<description>Cast</description>
+							<left>1350</left>
+							<top>370</top>
+							<width>525</width>
+							<height>355</height>
+							<font>Font_Reg28_2</font>
+							<textcolor>FFE5E5E5</textcolor>
+							<align>left</align>
+							<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
+							<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+						</control>
 					</control>
-					<control type="textbox">
-						<description>Plot</description>
-						<left>380</left>
-						<top>370</top>
-						<width>900</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>justify</align>
-						<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+					<!-- Episodes -->
+					<control type="group">
+						<visible>VideoPlayer.Content(episodes)</visible>
+						<control type="label">
+							<left>380</left>
+							<top>320</top>
+							<width>300</width>
+							<height>25</height>
+							<align>left</align>
+							<font>Font_Bold28</font>
+							<textcolor>FF017196</textcolor>
+							<label>$LOCALIZE[31551]</label>
+						</control>
+						<control type="textbox">
+							<description>Plot</description>
+							<left>380</left>
+							<top>370</top>
+							<width>900</width>
+							<height>355</height>
+							<font>Font_Reg28_2</font>
+							<textcolor>FFE5E5E5</textcolor>
+							<align>justify</align>
+							<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
+							<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+						</control>
+						<control type="label">
+							<left>1350</left>
+							<top>320</top>
+							<width>300</width>
+							<height>25</height>
+							<align>left</align>
+							<font>Font_Bold28</font>
+							<textcolor>FF017196</textcolor>
+							<label>$LOCALIZE[31552]</label>
+						</control>
+						<control type="textbox">
+							<description>Cast</description>
+							<left>1350</left>
+							<top>370</top>
+							<width>525</width>
+							<height>355</height>
+							<font>Font_Reg28_2</font>
+							<textcolor>FFE5E5E5</textcolor>
+							<align>left</align>
+							<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
+							<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+						</control>
 					</control>
-					<control type="label">
-						<left>1350</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31552]</label>
-					</control>
-					<control type="textbox">
-						<description>Cast</description>
-						<left>1350</left>
-						<top>370</top>
-						<width>525</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>left</align>
-						<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
-				</control>
-			</control>
-			<control type="group" id="10125">
-				<top>130</top>
-				<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-				<visible>Player.Paused + VideoPlayer.Content(files) + Skin.HasSetting(Show_Info_Paused)</visible>
-				<control type="group">
-					<visible>!Skin.HasSetting(DarkOverlayinfoscreen)</visible>
-					<top>309</top>
-					<control type="image" id="1">
-						<width>1919</width>
-						<height>460</height>
-						<texture border="8">panels/panel.png</texture>
-					</control>
-					<control type="image" id="1">
-						<left>4</left>
-						<top>4</top>
-						<width>1909</width>
-						<height>40</height>
-						<texture border="5">panels/panel-content-border2.png</texture>
-						<animation effect="fade" end="5" condition="true">Conditional</animation>
-					</control>
-				</control>
-				<control type="group">
-					<visible>Skin.HasSetting(Plotinfoscreen)</visible>
-					<visible>Player.Paused + VideoPlayer.Content(files) + Skin.HasSetting(Show_Info_Paused)</visible>
-					<control type="label">
-						<left>380</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31551]</label>
-					</control>
-					<control type="textbox">
-						<description>Plot</description>
-						<left>380</left>
-						<top>370</top>
-						<width>900</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>justify</align>
-						<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
-					</control>
-					<control type="label">
-						<left>1350</left>
-						<top>320</top>
-						<width>300</width>
-						<height>25</height>
-						<align>left</align>
-						<font>Font_Bold28</font>
-						<textcolor>FF017196</textcolor>
-						<label>$LOCALIZE[31552]</label>
-					</control>
-					<control type="textbox">
-						<description>Cast</description>
-						<left>1350</left>
-						<top>370</top>
-						<width>525</width>
-						<height>355</height>
-						<font>Font_Reg28_2</font>
-						<textcolor>FFE5E5E5</textcolor>
-						<align>left</align>
-						<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
-						<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+					<!-- Files -->
+					<control type="group">
+						<visible>VideoPlayer.Content(files)</visible>
+						<control type="label">
+							<left>380</left>
+							<top>320</top>
+							<width>300</width>
+							<height>25</height>
+							<align>left</align>
+							<font>Font_Bold28</font>
+							<textcolor>FF017196</textcolor>
+							<label>$LOCALIZE[31551]</label>
+						</control>
+						<control type="textbox">
+							<description>Plot</description>
+							<left>380</left>
+							<top>370</top>
+							<width>900</width>
+							<height>355</height>
+							<font>Font_Reg28_2</font>
+							<textcolor>FFE5E5E5</textcolor>
+							<align>justify</align>
+							<label fallback="31203">$INFO[VideoPlayer.Plot]</label>
+							<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+						</control>
+						<control type="label">
+							<left>1350</left>
+							<top>320</top>
+							<width>300</width>
+							<height>25</height>
+							<align>left</align>
+							<font>Font_Bold28</font>
+							<textcolor>FF017196</textcolor>
+							<label>$LOCALIZE[31552]</label>
+						</control>
+						<control type="textbox">
+							<description>Cast</description>
+							<left>1350</left>
+							<top>370</top>
+							<width>525</width>
+							<height>355</height>
+							<font>Font_Reg28_2</font>
+							<textcolor>FFE5E5E5</textcolor>
+							<align>left</align>
+							<label fallback="31203">$INFO[VideoPlayer.CastandRole]</label>
+							<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
+						</control>
 					</control>
 				</control>
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(Show_Info_Paused)</visible>
-				<control type="group">
-					<visible>Player.Paused</visible>
-					<visible>VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)</visible>
-					<include>Animation_CommonFade</include>
-				</control>
 				<control type="group">
 					<animation type="WindowOpen">
 						<effect type="fade" time="200" end="100"/>
@@ -559,7 +511,7 @@
 						<height>87</height>
 						<texture>osd/osd_bottom_bar.png</texture>
 					</control>
-					<control type="label" id="1">
+					<control type="label">
 						<left>-150</left>
 						<width>748</width>
 						<height>42</height>
@@ -690,7 +642,7 @@
 							<height>87</height>
 							<texture>osd/osd_bottom_bar.png</texture>
 						</control>
-						<control type="label" id="1">
+						<control type="label">
 							<left>-150</left>
 							<width>748</width>
 							<height>42</height>
@@ -820,14 +772,14 @@
 						<left>15</left>
 						<top>30</top>
 						<include>OSDFlagVars</include>
-						<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsPathVar]source/$VAR[VideoSourceFlagVar,,.png]</texture>
+						<texture fallback="flags/source/defaultsource.png">$VAR[ColorFlagsPathVar]source/$VAR[VideoSourceFlagVar]</texture>
 					</control>
 					<control type="group">
 						<left>165</left>
 						<top>30</top>
 						<visible>!VideoPlayer.Content(files)</visible>
 						<control type="image" id="76">
-							<texture>String.Contains$INFO[VideoPlayer.Studio,,.png]</texture>
+							<texture>$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
 							<include>OSDFlagVars</include>
 						</control>
 						<control type="image">
@@ -914,7 +866,7 @@
 							<height>30</height>
 							<aspectratio>keep</aspectratio>
 							<fadetime>IconCrossfadeTime2</fadetime>
-							<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
+							<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]$INFO[VideoPlayer.AudioLanguage,,.png]</texture>
 						</control>
 						<control type="image">
 							<left>1860</left>
@@ -923,7 +875,7 @@
 							<height>30</height>
 							<aspectratio>keep</aspectratio>
 							<fadetime>IconCrossfadeTime2</fadetime>
-							<texture colordiffuse="white2" fallback="">$VAR[ColorFlagsPathVar]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
+							<texture colordiffuse="white2">$VAR[LanguageFlagsStyleVar]$INFO[VideoPlayer.SubtitlesLanguage,,.png]</texture>
 							<animation effect="fade" time="200">VisibleChange</animation>
 						</control>
 					</control>
