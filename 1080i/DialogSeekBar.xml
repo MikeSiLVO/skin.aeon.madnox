@@ -778,14 +778,14 @@
 						<left>165</left>
 						<top>30</top>
 						<visible>!VideoPlayer.Content(files)</visible>
-						<control type="image" id="76">
-							<texture>$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
+						<control type="image" id="7676">
 							<include>OSDFlagVars</include>
+							<texture>$VAR[ColorFlagsStudio]$INFO[VideoPlayer.Studio,,.png]</texture>
 						</control>
 						<control type="image">
-							<texture>default-studio.png</texture>
 							<include>OSDFlagVars</include>
-							<visible>String.IsEmpty(VideoPlayer.Studio)</visible>
+							<texture>$VAR[ColorFlagsPathVar]Default-Studio.png</texture>
+							<visible>String.IsEmpty(Control.GetLabel(7676))</visible>
 						</control>
 					</control>
 					<control type="image" id="2117">
