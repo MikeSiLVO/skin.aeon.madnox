@@ -2496,6 +2496,24 @@
 		<value condition="String.IsEqual(Skin.String(LiveBGCase),tvshows)">$LOCALIZE[31248]</value>
 		<value>Color Cases</value>
 	</variable>
+	<variable name="LiveMovieSetBGCasesLabelVar">
+		<value condition="String.IsEmpty(Skin.String(LiveMovieSetBGCases))">$LOCALIZE[16018]</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),color)">Color Cases</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),clear)">$LOCALIZE[31282]</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),BDDVD)">$LOCALIZE[31248]</value>
+	</variable>
+	<variable name="LiveMovieSetBGCasesOnclickVar">
+		<value condition="String.IsEmpty(Skin.String(LiveMovieSetBGCases))">Skin.SetString(LiveMovieSetBGCases,color)</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),color)">Skin.SetString(LiveMovieSetBGCases,clear)</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),clear)">Skin.SetString(LiveMovieSetBGCases,BDDVD)</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),BDDVD)">Skin.Reset(LiveMovieSetBGCases)</value>
+	</variable>
+	<variable name="LiveMovieSetBGCasesVar">
+		<value condition="String.IsEmpty(Skin.String(LiveMovieSetBGCases))">None</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),color)">colorcases</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),clear)">movies</value>
+		<value condition="String.IsEqual(Skin.String(LiveMovieSetBGCases),BDDVD)">tvshows</value>
+	</variable>
 	<variable name="VideoExtraLogo">
 		<value condition="String.Contains(ListItem.Path,BDMV)">$INFO[ListItem.Path,../,logo.png]</value>
 		<value>$INFO[ListItem.Path,,logo.png]</value>

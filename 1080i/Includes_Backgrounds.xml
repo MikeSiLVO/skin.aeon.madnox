@@ -103,7 +103,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.2.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.2.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -131,7 +131,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.3.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.3.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -159,7 +159,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.5.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.5.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -186,7 +186,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.6.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.6.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -214,7 +214,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.4.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.4.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -242,7 +242,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.8.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.8.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -270,7 +270,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.7.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.7.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -298,7 +298,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.9.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.9.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -326,7 +326,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.10.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.10.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -354,7 +354,7 @@
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true" fallback="thumbs/boxes/movies/p.png">thumbs/boxes/$VAR[LiveBGCases]/$INFO[Window(home).Property(Set.Movie.1.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.1.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>

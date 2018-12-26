@@ -12,12 +12,9 @@
 	<onload condition="Window.IsActive(1115)">SetProperty(BackgroundArea,Featured,home)</onload>
 	<onload condition="Window.IsActive(tvchannels)">SetProperty(BackgroundArea,LiveTV,home)</onload>
 	<defaultcontrol always="true">450</defaultcontrol>
-
 	<coordinates>
 		<system>1</system>
 	</coordinates>
-	<!--     <onunload>Skin.SetString($INFO[Window(home).Property(BackgroundArea)],$ESCINFO[Skin.String(ItemToEdit.MultiFanart)])</onunload>
- -->
 	<include>Animation_DialogPopup</include>
 	<controls>
 		<control type="group">
@@ -176,16 +173,14 @@
 					<include>Objects_MediaBackgroundsButton</include>
 					<onclick>Skin.ToggleSetting(livenodecovers)</onclick>
 					<selected>Skin.HasSetting(livenodecovers)</selected>
-					<visible>Container.Content(sets)</visible>
+					<visible>Container.Content(movies) | Container.Content(sets)</visible>
 				</control>
 				<control type="button" id="460">
 					<label>$LOCALIZE[31744]</label>
-					<label2>$VAR[LiveBGCaseLib]</label2>
+					<label2>$VAR[LiveMovieSetBGCasesLabelVar]</label2>
 					<include>Objects_MediaBackgroundsButton</include>
-					<onclick condition="String.IsEqual(Skin.String(LiveBGCase),colorcases) | String.IsEmpty(Skin.String(LiveBGCase))">Skin.SetString(LiveBGCase,movies)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(LiveBGCase),movies)">Skin.SetString(LiveBGCase,tvshows)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(LiveBGCase),tvshows)">Skin.SetString(LiveBGCase,colorcases)</onclick>
-					<visible>Container.Content(sets)</visible>
+					<onclick>$VAR[LiveMovieSetBGCasesOnclickVar]</onclick>
+					<visible>Skin.HasSetting(livenodecovers) + [Container.Content(movies) | Container.Content(sets)]</visible>
 				</control>
 				<control type="radiobutton" id="1678">
 					<label>31387</label>
