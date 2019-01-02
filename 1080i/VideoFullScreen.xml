@@ -3,305 +3,37 @@
 	<defaultcontrol />
 	<onload condition="Window.IsActive(1115)">Dialog.Close(1115)</onload>
 	<controls>
-		<control type="group" id="0">
-			<animation effect="slide" end="0,45" time="160" tween="cubic" condition="Window.IsVisible(seekbar) + !Skin.HasSetting(Show_Info_Paused)">Conditional</animation>
-			<animation effect="slide" end="0,165" time="160" tween="cubic" condition="[Window.IsVisible(seekbar) + Skin.HasSetting(Show_Info_Paused)] | [Window.IsVisible(fullscreeninfo) + String.IsEmpty(Window(home).Property(morefullscreeninfo)) + Player.Paused]">Conditional</animation>
-			<animation effect="slide" end="0,135" time="160" tween="cubic" condition="!VideoPlayer.Content(LiveTV) + Window.IsVisible(fullscreeninfo) + String.IsEmpty(Window(home).Property(morefullscreeninfo)) + !Player.Paused">Conditional</animation>
-			<!-- codec infos -->
-			<control type="image">
-				<visible>!VideoPlayer.Content(LiveTV)</visible>
-				<width>1920</width>
-				<height>340</height>
-				<texture flipy="true">views/lowlist_panelback.png</texture>
-				<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-				<animation effect="slide" end="0,270" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
+		<control type="grouplist" id="0">
+			<left>30</left>
+			<width>1920</width>
+			<height>300</height>
+			<itemgap>10</itemgap>
+			<control type="label" id="10">
+				<description>row 1 label</description>
+				<width>1770</width>
+				<height>90</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<textcolor>grey2</textcolor>
+				<label />
 			</control>
-			<control type="image">
-				<visible>VideoPlayer.Content(LiveTV)</visible>
-				<top>-270</top>
-				<width>1920</width>
-				<height>630</height>
-				<texture flipy="true">views/lowlist_panelback.png</texture>
-				<animation effect="fade" start="100" end="80" time="40" condition="true">Conditional</animation>
-				<animation effect="slide" end="0,270" time="160" tween="cubic" condition="VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)">Conditional</animation>
+			<control type="label" id="11">
+				<description>row 2 label</description>
+				<width>1770</width>
+				<height>90</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label />
+				<textcolor>grey2</textcolor>
 			</control>
-			<control type="grouplist" id="0">
-				<left>30</left>
-				<width>1920</width>
-				<height>300</height>
-				<itemgap>10</itemgap>
-				<control type="label" id="10">
-					<description>row 1 label</description>
-					<width>1770</width>
-					<height>90</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<textcolor>grey2</textcolor>
-					<label />
-				</control>
-				<control type="label" id="11">
-					<description>row 2 label</description>
-					<width>1770</width>
-					<height>90</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label />
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label" id="12">
-					<description>row 3 label</description>
-					<width>1770</width>
-					<height>90</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label />
-					<textcolor>grey2</textcolor>
-				</control>
-			</control>
-			<control type="group">
-				<left>-20</left>
-				<top>320</top>
-				<visible>VideoPlayer.Content(LiveTV) + System.GetBool(pvrplayback.signalquality)</visible>
-				<control type="label">
-					<description>Header</description>
-					<left>50</left>
-					<top>5</top>
-					<width>1200</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19005]</label>
-					<font>Font_Reg33_Caps</font>
-					<textcolor>$VAR[FontColorVar]</textcolor>
-				</control>
-				<control type="label">
-					<description>Backend</description>
-					<left>50</left>
-					<top>40</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19012]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>Backend value</description>
-					<left>270</left>
-					<top>40</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamClient]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>Device</description>
-					<left>50</left>
-					<top>70</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19006]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>Device value</description>
-					<left>270</left>
-					<top>70</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamDevice]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>Status</description>
-					<left>50</left>
-					<top>100</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19007]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>Status value</description>
-					<left>270</left>
-					<top>100</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamStatus]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>Signal</description>
-					<left>50</left>
-					<top>130</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19008]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="progress">
-					<description>Progressbar</description>
-					<left>270</left>
-					<top>137</top>
-					<width>910</width>
-					<height>14</height>
-					<info>PVR.ActStreamProgrSignal</info>
-				</control>
-				<control type="label">
-					<description>Signal value</description>
-					<left>1210</left>
-					<top>135</top>
-					<width>180</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamSignal]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>SNR</description>
-					<left>50</left>
-					<top>160</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19009]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="progress">
-					<description>Progressbar</description>
-					<left>270</left>
-					<top>167</top>
-					<width>910</width>
-					<height>14</height>
-					<info>PVR.ActStreamProgrSNR</info>
-				</control>
-				<control type="label">
-					<description>SNR value</description>
-					<left>1210</left>
-					<top>160</top>
-					<width>180</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamSNR]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>BER</description>
-					<left>50</left>
-					<top>190</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19010]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>BER value</description>
-					<left>270</left>
-					<top>190</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamBER]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>UNC</description>
-					<left>480</left>
-					<top>190</top>
-					<width>165</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19011]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>UNC value</description>
-					<left>650</left>
-					<top>190</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamUNC]</label>
-					<textcolor>white</textcolor>
-				</control>
-				<control type="label">
-					<description>Encryption</description>
-					<left>50</left>
-					<top>220</top>
-					<width>250</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[19015]:</label>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="label">
-					<description>Encryption value</description>
-					<left>270</left>
-					<top>220</top>
-					<width>1000</width>
-					<height>25</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[PVR.ActStreamEncryptionName]</label>
-					<textcolor>white</textcolor>
-				</control>
-			</control>
-		</control>
-		<control type="group" id="1">
-			<animation type="WindowOpen">
-				<effect type="fade" time="160" end="100" />
-				<effect type="slide" time="160" start="0,-98" end="0,0" tween="cubic" />
-			</animation>
-			<animation type="WindowClose">
-				<effect type="fade" time="160" start="100" end="0" />
-				<effect type="slide" time="160" end="0,-98" easing="in" tween="cubic" />
-			</animation>
-			<animation type="Visible">
-				<effect type="fade" time="160" end="100" />
-				<effect type="slide" time="160" start="0,-98" end="0,0" tween="cubic" />
-			</animation>
-			<animation type="Hidden">
-				<effect type="fade" time="160" start="100" end="0" />
-				<effect type="slide" time="160" end="0,-98" easing="in" tween="cubic" />
-			</animation>
-			<visible>[Player.Seeking | [Player.DisplayAfterSeek + [!String.IsEmpty(Player.SeekOffset) | !String.IsEmpty(Player.Chapter)]] | Player.Forwarding | Player.Rewinding] + ![Player.Paused|[Player.Paused+Player.Seeking] | [Player.Paused+Player.DisplayAfterSeek]]</visible>
-			<control type="image" id="1">
-				<left>704</left>
-				<width>513</width>
-				<height>87</height>
-				<texture flipy="true">osd/osd_top_bar.png</texture>
-				<visible>[[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek] | [[Player.Paused + Player.Caching] + !Player.Seeking] | Player.Seeking|[Player.DisplayAfterSeek + ![player.forwarding | player.rewinding] + !String.IsEmpty(Player.SeekOffset)]</visible>
-			</control>
-			<control type="label" id="1">
-				<left>750</left>
-				<width>420</width>
-				<height>42</height>
-				<align>center</align>
-				<label>$VAR[VideoPlayerSeekVar]</label>
-				<font>Font_Reg33_Caps</font>
-				<shadowcolor>88e5e5e5</shadowcolor>
-				<textcolor>FF363636</textcolor>
+			<control type="label" id="12">
+				<description>row 3 label</description>
+				<width>1770</width>
+				<height>90</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label />
+				<textcolor>grey2</textcolor>
 			</control>
 		</control>
 	</controls>

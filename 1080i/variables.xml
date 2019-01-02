@@ -29,6 +29,15 @@
 		<value condition="String.Contains(ListItem.Filename,4K)">4k.png</value>
 		<value>$INFO[ListItem.VideoResolution]p.png</value>
 	</variable>
+	<variable name="VideoPlayerCaseVar">
+		<value condition="VideoPlayer.IsStereoscopic">3d.png</value>
+		<value condition="String.Contains(Player.Filename,hddvd)">hddvd.png</value>
+		<value condition="String.Contains(Player.Filename,sdtv) | String.Contains(Player.Filename,sd tv)">sdtv.png</value>
+		<value condition="String.Contains(Player.Filename,hdtv) | String.Contains(Player.Filename,hd tv)">hdtv.png</value>
+		<value condition="String.Contains(Player.Filename,webdl) | String.Contains(Player.Filename,web-tv) | String.Contains(Player.Filename,webrip)">webdl.png</value>
+		<value condition="String.Contains(Player.Filename,4K)">4k.png</value>
+		<value>$INFO[VideoPlayer.VideoResolution]p.png</value>
+	</variable>
 	<variable name="DefaultAreaColorVar">
 		<value condition="[Window.IsActive(fullscreeninfo) | Window.IsActive(fullscreenvideo) | Window.IsActive(videoosd) | Window.IsActive(videos) | Window.IsActive(script-videoextras-main.xml) | Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)| Window.IsActive(videobookmarks)] + !String.IsEmpty(Skin.String(diffuse_videolibrary))">$INFO[Skin.String(diffuse_videolibrary)]</value>
 		<value condition="[Window.IsActive(music) | Window.IsActive(musicosd) | Window.IsActive(visualisation)] + !String.IsEmpty(Skin.String(diffuse_music))">$INFO[Skin.String(diffuse_music)]</value>
