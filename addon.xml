@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addon id="skin.aeon.madnox" version="1.10.1" name="Aeon Madnox" provider-name="Mike_Doc|Schimi2k|meowmoo">
   <requires>
-    <import addon="xbmc.gui" version="5.13.0"/>
+    <import addon="xbmc.gui" version="5.14.0"/>
     <import addon="script.skinshortcuts" version="1.0.7"/>
     <import addon="script.skin.helper.service" version="1.0.0"/>
     <import addon="service.library.data.provider" version="0.0.7"/>
