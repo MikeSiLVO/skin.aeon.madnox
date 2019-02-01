@@ -65,8 +65,25 @@
 					<include>Animation_VisibleChange200</include>
 					<visible>!String.IsEmpty(Container(50).ListItem.Title)</visible>
 					<control type="image">
+						<top>-375</top>
 						<width>804</width>
-						<height>80</height>
+						<height>455</height>
+						<texture border="4">pvr/Border.png</texture>
+						<colordiffuse>$VAR[ExtendedColorDiffuseVar]</colordiffuse>
+					</control>
+					<control type="image">
+						<left>4</left>
+						<top>-371</top>
+						<width>796</width>
+						<height>447</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+						<animation effect="fade" end="60" condition="true">conditional</animation>
+					</control>
+					<control type="image">
+						<left>4</left>
+						<width>796</width>
+						<height>76</height>
 						<texture>common/black.png</texture>
 						<animation effect="fade" end="60" condition="true">conditional</animation>
 					</control>
