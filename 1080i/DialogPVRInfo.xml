@@ -175,7 +175,7 @@
 							<height>380</height>
 							<aspectratio scalediffuse="false" align="center" aligny="top">keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<visible>String.IsEmpty(Window(home).Property(SkinHelper.PVR.Poster))</visible>
+							<visible>String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Poster))</visible>
 							<bordertexture border="5">new_pvr/mod/inner.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -183,8 +183,8 @@
 							<width>310</width>
 							<height>380</height>
 							<aspectratio aligny="top">keep</aspectratio>
-							<texture>$INFO[Window(home).Property(SkinHelper.PVR.Poster)]</texture>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Poster)) + Skin.HasSetting(SkinHelper.EnablePVRThumbs)</visible>
+							<texture>$INFO[Window(home).Property(SkinHelper.ListItem.Art.Poster)]</texture>
+							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Poster)) + Skin.HasSetting(SkinHelper.EnablePVRThumbs)</visible>
 							<bordertexture border="5">new_pvr/mod/inner.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>

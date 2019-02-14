@@ -56,14 +56,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.IsVisible(50)</visible>
 				<include>Animation_VisibleChange200</include>
 				<control type="group">
 					<left>105</left>
 					<top>480</top>
 					<include>Animation_OpenCloseZoom_New</include>
 					<include>Animation_VisibleChange200</include>
-					<visible>!String.IsEmpty(Container(50).ListItem.Title)</visible>
 					<control type="image">
 						<top>-375</top>
 						<width>804</width>
@@ -78,6 +76,17 @@
 						<height>447</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+						<visible>String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Thumb))</visible>
+						<animation effect="fade" end="60" condition="true">conditional</animation>
+					</control>
+					<control type="image">
+						<left>4</left>
+						<top>-371</top>
+						<width>796</width>
+						<height>447</height>
+						<texture>$INFO[Window(home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
+						<aspectratio scalediffuse="false" align="center" aligny="top">scale</aspectratio>
+						<visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Thumb)) + Skin.HasSetting(SkinHelper.EnablePVRThumbs)</visible>
 						<animation effect="fade" end="60" condition="true">conditional</animation>
 					</control>
 					<control type="image">
@@ -93,7 +102,7 @@
 						<width>764</width>
 						<height>30</height>
 						<align>center</align>
-						<label>$INFO[Container(50).ListItem.Title]</label>
+						<label>$INFO[ListItem.Title]</label>
 						<font>Font_Bold34</font>
 						<textcolor>$VAR[FontColorVar]</textcolor>
 						<scroll>true</scroll>
@@ -104,10 +113,9 @@
 						<width>800</width>
 						<height>30</height>
 						<align>center</align>
-						<label>$INFO[Container(50).ListItem.StartDate] - $INFO[Container(50).ListItem.StartTime]</label>
+						<label>$INFO[ListItem.StartDate] - $INFO[ListItem.StartTime]</label>
 						<font>Font_Reg25</font>
 						<textcolor>white</textcolor>
-						<visible>Container(50).ListItem.HasEpg</visible>
 					</control>
 				</control>
 				<control type="group">
@@ -119,7 +127,7 @@
 						<top>10</top>
 						<width>800</width>
 						<height>330</height>
-						<label>$INFO[Container(50).ListItem.Plot]</label>
+						<label>$INFO[ListItem.Plot]</label>
 						<font>Font_Reg30_2</font>
 						<shadowcolor>black</shadowcolor>
 						<textcolor>white6</textcolor>
@@ -163,7 +171,7 @@
 							<textcolor>$VAR[FontColorVar]</textcolor>
 						</control>
 						<control type="label">
-							<left>630</left>
+							<left>600</left>
 							<top>14</top>
 							<width>300</width>
 							<height>40</height>
@@ -205,7 +213,7 @@
 							<textcolor>$VAR[FontColorVar]</textcolor>
 						</control>
 						<control type="label">
-							<left>630</left>
+							<left>600</left>
 							<top>14</top>
 							<width>300</width>
 							<height>40</height>
