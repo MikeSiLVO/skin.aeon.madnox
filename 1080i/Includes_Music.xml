@@ -1375,6 +1375,7 @@
 				<label>10517</label>
 				<font />
 				<colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
+				<onclick>Close</onclick>
 				<onclick>ActivateWindow(MusicPlaylist)</onclick>
 			</control>
 			<control type="button" id="500">

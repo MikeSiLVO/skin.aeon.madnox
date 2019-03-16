@@ -252,7 +252,7 @@
 		<value condition="String.Contains(ListItem.mpaa,UK:15)">BBFC_15_Certificate_UK</value>
 		<value condition="String.Contains(ListItem.mpaa,UK:18)">BBFC_18_Certificate_UK</value>
 		<value condition="String.Contains(ListItem.mpaa,Germany:0) | String.Contains(ListItem.mpaa,ab 0) | String.Contains(ListItem.mpaa,o.A) | String.Contains(ListItem.mpaa,FSK 0) | String.IsEqual(ListItem.mpaa,FSK:0) | String.IsEqual(ListItem.mpaa,Rated 0)">FSK-0</value>
-		<value condition="String.Contains(ListItem.mpaa,Germany:6) |  String.Contains(ListItem.mpaa,ab 6)  + String.Contains(ListItem.mpaa,6) | String.Contains(ListItem.mpaa,FSK 6) | String.IsEqual(ListItem.mpaa,FSK:6)">FSK-6</value>
+		<value condition="String.Contains(ListItem.mpaa,Germany:6) | String.Contains(ListItem.mpaa,ab 6) | String.Contains(ListItem.mpaa,FSK 6) | String.IsEqual(ListItem.mpaa,FSK:6)">FSK-6</value>
 		<value condition="String.Contains(ListItem.mpaa,Germany:12) | String.Contains(ListItem.mpaa,ab 12) | String.Contains(ListItem.mpaa,FSK 12) | String.IsEqual(ListItem.mpaa,FSK:12)">FSK-12</value>
 		<value condition="String.Contains(ListItem.mpaa,Germany:16) | String.Contains(ListItem.mpaa,ab 16) | String.Contains(ListItem.mpaa,FSK 16) | String.IsEqual(ListItem.mpaa,FSK:16)">FSK-16</value>
 		<value condition="String.Contains(ListItem.mpaa,Germany:18) | String.Contains(ListItem.mpaa,ab 18) | String.Contains(ListItem.mpaa,FSK 18) | String.IsEqual(ListItem.mpaa,FSK:18)">FSK-18</value>
@@ -299,10 +299,10 @@
 		<value condition="String.Contains(VideoPlayer.mpaa,UK:15)">BBFC_15_Certificate_UK</value>
 		<value condition="String.Contains(VideoPlayer.mpaa,UK:18)">BBFC_18_Certificate_UK</value>
 		<value condition="String.Contains(VideoPlayer.mpaa,Germany:0) | String.Contains(VideoPlayer.mpaa,o.A) | String.IsEqual(VideoPlayer.mpaa,ab 0) | String.Contains(VideoPlayer.mpaa,FSK 0) |  String.Contains(VideoPlayer.mpaa,Rated 0) |String.Contains(VideoPlayer.mpaa,FSK:0)">FSK-0</value>
-		<value condition="String.Contains(VideoPlayer.mpaa,Germany:6) | !String.Contains(VideoPlayer.mpaa,16) + String.Contains(VideoPlayer.mpaa,6) | String.IsEqual(VideoPlayer.mpaa,ab 6) | String.Contains(VideoPlayer.mpaa,FSK 6) | String.Contains(VideoPlayer.mpaa,FSK:6)">FSK-6</value>
-		<value condition="String.Contains(VideoPlayer.mpaa,Germany:12) | String.Contains(VideoPlayer.mpaa,12) | String.IsEqual(VideoPlayer.mpaa,ab 12) | String.Contains(VideoPlayer.mpaa,FSK 12) | String.Contains(VideoPlayer.mpaa,FSK:12)">FSK-12</value>
-		<value condition="String.Contains(VideoPlayer.mpaa,Germany:16) | String.Contains(VideoPlayer.mpaa,16) | String.IsEqual(VideoPlayer.mpaa,ab 16) | String.Contains(VideoPlayer.mpaa,FSK 16) | String.Contains(VideoPlayer.mpaa,FSK:16)">FSK-16</value>
-		<value condition="String.Contains(VideoPlayer.mpaa,Germany:18) | String.Contains(VideoPlayer.mpaa,18) | String.IsEqual(VideoPlayer.mpaa,ab 18) | String.Contains(VideoPlayer.mpaa,FSK 18) | String.Contains(VideoPlayer.mpaa,FSK:18)">FSK-18</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Germany:6) | String.IsEqual(VideoPlayer.mpaa,ab 6) | String.Contains(VideoPlayer.mpaa,FSK 6) | String.Contains(VideoPlayer.mpaa,FSK:6)">FSK-6</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Germany:12) | String.IsEqual(VideoPlayer.mpaa,ab 12) | String.Contains(VideoPlayer.mpaa,FSK 12) | String.Contains(VideoPlayer.mpaa,FSK:12)">FSK-12</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Germany:16) | String.IsEqual(VideoPlayer.mpaa,ab 16) | String.Contains(VideoPlayer.mpaa,FSK 16) | String.Contains(VideoPlayer.mpaa,FSK:16)">FSK-16</value>
+		<value condition="String.Contains(VideoPlayer.mpaa,Germany:18) | String.IsEqual(VideoPlayer.mpaa,ab 18) | String.Contains(VideoPlayer.mpaa,FSK 18) | String.Contains(VideoPlayer.mpaa,FSK:18)">FSK-18</value>
 		<value condition="String.Contains(VideoPlayer.mpaa,korhatárra való tekintett nélkül megtekintethető)">HU_KN</value>
 		<value condition="String.Contains(VideoPlayer.mpaa,6 éven aluliak számára nem ajánlott)">HU_06</value>
 		<value condition="String.Contains(VideoPlayer.mpaa,12 éven aluliak számára a megtekintése nagykorú felügyelete mellett ajánlott)">HU_12</value>
