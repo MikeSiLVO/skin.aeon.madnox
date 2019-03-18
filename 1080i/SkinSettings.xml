@@ -252,11 +252,6 @@
 						<include>Default_SettingButton</include>
 						<onclick>ActivateWindow(1158)</onclick>
 					</control>
-					<control type="button" id="4579">
-						<label>Home Bottom NowPlaying Settings</label>
-						<include>Default_SettingButton</include>
-						<onclick>ActivateWindow(1176)</onclick>
-					</control>
 					<control type="button" id="444">
 						<label>31347</label>
 						<include>Default_SettingButton</include>

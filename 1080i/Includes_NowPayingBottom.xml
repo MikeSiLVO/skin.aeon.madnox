@@ -3,17 +3,17 @@
 	<include name="BottomNowPlaying">
 		<!--Now Playing-->
 		<control type="group">
-			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="150" end="100" center="960,540" delay="100" time="800" tween="cubic" />
-				<effect type="fade" delay="100" start="50" end="100" time="240" />
-			</animation>
-			<animation type="WindowClose" reversible="false">
-				<effect type="fade" start="100" end="0" time="240" />
-				<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-			</animation>
+			<visible>Player.HasMedia + Skin.HasSetting(NowPlayingBelowBar)</visible>
+			<include>Animation_WindowFade200</include>
 			<control type="group">
-				<visible>Player.HasMedia + Skin.HasSetting(NowPlayingBottom)</visible>
-				<include>Animation_WindowFade200</include>
+				<animation type="WindowOpen" reversible="false">
+					<effect type="zoom" start="150" end="100" center="960,540" delay="100" time="800" tween="cubic" />
+					<effect type="fade" delay="100" start="50" end="100" time="240" />
+				</animation>
+				<animation type="WindowClose" reversible="false">
+					<effect type="fade" start="100" end="0" time="240" />
+					<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+				</animation>
 				<!--CDArt right-->
 				<!--vinyl-->
 				<control type="image">
@@ -247,221 +247,221 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 			</control>
-		</control>
-		<!--Music Info-->
-		<control type="group">
-			<visible>Player.HasAudio + Skin.HasSetting(NowPlayingBottom)</visible>
-			<top>260</top>
-			<left>15</left>
+			<!--Music Info-->
 			<control type="group">
-				<top>695</top>
+				<visible>Player.HasAudio + Skin.HasSetting(NowPlayingBottom)</visible>
+				<top>260</top>
+				<left>15</left>
+				<control type="group">
+					<top>695</top>
+					<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
+					<animation type="WindowClose" reversible="false">
+						<effect type="fade" start="100" end="0" time="240" />
+						<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+					</animation>
+					<control type="image" id="8318">
+						<width>250</width>
+						<fadetime>400</fadetime>
+						<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
+						<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
+						<aspectratio aligny="center" align="left">keep</aspectratio>
+						<visible>Skin.HasSetting(NowPlayingBottomLogo)</visible>
+						<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>
+					</control>
+					<control type="image">
+						<animation effect="slide" start="-1250" end="-150" time="700" tween="cubic" delay="1100">WindowOpen</animation>
+						<left>-100</left>
+						<top>30</top>
+						<width>500</width>
+						<height>4</height>
+						<texture>views/list_divider.png</texture>
+						<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
+					</control>
+					<control type="image">
+						<animation effect="slide" start="-1250" end="-150" time="700" tween="cubic" delay="1100">WindowOpen</animation>
+						<left>-100</left>
+						<top>73</top>
+						<width>500</width>
+						<height>4</height>
+						<texture>views/list_divider.png</texture>
+						<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
+					</control>
+					<!--logo divider-->
+					<control type="image">
+						<animation effect="slide" start="-250" end="0" time="700" tween="cubic" delay="1100">WindowOpen</animation>
+						<left>200</left>
+						<top>60</top>
+						<width>350</width>
+						<height>4</height>
+						<texture>views/list_divider.png</texture>
+						<visible>Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)</visible>
+					</control>
+					<control type="label">
+						<animation effect="slide" time="250" start="-270,10" end="0,0" tween="back" easing="out" condition="String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+						<width>790</width>
+						<height>38</height>
+						<align>left</align>
+						<scroll>true</scroll>
+						<font>Font_Reg22_2</font>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<textcolor>$VAR[TitleColorVar]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
+					</control>
+					<control type="label">
+						<animation effect="slide" time="250" start="-265,15" end="0,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
+						<left>270</left>
+						<top>20</top>
+						<width>490</width>
+						<height>45</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>$VAR[TitleColorVar]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<label>[COLOR=white]$INFO[MusicPlayer.Title, ','][/COLOR]</label>
+					</control>
+					<control type="label">
+						<animation effect="slide" time="250" start="-270,10" end="0,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
+						<left>290</left>
+						<top>65</top>
+						<width>490</width>
+						<height>36</height>
+						<align>left</align>
+						<font>Font_Reg22_2</font>
+						<label>[COLOR white]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
+						<textcolor>$VAR[TitleColorVar]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+				</control>
+				<!--Next Songs-->
+				<control type="group">
+					<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
+					<animation type="WindowClose" reversible="false">
+						<effect type="fade" start="100" end="0" time="240" />
+						<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
+					</animation>
+					<left>1130</left>
+					<top>695</top>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+					<visible>Player.HasAudio + Skin.HasSetting(NowPlayingBottomNext)</visible>
+					<control type="image">
+						<animation effect="slide" start="50" end="-400" time="700" tween="cubic" delay="1100">WindowOpen</animation>
+						<left>800</left>
+						<top>33</top>
+						<width>500</width>
+						<height>4</height>
+						<align>right</align>
+						<texture>views/list_divider.png</texture>
+					</control>
+					<control type="label">
+						<visible>!MusicPartyMode.Enabled</visible>
+						<width>750</width>
+						<height>36</height>
+						<align>right</align>
+						<font>Font_Reg22_2</font>
+						<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31889][/COLOR]</label>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<include>Animation_VisibleChange400</include>
+					</control>
+					<control type="label">
+						<visible>MusicPartyMode.Enabled</visible>
+						<width>750</width>
+						<height>36</height>
+						<align>right</align>
+						<font>Font_Reg22_2</font>
+						<label>[COLOR $VAR[FontColorVar]]Party Mode: $INFO[MusicPartyMode.SongsPlayed, (,)   ]Next:[/COLOR]</label>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<include>Animation_VisibleChange400</include>
+					</control>
+					<control type="group">
+						<control type="label">
+							<top>40</top>
+							<width>750</width>
+							<height>36</height>
+							<align>right</align>
+							<font>Font_Reg19_Caps</font>
+							<label>$INFO[MusicPlayer.offset(1).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(1).Title,","][/COLOR]</label>
+							<textcolor>$VAR[TitleColorVar]</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>true</scroll>
+							<include>Animation_VisibleChange400</include>
+						</control>
+						<control type="label">
+							<top>65</top>
+							<width>750</width>
+							<height>36</height>
+							<align>right</align>
+							<font>Font_Reg19_Caps</font>
+							<label>$INFO[MusicPlayer.offset(2).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(2).Title,","][/COLOR]</label>
+							<textcolor>$VAR[TitleColorVar]</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>true</scroll>
+							<include>Animation_VisibleChange400</include>
+						</control>
+						<control type="label">
+							<top>90</top>
+							<width>750</width>
+							<height>36</height>
+							<align>right</align>
+							<font>Font_Reg19_Caps</font>
+							<label>$INFO[MusicPlayer.offset(3).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(3).Title,","][/COLOR]</label>
+							<textcolor>$VAR[TitleColorVar]</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<scroll>true</scroll>
+							<include>Animation_VisibleChange400</include>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Player.HasVideo + Skin.HasSetting(NowPlayingBottom)</visible>
 				<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
 				<animation type="WindowClose" reversible="false">
 					<effect type="fade" start="100" end="0" time="240" />
 					<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
 				</animation>
-				<control type="image" id="8318">
+				<!--ClearLogo-->
+				<control type="image" id="9966">
+					<top>950</top>
 					<width>250</width>
 					<fadetime>400</fadetime>
-					<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
-					<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
+					<texture background="true">$VAR[HomeNowPlayingArtworkVar]</texture>
 					<aspectratio aligny="center" align="left">keep</aspectratio>
-					<visible>Skin.HasSetting(NowPlayingBottomLogo)</visible>
 					<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>
 				</control>
-				<control type="image">
-					<animation effect="slide" start="-1250" end="-150" time="700" tween="cubic" delay="1100">WindowOpen</animation>
-					<left>-100</left>
-					<top>30</top>
-					<width>500</width>
-					<height>4</height>
-					<texture>views/list_divider.png</texture>
-					<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
-				</control>
-				<control type="image">
-					<animation effect="slide" start="-1250" end="-150" time="700" tween="cubic" delay="1100">WindowOpen</animation>
-					<left>-100</left>
-					<top>73</top>
-					<width>500</width>
-					<height>4</height>
-					<texture>views/list_divider.png</texture>
-					<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
-				</control>
-				<!--logo divider-->
-				<control type="image">
-					<animation effect="slide" start="-250" end="0" time="700" tween="cubic" delay="1100">WindowOpen</animation>
-					<left>200</left>
-					<top>60</top>
-					<width>350</width>
-					<height>4</height>
-					<texture>views/list_divider.png</texture>
-					<visible>Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)</visible>
-				</control>
+				<!--Title-->
 				<control type="label">
-					<animation effect="slide" time="250" start="-270,10" end="0,0" tween="back" easing="out" condition="String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+					<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+					<left>-125</left>
+					<top>1000</top>
 					<width>790</width>
 					<height>38</height>
 					<align>left</align>
 					<scroll>true</scroll>
-					<font>Font_Reg22_2</font>
-					<label>$INFO[MusicPlayer.Artist]</label>
+					<font>font13</font>
+					<label>$VAR[HomeNowPlayingVideoTitleVar]</label>
 					<textcolor>$VAR[TitleColorVar]</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>String.Contains(Control.GetLabel(8318),empty.png) | !Skin.HasSetting(NowPlayingBottomLogo)</visible>
+					<visible>String.IsEmpty(Control.GetLabel(9966))</visible>
 				</control>
+				<!-- Outline-->
 				<control type="label">
-					<animation effect="slide" time="250" start="-265,15" end="0,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
-					<left>270</left>
-					<top>20</top>
-					<width>490</width>
-					<height>45</height>
-					<align>left</align>
+					<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
+					<left>1050</left>
+					<top>1000</top>
+					<width>700</width>
+					<height>38</height>
+					<align>right</align>
 					<font>font13</font>
 					<textcolor>$VAR[TitleColorVar]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>true</scroll>
-					<label>[COLOR=white]$INFO[MusicPlayer.Title, ','][/COLOR]</label>
+					<label>$VAR[HomeNowPlayingVideoEpisodeVar]</label>
 				</control>
-				<control type="label">
-					<animation effect="slide" time="250" start="-270,10" end="0,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo) + !String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
-					<left>290</left>
-					<top>65</top>
-					<width>490</width>
-					<height>36</height>
-					<align>left</align>
-					<font>Font_Reg22_2</font>
-					<label>[COLOR white]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, [,] ]</label>
-					<textcolor>$VAR[TitleColorVar]</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-				</control>
-			</control>
-			<!--Next Songs-->
-			<control type="group">
-				<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
-				<animation type="WindowClose" reversible="false">
-					<effect type="fade" start="100" end="0" time="240" />
-					<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-				</animation>
-				<left>1130</left>
-				<top>695</top>
-				<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-				<visible>Player.HasAudio + Skin.HasSetting(NowPlayingBottomNext)</visible>
-				<control type="image">
-					<animation effect="slide" start="50" end="-400" time="700" tween="cubic" delay="1100">WindowOpen</animation>
-					<left>800</left>
-					<top>33</top>
-					<width>500</width>
-					<height>4</height>
-					<align>right</align>
-					<texture>views/list_divider.png</texture>
-				</control>
-				<control type="label">
-					<visible>!MusicPartyMode.Enabled</visible>
-					<width>750</width>
-					<height>36</height>
-					<align>right</align>
-					<font>Font_Reg22_2</font>
-					<label>[COLOR $VAR[FontColorVar]]$LOCALIZE[31889][/COLOR]</label>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<include>Animation_VisibleChange400</include>
-				</control>
-				<control type="label">
-					<visible>MusicPartyMode.Enabled</visible>
-					<width>750</width>
-					<height>36</height>
-					<align>right</align>
-					<font>Font_Reg22_2</font>
-					<label>[COLOR $VAR[FontColorVar]]Party Mode: $INFO[MusicPartyMode.SongsPlayed, (,)   ]Next:[/COLOR]</label>
-					<shadowcolor>black</shadowcolor>
-					<scroll>true</scroll>
-					<include>Animation_VisibleChange400</include>
-				</control>
-				<control type="group">
-					<control type="label">
-						<top>40</top>
-						<width>750</width>
-						<height>36</height>
-						<align>right</align>
-						<font>Font_Reg19_Caps</font>
-						<label>$INFO[MusicPlayer.offset(1).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(1).Title,","][/COLOR]</label>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
-						<include>Animation_VisibleChange400</include>
-					</control>
-					<control type="label">
-						<top>65</top>
-						<width>750</width>
-						<height>36</height>
-						<align>right</align>
-						<font>Font_Reg19_Caps</font>
-						<label>$INFO[MusicPlayer.offset(2).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(2).Title,","][/COLOR]</label>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
-						<include>Animation_VisibleChange400</include>
-					</control>
-					<control type="label">
-						<top>90</top>
-						<width>750</width>
-						<height>36</height>
-						<align>right</align>
-						<font>Font_Reg19_Caps</font>
-						<label>$INFO[MusicPlayer.offset(3).Artist, , - ][COLOR=white]$INFO[MusicPlayer.offset(3).Title,","][/COLOR]</label>
-						<textcolor>$VAR[TitleColorVar]</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
-						<include>Animation_VisibleChange400</include>
-					</control>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>Player.HasVideo + Skin.HasSetting(NowPlayingBottom)</visible>
-			<animation effect="slide" start="0,200" end="0" time="560" tween="cubic" easing="inout" delay="350">WindowOpen</animation>
-			<animation type="WindowClose" reversible="false">
-				<effect type="fade" start="100" end="0" time="240" />
-				<effect type="zoom" start="100" end="130" center="960,540" time="240" tween="cubic" easing="in" />
-			</animation>
-			<!--ClearLogo-->
-			<control type="image" id="9966">
-				<top>950</top>
-				<width>250</width>
-				<fadetime>400</fadetime>
-				<texture background="true">$VAR[HomeNowPlayingArtworkVar]</texture>
-				<aspectratio aligny="center" align="left">keep</aspectratio>
-				<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>
-			</control>
-			<!--Title-->
-			<control type="label">
-				<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
-				<left>-125</left>
-				<top>1000</top>
-				<width>790</width>
-				<height>38</height>
-				<align>left</align>
-				<scroll>true</scroll>
-				<font>font13</font>
-				<label>$VAR[HomeNowPlayingVideoTitleVar]</label>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>String.IsEmpty(Control.GetLabel(9966))</visible>
-			</control>
-			<!-- Outline-->
-			<control type="label">
-				<animation effect="slide" time="250" start="0,0" end="150,0" tween="back" easing="out" condition="Skin.HasSetting(NowPlayingBottomLogo)">Conditional</animation>
-				<left>1050</left>
-				<top>1000</top>
-				<width>700</width>
-				<height>38</height>
-				<align>right</align>
-				<font>font13</font>
-				<textcolor>$VAR[TitleColorVar]</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<label>$VAR[HomeNowPlayingVideoEpisodeVar]</label>
 			</control>
 		</control>
 	</include>
