@@ -4,7 +4,7 @@
 	<onload>Skin.Reset(vispanelrotate)</onload>
 	<onunload>Skin.Reset(vispanelrotate)</onunload>
 	<onload>RunScript(script.artistslideshow)</onload>
-	<onload condition="!Skin.HasSetting(AltMusicVizLayout) + !Skin.HasSetting(ThirdMusicVizLayout) + !Skin.HasSetting(FourthMusicVizLayout)">RunScript(script.cu.lrclyrics)</onload>
+	<!-- <onload condition="!Skin.HasSetting(AltMusicVizLayout) + !Skin.HasSetting(ThirdMusicVizLayout) + !Skin.HasSetting(FourthMusicVizLayout)">RunScript(script.cu.lrclyrics)</onload> -->
 	<onload>AlarmClock(MusicInfoRotation,ActivateWindow(1156),00:15,silent,loop)</onload>
 	<onunload>CancelAlarm(MusicInfoRotation,true)</onunload>
 	<controls>
@@ -256,7 +256,7 @@
 					<left>262</left>
 					<top>-243</top>
 					<visible>Skin.HasSetting(cdartinvis)</visible>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+					<texture background="true">$VAR[PlayerArtworkDiscVar]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image" id="3334">
@@ -712,7 +712,7 @@
 						<height>193</height>
 						<fadetime>400</fadetime>
 						<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8308),empty.png)">Conditional</animation>
-						<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+						<texture background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 						<visible>!String.IsEmpty(Skin.String(ArtistsLogosPath))</visible>
 						<animation effect="slide" time="400" tween="cubic" easing="inout" end="-35" condition="!Skin.HasSetting(CDArtinVis)">Conditional</animation>
 					</control>
@@ -903,7 +903,7 @@
 				<left>262</left>
 				<top>-243</top>
 				<visible>Skin.HasSetting(cdartinvis)</visible>
-				<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+				<texture background="true">$VAR[PlayerArtworkDiscVar]]</texture>
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="image">
@@ -1146,7 +1146,7 @@
 				<height>193</height>
 				<fadetime>400</fadetime>
 				<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
-				<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+				<texture background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 			</control>
 			<control type="label">
 				<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" condition="Skin.HasSetting(AltMusicVizLayoutNext)">Conditional</animation>
@@ -1939,7 +1939,7 @@
 					<width>500</width>
 					<height>317</height>
 					<aspectratio>keep</aspectratio>
-					<texture border="5" colordiffuse="77777777" background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+					<texture border="5" colordiffuse="77777777" background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 				</control>
 				<control type="group">
 					<visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
@@ -2163,7 +2163,7 @@
 						<left>262</left>
 						<top>20</top>
 						<visible>Skin.HasSetting(cdartinvis) + !Skin.HasSetting(vinylart)</visible>
-						<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</texture>
+						<texture background="true">$VAR[PlayerArtworkDiscVar]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -2229,7 +2229,7 @@
 							<top>190</top>
 							<width>110</width>
 							<height>110</height>
-							<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+							<texture>$VAR[PlayerArtworkDiscVar]</texture>
 							<aspectratio aligny="bottom">keep</aspectratio>
 						</control>
 					</control>
@@ -2375,7 +2375,7 @@
 			<top>1400</top>
 			<left>710</left>
 			<fadetime>300</fadetime>
-			<texture background="true" fallback="common/cdart/vinyl.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+			<texture background="true" fallback="common/cdart/vinyl.png">$VAR[PlayerArtworkDiscVar]</texture>
 			<aspectratio aligny="bottom">keep</aspectratio>
 		</control>
 		<!-- Cover-->
@@ -2410,7 +2410,7 @@
 				<height>500</height>
 				<aspectratio>keep</aspectratio>
 				<animation effect="fade" start="100" end="0" time="500" condition="String.Contains(Control.GetLabel(831844),empty.png)">Conditional</animation>
-				<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+				<texture background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -2858,7 +2858,7 @@
 				<left>75</left>
 				<top>-480</top>
 				<visible>[Integer.IsGreater(MusicPlayer.Time,7) + !Integer.IsGreater(MusicPlayer.Time,24) + Skin.HasSetting(widgetpola) + String.StartsWith(Control.GetLabel(7782),xy)] | [Integer.IsGreater(MusicPlayer.Time,154) + !Integer.IsGreater(MusicPlayer.Time,171) + Skin.HasSetting(widgetpola) + String.StartsWith(Control.GetLabel(7782),xy)]</visible>
-				<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
+				<texture background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 				<colordiffuse>D1FFFFFF</colordiffuse>
 				<aspectratio>keep</aspectratio>
 			</control>

@@ -224,7 +224,7 @@
 					<left>780</left>
 					<top>920</top>
 					<fadetime>300</fadetime>
-					<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+					<texture background="true" fallback="empty.png">$VAR[PlayerArtworkDiscVar]</texture>
 					<aspectratio aligny="bottom">keep</aspectratio>
 				</control>
 				<!-- Movie CDArt-->
@@ -242,7 +242,7 @@
 					<left>780</left>
 					<top>920</top>
 					<fadetime>300</fadetime>
-					<texture background="true" fallback="common/cdart/bd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+					<texture background="true" fallback="common/cdart/bd.png">$VAR[PlayerArtworkDiscVar]</texture>
 					<visible>Player.HasVideo</visible>
 					<aspectratio>keep</aspectratio>
 				</control>
@@ -263,7 +263,7 @@
 						<width>250</width>
 						<fadetime>400</fadetime>
 						<animation effect="fade" start="100" end="0" time="0" condition="String.Contains(Control.GetLabel(8318),empty.png)">Conditional</animation>
-						<texture background="true" fallback="empty.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
+						<texture background="true" fallback="empty.png">$VAR[PlayerArtworkLogoVar]</texture>
 						<aspectratio aligny="center" align="left">keep</aspectratio>
 						<visible>Skin.HasSetting(NowPlayingBottomLogo)</visible>
 						<animation effect="slide" time="560" start="-270,15" end="0,0" tween="back" easing="inout">VisibleChange</animation>

@@ -2270,8 +2270,12 @@
 	<variable name="PlayerArtworkDiscVar">
 		<value condition="!String.IsEmpty(Player.Art(album.discart))">$INFO[Player.Art(album.discart)]</value>
 		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
-		<value condition="Skin.HasSetting(MusicDiscFallback.Vinyl)">special://skin/extras/cdart/vinyl.png</value>
-		<value>special://skin/extras/cdart/default.png</value>
+		<!-- <value condition="Skin.HasSetting(MusicDiscFallback.Vinyl)">special://skin/extras/cdart/vinyl.png</value>
+		<value>special://skin/extras/cdart/default.png</value> -->
+	</variable>
+	<variable name="PlayerArtworkLogoVar">
+		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+		<value>$INFO[Player.Art(clearlogo)]</value>
 	</variable>
 	<variable name="ArtworkDiscVar">
 		<value condition="!String.IsEmpty(ListItem.Art(album.discart))">$INFO[ListItem.Art(album.discart)]</value>
