@@ -373,7 +373,7 @@
 				<top>993</top>
 				<visible>!Control.IsVisible(4000)</visible>
 				<visible>!Window.IsVisible(fullscreeninfo) + !Window.IsVisible(notification) + !Window.IsVisible(videoosd)</visible>
-				<visible>Player.Paused | Player.Seeking | Player.DisplayAfterSeek + [Player.Forwarding | Player.Rewinding]</visible>
+				<visible>Player.Paused | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding</visible>
 				<animation type="Visible">
 					<effect type="fade" time="200" end="100"/>
 					<effect type="slide" time="200" start="0,98" end="0,0" tween="cubic"/>
