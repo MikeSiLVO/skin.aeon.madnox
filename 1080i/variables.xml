@@ -369,7 +369,7 @@
 		<value condition="Container.Content(addons)">$INFO[Skin.String(InfoPanelAddons)]</value>
 	</variable>
 	<variable name="SecondLabelVar">
-		<value condition="ListItem.IsCollection + !ListItem.IsParentFolder">$INFO[Window(home).Property(Set.Movies.Genre)]$INFO[Window(home).Property(Set.Movies.RunTime), • , $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</value>
+		<value condition="ListItem.IsCollection + !ListItem.IsParentFolder">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]$INFO[Window(Home).Property(SkinInfo.Set.Movies.RunTime), • , $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</value>
 		<value condition="Container.Content(movies) + Skin.HasSetting(FloorLabelTagline) + !ListItem.IsFolder">$INFO[ListItem.Tagline]</value>
 		<value condition="[Container.Content(movies) + !Skin.HasSetting(wallgenre) + !ListItem.IsFolder] | [Container.Content(seasons) + String.IsEmpty(ListItem.TVShowTitle)]">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</value>
 		<value condition="[Window.IsActive(programs) + !Container.Content(addons)]">$INFO[ListItem.Genre]</value>
@@ -484,7 +484,7 @@
 		<value>special://skin/backgrounds/musicvideos/</value>
 	</variable>
 	<variable name="MovieFanartVar">
-		<value condition="Skin.HasSetting(RotateFanart) + !String.IsEmpty(Window(Home).Property(Detail.Movie.1.Art(fanart))) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Control.GetLabel(4324)]</value>
+		<value condition="Skin.HasSetting(RotateFanart) + !String.IsEmpty(Window(Home).Property(SkinInfo.Detail.Movie.1.Art(fanart))) + !Skin.HasSetting(NoVideoLibraryFanart) + [Container.Content(sets) | ListItem.IsCollection]">$INFO[Control.GetLabel(4324)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart) + !String.IsEmpty(Skin.String(MoviesBackground))">$INFO[Skin.String(MoviesBackground)]</value>
 		<value condition="Skin.HasSetting(NoVideoLibraryFanart)">special://skin/backgrounds/movies/</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
@@ -538,7 +538,7 @@
 		<value>$LOCALIZE[20364]:</value>
 	</variable>
 	<variable name="FanartPanelValue1Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</value>
 		<value condition="Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Director]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[ListItem.TVShowTitle]</value>
@@ -548,7 +548,7 @@
 		<value>$LOCALIZE[13279]:</value>
 	</variable>
 	<variable name="FanartPanelValue2Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</value>
 		<value condition="Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Writer]</value>
 		<value>$INFO[ListItem.Studio]</value>
 	</variable>
@@ -560,7 +560,7 @@
 	</variable>
 	<variable name="FanartPanelValue3Var">
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + [Skin.HasSetting(wallgenre) | Skin.HasSetting(FloorLabelTagline)]">$INFO[ListItem.Year]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[Window(home).Property(NextAired.Genre)]</value>
@@ -580,7 +580,7 @@
 		<value>$LOCALIZE[31189]:</value>
 	</variable>
 	<variable name="FanartPanelValue5Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR grey]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value>$VAR[LastEpisodeVar]</value>
@@ -593,27 +593,27 @@
 	</variable>
 	<variable name="FanartPanelValue6Var">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">$INFO[ListItem.OriginalTitle]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Country)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Country]</value>
 		<value condition="Container.Content(episodes) + !ListItem.Property(IsSpecial)">$INFO[ListItem.Season,$LOCALIZE[20373] ], $INFO[ListItem.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="Container.Content(episodes)">$LOCALIZE[20381],$INFO[ListItem.Episode, $LOCALIZE[20359] ]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$VAR[NextEpisodeVar]$INFO[Window(Home).Property(NextAired.NextSeasonNumber), - S] $INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]</value>
 	</variable>
 	<variable name="FanartPanelPlotVar">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</value>
 		<value condition="!Skin.HasSetting(preferplot) + !String.IsEmpty(ListItem.PlotOutline) + Control.IsVisible(7550)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonDescription]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="GlobalPlotVar">
-		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="!Skin.HasSetting(preferplot) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="GlobalPlotOutlineVar">
-		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection + !Control.IsVisible(518)">$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</value>
 		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value>$INFO[ListItem.Plot]</value>
@@ -657,7 +657,7 @@
 		<value>$LOCALIZE[31190]:</value>
 	</variable>
 	<variable name="PosterPanelValue5Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) + ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR white3]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value>$VAR[NextEpisodeVar]</value>
@@ -669,7 +669,7 @@
 	</variable>
 	<variable name="PosterPanelValue6Var">
 		<value condition="!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,ListItem.Title)">$INFO[ListItem.OriginalTitle]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Country)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Country)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.Country]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$VAR[LastEpisodeVar]</value>
 	</variable>
@@ -678,7 +678,7 @@
 		<value condition="Container.Content(tvshows) + !Control.IsVisible(503)">$LOCALIZE[2050]:</value>
 	</variable>
 	<variable name="PosterPanelValue7Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</value>
 		<value condition="String.IsEmpty(ListItem.TvShowTitle) | [Container.Content(tvshows)+ Control.isVisible(503)]">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(tvshows) + !Control.isVisible(503)">$INFO[Window(Home).Property(NextAired.Runtime),, $LOCALIZE[12391]]</value>
 	</variable>
@@ -1046,7 +1046,7 @@
 		<value>$LOCALIZE[571]</value>
 	</variable>
 	<variable name="InfoWallSubTitleVar">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</value>
 		<value condition="!Skin.HasSetting(InfoWallTagLine) + Container.Content(movies)">$INFO[ListItem.Tagline]</value>
 		<value condition="Skin.HasSetting(InfoWallTagLine) + Container.Content(movies)">$INFO[ListItem.Genre]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Artist]</value>
@@ -1057,7 +1057,7 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="InfoWallBottomLabel1Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</value>
 		<value condition="Container.Content(movies) | Container.Content(episodes)">$INFO[ListItem.Director,$LOCALIZE[31156] ]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonVersion,[COLOR floorlabel]$LOCALIZE[24051] [/COLOR]]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
@@ -1082,10 +1082,10 @@
 		<value condition="Container.Content(musicvideos)">$INFO[ListItem.RatingAndVotes]</value>
 	</variable>
 	<variable name="InfoWallTextboxVar">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonDescription]</value>
 		<value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-		<value condition="Container.Content(albums)">$INFO[Window(home).Property(Album.Songs.Tracklist)]</value>
+		<value condition="Container.Content(albums)">$INFO[Window(Home).Property(SkinInfo.Album.Songs.Tracklist)]</value>
 		<value condition="Container.Content(albums)">$LOCALIZE[414]</value>
 		<value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="Container.Content(artists)">$LOCALIZE[547]</value>
@@ -1779,32 +1779,32 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ExtraThumb1Var">
-		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.1.Art(clearlogo))]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.1.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(clearlogo)))">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season01-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb1))">$INFO[ListItem.Art(extrathumb1)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb1))">$INFO[Container.ListItem.Art(extrathumb1)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb2Var">
-		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.2.Art(clearlogo))]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.2.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.2.Art(clearlogo)))">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season02-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb2))">$INFO[ListItem.Art(extrathumb2)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb2))">$INFO[Container.ListItem.Art(extrathumb2)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb3Var">
-		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.3.Art(clearlogo))]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.3.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.3.Art(clearlogo)))">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season03-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb3))">$INFO[ListItem.Art(extrathumb3)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb3))">$INFO[Container.ListItem.Art(extrathumb3)]</value>
 		<value>$INFO[ListItem.Path,,extrathumbs/thumb3.jpg]</value>
 	</variable>
 	<variable name="ExtraThumb4Var">
-		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(clearlogo)))">$INFO[Window(home).Property(Set.Movie.4.Art(clearlogo))]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movie.4.Art(fanart))]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.4.Art(clearlogo)))">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(clearlogo))]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(fanart))]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Path]/season04-landscape.jpg</value>
 		<value condition="!String.IsEmpty(ListItem.Art(extrathumb4))">$INFO[ListItem.Art(extrathumb4)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(extrathumb4))">$INFO[Container.ListItem.Art(extrathumb4)]</value>
@@ -1991,7 +1991,7 @@
 	</variable>
 	<variable name="LowListInfoValue3">
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Property(TotalSeasons)]</value>
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Studio)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]</value>
 		<value>$INFO[ListItem.Studio]</value>
 	</variable>
 	<variable name="LowListInfoDetail4">
@@ -2008,7 +2008,7 @@
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$LOCALIZE[4]:</value>
 	</variable>
 	<variable name="LowListInfoValue5">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)] + !ListItem.IsResumable">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(episodes) | String.IsEmpty(ListItem.TvShowTitle)]">$INFO[ListItem.Duration,, $LOCALIZE[12391]][COLOR grey]$INFO[ListItem.PercentPlayed, (,%)][/COLOR]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">$INFO[Window(Home).Property(NextAired.AirTime)]</value>
@@ -2045,7 +2045,7 @@
 		<value>$LOCALIZE[515]:</value>
 	</variable>
 	<variable name="TriPanelValue2Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
@@ -2058,7 +2058,7 @@
 		<value>$LOCALIZE[20339]:</value>
 	</variable>
 	<variable name="TriPanelValue3Var">
-		<value condition="ListItem.IsCollection">$INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.NextDay))">$VAR[NextEpisodeVar]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.LatestDay))">$INFO[Window(Home).Property(NextAired.LatestDate)]</value>
 		<value condition="Container.Content(tvshows)">$INFO[ListItem.Premiered]</value>
@@ -2674,7 +2674,7 @@
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Skin.HasSetting(preferplot) + !String.IsEmpty(ListItem.PlotOutline) + !String.IsEmpty(ListItem.Tagline)">[COLOR $VAR[FontColorVar]]$INFO[ListItem.Tagline] - [/COLOR]$INFO[ListItem.PlotOutline]</value>
 		<value condition="Skin.HasSetting(preferplot) + String.IsEmpty(ListItem.PlotOutline) + !String.IsEmpty(ListItem.Tagline)">[COLOR $VAR[FontColorVar]]$INFO[ListItem.Tagline] - [/COLOR]$INFO[ListItem.Plot]</value>
-		<value condition="Skin.HasSetting(preferplot) + !String.IsEmpty(Window(home).Property(Set.Movies.ExtendedPlot))">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>
+		<value condition="Skin.HasSetting(preferplot) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot))">$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</value>
 		<value condition="Skin.HasSetting(preferplot)">$INFO[ListItem.Plot]</value>
 		<value>$INFO[ListItem.PlotOutline]</value>
 	</variable>
@@ -2688,12 +2688,12 @@
 	</variable>
 	<variable name="VideoSubLabelVar">
 		<value condition="Container.Content(tvshows)">[COLOR $VAR[TitleColorVar]]$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)][/COLOR]$INFO[ListItem.Property(UnWatchedEpisodes), (,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE])]</value>
-		<value condition="ListItem.IsCollection + !ListItem.IsParentFolder">$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[Window(home).Property(Set.Movies.Runtime)] $LOCALIZE[12391] • $INFO[Window(home).Property(SkinHelper.ListItem.Count)] Movies</value>
+		<value condition="ListItem.IsCollection + !ListItem.IsParentFolder">$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)] $LOCALIZE[12391] • $INFO[Window(home).Property(SkinHelper.ListItem.Count)] Movies</value>
 		<value>$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 	</variable>
 	<variable name="KodiFlixSubLabelInfo">
-		<value condition="ListItem.IsCollection + ListItem.IsFolder + !String.IsEmpty(ListItem.Title) + Integer.IsGreater(Window(home).Property(Set.Movies.Count),1)">$INFO[Window(home).Property(Set.Movies.Count), • , $LOCALIZE[342]]</value>
-		<value condition="ListItem.IsCollection + ListItem.IsFolder + !String.IsEmpty(ListItem.Title) + !Integer.IsGreater(Window(home).Property(Set.Movies.Count),1)">$INFO[Window(home).Property(Set.Movies.Count), • , $LOCALIZE[20338]]</value>
+		<value condition="ListItem.IsCollection + ListItem.IsFolder + !String.IsEmpty(ListItem.Title) + Integer.IsGreater(Window(Home).Property(SkinInfo.Set.Movies.Count),1)">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Count), • , $LOCALIZE[342]]</value>
+		<value condition="ListItem.IsCollection + ListItem.IsFolder + !String.IsEmpty(ListItem.Title) + !Integer.IsGreater(Window(Home).Property(SkinInfo.Set.Movies.Count),1)">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Count), • , $LOCALIZE[20338]]</value>
 		<value condition="[Container.Content(Movies) + String.StartsWith(Container.FolderPath,plugin://plugin.video)] + !String.IsEmpty(ListItem.Property(ReleaseDate))">$INFO[ListItem.Property(ReleaseDate),$LOCALIZE[31004]: ]</value>
 		<value condition="Container.Content(tvshows)">• $INFO[ListItem.Premiered] •</value>
 		<value>• $INFO[ListItem.Year] •</value>
@@ -3045,13 +3045,13 @@
 		<value condition="Skin.HasSetting(KodiFlixExtrasDelay_30)">30 seconds</value>
 	</variable>
 	<variable name="Shelf3DLabel1Var">
-		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Director))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR] $INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR] $INFO[ListItem.Director]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.Status))">[COLOR $VAR[FontColorVar]]$LOCALIZE[126]:[/COLOR] $INFO[Window(Home).Property(NextAired.Status)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="Shelf3DLabel2Var">
-		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Writer))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR] $INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Writer))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR] $INFO[ListItem.Writer]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31190]:[/COLOR] $INFO[Window(Home).Property(NextAired.NextDate),,: ]$INFO[Window(Home).Property(NextAired.NextTitle)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(ListItem.Genre)">[COLOR $VAR[TitleColorVar]]$LOCALIZE[515]: [/COLOR][COLOR white]$INFO[ListItem.Genre][/COLOR]</value>
@@ -3064,13 +3064,13 @@
 		<value condition="Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[20360]:[/COLOR] $INFO[ListItem.Property(TotalEpisodes)]</value>
 	</variable>
 	<variable name="Shelf3DLabel4Var">
-		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Runtime))">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR] $INFO[Window(home).Property(Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Runtime))">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR] $INFO[ListItem.Duration]</value>
 		<value condition="Container.Content(tvshows)">[COLOR $VAR[FontColorVar]]$LOCALIZE[33054]:[/COLOR] $INFO[ListItem.Property(TotalSeasons)]</value>
 		<value condition="Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[16101]:[/COLOR] $INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 	</variable>
 	<variable name="Shelf3DLabel5Var">
-		<value condition="[Container.Content(movies) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Years))">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR] $INFO[Window(home).Property(Set.Movies.Years)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Years))">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR] $INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR] $INFO[ListItem.Year]</value>
 		<value condition="Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered]</value>
 	</variable>
@@ -3143,13 +3143,13 @@
 		<value>$INFO[Window(weather).Property(Day6.OutlookIcon)]</value>
 	</variable>
 	<variable name="Shelf3DRLabel1Var">
-		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Director))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR][CR]$INFO[Window(home).Property(Set.Movies.Director)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR][CR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[31156]:[/COLOR][CR]$INFO[ListItem.Director]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.Status))">[COLOR $VAR[FontColorVar]]$LOCALIZE[126]:[/COLOR][CR]$INFO[Window(Home).Property(NextAired.Status)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[515]:[/COLOR][CR]$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="Shelf3DRLabel2Var">
-		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Writer))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR][CR]$INFO[Window(home).Property(Set.Movies.Writer)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Writer))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR][CR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[31157]:[/COLOR][CR]$INFO[ListItem.Writer]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31190]:[/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextDate),,: ]$INFO[Window(Home).Property(NextAired.NextTitle)]</value>
 		<value condition="[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(Window(Home).Property(NextAired.LatestDate))">[COLOR $VAR[FontColorVar]]$LOCALIZE[31159]:[/COLOR][CR]$INFO[Window(Home).Property(NextAired.LatestNumber),, - ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</value>
@@ -3161,13 +3161,13 @@
 		<value condition="Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[20360]:[/COLOR][CR]$INFO[ListItem.Property(TotalEpisodes)]</value>
 	</variable>
 	<variable name="Shelf3DRLabel4Var">
-		<value condition="!String.IsEmpty(Window(home).Property(Set.Movies.Runtime))">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR][CR]$INFO[ListItem.Duration]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Runtime))">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR][CR]$INFO[ListItem.Duration]</value>
 		<value condition="[Container.Content(movies) | Container.Content(episodes) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[2050]:[/COLOR][CR]$INFO[ListItem.Duration]</value>
 		<value condition="Container.Content(tvshows)">[COLOR $VAR[FontColorVar]]$LOCALIZE[33054]:[/COLOR][CR]$INFO[ListItem.Property(TotalSeasons)]</value>
 		<value condition="Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[16101]:[/COLOR][CR]$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 	</variable>
 	<variable name="Shelf3DRLabel5Var">
-		<value condition="[Container.Content(movies) | Container.Content(sets)] + !String.IsEmpty(Window(home).Property(Set.Movies.Years))">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR][CR]$INFO[Window(home).Property(Set.Movies.Years)]</value>
+		<value condition="[Container.Content(movies) | Container.Content(sets)] + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Years))">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR][CR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(sets)]">[COLOR $VAR[FontColorVar]]$LOCALIZE[345]:[/COLOR][CR]$INFO[ListItem.Year]</value>
 		<value condition="Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)">[COLOR $VAR[FontColorVar]]$LOCALIZE[20416]:[/COLOR][CR]$INFO[ListItem.Premiered]</value>
 	</variable>

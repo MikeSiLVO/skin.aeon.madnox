@@ -732,7 +732,7 @@
 							<width>135</width>
 							<height>60</height>
 							<align>center</align>
-							<label>$INFO[Window(home).Property(Artist.Albums.Count)]</label>
+							<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Count)]</label>
 							<font>Font_Bold40</font>
 							<textcolor>floor</textcolor>
 						</control>
@@ -754,7 +754,7 @@
 							<width>135</width>
 							<height>60</height>
 							<align>center</align>
-							<label>$INFO[Window(home).Property(Artist.Albums.Playcount)]</label>
+							<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Playcount)]</label>
 							<font>Font_Bold40</font>
 							<textcolor>floor</textcolor>
 						</control>
@@ -780,7 +780,7 @@
 						<width>135</width>
 						<height>60</height>
 						<align>center</align>
-						<label>$INFO[Window(home).Property(Artist.Albums.Newest)]</label>
+						<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Newest)]</label>
 						<font>Font_Bold40</font>
 						<textcolor>floor</textcolor>
 					</control>
@@ -798,7 +798,7 @@
 						<width>135</width>
 						<height>60</height>
 						<align>center</align>
-						<label>$INFO[Window(home).Property(Artist.Albums.Oldest)]</label>
+						<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Oldest)]</label>
 						<font>Font_Bold40</font>
 						<textcolor>floor</textcolor>
 					</control>
@@ -832,7 +832,7 @@
 					<control type="image">
 						<left>130</left>
 						<top>12</top>
-						<texture>$VAR[ColorFlagsPathVar]audio/$INFO[Window(home).Property(Album.Song.1.FileExtension),,.png]</texture>
+						<texture>$VAR[ColorFlagsPathVar]audio/$INFO[Window(Home).Property(SkinInfo.Album.Song.1.FileExtension),,.png]</texture>
 						<include>AudioFlagsVars</include>
 					</control>
 					<control type="group">
@@ -892,7 +892,7 @@
 							<width>135</width>
 							<height>65</height>
 							<align>center</align>
-							<label>$INFO[Window(home).Property(Album.Songs.Count)]</label>
+							<label>$INFO[Window(Home).Property(SkinInfo.Album.Songs.Count)]</label>
 							<font>Font_Bold40</font>
 							<textcolor>floor</textcolor>
 						</control>

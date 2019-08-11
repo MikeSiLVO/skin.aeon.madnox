@@ -974,16 +974,16 @@
 					<visible>Container.Content(artists)</visible>
 					<left>400</left>
 					<width min="0" max="100">auto</width>
-					<label>$INFO[Window(home).Property(Artist.Albums.Oldest)]</label>
+					<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Oldest)]</label>
 					<font>Font.ml.28</font>
 				</control>
 				<control type="label">
 					<visible>Container.Content(artists)</visible>
 					<left>450</left>
 					<width min="0" max="150">auto</width>
-					<label> - $INFO[Window(home).Property(Artist.Albums.Newest)]</label>
+					<label> - $INFO[Window(Home).Property(SkinInfo.Artist.Albums.Newest)]</label>
 					<font>Font.ml.28</font>
-					<visible>!String.IsEqual(Window(home).Property(Artist.Albums.Oldest),Window(home).Property(Artist.Albums.Newest))</visible>
+					<visible>!String.IsEqual(Window(Home).Property(SkinInfo.Artist.Albums.Oldest),Window(Home).Property(SkinInfo.Artist.Albums.Newest))</visible>
 				</control>
 				<!--Albums lvl -->
 				<control type="image" id="99">

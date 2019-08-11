@@ -2950,8 +2950,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="0" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="0" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -2963,8 +2963,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.2.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="500" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="500" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -2976,8 +2976,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.3.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.3.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="1000" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="1000" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -2989,8 +2989,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.4.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.4.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="1500" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="1500" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3002,8 +3002,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.5.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.5.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.5.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="2000" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="2000" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3015,8 +3015,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.6.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.6.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.6.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="2500" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="2500" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3028,8 +3028,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.7.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.7.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="3000" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="3000" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3041,8 +3041,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.8.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.8.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.8.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.8.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="3500" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="3500" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3054,8 +3054,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.9.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.9.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.9.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.9.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="4000" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="4000" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3067,8 +3067,8 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture background="true">$INFO[Window(home).Property(Set.Movie.10.Art(discart))]</texture>
-			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(home).Property(Set.Movie.10.Art(discart)))" reversible="false">
+			<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.10.Art(discart))]</texture>
+			<animation type="Conditional" condition="Control.IsVisible(1970) + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.10.Art(discart)))" reversible="false">
 				<effect type="slide" start="0,0" end="-1400,0" delay="4500" time="2300" tween="cubic" easing="inout"/>
 				<effect type="rotate" start="0" center="auto" end="720" delay="4500" time="2300" tween="cubic" easing="inout"/>
 			</animation>
@@ -3077,21 +3077,21 @@
 	</include>
 	<!-- Open case -->
 	<include name="ShowcaseOpenCase">
-		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies)">
+		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies)">
 			<effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="4800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies)">
+		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies)">
 			<effect type="rotatey" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="4800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
 	</include>
 	<include name="ShowcaseOpenCaseWatched">
-		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies)">
+		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(usecases) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies)">
 			<effect type="rotatey" center="0" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="4800" center="0" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies)">
+		<animation type="conditional" reversible="false" condition="Control.IsVisible(1970) + Skin.HasSetting(OpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies)">
 			<effect type="rotatey" center="-11" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="4800" center="-11" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
@@ -3405,7 +3405,7 @@
 								<width>150</width>
 								<height>198</height>
 								<aligny>top</aligny>
-								<label>$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</label>
+								<label>$INFO[Window(Home).Property(SkinInfo.Set.Movies.ExtendedPlot)]</label>
 								<font>Font_Reg10</font>
 								<textcolor>black</textcolor>
 							</control>

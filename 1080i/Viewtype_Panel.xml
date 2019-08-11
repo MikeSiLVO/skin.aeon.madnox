@@ -192,7 +192,7 @@
 						<control type="label">
 							<width min="50" max="720">auto</width>
 							<aligny>bottom</aligny>
-							<label fallback="N/A">$INFO[Window(home).Property(Set.Movies.Genre)]</label>
+							<label fallback="N/A">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)]</label>
 							<font>Font_Reg32</font>
 							<textcolor>white6</textcolor>
 							<scroll>true</scroll>
@@ -223,7 +223,7 @@
 						<control type="label">
 							<width min="50" max="720">auto</width>
 							<aligny>bottom</aligny>
-							<label fallback="N/A">$INFO[Window(home).Property(Set.Movies.Director)]</label>
+							<label fallback="N/A">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)]</label>
 							<font>Font_Reg32</font>
 							<textcolor>white6</textcolor>
 							<scroll>true</scroll>
@@ -254,7 +254,7 @@
 						<control type="label">
 							<width min="50" max="720">auto</width>
 							<aligny>bottom</aligny>
-							<label fallback="N/A">$INFO[Window(home).Property(Set.Movies.Writer)]</label>
+							<label fallback="N/A">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Writer)]</label>
 							<font>Font_Reg32</font>
 							<textcolor>white6</textcolor>
 							<scroll>true</scroll>
@@ -349,7 +349,7 @@
 						<control type="label">
 							<width min="50" max="720">auto</width>
 							<aligny>bottom</aligny>
-							<label fallback="N/A">$INFO[Window(home).Property(Set.Movies.Studio)]</label>
+							<label fallback="N/A">$INFO[Window(Home).Property(SkinInfo.Set.Movies.Studio)]</label>
 							<font>Font_Reg32</font>
 							<textcolor>white6</textcolor>
 							<scroll>true</scroll>

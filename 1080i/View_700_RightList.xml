@@ -304,16 +304,16 @@
 				<control type="grouplist">
 					<visible>[ListItem.IsCollection + !ListItem.IsParentFolder]</visible>
 					<control type="label">
-						<label>[COLOR $VAR[TitleColorVar]]Directed by:[/COLOR][CR][COLOR white]$INFO[Window(home).Property(Set.Movies.Director)][/COLOR]</label>
+						<label>[COLOR $VAR[TitleColorVar]]Directed by:[/COLOR][CR][COLOR white]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Director)][/COLOR]</label>
 						<width>650</width>
 						<include>RighListButtonsValues</include>
-						<visible>!String.IsEmpty(Window(home).Property(Set.Movies.Director)) + [Container.Content(movies) | Container.Content(sets)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Director)) + [Container.Content(movies) | Container.Content(sets)]</visible>
 					</control>
 					<control type="label">
-						<label>[COLOR $VAR[TitleColorVar]]$LOCALIZE[515]:[/COLOR][CR][COLOR white]$INFO[Window(home).Property(Set.Movies.Genre),, $LOCALIZE[12391][/COLOR]]</label>
+						<label>[COLOR $VAR[TitleColorVar]]$LOCALIZE[515]:[/COLOR][CR][COLOR white]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre),, $LOCALIZE[12391][/COLOR]]</label>
 						<width>650</width>
 						<include>RighListButtonsValues</include>
-						<visible>!String.IsEmpty(Window(home).Property(Set.Movies.Genre)) + [Container.Content(movies) | Container.Content(sets)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Genre)) + [Container.Content(movies) | Container.Content(sets)]</visible>
 					</control>
 				</control>
 				<control type="grouplist">
@@ -647,7 +647,7 @@
 						<font>Font_Reg26</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window(home).Property(Set.Movie.Count)]</label>
+						<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.Count)]</label>
 						<textcolor>grey3</textcolor>
 						<textoffsetx>18</textoffsetx>
 						<visible>ListItem.IsCollection</visible>

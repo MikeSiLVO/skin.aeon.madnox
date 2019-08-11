@@ -231,7 +231,7 @@
 						<texture border="1">separator3.png</texture>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(Window(home).Property(Artist.Albums.Count)) + !String.IsEmpty(Container(50).NumItems) + !String.IsEqual(ListItem.DBType,song)</visible>
+						<visible>!IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count)) + !String.IsEmpty(Container(50).NumItems) + !String.IsEqual(ListItem.DBType,song)</visible>
 						<width>160</width>
 						<control type="label">
 							<top>2</top>
@@ -248,10 +248,10 @@
 							<width>160</width>
 							<height>60</height>
 							<align>center</align>
-							<label>$INFO[Window(home).Property(Artist.Albums.Count)]</label>
+							<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Count)]</label>
 							<font>font48_bold</font>
 							<textcolor>grey</textcolor>
-							<visible>System.HasAddon(script.skin.info.service) + !IsEmpty(Window(home).Property(Artist.Albums.Count))</visible>
+							<visible>System.HasAddon(script.skin.info.service) + !IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count))</visible>
 						</control>
 						<control type="label">
 							<top>52</top>
@@ -278,7 +278,7 @@
 						<width>2</width>
 						<height>90</height>
 						<texture border="1">separator3.png</texture>
-						<visible>!IsEmpty(Window(home).Property(Artist.Albums.Count)) + !String.IsEmpty(Container(50).NumItems) + !String.IsEqual(ListItem.DBType,song)</visible>
+						<visible>!IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count)) + !String.IsEmpty(Container(50).NumItems) + !String.IsEqual(ListItem.DBType,song)</visible>
 					</control>
 					<control type="image">
 						<width>260</width>

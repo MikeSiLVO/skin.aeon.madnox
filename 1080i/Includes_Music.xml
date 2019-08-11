@@ -163,33 +163,33 @@
 					<control type="group">
 						<control type="image">
 							<left>154</left>
-							<animation effect="zoom" end="200" center="154,70" time="320" tween="cubic" easing="inout" condition="String.IsEmpty(Window(home).Property(Artist.Album.3.Thumb)) + !String.IsEmpty(Window(home).Property(Artist.Album.1.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.5.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.7.Thumb))">Conditional</animation>
+							<animation effect="zoom" end="200" center="154,70" time="320" tween="cubic" easing="inout" condition="String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Thumb)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.1.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Thumb))">Conditional</animation>
 							<top>70</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.1.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.1.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>360</left>
-							<animation effect="zoom" end="200" center="560,70" time="320" tween="cubic" easing="inout" condition="!String.IsEmpty(Window(home).Property(Artist.Album.3.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.1.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.5.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.7.Thumb))">Conditional</animation>
+							<animation effect="zoom" end="200" center="560,70" time="320" tween="cubic" easing="inout" condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.3.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.1.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.5.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.7.Thumb))">Conditional</animation>
 							<top>70</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.3.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.3.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>154</left>
 							<top>285</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.5.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.5.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>360</left>
 							<top>285</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.7.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.7.Thumb)]</texture>
 						</control>
 					</control>
 					<control type="group">
@@ -198,30 +198,30 @@
 							<top>70</top>
 							<width>200</width>
 							<height>200</height>
-							<animation effect="zoom" end="200" center="1780,70" time="320" tween="cubic" easing="inout" condition="String.IsEmpty(Window(home).Property(Artist.Album.4.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.6.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.8.Thumb)) + !String.IsEmpty(Window(home).Property(Artist.Album.2.Thumb))">Conditional</animation>
-							<texture>$INFO[Window(home).Property(Artist.Album.2.Thumb)]</texture>
+							<animation effect="zoom" end="200" center="1780,70" time="320" tween="cubic" easing="inout" condition="String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Thumb)) + !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Thumb))">Conditional</animation>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.2.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>1364</left>
-							<animation effect="zoom" end="200" center="1364,70" time="320" tween="cubic" easing="inout" condition="!String.IsEmpty(Window(home).Property(Artist.Album.4.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.6.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.8.Thumb)) + String.IsEmpty(Window(home).Property(Artist.Album.2.Thumb))">Conditional</animation>
+							<animation effect="zoom" end="200" center="1364,70" time="320" tween="cubic" easing="inout" condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.4.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.6.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.8.Thumb)) + String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Album.2.Thumb))">Conditional</animation>
 							<top>70</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.4.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.4.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>1570</left>
 							<top>285</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.6.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.6.Thumb)]</texture>
 						</control>
 						<control type="image">
 							<left>1364</left>
 							<top>285</top>
 							<width>200</width>
 							<height>200</height>
-							<texture>$INFO[Window(home).Property(Artist.Album.8.Thumb)]</texture>
+							<texture>$INFO[Window(Home).Property(SkinInfo.Artist.Album.8.Thumb)]</texture>
 						</control>
 					</control>
 				</control>

@@ -1330,7 +1330,7 @@
 					<height>90</height>
 					<align>right</align>
 					<aligny>top</aligny>
-					<label>$INFO[ListItem.Year]$INFO[Window(home).Property(Set.Movies.Runtime) • $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</label>
+					<label>$INFO[ListItem.Year]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime) • $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ]</label>
 					<textcolor>grey</textcolor>
 					<visible>!String.IsEmpty(ListItem.Title) + ListItem.IsCollection</visible>
 				</control>

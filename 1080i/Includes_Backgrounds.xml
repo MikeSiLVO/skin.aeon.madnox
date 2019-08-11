@@ -46,26 +46,26 @@
 			<font>font10</font>
 			<textcolor>white</textcolor>
 			<randomize>true</randomize>
-			<label>$INFO[Window(Home).Property(Set.Movie.1.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.2.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.3.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.4.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.5.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.6.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.7.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.8.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.9.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.10.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.11.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.12.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.13.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.14.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.15.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.16.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.17.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.18.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.19.Art(fanart))]</label>
-			<label>$INFO[Window(Home).Property(Set.Movie.20.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.7.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.8.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.9.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.10.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.11.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.12.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.13.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.14.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.15.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.16.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.17.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.18.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.19.Art(fanart))]</label>
+			<label>$INFO[Window(Home).Property(SkinInfo.Set.Movie.20.Art(fanart))]</label>
 			<visible>[Container.Content(tags) | Container.Content(directors) | Container.Content(actors) | Container.Content(genres) | Container.Content(studios) | Container.Content(countries) | Container.Content(years) | Container.Content(sets) | ListItem.IsCollection]</visible>
 			<visible>!ListItem.IsParentFolder</visible>
 		</control>
@@ -82,7 +82,7 @@
 				<control type="group">
 					<left>100</left>
 					<top>50</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.2.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.2.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -96,14 +96,14 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.2.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.2.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
@@ -111,7 +111,7 @@
 					<left>1500</left>
 					<top>480</top>
 					<animation effect="fade" time="320">VisibleChange</animation>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.3.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.3.Art(poster)))</visible>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
 						<animation effect="rotate" center="138,190" start="10" end="10" time="0" condition="true">Conditional</animation>
@@ -124,21 +124,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.3.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.3.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>500</left>
 					<top>270</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.5.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -152,20 +152,20 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.5.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.5.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>750</left>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.6.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -179,21 +179,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.6.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.6.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>150</left>
 					<top>400</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.4.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -207,21 +207,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.4.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.4.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>1380</left>
 					<top>650</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.8.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.8.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -235,21 +235,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.8.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.8.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.8.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.8.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>1050</left>
 					<top>500</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.7.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -263,21 +263,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.7.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.7.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.7.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.7.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>400</left>
 					<top>700</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.9.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.9.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -291,21 +291,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.9.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.9.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.9.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.9.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>800</left>
 					<top>600</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.10.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.10.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -319,21 +319,21 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.10.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.10.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.10.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.10.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>
 				<control type="group">
 					<left>1400</left>
 					<top>30</top>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.1.Art(poster)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(poster)))</visible>
 					<animation effect="fade" time="320">VisibleChange</animation>
 					<control type="group">
 						<animation effect="zoom" start="180" end="180" center="138,190" time="0" tween="linear" condition="true">Conditional</animation>
@@ -347,14 +347,14 @@
 							<align>center</align>
 							<!-- MikeBZH44 Scale to Stretch for poster -->
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(home).Property(Set.Movie.1.Art(poster))]</texture>
+							<texture background="true" diffuse="thumbs/boxes/movieposter_mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(poster))]</texture>
 						</control>
 						<control type="image">
 							<top>-20</top>
 							<width>276</width>
 							<height>380</height>
 							<!-- MikeBZH44 Resolution case for movieset -->
-							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(home).Property(Set.Movie.1.VideoResolution)]p.png</texture>
+							<texture background="true">thumbs/boxes/$VAR[LiveMovieSetBGCasesVar]/$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.VideoResolution)]p.png</texture>
 						</control>
 					</control>
 				</control>

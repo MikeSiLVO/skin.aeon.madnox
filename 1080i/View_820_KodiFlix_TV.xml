@@ -1005,7 +1005,7 @@
 					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label> • $INFO[Window(home).Property(Set.Movies.Runtime)] $LOCALIZE[12391]</label>
+					<label> • $INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)] $LOCALIZE[12391]</label>
 					<visible>[Container.Content(Movies) | Container.Content(sets)] + ListItem.IsCollection</visible>
 				</control>
 			</control>
@@ -1097,7 +1097,7 @@
 					<scroll>false</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label> • $INFO[Window(home).Property(Set.Movies.Runtime)] $LOCALIZE[12391]</label>
+					<label> • $INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)] $LOCALIZE[12391]</label>
 					<visible>[Container.Content(Movies) | Container.Content(sets)] + ListItem.IsCollection</visible>
 				</control>
 			</control>
@@ -2509,27 +2509,27 @@
 		</control>
 	</include>
 	<include name="KodiFlixOpenCase">
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies) + !Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | Skin.HasSetting(Fakedischandwriting)| Skin.Hassetting(fakediscart)] + !Skin.HasSetting(clearcases) + Container.Content(movies) + !Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="50" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-50" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies) + !Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart))) | !String.IsEmpty(Container.ListItem.Art(poster))] + Skin.HasSetting(clearcases) + Container.Content(movies) + !Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="50" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-50" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + !Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="75" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-75" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart)))] + !Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="85" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-85" time="1000" tween="quadratic" easing="out"/>
 		</animation>
-		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus)">
+		<animation type="focus" reversible="true" condition="Control.IsVisible(820) + Skin.HasSetting(usecases) + Skin.HasSetting(KodiFlixOpenCase) + [!String.IsEmpty(Container.ListItem.Art(discart)) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(discart)))] + Skin.HasSetting(clearcases) + Container.Content(movies) + Skin.HasSetting(KodiFlixTVCenterList) + Skin.HasSetting(KodiFlixTVCenterFocus)">
 			<effect type="rotatey" delay="1000" center="-4" start="0" end="85" time="1000" tween="quadratic" easing="out"/>
 			<effect type="rotatey" delay="6800" center="-4" start="0" end="-85" time="1000" tween="quadratic" easing="out"/>
 		</animation>
@@ -2605,50 +2605,50 @@
 				<control type="image" id="6601">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 				<control type="image" id="6602">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.2.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.8.Art(Discart))) | !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.8.Art(Discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 				<control type="image" id="6603">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.3.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.9.Art(Discart))) | !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.9.Art(Discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 				<control type="image" id="6604">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.4.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.10.Art(Discart))) | !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.10.Art(Discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 				<control type="image" id="6605">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.5.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.11.Art(Discart))) | !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.11.Art(Discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 				<control type="image" id="6606">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.6.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscAnimation</include>
-					<include condition="!String.IsEmpty(Window(home).Property(Set.Movie.12.Art(Discart))) | !String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
+					<include condition="!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.12.Art(Discart))) | !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))">KodiFlixExtrasDiscChange</include>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -2659,50 +2659,50 @@
 				<control type="image" id="6601">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.7.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.7.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.7.Art(Discart)))</visible>
 				</control>
 				<control type="image" id="6602">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.8.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.8.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.8.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.8.Art(Discart)))</visible>
 				</control>
 				<control type="image" id="6603">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.9.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.9.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.9.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.9.Art(Discart)))</visible>
 				</control>
 				<control type="image" id="6604">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.10.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.10.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.10.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.10.Art(Discart)))</visible>
 				</control>
 				<control type="image" id="6605">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.11.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.11.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.11.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.11.Art(Discart)))</visible>
 				</control>
 				<control type="image" id="6606">
 					<width>254</width>
 					<height>254</height>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.12.Art(Discart))]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinInfo.Set.Movie.12.Art(Discart))]</texture>
 					<fadetime>400</fadetime>
 					<include>KodiFlixExtrasDiscNext</include>
-					<visible>!String.IsEmpty(Window(home).Property(Set.Movie.12.Art(Discart)))</visible>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.12.Art(Discart)))</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -2711,11 +2711,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.1.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2723,11 +2723,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.1.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.1.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6601)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.1.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2735,11 +2735,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.2.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.2.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2747,11 +2747,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.2.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.2.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.2.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6602)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.2.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2759,11 +2759,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.3.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.3.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2771,11 +2771,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.3.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.3.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.3.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6603)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.3.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2783,11 +2783,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.4.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.4.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2795,11 +2795,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.4.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.4.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.4.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6604)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.4.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2807,11 +2807,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.5.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.5.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2819,11 +2819,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.5.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="common/discart/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.5.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.5.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6605)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.5.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2831,11 +2831,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(home).Property(Set.Movie.6.Art(poster))]</texture>
+				<texture background="true" diffuse="thumbs/sets/cdart-mask.png">$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.Art(poster))]</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.6.Art(poster)))</visible>
 			</control>
 			<control type="image">
 				<top>622</top>
@@ -2843,11 +2843,11 @@
 				<width>266</width>
 				<height>266</height>
 				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-				<texture background="true" fallback="thumbs/boxes/movies/p.png">common/discart/$INFO[Window(home).Property(Set.Movie.6.VideoResolution)]p.png</texture>
+				<texture background="true" fallback="thumbs/boxes/movies/p.png">common/discart/$INFO[Window(Home).Property(SkinInfo.Set.Movie.6.VideoResolution)]p.png</texture>
 				<fadetime>400</fadetime>
 				<bordersize>7</bordersize>
 				<include>KodiFlixExtrasDiscAnimation</include>
-				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(home).Property(Set.Movie.6.Art(poster)))</visible>
+				<visible>String.IsEmpty(Control.GetLabel(6606)) + ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movie.6.Art(poster)))</visible>
 			</control>
 			<control type="Label">
 				<top>594</top>
